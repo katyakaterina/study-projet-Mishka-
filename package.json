@@ -1,0 +1,36 @@
+{
+  "name": "codedbeings",
+  "version": "1.0.0",
+  "description": "Первая командная работа",
+  "main": "index.js",
+  "scripts": {
+    "test": "woki"
+  },
+  "author": "Kate Konstantionva Vladimir Ozerskiy",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.19.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-csso": "^3.0.0",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-posthtml": "^3.0.2",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "gulp-stylus": "^2.6.0",
+    "imagemin-optipng": "^5.2.1",
+    "install": "^0.10.2",
+    "npm": "^5.6.0",
+    "posthtml-include": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Sheloveseveryone@bitbucket.org/teamWoKi/project-mishka.git"
+  },
+  "keywords": [
+    "mishka"
+  ],
+  "homepage": "https://bitbucket.org/teamWoKi/project-mishka#readme"
+}

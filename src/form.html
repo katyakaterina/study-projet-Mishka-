@@ -61,9 +61,10 @@
        </nav>
    </header>
    <main class="main">
-            <h2 class="main__title">Вязание на заказ</h2>
-            <form class="form__customer">
-                <article class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! 
+       <div class="page-form">
+            <h2 class="page-form__title">Вязание на заказ</h2>
+            <form class="page-form__customer">
+                <article class="page-form__text">Мы будем рады воплотить в жизнь ваши пожелания! 
                      Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
                 </article>
                 <section class="filter">
@@ -95,18 +96,48 @@
                        </form>
                 </section>
                 <section class="customer">
-                    <h3 class="customer__full-name"> Фио</h3>
-                    <label class="customer__name">Имя</label>
-                    <input class="customer__input" type="text">
-                    
-
+                    <form class="customer__form">
+                        <div class="customer__ful-name">
+                             <h3 class="customer__full-name"> Фио</h3>
+                             <label class="customer__label">Имя</label>
+                             <input class="customer__input" type="text" placeholder="Введите ваше имя*">
+                             <label class="customer__label">Фамилия</label>
+                             <input class="customer__input" type="text" placeholder="Укажите фамилию*">
+                             <label class="customer__label">Отчество</label>
+                             <input class="customer__input" type="text" placeholder="Отчество, если желаете">
+                        </div>
+                        <div class="customer__data">
+                             <h3 class="customer__full-name">Тел</h3>
+                             <input type="tel" value="" name="tel" placeholder="+7 ХХХ ХХ ХХ*">
+                             <label class="customer__number"></label>
+                             <h3 class="customer__full-name">Email</h3>
+                             <input class="customer__input" type="email" value="" name="email" placeholder="Ваш Email*">
+                             <label class="customer__email"></label>
+                             <h3 class="customer__full-name">Доп</h3>
+                             <textarea class="customer__extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                        </div>
+                    </form>
                 </section>
-
-
+                <span class="page-form__note">*Поля обязательны для заполнения</span>
+                <button class="btn page-form__btn">Отправить заказ</button>
             </form>
-            
-       
+       </div>
    </main>
-    
-</body>
+   <footer class="footer">
+        <div class="footer__social">
+            <a class="footer__link" href="#">
+                <img class="footer__insta" src="" width="" height="" alt="instagram">
+            </a>
+            <a class="footer__link" href="#">
+                <img class="footer__facebook" src="" width="" height="" alt="facebook">
+            </a>
+            <a class="footer__link" href="#">
+                <img class="footer__twitter" src="" width="" height="" alt="twitter">
+            </a>
+        </div>
+        <div class="footer__copyright">
+            <p class="footer__creator">Разработано</p>
+        </div>
+    </footer>
+  </body>
 </html>

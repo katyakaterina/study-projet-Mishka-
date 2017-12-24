@@ -157,11 +157,16 @@
     </footer>
     <div class="modal-ctg">
         <h2 class="modal-ctg__title">Добавить в корзину</h2>
-        <p class="modal-ctg__sizes">Выберите размер</p>
+        <p class="modal-ctg__text">Выберите размер</p>
         <ul class="modal-ctg__list">
-            <li class="modal-ctg__item"><a class="modal-ctg__link">S</a></li>
-            <li class="modal-ctg__item"><a class="modal-ctg__link">M</a></li>
-            <li class="modal-ctg__item"><a class="modal-ctg__link">L</a></li>
+            <form class="modal-ctg__form">
+                <input class="modal-ctg__input" type="checkbox" name="check" checked>
+                <label class="modal-ctg__size">S</label>
+                <input class="modal-ctg__input" type="checkbox" name="check">
+                <label class="modal-ctg__size">M</label>
+                <input class="modal-ctg__input" type="checkbox" name="check">
+                <label class="modal-ctg__size">L</label>
+            </form>
         </ul>
         <button class="btn modal-ctg__btn">Добавить</button>
     </div>

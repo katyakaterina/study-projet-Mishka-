@@ -42,7 +42,7 @@ gulp.task('browserSync', function () {
      });
 });
 
-gulp.task('serve', ['sass'], function() {  
+gulp.task('browser-sync', ['sass'], function() {  
     browserSync.init({
        server: "./src"
 }); 

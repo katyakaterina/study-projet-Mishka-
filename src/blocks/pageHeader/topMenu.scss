@@ -1,0 +1,35 @@
+header {
+    width: 280px;
+    padding: 0 20px; 
+
+}
+
+.menu-top {
+
+    &__list {
+        display: block;
+    }
+
+
+
+
+}
+
+
+@media (min-width: 768px) {
+    
+    .menu-top {
+
+        &__list{
+            display: flex;
+        }
+
+        &__link {
+            color: $tiffany;
+        }
+
+       
+            
+    }
+    
+}

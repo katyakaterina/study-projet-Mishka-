@@ -1,0 +1,31 @@
+.menu-bottom {
+
+    &__list{
+        display: block;
+    }
+
+    &__item{
+        height: 103px;
+    }
+
+    &__item--left{
+        
+        border: 1px solid $tiffanyLeft;
+        background-color: $tiffanyLeft;
+    }
+    &__item--right{
+        border: 1px solid $tiffanyRight;
+        background-color: $tiffanyRight;
+    }
+
+        &__title {
+            font-size: 27px;
+            color: $black;
+            width: 244px;
+            text-align: center;
+
+    } 
+    
+    
+   
+}

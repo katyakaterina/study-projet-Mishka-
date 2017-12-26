@@ -3,28 +3,57 @@
   "version": "1.0.0",
   "description": "Первая командная работа",
   "main": "index.js",
-  "scripts": {
-    "test": "woki"
-  },
+
   "author": "Kate Konstantionva Vladimir Ozerskiy",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.19.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
+    "gulp-build": "^0.5.3",
+    "gulp-cssnano": "^2.1.2",
     "gulp-csso": "^3.0.0",
     "gulp-imagemin": "^4.0.0",
+    "gulp-include": "^2.3.1",
+    "gulp-minify": "^2.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
     "gulp-posthtml": "^3.0.2",
     "gulp-pug": "^3.3.0",
-    "gulp-sass": "^3.1.0"
-  },
-  "dependencies": {
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
     "gulp-stylus": "^2.6.0",
+    "gulp-webp": "^2.3.0",
     "imagemin-optipng": "^5.2.1",
     "install": "^0.10.2",
     "npm": "^5.6.0",
-    "posthtml-include": "^1.1.0"
+    "posthtml-include": "^1.1.0",
+    "gulp-cache": "^1.0.1",
+    "del": "^3.0.0"
   },
+"scripts": {
+  "stylelint": "stylelint 'sass/**/*.scss' --syntax sass",
+  "test": "npm run editorconfig && npm run stylelint",
+  "build": "gulp build",
+  "start": "npm run build && gulp serve",
+  "images": "gulp images",
+  "copy": "gulp copy",
+  "clean": "gulp clean"
+},
+"browserslist": [
+  "last 2 versions",
+  "IE 11",
+  "Firefox ESR"
+],
+"editorconfig-cli": [
+  "*.html",
+  "*.json",
+  "*.js",
+  "js/**/*.js",
+  "img/**/*.svg",
+  "sass/**/*.scss"
+],
+
   "repository": {
     "type": "git",
     "url": "git+https://Sheloveseveryone@bitbucket.org/teamWoKi/project-mishka.git"
@@ -32,5 +61,8 @@
   "keywords": [
     "mishka"
   ],
-  "homepage": "https://bitbucket.org/teamWoKi/project-mishka#readme"
+  "homepage": "https://bitbucket.org/teamWoKi/project-mishka#readme",
+  "dependencies": {
+
+  }
 }

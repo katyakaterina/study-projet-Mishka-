@@ -164,7 +164,7 @@ gulp.task("server", function () {
 
 //end server//
     gulp.task('default', function () {
-        return gulp.src('main.css')
+        return gulp.src('./main.css')
             .pipe(cssnano())
             .pipe(gulp.dest('dist'));
     });

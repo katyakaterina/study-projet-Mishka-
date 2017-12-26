@@ -1,0 +1,8 @@
+@mixin text($size, $weig) {
+  font: {
+    family: 'Open Sans';
+    size: $size;
+    weight: $weig;
+  }
+}
+

@@ -9,23 +9,29 @@
     }
 
     &__item--left{
-        
-        border: 1px solid $tiffanyLeft;
-        background-color: $tiffanyLeft;
+
+        border: 1px solid #7fcebb;
+
+
+        background-color: #7fcebb;
+
+
     }
     &__item--right{
-        border: 1px solid $tiffanyRight;
-        background-color: $tiffanyRight;
+        border: 1px solid #73c0b2;
+
+        background-color: #73c0b2;
+
     }
 
         &__title {
             font-size: 27px;
-            color: $black;
+            color: #000000;
             width: 244px;
             text-align: center;
 
-    } 
-    
-    
-   
+    }
+
+
+
 }

@@ -20,64 +20,73 @@ var build = require('gulp-build');
 var del = require('del');
 
 
+
+
+
 gulp.task("sass", function () {
-    return gulp.src("sass/**/*.scss")////
-        .pipe(plumber())
-        .pipe(sass())
-        .pipe(postcss([
-            autoprefixer()
-        ]))
-        .pipe(gulp.dest("css"))
-        .pipe(minify())
-        .pipe(rename("style.min.css"))
-        .pipe(gulp.dest("css"))
-        .pipe(server.stream());
+  return gulp.src("src/sass/**/*.scss")////
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minify())
+    .pipe(rename("main.css"))
+    .pipe(gulp.dest("css"))
+    .pipe(server.stream())
+.pipe(browserSync.reload({ stream: true }));
+});
+gulp.task('sass', function () {
+  return gulp.src('src/sass/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('dist/css'))
+    .pipe(browserSync.stream());
+
 });
 
 
-gulp.task('sass', function () { // Создаем таск Sass
-    return gulp.src('sass/**/*.scss') // Берем источник
-        .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
-        .pipe(gulp.dest('css')) // Выгружаем результата в папку app/css
-        .pipe(browserSync.reload({ stream: true })) // Обновляем CSS на странице при изменении
-});
-
-gulp.task('watch', ['browser-sync', 'sass'], function () {
-    gulp.watch('sass/**/*.scss', ['sass']); // Наблюдение за sass файлами
-    // Наблюдение за другими типами файлов
-});
 //browser-sync//
+
 gulp.task('browser-sync', function () {
-    var files = [
-        'html/**/*.html',  ////
-        'css/**/*.css',
-        'img/**/*.png',
-        'js/**/*.js'
-    ];
-    browserSync.init(files, {
-        server: {
-            baseDir: './'
-        }
-    });
+  var files = [
+    'dist/html/**/*.html',  ////
+    'dist/css/**/*.css',
+    'dist/img/**/*.png',
+    'dist/js/**/*.js'
+  ];
+  browserSync.init(files, {
+    server: {
+      baseDir: 'dist'
+    }
+  });
 });
+
+
+
+
 //end browser-sync//
-//watch//
-gulp.task('watch', ['browser-sync', 'sass', 'html', 'js', 'img'], function () {
-    gulp.watch('sass/**/*scss', ['sass']);
-    gulp.watch('src/*.html', browserSync.reload);
-    gulp.watch('src/js/**/*js', browserSync.reload);
-    gulp.watch('src/img/**/*', browserSync.reload);  ////
+
+
+gulp.task('watch', ['browser-sync', 'sass','html','img','js'], function () {
+
+  gulp.watch('src/sass/**/*.scss', ['sass']);
+gulp.watch('/*.html', browserSync.reload);
+gulp.watch('src/js/**/*.js', browserSync.reload);
+ gulp.watch('src/img/**/*', browserSync.reload);
 });
+//watch//
+
 //end watch//
 
 
 //html//
 gulp.task("html", function () {
-    return gulp.src("*.html")
-        .pipe(posthtml([
-            include()
-        ]))
-        .pipe(gulp.dest("dist"));
+  return gulp.src("./*.html")
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("dist"));
 });
 //end html//
 //js//
@@ -100,7 +109,7 @@ gulp.task('minify', function () {
 //end js//
 //img//
 gulp.task('img', function () {
-    return gulp.src('src/img/**/*') // Берем все изображения из app
+    return gulp.src('img/**/*') // Берем все изображения из app
         .pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
             interlaced: true,
             progressive: true,
@@ -129,7 +138,7 @@ gulp.task('build', ['clean', 'sass'], function () {
 
     var buildCss = gulp.src([ // Переносим библиотеки в продакшен
         'css/main.css'
-        
+
     ])
         .pipe(gulp.dest('dist/css'))
 
@@ -151,7 +160,13 @@ gulp.task("webp", function () {
         .pipe(webp({ quality: 90 }))
         .pipe(gulp.dest("img"));
 });
+ gulp.task('serve', ['sass'], function () {
+        browserSync.init({
+            server: "dist"
+        });
 
+
+    });
 //server//
 gulp.task("server", function () {
     server.init({
@@ -170,7 +185,7 @@ gulp.task("server", function () {
     });
     //img//
     gulp.task('compress', function () {
-        gulp.src('./img/*.png')
+        gulp.src('img/*.png')
             .pipe(gulpPngquant({
                 quality: '65-80'
             }))
@@ -178,19 +193,13 @@ gulp.task("server", function () {
     });
     //end img//
 
-    gulp.task('serve', ['sass'], function () {
-        browserSync.init({
-            server: "src"
-        });
 
-
-    });
 
     // Compile sass into CSS & auto-inject into browsers
     gulp.task('default', ['serve']);
 
     gulp.task('sass', function () {
-        return gulp.src("src/*.scss")
+        return gulp.src("src/sass/**/*.scss")
             .pipe(sass())
             .pipe(gulp.dest("dist/css"))
             .pipe(browserSync.stream());

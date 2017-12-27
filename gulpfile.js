@@ -70,17 +70,10 @@ gulp.task('browser-sync', function () {
 //watch//
 gulp.task('watch', ['browser-sync', 'sass','html','img','js'], function () {
 
-<<<<<<< HEAD
-  gulp.watch('src/sass/**/*.scss', ['sass']);
-gulp.watch('src/*.html', browserSync.reload);
-gulp.watch('src/js/**/*.js', browserSync.reload);
- gulp.watch('src/img/**/*', browserSync.reload);
-=======
   gulp.watch('./src/**/*.scss', ['sass']);
 gulp.watch('/*.html', browserSync.reload);
 gulp.watch('./src/js/**/*.js', browserSync.reload);
- gulp.watch('./src/img/**/*', browserSync.reload);
->>>>>>> 084995d9e5240655f24ef4ebfb1ec90854e628f5
+ gulp.watch('src/img/**/*', browserSync.reload);
 });
 //end watch//
 
@@ -126,7 +119,7 @@ gulp.task('minify', function () {
 //end js//
 //img//
 gulp.task('img', function () {
-    return gulp.src('img/**/*') // Берем все изображения из app
+    return gulp.src('./src/img/**/*') // Берем все изображения из app
         .pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
             interlaced: true,
             progressive: true,
@@ -169,11 +162,21 @@ gulp.task('build', ['clean', 'sass'], function () {
         .pipe(gulp.dest('dist'));
 
 });
-
-
 //end build//
+
+//img//
+gulp.task('compress', function () {
+  gulp.src('./img/*.png')
+    .pipe(gulpPngquant({
+      quality: '65-80'
+    }))
+    .pipe(gulp.dest('./compressed/'));
+});
+    //end img//
+
+
 gulp.task("webp", function () {
-    return gulp.src("img/**/*.{png,jpg}")
+    return gulp.src("src/img/**/*.{png,jpg}")
         .pipe(webp({ quality: 90 }))
         .pipe(gulp.dest("img"));
 });
@@ -195,29 +198,12 @@ gulp.task("server", function () {
     });
 
 //end server//
-<<<<<<< HEAD
-
-
-
-
-
-
-=======
     gulp.task('default', function () {
         return gulp.src('./main.css')
             .pipe(cssnano())
             .pipe(gulp.dest('./dist'));
     });
->>>>>>> 084995d9e5240655f24ef4ebfb1ec90854e628f5
-    //img//
-    gulp.task('compress', function () {
-        gulp.src('./img/*.png')
-            .pipe(gulpPngquant({
-                quality: '65-80'
-            }))
-            .pipe(gulp.dest('./compressed/'));
-    });
-    //end img//
+
 
 
 

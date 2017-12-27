@@ -1,9 +1,13 @@
 .menu-bottom {
-
+width: 320px;
+margin: 0 auto;
     &__list{
-        display: block;
-    }
 
+    }
+&__img{
+
+margin-left: -40px;
+}
     &__item{
         height: 103px;
     }

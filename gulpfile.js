@@ -23,27 +23,33 @@ gulp.task('default', function() {
     console.log("hello people!")
 });
 
+
+
+
 gulp.task("sass", function () {
-  return gulp.src("./src/**/*.scss")////
+  return gulp.src("./style/**/*.scss") ////
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("./dist/css"))
+    .pipe(gulp.dest("dist/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest(".dist/css"))
+    .pipe(gulp.dest("dist/css"))
     .pipe(server.stream())
-.pipe(browserSync.reload({ stream: true }));
+    .pipe(browserSync.reload({
+      stream: true
+    }));
 });
 gulp.task('sass', function () {
-  return gulp.src('./src/**/*.scss')
+  return gulp.src('./style/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./dist/css'))
+    .pipe(gulp.dest('dist/css'))
     .pipe(browserSync.stream());
 
 });
+
 
 
 //browser-sync//
@@ -70,10 +76,10 @@ gulp.task('browser-sync', function () {
 //watch//
 gulp.task('watch', ['browser-sync', 'sass','html','img','js'], function () {
 
-  gulp.watch('./src/**/*.scss', ['sass']);
-gulp.watch('/*.html', browserSync.reload);
+  gulp.watch('./style/**/*.scss', ['sass']);
+gulp.watch('src/*.html', browserSync.reload);
 gulp.watch('./src/js/**/*.js', browserSync.reload);
- gulp.watch('src/img/**/*', browserSync.reload);
+ gulp.watch('/img/**/*', browserSync.reload);
 });
 //end watch//
 
@@ -84,7 +90,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(gulp.dest("./dist"));
+    .pipe(gulp.dest("dist"));
 });
 //end html//
 gulp.task('default', function () {
@@ -119,7 +125,7 @@ gulp.task('minify', function () {
 //end js//
 //img//
 gulp.task('img', function () {
-    return gulp.src('./src/img/**/*') // Берем все изображения из app
+    return gulp.src('src/img/**/*') // Берем все изображения из app
         .pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
             interlaced: true,
             progressive: true,
@@ -144,10 +150,10 @@ gulp.task('clean', function () {
     return del.sync('dist'); // Удаляем папку dist перед сборкой
 });
 
-gulp.task('build', ['clean', 'sass'], function () {
+gulp.task('build', ['clean', 'sass','css','html','img'], function () {
 
     var buildCss = gulp.src([ // Переносим библиотеки в продакшен
-        'css/main.css'
+        'css/style/main.css'
 
     ])
         .pipe(gulp.dest('dist/css'))

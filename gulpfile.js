@@ -67,16 +67,14 @@ gulp.task('browser-sync', function () {
 
 //end browser-sync//
 
-
+//watch//
 gulp.task('watch', ['browser-sync', 'sass','html','img','js'], function () {
 
   gulp.watch('./src/**/*.scss', ['sass']);
 gulp.watch('/*.html', browserSync.reload);
 gulp.watch('./src/js/**/*.js', browserSync.reload);
- gulp.watch('./src/img/**/*', browserSync.reload);
+ gulp.watch('src/img/**/*', browserSync.reload);
 });
-//watch//
-
 //end watch//
 
 
@@ -89,6 +87,18 @@ gulp.task("html", function () {
     .pipe(gulp.dest("./dist"));
 });
 //end html//
+gulp.task('default', function () {
+  return gulp.src('./main.css')
+    .pipe(cssnano())
+    .pipe(gulp.dest('dist'));
+});
+
+
+
+
+
+
+
 //js//
 gulp.task('js', function () {
     gulp.src('js/*.js')
@@ -109,7 +119,7 @@ gulp.task('minify', function () {
 //end js//
 //img//
 gulp.task('img', function () {
-    return gulp.src('img/**/*') // Берем все изображения из app
+    return gulp.src('./src/img/**/*') // Берем все изображения из app
         .pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
             interlaced: true,
             progressive: true,
@@ -152,11 +162,21 @@ gulp.task('build', ['clean', 'sass'], function () {
         .pipe(gulp.dest('dist'));
 
 });
-
-
 //end build//
+
+//img//
+gulp.task('compress', function () {
+  gulp.src('./img/*.png')
+    .pipe(gulpPngquant({
+      quality: '65-80'
+    }))
+    .pipe(gulp.dest('./compressed/'));
+});
+    //end img//
+
+
 gulp.task("webp", function () {
-    return gulp.src("img/**/*.{png,jpg}")
+    return gulp.src("src/img/**/*.{png,jpg}")
         .pipe(webp({ quality: 90 }))
         .pipe(gulp.dest("img"));
 });
@@ -183,15 +203,7 @@ gulp.task("server", function () {
             .pipe(cssnano())
             .pipe(gulp.dest('./dist'));
     });
-    //img//
-    gulp.task('compress', function () {
-        gulp.src('./img/*.png')
-            .pipe(gulpPngquant({
-                quality: '65-80'
-            }))
-            .pipe(gulp.dest('./compressed/'));
-    });
-    //end img//
+
 
 
 

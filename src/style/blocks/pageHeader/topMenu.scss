@@ -2,23 +2,26 @@
     display: block;
     text-align: center;
     height: 79px;
+&__logo{
+ background: url('/img/logo-mishka-mobile.png')no-repeat ;
+background-position: 50% 50%;
 
-    &__logo-link {
-        text-align: center;
-        background-image: url('../img/logo-mishka-mobile.png');
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
+
         background-size: 60px;
+}
+    &__logo-img {
+        text-align: center;
+
       }
 
-    &__list {
+    &__item {
         // display: none;
         list-style: none;
         height: 315px;
         padding: 0;
     }
 
-    &__item {
+    &__list{
         height: 79px;
         border: 1px solid $baseC;
         text-align: center;
@@ -33,14 +36,14 @@
 
 
 @media (min-width: 768px) {
-    
+
     .menu-top {
         display: block;
         text-align: left;
 
         &__logo-link {
             text-align: center;
-            background-image: url('./img/logo-tablet.png');
+            background-image: url('/img/logo-tablet.png');
             background-position: 50% 50%;
             background-repeat: no-repeat;
           }
@@ -49,10 +52,10 @@
             display: flex;
         }
 
-       
 
-       
-            
+
+
+
     }
-    
+
 }

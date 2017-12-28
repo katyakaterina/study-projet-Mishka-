@@ -2,35 +2,37 @@
     display: block;
     text-align: center;
     height: 79px;
-&__logo{
- background: url('/img/logo-mishka-mobile.png')no-repeat ;
-background-position: 50% 50%;
-
-
-        background-size: 60px;
+    
+    &__logo{
+    background: url('/img/logo-mishka-mobile.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
     &__logo-img {
         text-align: center;
-
-      }
+    }
 
     &__item {
-        // display: none;
         list-style: none;
-        height: 315px;
+        height: 79px;
+        border: 1px solid #ececec;
         padding: 0;
     }
 
     &__list{
-        height: 79px;
-        border: 1px solid $baseC;
+        display: none;
+        height: 315px;
         text-align: center;
+        padding: 0;
+        margin: 0;
+       
     }
     &__link {
         font-size: 17px;
         color: #000000;
         font-weight: 700;
         text-decoration: none;
+        text-align: center;
 }
 }
 

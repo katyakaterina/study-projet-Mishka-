@@ -1,0 +1,90 @@
+.menu-bottom {
+
+    
+      background-image: url('/img/header-bg-mobile.jpg');
+    background-position: 50% 60%;
+    background-repeat: no-repeat;  
+    
+    
+
+    &__list{
+        display: block;
+        list-style: none;
+        padding: 0;
+    }
+
+    &__item{
+        height: 103px;
+    }
+
+    &__link{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    &__caption{
+        width: 100px;
+        margin-left: 30px;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: calc(24/19);
+        
+    }
+
+    &__item--left{
+        border: 1px solid #7fcebb;
+        background-color:#7fcebb;
+        background-image: url('/img/lamp.png');
+        background-position: 83%;
+        background-repeat: no-repeat;
+    }
+    &__item--right{
+        border: 1px solid #73c0b2;
+        background-color: #73c0b2;
+        background-image: url('/img/toy.png');
+        background-position: 83%;
+        background-repeat: no-repeat;
+
+    }
+
+    &__title {
+        font-size: 27px;
+        font-weight: 700;
+        color: #000000;
+        width: 244px;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+}
+@media (min-width: 760px) {
+
+    body{
+        width: 640px; 
+        padding: 0 64px;
+    }
+
+    .menu-bottom{
+        height: 746px;
+        background-image: url('/img/header-bg.jpg');
+        background-position: 50% -60%;
+        background-repeat: no-repeat;
+
+        &__title {
+           
+            width: 315px;
+            margin: 0 auto;
+        }
+        &__list{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        &__item{
+            width: 334px;
+            height: 119px;
+    
+        }
+
+
+    }
+}

@@ -1,6 +1,6 @@
 .menu-bottom {
 
-    background-image: url('img/header-bg-mobile.jpg');
+    background-image: url('../img/header-bg-mobile.jpg');
     background-position: 50% -60%;
     background-repeat: no-repeat;
 
@@ -30,7 +30,7 @@
     &__item--left{
         border: 1px solid #7fcebb;
         background-color: #7fcebb;
-        background-image: url('img/lamp.png');
+        background-image: url('../img/lamp.png');
         background-position: 83%;
         background-repeat: no-repeat;
     }
@@ -59,11 +59,12 @@
 
     .menu-bottom{
         height: 746px;
-        background-image: url("img/header-bg.jpg");
+        background-image: url("../img/header-bg.jpg");
         background-position: 50% -60%;
         background-repeat: no-repeat;
 
         &__title {
+           
             width: 315px;
             margin: 0 auto;
         }
@@ -75,6 +76,7 @@
         &__item{
             width: 334px;
             height: 119px;
+    
         }
 
 

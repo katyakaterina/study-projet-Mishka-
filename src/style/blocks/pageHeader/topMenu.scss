@@ -1,36 +1,40 @@
 .menu-top {
-    display: block;
+    display: flex;
     text-align: center;
     height: 79px;
-    
+
     &__logo{
-    background: url('/img/logo-mishka-mobile.png');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+ background-image: url('../img/logo-mishka-mobile.png');
+
+ background-position: 50% 50%;
+ background-repeat: no-repeat;
+margin-left: 50px;
+
 }
     &__logo-img {
-        text-align: center;
+
+margin-left: 50px;
     }
 
     &__item {
+display: flex;
         list-style: none;
         height: 79px;
         border: 1px solid #ececec;
         padding: 0;
+
     }
 
     &__list{
-        display: none;
-        height: 315px;
+
+        height: 15px;
         text-align: center;
         padding: 0;
         margin: 0;
-       
+
     }
     &__link {
-        font-size: 17px;
-        color: #000000;
-        font-weight: 700;
+@include textLg(17px,700);
         text-decoration: none;
         text-align: center;
 }
@@ -40,15 +44,10 @@
 @media (min-width: 768px) {
 
     .menu-top {
-        display: block;
-        text-align: left;
+        display:flex;
+text-align: left;
 
-        &__logo-link {
-            text-align: center;
-            background-image: url('img/logo-tablet.png');
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
-          }
+
 
         &__list{
             display: flex;

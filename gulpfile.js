@@ -18,52 +18,74 @@ var minify = require('gulp-minify');
 var cache = require('gulp-cache');
 var build = require('gulp-build');
 var del = require('del');
+var  uglify = require("gulp-uglify");
+var concat = require("gulp-concat");
+
+
+
+
 
 gulp.task('default', function() {
     console.log("hello people!")
 });
 
 
-
-
-gulp.task("sass", function () {
-  return gulp.src("./style/**/*.scss") ////
-    .pipe(plumber())
-    .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(gulp.dest("dist/css"))
-    .pipe(minify())
-    .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("dist/css"))
-    .pipe(server.stream())
-    .pipe(browserSync.reload({
-      stream: true
-    }));
-});
-gulp.task('sass', function () {
-  return gulp.src('./style/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
+gulp.task('sass', function () { // Создаем таск "sass"
+  return gulp.src(['/src/style/**/*.scss']) // Берем источник
+    .pipe(sass({
+      outputStyle: 'expanded'
+    }).on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
     .pipe(gulp.dest('dist/css'))
-    .pipe(browserSync.stream());
+    .pipe(cssnano())
+      .pipe(rename({
+        suffix: '.min'
+      })) // Выгружаем результата в папку css
 
 });
 
 
+
+
+
+
+
+
+gulp.task("html", function () {
+  return gulp.src("src/**/*.html")
+    .pipe(gulp.dest("dist"));
+});
+
+gulp.task("scripts", function () {
+  return gulp.src("src/js/**/*.js") // директория откуда брать исходники
+    .pipe(concat('scripts.js')) // объеденим все js-файлы в один
+    .pipe(uglify()) // вызов плагина uglify - сжатие кода
+    .pipe(rename({ suffix: '.min' })) // вызов плагина rename - переименование файла с приставкой .min
+    .pipe(gulp.dest("dist/js")); // директория продакшена, т.е. куда сложить готовый файл
+});
+gulp.task('img', function () {
+  return gulp.src("src/img/*.+(jpg|jpeg|png|gif)")
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{ removeViewBox: false }],
+      interlaced: true
+    }))
+    .pipe(gulp.dest("dist/img"))
+});
 
 //browser-sync//
 
 gulp.task('browser-sync', function () {
-  var files = [
-    'dist/html/**/*.html',  ////
-    'dist/css/**/*.css',
-    'dist/img/**/*.png',
-    'dist/js/**/*.js'
-  ];
-  browserSync.init(files, {
+  browserSync.init([
+    'style/**/*.scss',
+    '*.html',
+    'css/*.css',
+    '**/*.{png,jpg,svg}',
+    'js/*.js',
+    'fonts/*.{eot,woff,woff2,ttf}'
+  ], {
+    open: true,
     server: {
-      baseDir: 'dist'
+      baseDir: './'
     }
   });
 });
@@ -71,33 +93,26 @@ gulp.task('browser-sync', function () {
 
 
 
+
+
+gulp.task("default", ["html", "sass", "scripts", "img", "watch"]);
+
 //end browser-sync//
 
 //watch//
-gulp.task('watch', ['browser-sync', 'sass','html','img','js'], function () {
+gulp.task('watch', ['browser-sync','html', 'sass','img','js'], function () {
 
-  gulp.watch('./style/**/*.scss', ['sass']);
-gulp.watch('src/*.html', browserSync.reload);
-gulp.watch('./src/js/**/*.js', browserSync.reload);
- gulp.watch('/img/**/*', browserSync.reload);
+  gulp.watch('src/style/**/*.scss', ['sass']);
+  gulp.watch('src/*.html', browserSync.reload);
+gulp.watch('src/js/**/*.js', browserSync.reload);
+ gulp.watch('src/img/**/*', browserSync.reload);
 });
 //end watch//
 
 
 //html//
-gulp.task("html", function () {
-  return gulp.src("./*.html")
-    .pipe(posthtml([
-      include()
-    ]))
-    .pipe(gulp.dest("dist"));
-});
-//end html//
-gulp.task('default', function () {
-  return gulp.src('./main.css')
-    .pipe(cssnano())
-    .pipe(gulp.dest('dist'));
-});
+
+
 
 
 
@@ -109,13 +124,13 @@ gulp.task('default', function () {
 gulp.task('js', function () {
     gulp.src('js/*.js')
         .pipe(minify())
-        .pipe(gulp.dest("dist/js"))
+        .pipe(gulp.dest("./dist/js"))
     gulp.watch('js/*.js', ['uglify']);
 });
 gulp.task('uglify', function () {
     gulp.src('js/*.js')
         .pipe(uglify())
-        .pipe(gulp.dest('dist/js'));
+        .pipe(gulp.dest('./dist/js'));
 });
 gulp.task('minify', function () {
     gulp.src('js/main.js')
@@ -124,15 +139,7 @@ gulp.task('minify', function () {
 });
 //end js//
 //img//
-gulp.task('img', function () {
-    return gulp.src('src/img/**/*') // Берем все изображения из app
-        .pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
-            interlaced: true,
-            progressive: true,
-            svgoPlugins: [{ removeViewBox: false }],
-        })))
-        .pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
-});
+
 //end img//
 //css//
 gulp.task('css', function () {
@@ -150,16 +157,16 @@ gulp.task('clean', function () {
     return del.sync('dist'); // Удаляем папку dist перед сборкой
 });
 
-gulp.task('build', ['clean', 'sass','css','html','img'], function () {
+gulp.task('build', ['clean', 'sass','html'], function () {
 
     var buildCss = gulp.src([ // Переносим библиотеки в продакшен
-        'css/style/main.css'
+        'css/main.css'
 
     ])
-        .pipe(gulp.dest('dist/css'))
+        .pipe(gulp.dest('./dist/css'))
 
     var buildFonts = gulp.src('fonts/**/*') // Переносим шрифты в продакшен
-        .pipe(gulp.dest('dist/fonts'))
+        .pipe(gulp.dest('./dist/fonts'))
 
     var buildJs = gulp.src('js/**/*') // Переносим скрипты в продакшен
         .pipe(gulp.dest('dist/js'))
@@ -188,7 +195,7 @@ gulp.task("webp", function () {
 });
  gulp.task('serve', ['sass'], function () {
         browserSync.init({
-            server: "./dist"
+            server: "dist"
         });
 
 
@@ -196,7 +203,7 @@ gulp.task("webp", function () {
 //server//
 gulp.task("server", function () {
     server.init({
-        server: "./dist",
+        server: "dist",
         notify: false,
         open: true,
         cors: true,
@@ -207,7 +214,7 @@ gulp.task("server", function () {
     gulp.task('default', function () {
         return gulp.src('./main.css')
             .pipe(cssnano())
-            .pipe(gulp.dest('./dist'));
+            .pipe(gulp.dest('dist'));
     });
 
 
@@ -216,12 +223,7 @@ gulp.task("server", function () {
     // Compile sass into CSS & auto-inject into browsers
     gulp.task('default', ['serve']);
 
-    gulp.task('sass', function () {
-        return gulp.src("./src/**/*.scss")
-            .pipe(sass())
-            .pipe(gulp.dest("./dist/css"))
-            .pipe(browserSync.stream());
-    });
+
 
 
 
@@ -229,7 +231,7 @@ gulp.task("server", function () {
 gulp.task('default', function () {
     return gulp.src('./src/img.jpg')
         .pipe(webp())
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('dist'));
 });
 });
 

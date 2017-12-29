@@ -1,62 +1,34 @@
+
 .menu-top {
-    display: flex;
-    text-align: center;
-    height: 79px;
-
-    &__logo{
- background-image: url('../img/logo-mishka-mobile.png');
-
- background-position: 50% 50%;
- background-repeat: no-repeat;
-margin-left: 50px;
-
-}
-    &__logo-img {
-
-margin-left: 50px;
-    }
-
-    &__item {
 display: flex;
-        list-style: none;
-        height: 79px;
-        border: 1px solid #ececec;
-        padding: 0;
+flex-direction: column;
 
-    }
 
-    &__list{
 
-        height: 15px;
-        text-align: center;
-        padding: 0;
-        margin: 0;
+  &__logo-link {
+    text-align: center;
+    margin-left: 50px;
+  }
+  &__item {
+display: none;
 
-    }
-    &__link {
-@include textLg(17px,700);
-        text-decoration: none;
-        text-align: center;
+    border: 1px solid #ececec;
+    padding: 0;
+  }
+  &__list {
+    display:flex;
+    height: 315px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  &__link{
+    font-size: 17px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+  }
 }
-}
 
 
-@media (min-width: 768px) {
-
-    .menu-top {
-        display:flex;
-text-align: left;
-
-
-
-        &__list{
-            display: flex;
-        }
-
-
-
-
-
-    }
-
-}

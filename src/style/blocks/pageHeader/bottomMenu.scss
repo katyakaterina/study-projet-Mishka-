@@ -1,7 +1,7 @@
 .menu-bottom {
 
     
-      background-image: url('/img/header-bg-mobile.jpg');
+    background-image: url('/img/mobile/header-mobile-1x.jpg');
     background-position: 50% 60%;
     background-repeat: no-repeat;  
     
@@ -14,12 +14,15 @@
     }
 
     &__item{
+        width: 280px; 
         height: 103px;
+            border: 1px solid #63d1bb;
+        background-color: #63d1bb;
     }
-
     &__link{
         color: #ffffff;
         text-decoration: none;
+        
     }
     &__caption{
         width: 100px;
@@ -31,19 +34,26 @@
     }
 
     &__item--left{
-        border: 1px solid #7fcebb;
-        background-color:#7fcebb;
-        background-image: url('/img/lamp.png');
-        background-position: 83%;
+       
+        display: block;
+        width: 41px; 
+        height: 62px;
+        background: url('/img/css_sprites.png'); 
+        background-position: -316px -714px;
         background-repeat: no-repeat;
+       
+        
     }
-    &__item--right{
-        border: 1px solid #73c0b2;
-        background-color: #73c0b2;
-        background-image: url('/img/toy.png');
-        background-position: 83%;
+    &__item--right {
+      
+        display: block;
+        width: 61px; 
+        height: 61px;
+        background: url('/img/css_sprites.png');
+        background-position:  -831px -343px;
         background-repeat: no-repeat;
-
+        
+       
     }
 
     &__title {
@@ -56,6 +66,12 @@
 
     }
 }
+.wrap{
+      border: 1px solid #56c3b2;
+        background: #56c3b2;
+        width: 280px;
+        height: 103px;
+}
 @media (min-width: 760px) {
 
     body{
@@ -65,7 +81,7 @@
 
     .menu-bottom{
         height: 746px;
-        background-image: url('/img/header-bg.jpg');
+        background-image: url('/img/tablet/header-tablet-1x.jpg');
         background-position: 50% -60%;
         background-repeat: no-repeat;
 

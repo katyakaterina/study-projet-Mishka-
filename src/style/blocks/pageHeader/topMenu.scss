@@ -3,11 +3,7 @@
     text-align: center;
     height: 79px;
     
-    &__logo{
-    background: url('/img/logo-mishka-mobile.png');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-}
+  
     &__logo-img {
         text-align: center;
     }
@@ -19,7 +15,8 @@
         padding: 0;
     }
 
-    &__list{
+
+    &__list {
         display: none;
         height: 315px;
         text-align: center;
@@ -27,12 +24,20 @@
         margin: 0;
        
     }
+    &__link--cart{
+        display: block;
+        width: 42px; 
+        height: 36px;
+    background: url('/img/css_sprites.png') -160px -808px;
+    }
     &__link {
         font-size: 17px;
         color: #000000;
         font-weight: 700;
         text-decoration: none;
         text-align: center;
+        
+
 }
 }
 
@@ -45,9 +50,7 @@
 
         &__logo-link {
             text-align: center;
-            background-image: url('/img/logo-tablet.png');
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
+            
           }
 
         &__list{

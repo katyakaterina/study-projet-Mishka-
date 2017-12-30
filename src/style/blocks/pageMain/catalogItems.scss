@@ -170,6 +170,9 @@ color: $grayBtn;
     background-color: #63d1bb;
 margin-left: 30px;
 cursor: pointer;
+@include textLg(17px, 400);
+
+
   }
 }
 

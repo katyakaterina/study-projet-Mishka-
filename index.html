@@ -9,24 +9,139 @@
   <link rel="stylesheet" href="dist/css/style/main.css">
   <title>Mishka - интернет - магазин</title>
 </head>
-
-<body>
-  <header class="header">
-    <nav class="nav">
-      <div class="menu-top">
-        <!-- меню-гамбургер -->
-        <div class="hamburger">
-          <!-- переключатель меню -->
-          <input class="hamburger__input" type="checkbox" id="toogle">
-          <label class="hamburger__menu" for="toogle">
-            <!-- когда меню открыто - кнопка закрытия -->
-            <span class="hamburger__btn"></span>
-          </label>
-          <nav class="hamburger__nav">
-            <div class="menu-top__logo">
-              <a class="menu-top__logo-link" href="#">
-                <img class="menu-top__logo-img" src="src/img/logo-mishka-mobile.png" width="" height="" alt="Mishka">
-              </a>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <div class="menu-top">
+                    <!-- меню-гамбургер -->
+                    <div class="hamburger">
+                        <!-- переключатель меню -->
+                        <input class="hamburger__input" type="checkbox" id="toogle">
+                        <label class="hamburger__menu" for="toogle">
+                            <!-- когда меню открыто - кнопка закрытия -->
+                            <span class="hamburger__btn"></span>
+                        </label>
+                        <nav class="hamburger__nav">
+                            <div class="menu-top__logo">
+                               <a class="menu-top__logo-link" href="#">
+                                   <img class="menu-top__logo-img" src="" width="" height="" alt="Mishka">
+                               </a>
+                            </div>
+                            <ul class="menu-top__list">
+                               <li class="menu-top__item">
+                                   <a class="menu-top__link" href="catalog.html" target="blank">Каталог товаров</a>
+                               </li>
+                               <li class="menu-top__item">
+                                   <a class="menu-top__link" href="#">Вязание на заказ</a>
+                               </li>
+                               <li class="menu-top__item">
+                                   <form class="search-form">
+                                       <label class="search">Поиск по сайту</label>
+                                       <input class="input-search" type="search">
+                                   </form>
+                               </li>
+                               <li class="menu-top__item">
+                                    <a class="menu-top__link menu-top__link--cart" href="#">Корзина: пока пуста</a>
+                               </li>
+                          </ul>
+                       </nav>
+                    </div>
+                </div>
+                <div class="menu-bottom">
+                    <ul class="menu-bottom__list">
+                        <div class="header__img">
+                            <img class="menu-bottom__img" src="" width="" height="" alt="">
+                        </div>
+                        <h1 class="menu-bottom__title">Милые штуки ручной работы для дома</h1>
+                        <li class="menu-bottom__item menu-bottom__item--left">
+                            <a class="menu-bottom__link" href="#">
+                                <p class="menu-bottom__caption">Предметы интерьера</p>
+                            </a>
+                        </li>
+                        <li class="menu-bottom__item menu-bottom__item--right">
+                            <a class="menu-bottom__link" href="#">
+                                <p class="menu-bottom__caption">Детские игрушки</p>
+                            </a>
+                        </li>
+                   </ul>
+               </div>
+            </nav>
+        </header>
+        <main class="main">
+           <section class="catalog">
+              <div class="catalog__item">
+                 <h3 class="catalog__title">Вязаные корзинки</h3>
+                    <span class="catalog__hot-sale">Товар недели</span>
+                    <p class="catalog__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+                    <table class="catalog__table table">
+                       <tr class="catalog__row table__row">
+                           <td class="catalog__cell table__cell">Цвет:</td>
+                           <td class="catalog__cell table__cell">"Тиффани"/серый</td>
+                       </tr>
+                       <tr class="catalog__row table__row">
+                           <td class="catalog__cell table__cell">Диаметр:</td>
+                           <td class="catalog__cell table__cell">25 см</td>
+                       </tr>
+                       <tr class="catalog__row table__row">
+                           <td class="catalog__cell table__cell">Высота:</td>
+                           <td class="catalog__cell table__cell">15 см</td>
+                       </tr>
+                   </table>
+                   <img class="catalog__img" src="" width="" height="" alt="Вязаные корзинки">
+                   <p class="catalog__price">990 руб.</p>
+                   <button class="btn catalog__btn">Заказать</button>
+              </div>
+          </section>
+          <section class="about-us">
+              <h3 class="about-us__title">Коротко о нас:</h3>
+              <p class="about-us__feature">Экологически чистые материалы</p>
+              <p class="about-us__feature">Скандинавский стиль по российской цене</p>
+              <p class="about-us__feature">Увеличивает лайкина фотографиях</p>
+              <p class="about-us__feature">Связано вручную с любовью и умилением</p>
+              <p class="about-us__feature">Поддержка отечественного производителя</p>
+              <p class="about-us__feature">Поставляется в подарочной упаковке</p>
+         </section>
+         <section class="slider">
+            <div class="slider__slider-btn">
+                <input class="button" type="radio" name="radio-btn" id="btn-1" checked>
+                <label class="slider__arrow-btn" for="btn-1"></label>
+                <input class="button" type="radio" name="radio-btn" id="btn-2">
+                <label class="slider__arrow-btn" for="btn-2"></label>
+                <input class="button" type="radio" name="radio-btn" id="btn-3">
+                <label class="slider__arrow-btn" for="btn-3"></label>
+                <div class="slider__slides">
+                    <h2 class="slider__title">Отзывы</h2>
+                     <div class="slider__slide">
+                        <p class="slider__comment">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
+                            как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                            и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+                        </p>
+                        <span class="slider____auth">Анастасия Красильникова @misssssiskras</span>
+                     </div>
+                     <div class="slider__slide">
+                        <p class="slider__comment"></p>
+                    </div>
+                    <div class="slider__slide">
+                        <p class="slider__comment"></p>
+                   </div>
+               </div>
+               <button class="btn slider__btn">Написать</button>
+           </div>
+        </section>
+        <section class="contacts">
+            <h3 class="contacts__title">Контакты</h3>
+            <table class="contacts__table table">
+                <tr class="contacts__row table__row">
+                    <td class="contacts__cell table__cell">e-mail:</td>
+                    <td class="contacts__cell table__cell"><a class="contacts__link" href="#">info@mimimishkashop.ru</a></td>
+                </tr>
+                <tr class="contacts__row table__row">
+                    <td class="contacts__cell table__cell">адрес:</td>
+                    <td class="contacts__cell table__cell">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+                </tr>
+            </table>
+            <div class="map">
+                <img class="map__img" src="" width="" height="" alt="Карта">
             </div>
             <ul class="menu-top__list">
               <li class="menu-top__item">

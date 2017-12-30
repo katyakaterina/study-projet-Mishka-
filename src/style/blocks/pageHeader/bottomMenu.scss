@@ -1,11 +1,11 @@
 .menu-bottom {
 
-    
-    background-image: url('/img/mobile/header-mobile-1x.jpg');
+
+    background-image: url('./img/mobile/header-mobile-1x.jpg');
     background-position: 50% 60%;
-    background-repeat: no-repeat;  
-    
-    
+    background-repeat: no-repeat;
+
+
 
     &__list{
         display: block;
@@ -14,7 +14,7 @@
     }
 
     &__item{
-        width: 280px; 
+        width: 280px;
         height: 103px;
             border: 1px solid #63d1bb;
         background-color: #63d1bb;
@@ -22,39 +22,37 @@
     &__link{
         color: #ffffff;
         text-decoration: none;
-        
+
     }
-    &__caption{
+&__caption{
         width: 100px;
         margin-left: 30px;
         font-size: 19px;
         font-weight: 700;
         line-height: calc(24/19);
-        
+
     }
 
     &__item--left{
-       
+
         display: block;
-        width: 41px; 
+        width: 41px;
         height: 62px;
-        background: url('/img/css_sprites.png'); 
+        background: url('./img/css_sprites.png');
         background-position: -316px -714px;
         background-repeat: no-repeat;
-       
-        
+
+
     }
     &__item--right {
-      border: 1px solid #56c3b2;
-        background: #56c3b2;
         display: block;
-        width: 61px; 
+        width: 61px;
         height: 61px;
-        background: url('/img/css_sprites.png');
+        background: url('./img/css_sprites.png');
         background-position:  -831px -343px;
         background-repeat: no-repeat;
-        
-       
+
+
     }
 
     &__title {
@@ -70,18 +68,18 @@
 @media (min-width: 760px) {
 
     body{
-        width: 640px; 
+        width: 640px;
         padding: 0 64px;
     }
 
     .menu-bottom{
         height: 746px;
-        background-image: url('/img/tablet/header-tablet-1x.jpg');
+        background-image: url('./img/tablet/header-tablet-1x.jpg');
         background-position: 50% -60%;
         background-repeat: no-repeat;
 
         &__title {
-           
+
             width: 315px;
             margin: 0 auto;
         }
@@ -93,7 +91,7 @@
         &__item{
             width: 334px;
             height: 119px;
-    
+
         }
 
 

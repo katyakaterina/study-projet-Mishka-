@@ -1,66 +1,34 @@
+
 .menu-top {
-    display: block;
+display: flex;
+flex-direction: column;
+
+
+
+  &__logo-link {
     text-align: center;
-    height: 79px;
-    
-  
-    &__logo-img {
-        text-align: center;
-    }
+    margin-left: 50px;
+  }
+  &__item {
+display: none;
 
-    &__item {
-        list-style: none;
-        height: 79px;
-        border: 1px solid #ececec;
-        padding: 0;
-    }
-
-
-    &__list {
-        display: none;
-        height: 315px;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-       
-    }
-    &__link--cart{
-        display: block;
-        width: 42px; 
-        height: 36px;
-    background: url('/img/css_sprites.png') -160px -808px;
-    }
-    &__link {
-        font-size: 17px;
-        color: #000000;
-        font-weight: 700;
-        text-decoration: none;
-        text-align: center;
-        
-
-}
+    border: 1px solid #ececec;
+    padding: 0;
+  }
+  &__list {
+    display:flex;
+    height: 315px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  &__link{
+    font-size: 17px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+  }
 }
 
 
-@media (min-width: 768px) {
-
-    .menu-top {
-        display: block;
-        text-align: left;
-
-        &__logo-link {
-            text-align: center;
-            
-          }
-
-        &__list{
-            display: flex;
-        }
-
-
-
-
-
-    }
-
-}

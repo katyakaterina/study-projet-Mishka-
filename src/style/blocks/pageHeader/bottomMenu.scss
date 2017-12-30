@@ -1,45 +1,27 @@
 .menu-bottom {
-
-
-
-
-
-
-    &__list{
+&__list{
         display:block;
         list-style: none;
         padding: 0;
-
-    }
-
-    &__item{
+}
+&__item{
         height: 103px;
     }
-
-    &__link{
+&__link{
         color: #ffffff;
         text-decoration: none;
     }
-    &__caption{
+&__caption{
         width: 100px;
         margin-left: 30px;
         font-size: 19px;
         font-weight: 700;
         line-height: calc(24/19);
-
-    }
-
-
-
-
-    &__title {
+}
+&__title {
 @include textLg(27px, 700);
-
-
-        color: #000000;
-
-
-        margin: 0 auto;
+  color: #000000;
+  margin: 0 auto;
 
     }
 }

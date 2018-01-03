@@ -20,6 +20,7 @@ var build = require('gulp-build');
 var del = require('del');
 var  uglify = require("gulp-uglify");
 var concat = require("gulp-concat");
+var spritesmith = require('gulp.spritesmith');
 
 
 
@@ -67,6 +68,7 @@ gulp.task('watch', ['browser-sync', 'sass', 'html', 'img', 'js'], function () {
   gulp.watch('src/img/**/*', browserSync.reload);
 });
 //end watch//
+
 
 
 
@@ -137,6 +139,7 @@ gulp.task('css', function () {
     ];
     return gulp.src('css/**/*.css')
         .pipe(postcss(plugins))
+      .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('dist'));
 });
 //end css//
@@ -147,10 +150,8 @@ gulp.task('clean', function () {
 
 gulp.task('build', ['clean', 'sass','html'], function () {
 
-    var buildCss = gulp.src([ // Переносим библиотеки в продакшен
-        'css/main.css'
+    var buildCss = gulp.src([ 'css/main.css'])// Переносим библиотеки в продакшен
 
-    ])
         .pipe(gulp.dest('dist/css'))
 
     var buildFonts = gulp.src('fonts/**/*') // Переносим шрифты в продакшен

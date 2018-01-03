@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style/main.css">
+
+
     <title>Mishka - интернет - магазин - каталог</title>
 </head>
 <body>
@@ -23,7 +25,7 @@
                    <nav class="hamburger__nav">
                         <div class="menu-top__logo">
                             <a class="menu-top__logo-link" href="#">
-                                <img class="menu-top__logo-img" src="src/img/logo-mishka-mobile.png" alt="">
+                                <img class="menu-top__logo-img" src="" alt="">
                             </a>
                         </div>
                        <ul class="menu-top__item">
@@ -76,7 +78,7 @@
                     <div class="catalog-price">
                         <p class="catalog-price__number">1 200 руб.</p>
                         <a class="catalog-price__link" href="#">
-                          <img src="src/img/cart-svg.png" alt="" class="catalog-price__link-pic">
+                          <img src="src/img/cart.svg.png" alt="" class="catalog-price__link-pic">
                         </a>
                     </div>
                     </div>
@@ -89,7 +91,7 @@
                       <div class="catalog-price">
                         <p class="catalog-price__number">690 руб.</p>
                         <a class="catalog-price__link" href="#">
-                          <img src="src/img/cart-svg.png" alt="" class="catalog-price__link-pic">
+                          <img src="src/img/cart.svg.png" alt="" class="catalog-price__link-pic">
                         </a>
                     </div>
                     </div>
@@ -103,7 +105,7 @@
                       <div class="catalog-price">
                         <p class="catalog-price__number">1 500 руб.</p>
                         <a class="catalog-price__link" href="#">
-                          <img src="src/img/cart-svg.png" alt="" class="catalog-price__link-pic">
+                          <img src="src/img/cart.svg.png" alt="" class="catalog-price__link-pic">
                         </a>
                       </div>
                     </div>
@@ -125,45 +127,84 @@
 <a href="" class="video-page__link">
   <img src="src/img/play-svg.png" alt="" class="video-page__link-pic">
 </a>
-<a href=""><img src="" alt="" class="video=page__video"></a>
 
+<a href="">
+  <img src="src/img/video-mobile.png" alt="" class="video-page__video">
+</a>
 </div>
                 <article class="video-page__descr">
                       <p> По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
                 </article>
-                <button class="btn player__btn">Сделать заказ</button>
+
+
+
+
+<button class="btn player__btn">Сделать заказ</button>
+
+<div class="overlay"></div>
+<div class="modal-ctg">
+  <h2 class="modal-ctg__title">Добавить в корзину</h2>
+  <p class="modal-ctg__text">Выберите размер</p>
+
+    <div class="modal-ctg__form">
+      <input class="modal-ctg__input" type="radio" name="check" checked>
+      <label class="modal-ctg__size">S</label>
+      <input class="modal-ctg__input" type="radio" name="check">
+      <label class="modal-ctg__size">M</label>
+      <input class="modal-ctg__input" type="radio" name="check">
+      <label class="modal-ctg__size">L</label>
+
+    </div>
+    <button  class="btn modal-ctg__btn">Добавить</button>
+
+</div>
+
+
+
            </section>
        </main>
        <footer class="footer">
             <div class="footer__social">
-                <a class="footer__link" href="#">
-                    <img class="footer__insta" src="src/img/insta-svg.png"  alt="instagram">
-                </a>
-                <a class="footer__link" href="#">
-                    <img class="footer__facebook" src="src/img/fb-svg.png"  alt="facebook">
-                </a>
-                <a class="footer__link" href="#">
-                    <img class="footer__twitter" src="src/img/twitter-svg.png"  alt="twitter">
-                </a>
+
+<div class="footer__insta"></div>
+<div class="footer__facebook"></div>
+<div class="footer__twitter"></div>
+
             </div>
             <div class="footer__copyright">
                 <p class="footer__creator">Разработано</p>
+            <div class="footer__creator-pic"></div>
             </div>
         </footer>
-        <div class="modal-ctg">
-            <h2 class="modal-ctg__title">Добавить в корзину</h2>
-            <p class="modal-ctg__text">Выберите размер</p>
-            <ul class="modal-ctg__list">
-                <form class="modal-ctg__form">
-                    <input class="modal-ctg__input" type="checkbox" name="check" checked>
-                    <label class="modal-ctg__size">S</label>
-                    <input class="modal-ctg__input" type="checkbox" name="check">
-                    <label class="modal-ctg__size">M</label>
-                    <input class="modal-ctg__input" type="checkbox" name="check">
-                    <label class="modal-ctg__size">L</label>
-                </form>
-            </ul>
-            <button class="btn modal-ctg__btn">Добавить</button>
-        </div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+    $('.player__btn').click( function(event){
+        event.preventDefault();
+        $('.overlay').fadeIn(400, // анимируем показ обложки
+            function(){ // далее показываем мод. окно
+                $('.modal-ctg')
+                    .css('display', 'block')
+                    .animate({opacity: 1, top: '50%'}, 200);
+        });
+    });
+
+    // закрытие модального окна
+    $('.modal-ctg__btn, .overlay').click( function(){
+        $('.modal-ctg')
+            .animate({opacity: 0, top: '45%'}, 200,  // уменьшаем прозрачность
+                function(){ // пoсле aнимaции
+                    $(this).css('display', 'none'); // скрываем окно
+                    $('.overlay').fadeOut(400); // скрывaем пoдлoжку
+                }
+            );
+    });
+
+});
+</script>
+
+
     </body>
 </html>

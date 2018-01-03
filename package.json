@@ -30,7 +30,9 @@
     "imagemin-optipng": "^5.2.1",
     "install": "^0.10.2",
     "npm": "^5.6.0",
-    "posthtml-include": "^1.1.0"
+    "posthtml-include": "^1.1.0",
+ "gulp.spritesmith": "^6.8.0"
+
   },
   "scripts": {
     "stylelint": "stylelint 'sass/**/*.scss' --syntax sass",
@@ -62,5 +64,7 @@
     "mishka"
   ],
   "homepage": "https://bitbucket.org/teamWoKi/project-mishka#readme",
-  "dependencies": {}
+  "dependencies": {
+    "gulp.spritesmith": "^6.8.0"
+  }
 }

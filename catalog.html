@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="dist/css/style/main.css">
+<link rel="stylesheet" href="/src/js/main.js">
+<link rel="stylesheet" href="dist/js/scripts.min.js">
+
     <title>Mishka - интернет - магазин - каталог</title>
 </head>
 <body>
@@ -20,11 +23,7 @@
                        <span class="hamburger__btn"></span>
                    </label>
                    <nav class="hamburger__nav">
-                        <div class="menu-top__logo">
-                            <a class="menu-top__logo-link" href="#">
-                                <img class="menu-top__logo-img" src="src/img/logo-mishka-mobile.png" alt="">
-                            </a>
-                        </div>
+                        <div class="menu-top__logo"></div>
                        <ul class="menu-top__item">
                           <li class="menu-top__list">
                               <a class="menu-top__link" href="#">Каталог товаров</a>
@@ -32,77 +31,72 @@
                            <li class="menu-top__list">
                               <a class="menu-top__link" href="#">Вязание на заказ</a>
                           </li>
+<li class="menu-top__list">
+  <a href="" class="menu-top__link-shipping">Бесплатная доставка по России</a>
+</li>
                           <li class="menu-top__list">
-                               <form class="search-form">
-                                  <label class="search">Поиск по сайту</label>
-<a href="">
-  <img src="src/img/search-svg.png" alt="">
-</a>
-                               </form>
+                              <a href="" class="menu-top__list-search">
+                                  <span class="menu-top__search">Поиск по сайту</span>
+                                </a>
+    <!--<a href="">
+          <img src="" alt="">
+    </a>-->
+
                           </li>
-                          <li class="menu-top__item">
-                               <a class="menu-top__link" href="#">Корзина: пока пуста</a>
+                          <li class="menu-top__list">
+                            <a href="" class="menu-top__list-cart">
+                              <span class="menu-top__cart">Корзина: пока пуста</span>
+                            </a>
+                               <!--<a class="menu-top__link" href="#">Корзина: пока пуста</a>-->
                           </li>
                        </ul>
                    </nav>
                </div>
           </div>
-<!--<div class="menu-bottom">
-               <ul class="menu-bottom__list">
-                    <div class="header__img">
-                       <img class="menu-bottom__img" src="" width="" height="" alt="">
-                   </div>
-                   <h1 class="menu-bottom__title">Милые штуки ручной работы для дома</h1>
-                   <li class="menu-bottom__item menu-bottom__item-left">
-                       <a class="menu-bottom__link" href="#"><p class="menu-bottom__caption">Предметы интерьера</p></a>
-                   </li>
-                   <li class="menu-bottom__item menu-bottom__item-right">
-                       <a class="menu-bottom__link" href="#"><p class="menu-bottom__caption">Детские игрушки</p></a>
-                   </li>
-               </ul>
-           </div>-->
+
        </nav>
     </header>
     <main class="main-catalog">
         <h2 class="main-catalog__title">Каталог товаров</h2>
             <section class="catalog">
+<div class="catalog__img"></div>
                 <div class="catalog__item">
-
-                    <img class="catalog__img" src="src/img/photo-1-mobile.png"  alt="Зайчик-попрыгайчик">
-                    <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
+<h3 class="catalog__title">Зайчик-попрыгайчик</h3>
                     <div class="catalog__detail">
                         <p class="catalog__descr">Рост 30 см, вес 200 г</p>
                     <div class="catalog-price">
                         <p class="catalog-price__number">1 200 руб.</p>
                         <a class="catalog-price__link" href="#">
-                          <img src="src/img/cart-svg.png" alt="" class="catalog-price__link-pic">
+                          <img src="src/img/cart.svg.png" alt="" class="catalog-price__link-pic">
                         </a>
                     </div>
                     </div>
                 </div>
+
+ <img class="catalog__img" src="src/img/photo-2-mobile.png"  alt="Корзинка для белья">
                 <div class="catalog__item">
-                  <img class="catalog__img" src="src/img/photo-2-mobile.png"  alt="Корзинка для белья">
                     <h3 class="catalog__title">Корзинка для белья</h3>
                       <div class="catalog__detail">
                         <p class="catalog__descr">Диаметр 15 см, высота 10 см</p>
                       <div class="catalog-price">
                         <p class="catalog-price__number">690 руб.</p>
                         <a class="catalog-price__link" href="#">
-                          <img src="src/img/cart-svg.png" alt="" class="catalog-price__link-pic">
+                          <img src="src/img/cart.svg.png" alt="" class="catalog-price__link-pic">
                         </a>
                     </div>
                     </div>
                 </div>
+<img class="catalog__img" src="src/img/photo-3-mobile.png"  alt="Большая корзина для игрушек">
                 <div class="catalog__item">
 
-                    <img class="catalog__img" src="src/img/photo-3-mobile.png"  alt="Большая корзина для игрушек">
+
                     <h3 class="catalog__title">Большая корзина для игрушек</h3>
                     <div class="catalog__detail">
                         <p class="catalog__descr">Диаметр 30 см, высота 30 см</p>
                       <div class="catalog-price">
                         <p class="catalog-price__number">1 500 руб.</p>
                         <a class="catalog-price__link" href="#">
-                          <img src="src/img/cart-svg.png" alt="" class="catalog-price__link-pic">
+                          <img src="src/img/cart.svg.png" alt="" class="catalog-price__link-pic">
                         </a>
                       </div>
                     </div>
@@ -113,56 +107,82 @@
                 <!--<video class="player__video-player">
                     <source class="player__video" src="img/video-svg.png" type="video" controls="" poster="" item-width="260px" item-height="150px">
                 </video>-->
-        <div class="player-video__process">
+<div class="player-process">
 
-              <h3 class="player-video__title">Процесс производства</h3>
-              <a href="" class="player-video__link">
-              <img src="src/img/video-svg.png" alt="" class="player-video__link-pic">
+              <h3 class="player-process__title">Процесс производства</h3>
+              <a href="" class="player-process__link">
+              <img src="src/img/video-svg.png" alt="" class="player-process__link-pic">
               </a>
-          </div>
+</div>
 <div class="video-page">
-<a href="" class="video-page__link">
-  <img src="src/img/play-svg.png" alt="" class="video-page__link-pic">
-</a>
-<a href=""><img src="" alt="" class="video=page__video"></a>
+<div class="video-page__video">
+  <img src="src/img/video-mobile.png" alt="" >
+</div>
+<div class="video-page__link-pic">
+  <img src="src/img/play-svg.png" alt="">
+</div>
 
 </div>
+
+<!--<a href="" class="video-page__link">
+  <img src="src/img/play-svg.png" alt="" class="video-page__link-pic">
+</a>-->
+
+<!--<a href="">
+  <img src="src/img/video-mobile.png" alt="" class="video-page__video">
+</a>-->
+
                 <article class="video-page__descr">
                       <p> По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
                 </article>
-                <button class="btn player__btn">Сделать заказ</button>
+
+
+
+
+<button class="btn player__btn">Сделать заказ</button>
+
+
+<div class="modal-ctg">
+  <h2 class="modal-ctg__title">Добавить в корзину</h2>
+  <p class="modal-ctg__text">Выберите размер</p>
+
+    <div class="modal-ctg__form">
+      <input class="modal-ctg__input" type="radio" name="check" checked>
+      <label class="modal-ctg__size">S</label>
+      <input class="modal-ctg__input" type="radio" name="check">
+      <label class="modal-ctg__size">M</label>
+      <input class="modal-ctg__input" type="radio" name="check">
+      <label class="modal-ctg__size">L</label>
+
+    </div>
+    <button  class="btn modal-ctg__btn">Добавить</button>
+<div class="overlay"></div>
+</div>
+
+
+
            </section>
        </main>
        <footer class="footer">
+<div class="footer__logo"></div>
             <div class="footer__social">
-                <a class="footer__link" href="#">
-                    <img class="footer__insta" src="src/img/insta-svg.png"  alt="instagram">
-                </a>
-                <a class="footer__link" href="#">
-                    <img class="footer__facebook" src="src/img/fb-svg.png"  alt="facebook">
-                </a>
-                <a class="footer__link" href="#">
-                    <img class="footer__twitter" src="src/img/twitter-svg.png"  alt="twitter">
-                </a>
+
+<div class="footer__insta"></div>
+<div class="footer__facebook"></div>
+<div class="footer__twitter"></div>
+
             </div>
             <div class="footer__copyright">
                 <p class="footer__creator">Разработано</p>
+            <div class="footer__creator-pic"></div>
             </div>
         </footer>
-        <div class="modal-ctg">
-            <h2 class="modal-ctg__title">Добавить в корзину</h2>
-            <p class="modal-ctg__text">Выберите размер</p>
-            <ul class="modal-ctg__list">
-                <form class="modal-ctg__form">
-                    <input class="modal-ctg__input" type="checkbox" name="check" checked>
-                    <label class="modal-ctg__size">S</label>
-                    <input class="modal-ctg__input" type="checkbox" name="check">
-                    <label class="modal-ctg__size">M</label>
-                    <input class="modal-ctg__input" type="checkbox" name="check">
-                    <label class="modal-ctg__size">L</label>
-                </form>
-            </ul>
-            <button class="btn modal-ctg__btn">Добавить</button>
-        </div>
+
+
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
     </body>
 </html>

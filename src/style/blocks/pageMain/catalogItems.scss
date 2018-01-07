@@ -1,11 +1,8 @@
-body{
-width: 320px;
-border: 1px solid blue;
-}
+
 .main-catalog {
   margin-top: 22px;
   &__title {
-@include textLg(27px,700);
+
 display: block;
   padding-top: 55px;
   padding-bottom: 74px;
@@ -25,14 +22,14 @@ line-height: 30px;
   margin-top: 20px;
     }
     &__title {
-@include textLg(17px,700);
+
   line-height: 24px;
   margin-left: 30px;
   margin-top: 20px;
     }
     &__descr {
-@include textLg(17px, 400);
-  color: #444444;
+
+  color: $darkGray;
   line-height: 30px;
   margin-left: 30px;
   margin-top: -17px;
@@ -46,7 +43,7 @@ line-height: 30px;
   justify-content: space-between;
   margin-left: 30px;
 &__number {
-@include textLg(17px, 700);
+
   line-height: 24px;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -70,8 +67,6 @@ line-height: 30px;
     justify-content: space-around;
   }
 &__title {
-@include textLg(17px, 400);
-
     line-height: 24px;
     width: 126px;
     margin-top: 20px;
@@ -93,10 +88,9 @@ margin-top: 6px;
     }
     &__descr {
       width: 183px;
-@include textLg(13px, 400);
-line-height: 24px;
-      color: $grayBtn;
 
+line-height: 24px;
+      
       margin-top: 34px;
 margin-left: 34px;
     }
@@ -104,14 +98,14 @@ margin-left: 34px;
   .player__btn {
     width: 192px;
     height: 52px;
-    border: 2px solid $grayBtn;
+    border: 2px solid;
 
     background-color: #ffffff;
 margin-left: 34px;
 margin-top: 9px;
 text-transform: uppercase;
-@include textLg(17px,700);
-color:$grayBtn;
+
+
 
 line-height: 16px;
   }
@@ -134,13 +128,13 @@ width: 260px;
 margin-left: 40px;
 }
 &__creator{
-@include textLg(19px, 700);
+
 margin-left: 69px;
 
 }
 }
 .modal-ctg {
-  width: 320px;
+  min-width: 280px;
   height: 336px;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   border: 1px solid #c6c6c6;
@@ -149,15 +143,15 @@ margin-left: 69px;
     margin-top: 36px;
     width: 149px;
 
-    @include textLg(25px, 700);
+    
     line-height: 30px;
     text-transform: uppercase;
 
   }
   &__text {
-    @include textLg(15px, 400);
+   
     line-height: 30px;
-color: $grayBtn;
+
     text-align: center;
     margin-top: -15px;
   }
@@ -167,12 +161,181 @@ color: $grayBtn;
   &__btn{
     width: 260px;
     height: 52px;
-    background-color: #63d1bb;
+   
 margin-left: 30px;
 cursor: pointer;
-@include textLg(17px, 400);
+
 
 
   }
 }
+// kate
+.catalog {
 
+  &__title {
+    font-size: 25px;
+    line-height: calc(30/25);
+    font-weight: 700;
+  }
+  &__hot-sale {
+    @include titleSm;
+    color: $greenLeft;
+    text-transform: uppercase;
+  }
+  &__descr{
+    font-size: 15px;
+    line-height: calc(24/15);
+    width: 260px;
+    color: $darkGray;
+    margin: 0;
+    padding: 34px 0 34px 0;
+  }
+  &__price {
+    @include titleSm;
+    line-height: calc(24/17);
+    color: $darkGray;
+    text-align: center;
+    margin: 0;
+    padding: 29px 0 29px 0;
+  }
+  
+}
+.btn {
+  border: 2px solid $darkGray;
+  background-color: transparent;
+  width: 256px;
+  height: 48px;
+  @include titleSm;
+  color: $darkGray;
+  text-transform: uppercase;
+  margin: 0 0 76px 0;
+  cursor: pointer;
+}
+.table {
+  margin-bottom: 29px;
+
+  &__row &__cell { 
+    border-bottom: 1px solid $frameMenu;
+    color: $darkGray;
+    font-size: 15px;
+    line-height: calc(20/15);
+    width: 260px;
+  }
+}
+
+.about-us {
+
+  &__title{
+    @include titleLMob;
+  }
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__feature {
+    @include titleSm;
+    padding: 87px 0 0 0;
+    margin: 0;
+    width: 175px;
+  }
+  &__feature:nth-child(2){
+    width: 200px;
+  }
+  &__feature:nth-child(3){
+    width: 200px;
+  }
+  &__feature:nth-child(4){
+    width: 211px;
+  }
+  &__feature:nth-child(5){
+    width: 251px;
+  }
+  &__feature:nth-child(6){
+    width: 250px;
+  }
+  &__feature:nth-child(7){
+    width: 250px;
+  }
+  
+}
+.slider {
+
+  &__title {
+    @include titleLMob;
+  }
+  &__comment {
+    font-size: 15px;
+    line-height: calc(30/15);
+    color: $darkGray;
+  }
+  &__auth {
+    @include titleSm;
+    line-height: calc(24/17);
+  }
+  &__nick {
+    font-size: 17px;
+    line-height: calc(30/17);
+    color: $darkGray;
+  }
+}
+
+
+@media (min-width:760px){
+
+  .catalog {
+
+    &__item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__title {
+      @include titleXlTab;
+      align-self: flex-start;
+      margin: 0 0 59px 0;
+    }
+
+    // &__title--hot::before{
+      // content: "товар недели";
+      // position: absolute;
+      // left: 84%;
+      // @include titleSm;
+      // color: $greenLeft;
+      // text-transform: uppercase;
+      // width: 70px;
+      // text-align: center;
+      // margin-top: 10px;
+    // }
+
+    &__hot-sale {
+      @include titleSm;
+      color: $greenLeft;
+      line-height: 1;
+      align-self: flex-start;
+      margin-top: 15px;
+      width: 72px;
+      text-align: center;
+    }
+    &__table {
+      width: 289px;
+      height: 106px;
+    }
+    &__price {
+      align-self: flex-start;
+    }
+    &__detail {
+      min-width: 50%;
+    }
+    &__descr {
+      @include descrTablet;
+      align-self: flex-start;
+      padding-top: 0;
+      padding: 0 0 55px 0;
+
+    width: 285px;
+    }
+  }
+
+
+}

@@ -5,4 +5,34 @@
     weight: $weight;
   }
 }
+ @mixin titleSm {
+   font-size: 17px;
+   font-weight: 700;
+   line-height: calc(20/17);
+ }
+ @mixin itemTop {
+  font-size: 15px;
+  line-height: calc(24/15);
+ }
+ @mixin titleXlMob{
+  font-size: 27px;
+  line-height: calc(30/27);
+  font-weight: 700;
+  color: $black;
+ }
+ @mixin titleLMob{
+   font-size: 25px;
+   line-height: calc(30/25);
+   font-weight: 700;
+   color: $black;
+ }
+ @mixin descrTablet{
+  font-size: 17px;
+  line-height: calc(30/17);
+ }
+ @mixin titleXlTab {
+   font-size: 43px;
+   line-height: calc(50/43);
+   font-weight: 700;
+ }
 

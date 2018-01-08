@@ -1,14 +1,9 @@
-body{
-width: 320px;
-
-
-}
 .main-catalog {
     margin-top: 22px;
     width: 320px;
 
   &__title {
-@include textLg(27px,700);
+
 display: block;
   padding-top: 55px;
   padding-bottom: 74px;
@@ -67,8 +62,8 @@ opacity: 0.3;
 }
 
     &__descr {
-@include textLg(17px, 400);
-  color: #444444;
+
+  color: $darkGray;
   line-height: 30px;
   margin-left: 30px;
   margin-top: -17px;
@@ -83,7 +78,7 @@ opacity: 0.3;
   justify-content: space-between;
   margin-left: 30px;
 &__number {
-@include textLg(17px, 700);
+
   line-height: 24px;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -205,7 +200,7 @@ margin-left: 40px;
 
 }
 &__creator{
-@include textLg(19px, 700);
+
 margin-left: 69px;
 }
 &__creator-pic{
@@ -242,9 +237,9 @@ display: none;
     text-transform: uppercase;
 }
   &__text {
-    @include textLg(15px, 400);
+
     line-height: 30px;
-color: $grayBtn;
+
     text-align: center;
     margin-top: -15px;
   }
@@ -335,9 +330,121 @@ display: block;
   text-decoration: none;
   line-height: 24px;
 }
-&__search {
-  display: none;
+
+
+  }
 }
+// index
+.catalog {
+
+  &__title {
+    font-size: 25px;
+    line-height: calc(30/25);
+    font-weight: 700;
+  }
+  &__hot-sale {
+    @include titleSm;
+    color: $greenLeft;
+    text-transform: uppercase;
+  }
+  &__descr{
+    font-size: 15px;
+    line-height: calc(24/15);
+    width: 260px;
+    color: $darkGray;
+    margin: 0;
+    padding: 34px 0 34px 0;
+  }
+  &__price {
+    @include titleSm;
+    line-height: calc(24/17);
+    color: $darkGray;
+    text-align: center;
+    margin: 0;
+    padding: 29px 0 29px 0;
+  }
+
+}
+.btn {
+  border: 2px solid $darkGray;
+  background-color: transparent;
+  width: 256px;
+  height: 48px;
+  @include titleSm;
+  color: $darkGray;
+  text-transform: uppercase;
+  margin: 0 0 76px 0;
+  cursor: pointer;
+}
+.table {
+  margin-bottom: 29px;
+
+  &__row &__cell {
+    border-bottom: 1px solid $frameMenu;
+    color: $darkGray;
+    font-size: 15px;
+    line-height: calc(20/15);
+    width: 260px;
+  }
+}
+
+@media (min-width:760px){
+
+  .catalog {
+
+    &__item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__title {
+      @include titleXlTab;
+      align-self: flex-start;
+      margin: 0 0 59px 0;
+    }
+
+    // &__title--hot::before{
+      // content: "товар недели";
+      // position: absolute;
+      // left: 84%;
+      // @include titleSm;
+      // color: $greenLeft;
+      // text-transform: uppercase;
+      // width: 70px;
+      // text-align: center;
+      // margin-top: 10px;
+    // }
+
+    &__hot-sale {
+      @include titleSm;
+      color: $greenLeft;
+      line-height: 1;
+      align-self: flex-start;
+      margin-top: 15px;
+      width: 72px;
+      text-align: center;
+    }
+    &__table {
+      width: 289px;
+      height: 106px;
+    }
+    &__price {
+      align-self: flex-start;
+    }
+    &__detail {
+      min-width: 50%;
+    }
+    &__descr {
+      @include descrTablet;
+      align-self: flex-start;
+      padding-top: 0;
+      padding: 0 0 55px 0;
+
+    width: 285px;
+    }
+  }
+
+
 &__cart {
   @include textLg(17px, 700);
   line-height: 24px;
@@ -345,6 +452,10 @@ display: block;
   width: 181px;
 }
 }
+
+//
+
+
 .main-catalog{
     width: 760px;
     margin-top: -35px;
@@ -550,7 +661,9 @@ display: none;
   }
 
 }
-}
+
+
+////поставить кавычку
 @media (min-width: 1224px){
 .menu-top{
 width: 1150px;

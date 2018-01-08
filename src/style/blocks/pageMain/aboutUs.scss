@@ -1,0 +1,56 @@
+.about-us {
+
+    &__title{
+      @include titleLMob;
+    }
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    &__feature {
+      @include titleSm;
+      padding: 87px 0 0 0;
+      margin: 0;
+      width: 175px;
+    }
+    &__feature:nth-child(2){
+      width: 200px;
+    }
+    &__feature:nth-child(3){
+      width: 200px;
+    }
+    &__feature:nth-child(4){
+      width: 211px;
+    }
+    &__feature:nth-child(5){
+      width: 251px;
+    }
+    &__feature:nth-child(6){
+      width: 250px;
+    }
+    &__feature:nth-child(7){
+      width: 250px;
+    }
+    
+  }
+  .slider {
+  
+    &__title {
+      @include titleLMob;
+    }
+    &__comment {
+      font-size: 15px;
+      line-height: calc(30/15);
+      color: $darkGray;
+    }
+    &__auth {
+      @include titleSm;
+      line-height: calc(24/17);
+    }
+    &__nick {
+      font-size: 17px;
+      line-height: calc(30/17);
+      color: $darkGray;
+    }
+  }

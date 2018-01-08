@@ -18,7 +18,7 @@ var minify = require('gulp-minify');
 var cache = require('gulp-cache');
 var build = require('gulp-build');
 var del = require('del');
-var  uglify = require("gulp-uglify");
+var uglify = require("gulp-uglify");
 var concat = require("gulp-concat");
 var spritesmith = require('gulp.spritesmith');
 
@@ -45,7 +45,7 @@ gulp.task('sass', function () { // Создаем таск "sass"
 
 gulp.task('browser-sync', function () {
   browserSync.init([
-    'src/style/**/*.scss',
+    './src/style/**/*.scss',
     './*.html',
     'css/*.css',
     '**/*.{png,jpg,svg}',
@@ -65,7 +65,7 @@ gulp.task('watch', ['browser-sync', 'sass', 'html', 'img', 'js'], function () {
   gulp.watch('./src/style/**/*.scss', ['sass']);
   gulp.watch('./*.html', browserSync.reload);
   gulp.watch('./src/js/**/*.js', browserSync.reload);
-  gulp.watch('src/img/**/*', browserSync.reload);
+  gulp.watch('./src/img/*.+(jpg|jpeg|png|gif)', browserSync.reload);
 });
 //end watch//
 
@@ -117,7 +117,7 @@ gulp.task("default", ["watch", "sass", "html", "scripts", "img"]);
 gulp.task('js', function () {
     gulp.src('js/*.js')
         .pipe(minify())
-        .pipe(gulp.dest("/dist/js"))
+        .pipe(gulp.dest("./dist/js"))
     gulp.watch('js/*.js', ['uglify']);
 });
 gulp.task('uglify', function () {
@@ -180,13 +180,13 @@ gulp.task("webp", function () {
 });
  gulp.task('serve', ['sass'], function () {
         browserSync.init({
-            server: "dist"
+            server: "./dist"
         });
       });
 //server//
 gulp.task("server", function () {
     server.init({
-        server: "dist",
+        server: "./dist",
         notify: false,
         open: true,
         cors: true,

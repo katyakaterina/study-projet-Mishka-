@@ -1,1 +1,28 @@
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 320px;
+    
+    
+}
+header {
+    min-height: 568px;
+}
+main {
+    margin: 0 auto;
+    width: 260px;
+}
+@media (min-width:768px){
 
+    body{
+       min-width: 768px;
+       margin: 0 auto; 
+    }
+    main {
+        min-width: 668px;
+        margin: 0 auto; 
+
+    }
+    
+
+}

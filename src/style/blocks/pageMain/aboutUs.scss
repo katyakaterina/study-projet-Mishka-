@@ -10,7 +10,7 @@
     }
     &__feature {
       @include titleSm;
-      padding: 87px 0 0 0;
+      padding: 15px 0 15px 0;
       margin: 0;
       width: 175px;
     }
@@ -32,7 +32,54 @@
     &__feature:nth-child(7){
       width: 250px;
     }
-    
+    &__icon1{
+      display: block;
+      background: url(/src/img/sprites.png);
+      background-position: -157px -7px ;
+	    width: 33px;
+      height: 38px;
+      margin: 20px;
+    }
+    &__icon2{
+      display: block;
+      background: url(/src/img/sprites.png);
+      background-position: -151px -58px ;
+	    width: 47px;
+      height: 27px;
+      margin: 20px;
+    }
+    &__icon3{
+      display: block;
+      background: url(/src/img/sprites.png);
+      background-position: -157px -109px ;
+	    width: 34px;
+      height: 27px;
+      margin: 20px;
+    }
+    &__icon4{
+      display: block;
+      background: url(/src/img/sprites.png);
+      background-position: -155px -156px ;
+	    width: 35px;
+      height: 34px;
+      margin: 20px;
+    }
+    &__icon5{
+      display: block;
+      background: url(/src/img/sprites.png);
+      background-position: -152px -212px ;
+	    width: 55px;
+      height: 23px;
+      margin: 20px;
+    }
+    &__icon6{
+      display: block;
+      background: url(/src/img/sprites.png);
+      background-position: -157px -255px ;
+	    width: 33px;
+      height: 32px;
+      margin: 20px;
+    }
   }
   .slider {
   

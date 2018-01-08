@@ -1,6 +1,4 @@
 .main-catalog {
-    margin-top: 22px;
-    width: 320px;
 
   &__title {
 
@@ -14,8 +12,6 @@ line-height: 30px;
   }
   .catalog {
 
-
-  width: 320px;
 &__img{
 background-image:url(/src/img/photo-1-mobile.png);
 width: 260px;
@@ -72,7 +68,7 @@ opacity: 0.3;
   width: 204px;
     }
 .catalog-price {
-@include flexbox;
+
 
   width: 204px;
   justify-content: space-between;
@@ -96,7 +92,7 @@ opacity:1;
 
 width: 21px;
 height: 18px;
-background: url("/src/img/css_sprites.png") -913px -836px;
+background: url(/src/img/css_sprites.png) -913px -836px;
 
 }
 
@@ -110,13 +106,13 @@ background: url("/src/img/css_sprites.png") -913px -836px;
   height: 503px;
   border: 1px solid #ececec;
   margin: 30px 30px 0 30px;
-@include flexbox;
+
 flex-direction: column;
 
 
   .player-process {
 
-@include flexbox;
+
 flex-direction: row-reverse;
 justify-content: space-around;
 padding-left: 40px;
@@ -137,9 +133,6 @@ margin-top: 20px;
 }
 .video-page {
 
-&__video img{
-
-}
 &__link-pic {
 margin-top: -116px;
 margin-left: 79px;
@@ -149,7 +142,7 @@ position: relative;
 &__descr {
 @include textLg(13px, 400);
 line-height: 24px;
-color: $grayBtn;
+color: $darkGray;
 margin-top: 34px;
 margin-left: 34px;
 margin-right: 10px;
@@ -160,30 +153,30 @@ order:3;
     width: 192px;
     height: 52px;
     display: inline-block;
-    border: 2px solid $grayBtn;
+    border: 2px solid $darkGray;
     background-color: $white;
     margin-left: 34px;
     margin-top: 9px;
     order: 4;
     text-transform: uppercase;
     @include textLg(17px,700);
-    color:$grayBtn;
+    color:$darkGray;
     cursor: pointer;
     line-height: 16px;
 }
 }
 .footer{
-@include flexbox;
+
     flex-direction: column;
     margin-top: 58px;
     background:#f1f1f1;
     height: 160px;
-    width: 320px;
+    // width: 320px;
 &__social{
 margin-left: 30px;
 margin-top: 30px;
 border-bottom:1px solid #e5e5e5;
-@include flexbox;
+
 
 padding-bottom: 30px;
 width: 260px;
@@ -214,10 +207,7 @@ background: url('/src/img/css_sprites.png')no-repeat -913px -613px;
 &__link{
 margin-left: 40px;
 }
-&__copyright{
-@include flexbox;
 
-}
 &__creator{
 
 margin-left: 69px;
@@ -314,32 +304,24 @@ margin-left: 10px;
 }
 }
 @media (min-width: 768px){
-body{
 
-width: 720px;
-
-
-}
 .menu-top{
-height: 88px;
-width: 760px;
-
-@include flexbox;
+  // height: 88px;
+  // width: 760px;
 
 
 
 
-&__logo{
- width: 113px;
-height: 46px;
- background: url('/src/img/css_sprites.png')no-repeat -744px -463px;
-cursor: pointer;
-margin-left: 48px;
-}
-&__item{
-@include flexbox;
 
-}
+
+// &__logo{
+//  width: 113px;
+// height: 46px;
+//  background: url('/src/img/css_sprites.png')no-repeat -744px -463px;
+// cursor: pointer;
+// margin-left: 48px;
+// }
+
 &__link{
 @include textLg(15px, 700);
 margin-top: 25px;
@@ -358,9 +340,7 @@ display: block;
   text-decoration: none;
   line-height: 24px;
 }
-
-
-  }
+}
 }
 // index
 .catalog {
@@ -472,20 +452,13 @@ display: block;
     }
   }
 
-
-&__cart {
-  @include textLg(17px, 700);
-  line-height: 24px;
-  color: #000000;
-  width: 181px;
-}
 }
 
-// 
+// _______________________________ 
 
 
 .main-catalog{
-    width: 760px;
+   
     margin-top: -35px;
 &__title {
 @include textLg(43px, 700);
@@ -494,12 +467,12 @@ display: block;
     line-height: 50px;
 }
 .catalog{
-@include flexbox;
-    width: 760px;
-    flex-wrap:wrap;
+
+ 
+    flex-wrap: wrap;
     margin-top: 70px;
 &__img{
-    background:url(/src/img/tablet/item1-1x.png)no-repeat ;
+    background:url(/src/img/item1-1x.png)no-repeat ;
     width: 334px;
     height: 334px;
     margin-left: 50px;
@@ -530,7 +503,7 @@ margin-top: -20px;
 margin-left: 30px;
 }
   .catalog-price {
-@include flexbox;
+
   width: 268px;
   justify-content: space-between;
   margin-left: 30px;
@@ -541,7 +514,7 @@ margin-left: 30px;
     display: flex;
     height: 703px;
 .player-process {
-@include flexbox;
+
     order: 2;
     margin-top: 43px;
 &__title {
@@ -590,7 +563,7 @@ margin-left: 30px;
 .footer{
 flex:0 0 auto;
 flex-direction: row;
-width: 760px;
+// width: 760px; размеры написаны в body.scss
 height: 143px;
 background:#f1f1f1;
 margin-top: 63px;
@@ -601,13 +574,12 @@ background: url('/src/img/css_sprites.png') -232px -326px;
 margin-top: 51px;
 margin-left: 50px;
 }
-&__social{
-margin-top: 63px;
-margin-left: 99px;
-}
+// &__social{
+// margin-top: 63px;
+// margin-left: 99px;
+// }
 &__copyright{
 margin-top: 38px;
 margin-left: -50px;
-}
 }
 }

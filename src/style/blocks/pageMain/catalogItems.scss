@@ -86,24 +86,18 @@ opacity: 0.3;
 width: 21px;
 height: 19px;
 opacity:1;
-
 }
 &__link-pic:hover{
-
 width: 21px;
 height: 18px;
 background: url(/src/img/css_sprites.png) -913px -836px;
 
 }
-
-
-    }
+}
   }
 }
-
 .player-video {
-
-  height: 503px;
+height: 503px;
   border: 1px solid #ececec;
   margin: 30px 30px 0 30px;
 
@@ -116,28 +110,21 @@ flex-direction: column;
 flex-direction: row-reverse;
 justify-content: space-around;
 padding-left: 40px;
-
-
-//kav
 &__title {
 @include textLg(17px, 700);
 margin-left: 25px;
     line-height: 24px;
 margin-top: 20px;
   }
-
 &__link-pic {
     margin-top: 35px;
-
-  }
+}
 }
 .video-page {
-
 &__link-pic {
 margin-top: -116px;
 margin-left: 79px;
 position: relative;
-
 }
 &__descr {
 @include textLg(13px, 400);
@@ -246,7 +233,7 @@ display: none;
     text-transform: uppercase;
 }
   &__text {
-   
+
     line-height: 30px;
 
     text-align: center;
@@ -371,7 +358,7 @@ display: block;
     margin: 0;
     padding: 29px 0 29px 0;
   }
-  
+
 }
 .btn {
   border: 2px solid $darkGray;
@@ -387,7 +374,7 @@ display: block;
 .table {
   margin-bottom: 29px;
 
-  &__row &__cell { 
+  &__row &__cell {
     border-bottom: 1px solid $frameMenu;
     color: $darkGray;
     font-size: 15px;
@@ -511,8 +498,8 @@ margin-left: 30px;
 }
 }
 .player-video {
-    display: flex;
-    height: 703px;
+@include flexbox;
+height: 703px;
 .player-process {
 
     order: 2;
@@ -573,6 +560,7 @@ height: 34px;
 background: url('/src/img/css_sprites.png') -232px -326px;
 margin-top: 51px;
 margin-left: 50px;
+cursor: pointer;
 }
 // &__social{
 // margin-top: 63px;
@@ -581,5 +569,104 @@ margin-left: 50px;
 &__copyright{
 margin-top: 38px;
 margin-left: -50px;
+}
+}
+  .modal-ctg {
+  margin-top: -250px;
+  margin-left: -30px;
+  width: 566px;
+  height: 336px;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  border: 1px solid #c6c6c6;
+  background: #fff;
+  position: fixed;
+  top: 50%;
+
+  &__title {
+    margin-left: 89px;
+    margin-top: 36px;
+    width: 149px;
+    @include textLg(25px, 700);
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+  &__text {
+    @include textLg(15px, 400);
+    line-height: 30px;
+    color: $grayBtn;
+    text-align: center;
+    margin-top: -15px;
+  }
+  &__form {
+    width: 260px;
+    margin-top: 38px;
+    margin-left: 30px;
+  }
+  &__input {
+    display: none;
+  }
+  &__size {
+    padding: 20px 34px;
+    cursor: pointer;
+    border: 2px solid #c6c6c6;
+    @include textLg(17px, 700);
+    background-color: #ffffff;
+    color: #444444;
+    line-height: 16px;
+  }
+  &__size:hover {
+    border: 2px solid #63d1bb;
+  }
+  &__input:checked+&__size {
+    border: 2px solid #63d1bb;
+  }
+  &__btn {
+    width: 260px;
+    height: 52px;
+    background-color: #63d1bb;
+    cursor: pointer;
+    @include textLg(17px, 700);
+    line-height: 16px;
+    color: $white;
+    margin-left: 30px;
+    text-transform: uppercase;
+    margin-top: 44px;
+    border: none
+  }
+  .overlay {
+    width: 320px;
+    height: 2444px;
+    position: fixed;
+    opacity: 0.9;
+    background-color: #fff;
+    border: 1px solid red;
+    cursor: pointer;
+display: none;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+  }
+
+}
+
+
+////поставить кавычку
+@media (min-width: 1224px){
+.menu-top{
+width: 1150px;
+height: 89px;
+@include flexbox;
+
+}
+.main-catalog{
+width: 1150px;
+&__title {
+  @include textLg(53px, 700);
+  padding: 106px 0px 78px 198px;
+  background: #f1f1f1;
+  line-height: 57px;
+}
+
 }
 }

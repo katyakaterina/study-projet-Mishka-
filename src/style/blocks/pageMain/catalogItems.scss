@@ -1,14 +1,17 @@
+
+
+
+
 .main-catalog {
     margin-top: 22px;
     width: 320px;
-
+border:1px solid black;
   &__title {
 
 display: block;
   padding-top: 55px;
   padding-bottom: 74px;
 padding-left: 40px;
-
 background: #f1f1f1;
 line-height: 30px;
   }
@@ -17,7 +20,7 @@ line-height: 30px;
 
   width: 320px;
 &__img{
-background-image:url(/src/img/photo-1-mobile.png);
+background:url(/src/img/item1-mobile-1x.jpg)no-repeat;
 width: 260px;
 height: 195px;
 margin-left: 30px;
@@ -43,10 +46,7 @@ border: 1px solid #ececec;
 background-color: #ffffff;
 
 }
-
-
-
-    &__title {
+&__title {
 cursor: pointer;
 @include textLg(17px,700);
   line-height: 24px;
@@ -92,9 +92,12 @@ height: 19px;
 opacity:1;
 }
 &__link-pic:hover{
+background:url('/src/img/sprites.png')-65px -215px;
+
 width: 21px;
 height: 18px;
-background: url("/src/img/css_sprites.png") -913px -836px;
+
+
 }
 }
   }
@@ -117,6 +120,12 @@ margin-left: 25px;
 margin-top: 20px;
   }
 &__link-pic {
+background:url('/src/img/sprites.png')-314px -263px;
+
+
+width: 32px;
+height: 22px;
+
     margin-top: 35px;
 }
 }
@@ -124,14 +133,19 @@ margin-top: 20px;
 &__video img{
 }
 &__link-pic {
+background:url('../src/img/sprites.png') -739px -11px;
+width: 102px;
+height: 78px;
+
 margin-top: -116px;
 margin-left: 79px;
-position: relative;
+position: absolute;
 }
 &__descr {
 @include textLg(13px, 400);
 line-height: 24px;
-color: $grayBtn;
+color: $darkGray;
+
 margin-top: 34px;
 margin-left: 34px;
 margin-right: 10px;
@@ -142,14 +156,16 @@ order:3;
     width: 192px;
     height: 52px;
     display: inline-block;
-    border: 2px solid $grayBtn;
+    border: 2px solid $darkGray;
+
     background-color: $white;
     margin-left: 34px;
     margin-top: 9px;
     order: 4;
     text-transform: uppercase;
     @include textLg(17px,700);
-    color:$grayBtn;
+    color:$darkGray;
+
     cursor: pointer;
     line-height: 16px;
 }
@@ -175,7 +191,8 @@ padding-right: 41px;
 width: 22px;
 height: 21px;
 cursor: pointer;
-  background: url('/src/img/css_sprites.png') no-repeat -913px -410px;
+  background: url('/src/img/sprites.png') -15px -61px;
+
 
 
 }
@@ -184,13 +201,15 @@ cursor: pointer;
     padding-right: 40px;
 width: 21px;
 height: 29px;
-background: url('/src/img/css_sprites.png')no-repeat -913px -613px;
+background: url('/src/img/sprites.png') -17px -110px;
+
 }
 &__twitter{
   cursor: pointer;
  width: 24px;
  height: 20px;
- background: url('/src/img/css_sprites.png') -913px -370px;
+ background: url('/src/img/sprites.png') -14px -14px;
+
 }
 &__link{
 margin-left: 40px;
@@ -209,12 +228,14 @@ margin-top: 22px;
 margin-left: 30px;
 width: 27px;
 height: 34px;
-background: url('/src/img/css_sprites.png') -913px -174px;
+background: url('/src/img/sprites.png') -14px -158px;
+
 }
 &__creator-pic:hover{
  width: 27px;
  height: 34px;
- background: url("/src/img/css_sprites.png") -913px -228px;
+ background: url("/src/img/sprites.png") -14px -158px;
+
 }
 }
 .modal-ctg {
@@ -294,171 +315,167 @@ left: 0;
 margin-left: 10px;
 }
 }
-@media (min-width: 768px){
-body{
-width: 720px;
-}
-.menu-top{
-height: 88px;
-width: 760px;
-@include flexbox;
-&__logo{
- width: 113px;
+
+  @media (min-width: 768px) {
+    body {
+      width: 720px;
+    }
+    .menu-top {
+      height: 88px;
+      width: 760px;
+      @include flexbox;
+      &__logo {
+width: 113px;
 height: 46px;
- background: url('/src/img/css_sprites.png')no-repeat -744px -463px;
-cursor: pointer;
+
+        background: url('/src/img/css_sprites.png')no-repeat -744px -463px;
+        cursor: pointer;
 margin-left: 48px;
-}
-&__item{
-@include flexbox;
-}
-&__link{
-@include textLg(15px, 700);
-margin-top: 25px;
-line-height: 24px;
-margin-left: 50px;
-margin-right: -23px;
-display: block;
-}
-&__link-shipping {
-  margin-left: 160px;
-  margin-top: 25px;
-  height: 14px;
-  position: absolute;
-  @include textLg(15px, 400);
-  color: #444444;
-  text-decoration: none;
-  line-height: 24px;
-}
 
-
-  }
-}
-// index
-.catalog {
-
-  &__title {
-    font-size: 25px;
-    line-height: calc(30/25);
-    font-weight: 700;
-  }
-  &__hot-sale {
-    @include titleSm;
-    color: $greenLeft;
-    text-transform: uppercase;
-  }
-  &__descr{
-    font-size: 15px;
-    line-height: calc(24/15);
-    width: 260px;
-    color: $darkGray;
-    margin: 0;
-    padding: 34px 0 34px 0;
-  }
-  &__price {
-    @include titleSm;
-    line-height: calc(24/17);
-    color: $darkGray;
-    text-align: center;
-    margin: 0;
-    padding: 29px 0 29px 0;
-  }
-
-}
-.btn {
-  border: 2px solid $darkGray;
-  background-color: transparent;
-  width: 256px;
-  height: 48px;
-  @include titleSm;
-  color: $darkGray;
-  text-transform: uppercase;
-  margin: 0 0 76px 0;
-  cursor: pointer;
-}
-.table {
-  margin-bottom: 29px;
-
-  &__row &__cell {
-    border-bottom: 1px solid $frameMenu;
-    color: $darkGray;
-    font-size: 15px;
-    line-height: calc(20/15);
-    width: 260px;
-  }
-}
-
-@media (min-width:760px){
-
-  .catalog {
-
-    &__item {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    &__title {
-      @include titleXlTab;
-      align-self: flex-start;
-      margin: 0 0 59px 0;
+      }
+      &__item {
+        @include flexbox;
+      }
+      &__link {
+        @include textLg(15px,
+        700);
+        margin-top: 25px;
+        line-height: 24px;
+        margin-left: 50px;
+        margin-right: -23px;
+        display: block;
+      }
+      &__link-shipping {
+        margin-left: 160px;
+        margin-top: 25px;
+        height: 14px;
+        position: absolute;
+        @include textLg(15px,
+        400);
+        color: #444444;
+        text-decoration: none;
+        line-height: 24px;
+      }
     }
 
-    // &__title--hot::before{
-      // content: "товар недели";
-      // position: absolute;
-      // left: 84%;
-      // @include titleSm;
-      // color: $greenLeft;
-      // text-transform: uppercase;
-      // width: 70px;
-      // text-align: center;
-      // margin-top: 10px;
-    // }
+ // index
+ .catalog {
+   &__title {
+     font-size: 25px;
+     line-height: calc(30/25);
+     font-weight: 700;
+   }
+   &__hot-sale {
+     @include titleSm;
+     color: $greenLeft;
+     text-transform: uppercase;
+   }
+   &__descr {
+     font-size: 15px;
+     line-height: calc(24/15);
+     width: 260px;
+     color: $darkGray;
+     margin: 0;
+     padding: 34px 0 34px 0;
+   }
+   &__price {
+     @include titleSm;
+     line-height: calc(24/17);
+     color: $darkGray;
+     text-align: center;
+     margin: 0;
+     padding: 29px 0 29px 0;
+   }
+ }
 
-    &__hot-sale {
-      @include titleSm;
-      color: $greenLeft;
-      line-height: 1;
-      align-self: flex-start;
-      margin-top: 15px;
-      width: 72px;
-      text-align: center;
-    }
-    &__table {
-      width: 289px;
-      height: 106px;
-    }
-    &__price {
-      align-self: flex-start;
-    }
-    &__detail {
-      min-width: 50%;
-    }
-    &__descr {
-      @include descrTablet;
-      align-self: flex-start;
-      padding-top: 0;
-      padding: 0 0 55px 0;
+ .btn {
+   border: 2px solid $darkGray;
+   background-color: transparent;
+   width: 256px;
+   height: 48px;
+   @include titleSm;
+   color: $darkGray;
+   text-transform: uppercase;
+   margin: 0 0 76px 0;
+   cursor: pointer;
+ }
 
-    width: 285px;
-    }
-  }
+ .table {
+   margin-bottom: 29px;
+   &__row &__cell {
+     border-bottom: 1px solid $frameMenu;
+     color: $darkGray;
+     font-size: 15px;
+     line-height: calc(20/15);
+     width: 260px;
+   }
+ }
+
+ @media (min-width:768px) {
+   .catalog {
+     &__item {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+     }
+     &__title {
+       @include titleXlTab;
+       align-self: flex-start;
+       margin: 0 0 59px 0;
+     } // &__title--hot::before{
+     // content: "товар недели";
+     // position: absolute;
+     // left: 84%;
+     // @include titleSm;
+     // color: $greenLeft;
+     // text-transform: uppercase;
+     // width: 70px;
+     // text-align: center;
+     // margin-top: 10px;
+     // }
+     &__hot-sale {
+       @include titleSm;
+       color: $greenLeft;
+       line-height: 1;
+       align-self: flex-start;
+       margin-top: 15px;
+       width: 72px;
+       text-align: center;
+     }
+     &__table {
+       width: 289px;
+       height: 106px;
+     }
+     &__price {
+       align-self: flex-start;
+     }
+     &__detail {
+       min-width: 50%;
+     }
+     &__descr {
+       @include descrTablet;
+       align-self: flex-start;
+       padding-top: 0;
+       padding: 0 0 55px 0;
+       width: 285px;
+     }
+   }
+   &__cart {
+     @include textLg(17px, 700);
+     line-height: 24px;
+     color: #000000;
+     width: 181px;
+   }
+ } //
 
 
-&__cart {
-  @include textLg(17px, 700);
-  line-height: 24px;
-  color: #000000;
-  width: 181px;
-}
-}
 
-//
 
 
 .main-catalog{
     width: 760px;
     margin-top: -35px;
+border:1px solid red;
 &__title {
 @include textLg(43px, 700);
     padding:106px 0px 78px 198px;
@@ -471,7 +488,7 @@ display: block;
     flex-wrap:wrap;
     margin-top: 70px;
 &__img{
-    background:url(/src/img/tablet/item1-1x.png)no-repeat ;
+    background:url(/src/img/item1-tablet-1x.jpg)no-repeat ;
     width: 334px;
     height: 334px;
     margin-left: 50px;
@@ -522,6 +539,10 @@ height: 703px;
     margin-right:350px;
 }
 &__link-pic{
+background:url('/src/img/sprites.png') -314px -263px;
+	width: 32px;
+	height: 22px;
+
     margin-left: -8px;
     margin-top: -50px;
     position: absolute;
@@ -530,12 +551,17 @@ height: 703px;
 .video-page {
 &__video img {
     width: 100%;
-    background:url(/src/img/tablet/video-1x.jpg)no-repeat;
+
     margin-bottom: 39px;
     margin-top: -20px;
     order: 1;
     }
 &__link-pic{
+cursor: pointer;
+background:url('/src/img/sprites.png') -739px -11px;
+width: 102px;
+height: 78px;
+
     margin-top: -308px;
     position: absolute;
     margin-left: 280px;
@@ -569,7 +595,7 @@ margin-top: 63px;
 &__logo{
 width: 102px;
 height: 34px;
-background: url('/src/img/css_sprites.png') -232px -326px;
+background: url('/src/img/sprites.png') -603px -88px;
 margin-top: 51px;
 margin-left: 50px;
 cursor: pointer;
@@ -605,7 +631,8 @@ margin-left: -50px;
   &__text {
     @include textLg(15px, 400);
     line-height: 30px;
-    color: $grayBtn;
+    color:$darkGray;
+
     text-align: center;
     margin-top: -15px;
   }
@@ -661,7 +688,7 @@ display: none;
   }
 
 }
-
+  }
 
 ////поставить кавычку
 @media (min-width: 1224px){

@@ -3,9 +3,6 @@
 
 
 .main-catalog {
-    margin-top: 22px;
-    width: 320px;
-border:1px solid black;
   &__title {
 
 display: block;
@@ -17,8 +14,6 @@ line-height: 30px;
   }
   .catalog {
 
-
-  width: 320px;
 &__img{
 background:url(/src/img/item1-mobile-1x.jpg)no-repeat;
 width: 260px;
@@ -72,7 +67,7 @@ opacity: 0.3;
   width: 204px;
     }
 .catalog-price {
-@include flexbox;
+
 
   width: 204px;
   justify-content: space-between;
@@ -96,7 +91,7 @@ background:url('/src/img/sprites.png')-65px -215px;
 
 width: 21px;
 height: 18px;
-
+background: url(/src/img/css_sprites.png) -913px -836px;
 
 }
 }
@@ -106,10 +101,13 @@ height: 18px;
 height: 503px;
   border: 1px solid #ececec;
   margin: 30px 30px 0 30px;
-@include flexbox;
+
 flex-direction: column;
-.player-process {
-@include flexbox;
+
+
+  .player-process {
+
+
 flex-direction: row-reverse;
 justify-content: space-around;
 padding-left: 40px;
@@ -130,8 +128,6 @@ height: 22px;
 }
 }
 .video-page {
-&__video img{
-}
 &__link-pic {
 background:url('../src/img/sprites.png') -739px -11px;
 width: 102px;
@@ -145,7 +141,6 @@ position: absolute;
 @include textLg(13px, 400);
 line-height: 24px;
 color: $darkGray;
-
 margin-top: 34px;
 margin-left: 34px;
 margin-right: 10px;
@@ -157,7 +152,6 @@ order:3;
     height: 52px;
     display: inline-block;
     border: 2px solid $darkGray;
-
     background-color: $white;
     margin-left: 34px;
     margin-top: 9px;
@@ -165,23 +159,23 @@ order:3;
     text-transform: uppercase;
     @include textLg(17px,700);
     color:$darkGray;
-
     cursor: pointer;
     line-height: 16px;
 }
 }
 .footer{
-@include flexbox;
+
     flex-direction: column;
     margin-top: 58px;
     background:#f1f1f1;
     height: 160px;
-    width: 320px;
+    // width: 320px;
 &__social{
 margin-left: 30px;
 margin-top: 30px;
 border-bottom:1px solid #e5e5e5;
-@include flexbox;
+
+
 padding-bottom: 30px;
 width: 260px;
 }
@@ -214,10 +208,7 @@ background: url('/src/img/sprites.png') -17px -110px;
 &__link{
 margin-left: 40px;
 }
-&__copyright{
-@include flexbox;
 
-}
 &__creator{
 
 margin-left: 69px;
@@ -315,10 +306,112 @@ left: 0;
 margin-left: 10px;
 }
 }
+@media (min-width: 768px){
 
-  @media (min-width: 768px) {
-    body {
-      width: 720px;
+.menu-top{
+  // height: 88px;
+  // width: 760px;
+
+
+
+
+
+
+// &__logo{
+//  width: 113px;
+// height: 46px;
+//  background: url('/src/img/css_sprites.png')no-repeat -744px -463px;
+// cursor: pointer;
+// margin-left: 48px;
+// }
+
+&__link{
+@include textLg(15px, 700);
+margin-top: 25px;
+line-height: 24px;
+margin-left: 50px;
+margin-right: -23px;
+display: block;
+}
+&__link-shipping {
+  margin-left: 160px;
+  margin-top: 25px;
+  height: 14px;
+  position: absolute;
+  @include textLg(15px, 400);
+  color: #444444;
+  text-decoration: none;
+  line-height: 24px;
+}
+}
+}
+// index
+.catalog {
+
+  &__title {
+    font-size: 25px;
+    line-height: calc(30/25);
+    font-weight: 700;
+  }
+  &__hot-sale {
+    @include titleSm;
+    color: $greenLeft;
+    text-transform: uppercase;
+  }
+  &__descr{
+    font-size: 15px;
+    line-height: calc(24/15);
+    width: 260px;
+    color: $darkGray;
+    margin: 0;
+    padding: 34px 0 34px 0;
+  }
+  &__price {
+    @include titleSm;
+    line-height: calc(24/17);
+    color: $darkGray;
+    text-align: center;
+    margin: 0;
+    padding: 29px 0 29px 0;
+  }
+
+}
+.btn {
+  border: 2px solid $darkGray;
+  background-color: transparent;
+  width: 256px;
+  height: 48px;
+  @include titleSm;
+  color: $darkGray;
+  text-transform: uppercase;
+  margin: 0 0 76px 0;
+  cursor: pointer;
+}
+.table {
+  margin-bottom: 29px;
+
+  &__row &__cell {
+    border-bottom: 1px solid $frameMenu;
+    color: $darkGray;
+    font-size: 15px;
+    line-height: calc(20/15);
+    width: 260px;
+  }
+}
+
+@media (min-width:760px){
+
+  .catalog {
+
+    &__item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__title {
+      @include titleXlTab;
+      align-self: flex-start;
+      margin: 0 0 59px 0;
     }
     .menu-top {
       height: 88px;
@@ -468,12 +561,13 @@ margin-left: 48px;
    }
  } //
 
+}
 
-
+// _______________________________
 
 
 .main-catalog{
-    width: 760px;
+
     margin-top: -35px;
 border:1px solid red;
 &__title {
@@ -483,12 +577,12 @@ border:1px solid red;
     line-height: 50px;
 }
 .catalog{
-@include flexbox;
-    width: 760px;
-    flex-wrap:wrap;
+
+
+    flex-wrap: wrap;
     margin-top: 70px;
 &__img{
-    background:url(/src/img/item1-tablet-1x.jpg)no-repeat ;
+    background:url(/src/img/item1-1x.png)no-repeat ;
     width: 334px;
     height: 334px;
     margin-left: 50px;
@@ -519,7 +613,7 @@ margin-top: -20px;
 margin-left: 30px;
 }
   .catalog-price {
-@include flexbox;
+
   width: 268px;
   justify-content: space-between;
   margin-left: 30px;
@@ -530,7 +624,7 @@ margin-left: 30px;
 @include flexbox;
 height: 703px;
 .player-process {
-@include flexbox;
+
     order: 2;
     margin-top: 43px;
 &__title {
@@ -588,7 +682,7 @@ height: 78px;
 .footer{
 flex:0 0 auto;
 flex-direction: row;
-width: 760px;
+// width: 760px; размеры написаны в body.scss
 height: 143px;
 background:#f1f1f1;
 margin-top: 63px;
@@ -600,10 +694,10 @@ margin-top: 51px;
 margin-left: 50px;
 cursor: pointer;
 }
-&__social{
-margin-top: 63px;
-margin-left: 99px;
-}
+// &__social{
+// margin-top: 63px;
+// margin-left: 99px;
+// }
 &__copyright{
 margin-top: 38px;
 margin-left: -50px;

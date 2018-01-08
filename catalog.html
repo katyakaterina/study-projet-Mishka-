@@ -13,53 +13,52 @@
 <body>
     <header class="header">
        <nav class="nav">
-          <div class="menu-top">
-              <!-- меню-гамбургер -->
+           <div class="menu-top">
+                <!-- меню-гамбургер -->
                 <div class="hamburger">
-                   <!-- переключатель меню -->
-                   <input class="hamburger__input" type="checkbox" id="toogle">
-                   <label class="hamburger__menu" for="toogle">
-                       <!-- когда меню открыто - кнопка закрытия -->
-                       <span class="hamburger__btn"></span>
-                   </label>
-                   <nav class="hamburger__nav">
-                        <div class="menu-top__logo">
-<a class="menu-top__logo-link" href="#">
-  <img class="menu-top__logo-mobile" src="src/img/logo-mobile.png" width="" height="" alt="Mishka">
-</a>
-                        </div>
-                       <ul class="menu-top__item">
-                          <li class="menu-top__list">
-                              <a class="menu-top__link" href="#">Каталог товаров</a>
-                          </li>
-                           <li class="menu-top__list">
-                              <a class="menu-top__link" href="#">Вязание на заказ</a>
-                          </li>
-<li class="menu-top__list">
-  <a href="" class="menu-top__link-shipping">Бесплатная доставка по России</a>
-</li>
-                          <li class="menu-top__list">
-                              <a href="" class="menu-top__list-search">
-                                  <span class="menu-top__search">Поиск по сайту</span>
+                    <!-- переключатель меню -->
+                    <input class="hamburger__input" type="checkbox" id="toogle">
+                    <label class="hamburger__menu" for="toogle">
+                        <!-- когда меню открыто - кнопка закрытия -->
+                            <span class="hamburger__btn"></span>
+                    </label>
+                    <nav class="hamburger__nav">
+                        <ul class="menu-top__list">
+                            <div class="menu-top__logo">
+                                <a class="menu-top__logo-link" href="index.html">
+                                    <img class="menu-top__logo-mobile" src="./src/img/logo-mobile.png" width="" height="" alt="Mishka">
                                 </a>
-    <!--<a href="">
-          <img src="" alt="">
-    </a>-->
-
-                          </li>
-                          <li class="menu-top__list">
-                            <a href="" class="menu-top__list-cart">
-                              <span class="menu-top__cart">Корзина: пока пуста</span>
-                            </a>
-                               <!--<a class="menu-top__link" href="#">Корзина: пока пуста</a>-->
-                          </li>
-                       </ul>
-                   </nav>
-               </div>
-          </div>
-
-       </nav>
-    </header>
+                                <a class="menu-top__logo-link" href="index.html">
+                                    <img class="menu-top__logo-tablet" src="./src/img/logo-tablet.png" width="" height="" alt="Mishka">
+                                </a>
+                                <a class="menu-top__logo-link" href="index.html">
+                                    <img class="menu-top__logo-desktop" src="./src/img/logo-desktop.png" width="" height="" alt="Mishka">
+                                </a>
+                            </div>
+                            <li class="menu-top__item">
+                                <a class="menu-top__link" href="catalog.html">Каталог товаров</a>
+                            </li>
+                            <li class="menu-top__item">
+                                <a class="menu-top__link" href="#">Вязание на заказ</a>
+                            </li>
+                            <li class="menu-top__item">
+                                <form class="search-form" action="" method="get">
+                                    <input class="search-input" type="search" name="search" placeholder="Поиск по сайту">
+                                    <button class="search-submit" type="submit">кнопка поиска</button>
+                                </form>
+                            </li>
+                            <li class="menu-top__item menu-top__item--cart">
+                                <a class="menu-top__link menu-top__link--cart" href="#">Корзина: пока пуста</a>
+                            </li>
+                            <li class="menu-top__item menu-top__item--delivery">
+                                <p class="menu-top__text menu-top__text--delivery">Бесплатная доставка по России</p>
+                            </li>
+                      </ul>
+                 </nav>
+             </div>
+         </div>
+    </nav>
+</header>
     <main class="main-catalog">
         <h2 class="main-catalog__title">Каталог товаров</h2>
             <section class="catalog">

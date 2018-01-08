@@ -39,9 +39,9 @@
                                <a class="menu-top__link" href="#">Вязание на заказ</a>
                            </li>
                            <li class="menu-top__item">
-                               <form class="search-form">
-                                   <label class="search">Поиск по сайту</label>
-                                   <input class="input-search" type="search">
+                               <form class="search-form" action="" method="get">
+                                   <input class="search-input" type="search" name="search" placeholder="Поиск по сайту">
+                                   <button class="search-submit" type="submit">кнопка поиска</button>
                                </form>
                            </li>
                            <li class="menu-top__item menu-top__item--cart">
@@ -57,10 +57,12 @@
             <div class="menu-bottom">
                 <h1 class="menu-bottom__title">Милые штуки ручной работы для дома</h1>
                 <ul class="menu-bottom__list">
-                    <li class="menu-bottom__item menu-bottom__item--left">
+                    <div class="menu-bottom__icon1 icon"></div>
+                    <li class="menu-bottom__item">
                         <a class="menu-bottom__link" href="#"><p class="menu-bottom__caption">Предметы интерьера</p></a>
                     </li>
-                    <li class="menu-bottom__item menu-bottom__item--right">
+                    <div class="menu-bottom__icon2 icon"></div>
+                    <li class="menu-bottom__item">
                         <a class="menu-bottom__link" href="#"><p class="menu-bottom__caption">Детские игрушки</p></a>
                     </li>
                </ul>
@@ -99,11 +101,17 @@
       <section class="about-us">
           <h3 class="about-us__title">Коротко о нас:</h3>
           <ul class="about-us__list">
+              <div class="about-us__icon1"></div>
               <li class="about-us__feature">Экологически чистые материалы</li>
+              <div class="about-us__icon2"></div>
               <li class="about-us__feature">Скандинавский стиль по российской цене</li>
+              <div class="about-us__icon3"></div>
               <li class="about-us__feature">Увеличивает лайки на фотографиях</li>
+              <div class="about-us__icon4"></div>
               <li class="about-us__feature">Связано вручную с любовью и умилением</li>
+              <div class="about-us__icon5"></div>
               <li class="about-us__feature">Поддержка отечественного производителя</li>
+              <div class="about-us__icon6"></div>
               <li class="about-us__feature">Поставляется в подарочной упаковке</li>
           </ul>
      </section>

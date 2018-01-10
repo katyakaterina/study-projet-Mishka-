@@ -8,11 +8,19 @@
     width: 320px;
   }
 
-  &__logo-mobile{
+  &__logo:hover {
+    opacity: 0.4;
+  }
+
+  &__logo:active {
+    opacity: 0.4;
+  }
+
+  &__logo-mobile {
     margin: 22px auto;
   }
 
-  &__logo-desktop{
+  &__logo-desktop {
     display: none;
   }
 
@@ -22,13 +30,43 @@
 
   &__item {
     border-bottom: 1px solid $frameMenu;
-    text-align: center;
-    vertical-align: middle;
+    text-align: left;
     height: 60px;
     margin-top: 25px;
+    padding-left: 57px;
   }
 
-  &__item:nth-child(6){
+  &__cart {
+    background: url(/src/img/sprites.png) no-repeat;
+    background-position: -16px -214px ;
+    width: 21px;
+    height: 18px;
+    position: absolute;
+    top: 103.5%;
+    left: 10%;
+  }
+
+  &__cart:hover{
+    background: url(/src/img/sprites.png) no-repeat;
+    background-position: -65px -215px ;
+    width: 21px;
+    height: 18px;
+    position: absolute;
+    top: 103.5%;
+    left: 10%;
+  }
+
+  &__cart:active{
+    background: url(/src/img/sprites.png) no-repeat;
+    background-position: -114px -215px ;
+    width: 21px;
+    height: 18px;
+    position: absolute;
+    top: 103.5%;
+    left: 10%;
+  }
+
+  &__item--delivery{
     display: none;
   }
 
@@ -45,13 +83,73 @@
     text-decoration: none;
     text-align: center;
     padding: 20px;
+    cursor: pointer;
+  }
+
+  &__link:hover {
+    opacity: 0.4;
+  }
+  &__link:active {
+    opacity: 0.1;
   }
 }
-// .search {
-  // font-size: 17px;
-  // color: $black;
-  // font-weight: 700;
-// }
+form.search-form {
+  position: relative;
+  width: 45px;
+  height: 45px;
+}
+input.search-input{
+  margin-left: 20px;
+  width: 180px;
+  height: 45px;
+  outline: none;
+}
+input.search-input::placeholder{
+  @include titleSm;
+  line-height: calc(24/17);
+  color: $black;
+}
+button.search-submit{
+  border: none;
+  position: absolute;
+  top: 10px;
+  left: -26px;
+  cursor: pointer;
+  background: url(/src/img/sprites.png) no-repeat;
+  background-position: -16px -261px ;
+	width: 18px;
+  height: 19px;
+  outline: none;
+}
+
+button.search-submit:hover {
+  background: url(/src/img/sprites.png) no-repeat;
+  background-position: -62px -260px ;
+	width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 10px;
+  left: -26px;
+
+}
+button.search-submit:active {
+  background: url(/src/img/sprites.png) no-repeat;
+  background-position: -114px -259px ;
+	width: 18px;
+	height: 18px;
+  position: absolute;
+  top: 10px;
+  left: -26px;
+}
+
+label.search-label {
+  display: none;
+}
+
+button.search-submit:hover{
+  cursor: pointer;
+}
+
 .hamburger {
 
   &__nav {
@@ -62,8 +160,14 @@
   }
 }
   
+@media (min-width: 768px) {
 
-@media (min-width: 760px) {
+  header {
+    background: url(/src/img/header-tablet-1x.jpg);
+    background-position: 50% 112%;
+    background-repeat: no-repeat;
+    height: 827px;
+  }
 
   .menu-top {
 
@@ -83,70 +187,81 @@
     &__logo {
       height: 89px;
       width: 370px;
-      border-bottom: 1px solid $frameMenu;
-      border-left:  1px solid $frameMenu;
+      border: 1px solid $frameMenu;
     }
-
     &__list {
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
+      
     }
 
-    &__item{
-      padding-top: 28px;
-      margin: 0;
+    &__item {
+      text-align: center;
+      padding: 0;
     }
 
     &__item:nth-child(1) {
       height: 89px;
-      border-bottom: 1px solid $frameMenu;
+      border: 1px solid $frameMenu;
     }
 
     &__item:nth-child(2){
-      height: 89px;
       border: none;
       order: 4;
       margin-left: 40px;
-      // margin-top: 15px;
     }
 
     &__item:nth-child(3){
-      height: 89px;
       border: none;
       order: 5;
-      flex-basis: 180px;
-      // margin-top: 15px;
     }
 
     &__item:nth-child(4){
-      height: 61px;
+      height: 89px;
       width: 80px;
-      border-left: 1px solid $frameMenu;
-      border-right: 1px solid $frameMenu;
-      border-bottom: 1px solid $frameMenu;
+      margin: 0;
+      border-top: 1px solid $frameMenu;
+     
     }
 
-    &__item:nth-child(5){
-      height: 61px;
+    &__item--cart{
+      height: 35px;
       min-width: 314px;
-      border: none;
-      border-bottom: 1px solid $frameMenu;
-      border-right: 1px solid $frameMenu;
+      border: 1px solid $frameMenu;
+      margin: 0;
+      padding: 27px 0 27px 0;
     }
 
-    &__item:nth-child(6){
+    &__item--delivery {
       display: inline-block;
       border: none;
-      order: 6;
+      order: 7;
       flex-grow: 1;
-      // margin-top: 15px;
     }
 
     &__text{
       @include itemTop;
       margin: 0;
       color: $darkGray;
+    }
+
+    &__cart {
+      position: absolute;
+      top: 31px;
+      left: 62%;
+    }
+
+    &__cart:hover{
+      position: absolute;
+      top: 31px;
+      left: 62%;
+    }
+
+    &__cart:active{
+      position: absolute;
+      top: 31px;
+      left: 62%;
     }
 
     &__link:nth-child(2) {
@@ -163,36 +278,96 @@
     
     &__link {
       padding: 10px;
+      margin: 0;
     }
 }
-
 form.search-form{
-  position: relative;
-  width: 150px;
-  height: 30px;
-  margin: 0;
+  margin: 30px 0 0 17px;
 }
-
 input.search-input {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -10px;
   background: transparent;
   outline: none;
   width: 0;
   height: 30px;
+  padding: 0 30px 0 15px;
+  border: none;
   transition: .4s cubic-bezier(0, 0.8, 0, 1);
   z-index: 2;
 }
 
-
-
+input.search-input:focus{
+  width: 150px;
+  z-index: 1;
+  border-bottom: 1px solid $greenLeft;
+  margin-top: 20px;
 }
+
+button.search-submit{
+  top: 0;
+  left: 15px;
+}
+
+button.search-submit:hover{
+  top: 0;
+  left: 15px;
+}
+
+button.search-submit:active{
+  top: 0;
+  left: 15px;
+}
+
+
+
+input.search-input::placeholder{
+  font-size: 10px;
+  
+}
+
+
+
+
 .hamburger {
 
   &__input {
     display: none;
   }
+}
+}
+
+@media (min-width: 1024px) {
+
+  header {
+    background: url(/src/img/header-desktop-1x.jpg);
+    background-position: 50% 112%;
+    background-repeat: no-repeat;
+    height: 827px;
+  }
+
+  .menu-top {
+
+    &__logo-desktop{
+      display: block;
+      
+    }
+
+    &__logo-tablet {
+      display: none;
+    }
+
+    &__logo-mobile {
+      display: none;
+    }
+  }
+
+
+
+
+
+  
 }
 
 

@@ -12,15 +12,24 @@ main {
 }
 @media (min-width:768px){
 
-    body{
+    body {
        min-width: 768px;
        margin: 0 auto; 
     }
     main {
         min-width: 668px;
         margin: 0 auto; 
+    }
+}
+@media (min-width: 1024px){
+
+    body {
+        min-width: 1150px;
+        margin: 0 auto;
+    }
+    main {
+        min-width: 1050px;
+        margin: 0 auto;
 
     }
-    
-
 }

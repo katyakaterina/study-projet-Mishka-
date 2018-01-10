@@ -193,6 +193,88 @@ padding:16px 0 16px 0;
 
 }
 }
+.modal-ctg {
+  margin-top: -250px;
+  margin-left: -30px;
+  width: 320px;
+  height: 336px;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  border: 1px solid #c6c6c6;
+  background: $white;
+  position: fixed;
+  top: 50%;
+display: none;
+  &__title {
+    margin-left: 89px;
+    margin-top: 36px;
+    width: 149px;
+    @include textLg(25px, 700);
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+  &__text {
+    line-height: 30px;
+    text-align: center;
+    margin-top: -15px;
+  }
+  &__form {
+    width: 260px;
+    margin-top: 38px;
+    margin-left: 30px;
+  }
+  &__input {
+    display: none;
+  }
+  &__size {
+    padding: 20px 34px;
+    cursor: pointer;
+    border: 2px solid #c6c6c6;
+    @include textLg(17px, 700);
+    background-color: #ffffff;
+    color: #444444;
+    line-height: 16px;
+  }
+  &__size:hover {
+    border: 2px solid #444444;
+  }
+  &__size:active {
+    border: 2px solid #62d1ba;
+  }
+  &__input:checked+&__size {
+    border: 2px solid #63d1bb;
+  }
+  &__btn {
+    width: 260px;
+    height: 52px;
+    background-color: #63d1bb;
+    cursor: pointer;
+    @include textLg(17px, 700);
+    line-height: 16px;
+    color: $white;
+    margin-left: 30px;
+    text-transform: uppercase;
+    margin-top: 44px;
+    border: none;
+  }
+  .overlay {
+    width: 320px;
+    height: 2444px;
+    position: fixed;
+    opacity: 0.9;
+    background-color: #fff;
+    border: 1px solid red;
+    cursor: pointer;
+    display: none;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+  }
+}
+
+
+
+
 .footer{
 @include flexbox;
 
@@ -282,83 +364,9 @@ background: url('/src/img/sprites.png') -14px -158px;
  background: url("/src/img/sprites.png") -14px -158px;
 }
 }
-.modal-ctg {
-margin-top:-250px;
-margin-left: -30px;
-  width: 320px;
-  height: 336px;
-  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
-  border: 1px solid #c6c6c6;
-background: $white;
-position: fixed;
-top: 50%;
-display: none;
-&__title {
-    margin-left: 89px;
-    margin-top: 36px;
-    width: 149px;
-@include textLg(25px, 700);
-    line-height: 30px;
-    text-transform: uppercase;
-}
-  &__text {
-line-height: 30px;
-text-align: center;
-margin-top:-15px;
-  }
-&__form{
-width: 260px;
-margin-top: 38px;
-margin-left: 30px;
-}
-&__input{
-display: none;
-}
-&__size{
-padding:20px 34px;
-cursor: pointer;
-border: 2px solid #c6c6c6;
-@include textLg(17px, 700);
-background-color: #ffffff;
-color:#444444;
-line-height: 16px;
-}
-&__size:hover{
-border: 2px solid #63d1bb;
-}
-&__input:checked+&__size{
-border: 2px solid #63d1bb;
-}
-&__btn{
-    width: 260px;
-    height: 52px;
 
-    background-color: #63d1bb;
-cursor: pointer;
-@include textLg(17px, 700);
-line-height: 16px;
-color:$white;
-margin-left: 30px;
-text-transform:uppercase;
-margin-top: 44px;
-border: none;
 
-  }
-.overlay{
-width: 320px;
-height: 2444px;
-position: fixed;
-opacity: 0.9;
-background-color:#fff;
-border:1px solid red;
- cursor:pointer;
- display:none;
- z-index:3;
-top: 0;
-left: 0;
-margin-left: 10px;
-}
-}
+
 @media (min-width: 768px){
 
 .menu-top{
@@ -778,7 +786,7 @@ margin-left: -20px;
 }
   .modal-ctg {
   margin-top: -250px;
-  margin-left: -30px;
+  margin-left: 50px;
   width: 566px;
   height: 336px;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
@@ -788,31 +796,32 @@ margin-left: -20px;
   top: 50%;
 
   &__title {
-    margin-left: 89px;
-    margin-top: 36px;
-    width: 149px;
-    @include textLg(25px, 700);
-    line-height: 30px;
-    text-transform: uppercase;
+
+width: 355px;
+height: 29px;
+margin-top: 45px;
+margin-left: 108px;
+@include textLg(30px, 700);
+line-height: 57px;
+text-transform: uppercase;
   }
   &__text {
-    @include textLg(15px, 400);
+    @include textLg(17px, 400);
     line-height: 30px;
     color:$darkGray;
-
-    text-align: center;
-    margin-top: -15px;
+text-align: center;
+    margin-top: 12px;
   }
   &__form {
-    width: 260px;
+    width: 360px;
     margin-top: 38px;
-    margin-left: 30px;
+    margin-left: 108px;
   }
   &__input {
     display: none;
   }
   &__size {
-    padding: 20px 34px;
+    padding: 20px 50px;
     cursor: pointer;
     border: 2px solid #c6c6c6;
     @include textLg(17px, 700);
@@ -820,24 +829,24 @@ margin-left: -20px;
     color: #444444;
     line-height: 16px;
   }
-  &__size:hover {
+  &__size:active {
     border: 2px solid #63d1bb;
   }
   &__input:checked+&__size {
     border: 2px solid #63d1bb;
   }
   &__btn {
-    width: 260px;
+    width: 355px;
     height: 52px;
     background-color: #63d1bb;
     cursor: pointer;
     @include textLg(17px, 700);
     line-height: 16px;
     color: $white;
-    margin-left: 30px;
+    margin-left: 108px;
     text-transform: uppercase;
-    margin-top: 44px;
-    border: none
+    margin-top: 51px;
+    border: none;
   }
   .overlay {
     width: 320px;

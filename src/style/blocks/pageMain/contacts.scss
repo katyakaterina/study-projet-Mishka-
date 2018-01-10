@@ -1,0 +1,17 @@
+.contacts {
+
+    &__title{
+        @include titleContactMobile;
+    }
+
+    // &__table {
+    //     height: 168px;
+    // }
+
+    &__row &__cell {
+        @include itemTop;
+        line-height: calc(30/15);
+        height: 118px;
+        border: none;
+    }
+}

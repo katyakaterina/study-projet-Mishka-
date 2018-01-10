@@ -555,8 +555,7 @@ margin-left: 48px;
    margin: 0 0 76px 0;
    cursor: pointer;
  }
-
- .table {
+.table {
    margin-bottom: 29px;
    &__row &__cell {
      border-bottom: 1px solid $frameMenu;
@@ -566,8 +565,7 @@ margin-left: 48px;
      width: 260px;
    }
  }
-
- @media (min-width:768px) {
+@media (min-width:768px) {
    .catalog {
      &__item {
        display: flex;
@@ -672,14 +670,12 @@ margin-top: 0px;
 border: 1px solid #ececec;
 background-color: #ffffff;
 margin-left: -18px;
-
 }
 &__title{
 @include textLg(20px, 700);
 line-height: 24px;
 margin-left:28px;
 margin-top: 20px;
-
 }
 &__descr{
 @include textLg(15px, 400);
@@ -696,7 +692,6 @@ margin-left: 30px;
 width: 268px;
   justify-content: space-between;
   margin-left: 30px;
-
 &__number{
 margin-top: 20px;
 }
@@ -803,7 +798,6 @@ margin-left: -20px;
   top: 50%;
 
   &__title {
-
 width: 355px;
 height: 29px;
 margin-top: 45px;
@@ -869,8 +863,7 @@ text-align: center;
     left: 0;
     margin-left: 10px;
   }
-
-}
+  }
   }
 @media screen and (min-width: 1150px)  {
 body{

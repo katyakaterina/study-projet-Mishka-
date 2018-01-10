@@ -33,7 +33,8 @@
     background: url(/src/img/sprites.png) no-repeat;
     background-position: -457px -8px ;
 	  width: 86px;
-	  height: 35px;
+    height: 35px;
+    margin: 0 auto;
   }
 
   &__item {
@@ -51,9 +52,9 @@
     background-position: -16px -214px ;
     width: 21px;
     height: 18px;
-    // position: absolute;
-    // top: 103.5%;
-    // left: 10%;
+    position: absolute;
+    top: 103.5%;
+    left: 10%;
   }
 
   &__cart:hover{

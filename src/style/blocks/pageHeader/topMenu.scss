@@ -16,16 +16,24 @@
     opacity: 0.4;
   }
 
-  &__logo-mobile {
-    margin: 22px auto;
-  }
+  // &__logo-mobile {
+  //   margin: 22px auto;
+  // }
 
-  &__logo-desktop {
-    display: none;
-  }
+  // &__logo-desktop {
+  //   display: none;
+  // }
 
-  &__logo-tablet {
-    display: none;
+  // &__logo-tablet {
+  //   display: none;
+  // }
+
+  &__logo-img{
+    display: block;
+    background: url(/src/img/sprites.png) no-repeat;
+    background-position: -457px -8px ;
+	  width: 86px;
+	  height: 35px;
   }
 
   &__item {
@@ -36,14 +44,16 @@
     padding-left: 57px;
   }
 
-  &__cart {
+  &__cart{
+    display: block;
+    content: '';
     background: url(/src/img/sprites.png) no-repeat;
     background-position: -16px -214px ;
     width: 21px;
     height: 18px;
-    position: absolute;
-    top: 103.5%;
-    left: 10%;
+    // position: absolute;
+    // top: 103.5%;
+    // left: 10%;
   }
 
   &__cart:hover{
@@ -171,24 +181,33 @@ button.search-submit:hover{
 
   .menu-top {
 
-    &__logo-tablet{
-      display: block;
-      margin: 23px 0 0 50px;
-    }
+    // &__logo-tablet{
+    //   display: block;
+    //   margin: 23px 0 0 50px;
+    // }
 
-    &__logo-mobile {
-      display: none;
-    }
+    // &__logo-mobile {
+    //   display: none;
+    // }
 
-    &__logo-desktop {
-      display: none;
-    }
+    // &__logo-desktop {
+    //   display: none;
+    // }
 
     &__logo {
       height: 89px;
       width: 370px;
       border: 1px solid $frameMenu;
     }
+
+    &__logo-img{
+      display: block;
+      background: url(/src/img/sprites.png) no-repeat;
+      background-position: -453px -56px ;
+	    width: 113px;
+    	height: 46px;
+    }
+  
     &__list {
       display: flex;
       flex-wrap: wrap;
@@ -349,18 +368,32 @@ input.search-input::placeholder{
 
   .menu-top {
 
-    &__logo-desktop{
+    // &__logo-desktop{
+    //   display: block;
+      
+    // }
+
+    // &__logo-tablet {
+    //   display: none;
+    // }
+
+    // &__logo-mobile {
+    //   display: none;
+    // }
+
+    &__logo-img{
       display: block;
+      background: url(/src/img/sprites.png) no-repeat;
+      background-position: -579px -9px ;
+	    width: 149px;
+      height: 72px;
       
     }
 
-    &__logo-tablet {
-      display: none;
-    }
 
-    &__logo-mobile {
-      display: none;
-    }
+
+
+
   }
 
 

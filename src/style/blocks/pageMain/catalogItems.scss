@@ -369,14 +369,14 @@ background: url('/src/img/sprites.png') -14px -158px;
 
 @media (min-width: 768px){
 
-.menu-top{
+
   // height: 88px;
   // width: 760px;
 
 
 
 
-
+// header сделаю я , у нас тут сильно расходится и перебиваются стили
 
 // &__logo{
 //  width: 113px;
@@ -386,26 +386,26 @@ background: url('/src/img/sprites.png') -14px -158px;
 // margin-left: 48px;
 // }
 
-&__link{
-@include textLg(15px, 700);
-margin-top: 25px;
-line-height: 24px;
-margin-left: 50px;
-margin-right: -23px;
-display: block;
+// &__link{
+// @include textLg(15px, 700);
+// margin-top: 25px;
+// line-height: 24px;
+// margin-left: 50px;
+// margin-right: -23px;
+// display: block;
+// }
+// &__link-shipping {
+  // margin-left: 160px;
+  // margin-top: 25px;
+  // height: 14px;
+  // position: absolute;
+  // @include textLg(15px, 400);
+  // color: #444444;
+  // text-decoration: none;
+  // line-height: 24px;
 }
-&__link-shipping {
-  margin-left: 160px;
-  margin-top: 25px;
-  height: 14px;
-  position: absolute;
-  @include textLg(15px, 400);
-  color: #444444;
-  text-decoration: none;
-  line-height: 24px;
-}
-}
-}
+
+
 // index
 .catalog {
 
@@ -447,6 +447,13 @@ display: block;
   text-transform: uppercase;
   margin: 0 0 76px 0;
   cursor: pointer;
+}
+.btn:hover{
+  background-color: $darkGray;
+  color: $white;
+}
+.btn:active{
+  opacity: 0.8;
 }
 .table {
   margin-bottom: 29px;
@@ -856,7 +863,7 @@ text-align: center;
     background-color: #fff;
     border: 1px solid red;
     cursor: pointer;
-display: none;
+    display: none;
     z-index: 3;
     top: 0;
     left: 0;

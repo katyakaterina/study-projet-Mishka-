@@ -86,9 +86,13 @@
         line-height: calc(24/19);
     }
 
+
     &__item:last-child {
         border: 1px solid $greenRight;
         background-color: $greenRight;
+
+
+
     }
 }
 @media (min-width: 768px) {

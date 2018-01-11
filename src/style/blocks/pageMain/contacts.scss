@@ -13,6 +13,7 @@
         @include itemTop;
         line-height: calc(30/15);
         padding: 20px 0px 10px 0px;
+        color: $darkGray;
     }
 
     &__text {

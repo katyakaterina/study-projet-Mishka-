@@ -46,15 +46,14 @@
   }
 
   &__cart{
-    display: block;
-    content: '';
+    display: inline-block;
     background: url(/src/img/sprites.png) no-repeat;
     background-position: -16px -214px ;
     width: 21px;
     height: 18px;
-    position: absolute;
-    top: 103.5%;
-    left: 10%;
+    margin-right: 19px;
+    vertical-align: middle;
+    
   }
 
   &__cart:hover{
@@ -62,9 +61,8 @@
     background-position: -65px -215px ;
     width: 21px;
     height: 18px;
-    position: absolute;
-    top: 103.5%;
-    left: 10%;
+    margin-right: 19px;
+    vertical-align: middle;
   }
 
   &__cart:active{
@@ -72,13 +70,16 @@
     background-position: -114px -215px ;
     width: 21px;
     height: 18px;
-    position: absolute;
-    top: 103.5%;
-    left: 10%;
+    margin-right: 19px;
+    vertical-align: middle;
   }
 
   &__item--delivery{
     display: none;
+  }
+
+  &__item--cart {
+    padding-left: 15px;
   }
 
   &__list {
@@ -266,23 +267,23 @@ button.search-submit:hover{
       color: $darkGray;
     }
 
-    &__cart {
-      position: absolute;
-      top: 31px;
-      left: 62%;
-    }
+    // &__cart {
+    //   position: absolute;
+    //   top: 31px;
+    //   left: 62%;
+    // }
 
-    &__cart:hover{
-      position: absolute;
-      top: 31px;
-      left: 62%;
-    }
+    // &__cart:hover{
+    //   position: absolute;
+    //   top: 31px;
+    //   left: 62%;
+    // }
 
-    &__cart:active{
-      position: absolute;
-      top: 31px;
-      left: 62%;
-    }
+    // &__cart:active{
+    //   position: absolute;
+    //   top: 31px;
+    //   left: 62%;
+    // }
 
     &__link:nth-child(2) {
       @include itemTop;

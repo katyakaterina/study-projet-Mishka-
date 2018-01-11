@@ -1,17 +1,45 @@
 .contacts {
 
+    width: 260px;
+
     &__title{
         @include titleContactMobile;
     }
 
-    // &__table {
-    //     height: 168px;
-    // }
-
-    &__row &__cell {
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
         @include itemTop;
         line-height: calc(30/15);
-        height: 118px;
-        border: none;
+        padding: 20px 0px 10px 0px;
     }
+
+    &__text {
+        margin: 0;
+        text-transform: lowercase;
+    }
+
+    &__link {
+        padding: 3px 3px 3px 3px;
+        text-decoration: none;
+        color: $darkGray;
+        position: relative;
+    }
+
+    &__link::after{
+        content: "";
+        top: 31px;
+        left: 3px;
+        position: absolute;
+        border-bottom: 1px solid $greenLeft;
+        width: 180px;
+    }
+
+    &__address {
+        width: 145px;
+        font-style: normal;
+        padding-right: 35px;
+    }
+
 }

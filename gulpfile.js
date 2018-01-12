@@ -32,15 +32,16 @@ gulp.task('default', function() {
 
 
 gulp.task('sass', function () { // Создаем таск "sass"
-  return gulp.src(['./src/**/*.scss']) // Берем источник
+  return gulp.src(['./src/style/main.scss']) // Берем источник
     .pipe(sass({
       outputStyle: 'expanded'
     }).on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
     .pipe(gulp.dest('./dist/css'))
     .pipe(cssnano())
-    .pipe(rename({suffix: 'style.main.css'})) // Выгружаем результата в папку css
+    .pipe(rename({suffix: 'main.css'})) // Выгружаем результата в папку css
 
 });
+
 
 
 gulp.task('browser-sync', function () {

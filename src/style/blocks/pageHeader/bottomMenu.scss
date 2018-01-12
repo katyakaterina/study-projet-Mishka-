@@ -4,6 +4,8 @@
     background-repeat: no-repeat;
 
     &__title {
+       // @include textLg(27px,700);
+
         @include titleXlMob;
         width: 244px;
         text-align: center;
@@ -102,7 +104,7 @@
         min-width: 668px;
         margin: 0 auto;
         background: none;
-        
+
 
         &__title {
             @include titleXlTab;
@@ -134,7 +136,7 @@
             margin: 20px 0 0 570px;
         }
 
-        
+
 
     }
 }

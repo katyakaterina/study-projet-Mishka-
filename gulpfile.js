@@ -32,17 +32,15 @@ gulp.task('default', function() {
 
 
 gulp.task('sass', function () { // Создаем таск "sass"
-  return gulp.src(['./src/**/*.scss']) // Берем источник
+  return gulp.src(['./src/style/main.scss']) // Берем источник
     .pipe(sass({
       outputStyle: 'expanded'
     }).on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
     .pipe(gulp.dest('./dist/css'))
     .pipe(cssnano())
-    .pipe(rename({suffix: 'style.main.css'})) // Выгружаем результата в папку css
+    .pipe(rename({suffix: 'main.css'})) // Выгружаем результата в папку css
 
 });
-
-
 gulp.task('browser-sync', function () {
   browserSync.init([
     './src/style/**/*.scss',
@@ -68,11 +66,6 @@ gulp.task('watch', ['browser-sync', 'sass', 'html', 'img', 'js'], function () {
   gulp.watch('./src/img/*.+(jpg|jpeg|png|gif)', browserSync.reload);
 });
 //end watch//
-
-
-
-
-
 
 gulp.task("html", function () {
   return gulp.src("src/**/*.html")
@@ -149,16 +142,12 @@ gulp.task('clean', function () {
 });
 
 gulp.task('build', ['clean', 'sass','html'], function () {
-
-    var buildCss = gulp.src([ 'css/main.css'])// Переносим библиотеки в продакшен
-
-        .pipe(gulp.dest('dist/css'))
-
-    var buildFonts = gulp.src('fonts/**/*') // Переносим шрифты в продакшен
-        .pipe(gulp.dest('dist/fonts'))
-
-    var buildJs = gulp.src('js/**/*') // Переносим скрипты в продакшен
-        .pipe(gulp.dest('dist/js'))
+var buildCss = gulp.src([ 'css/main.css'])// Переносим библиотеки в продакшен
+.pipe(gulp.dest('dist/css'))
+var buildFonts = gulp.src('fonts/**/*') // Переносим шрифты в продакшен
+.pipe(gulp.dest('dist/fonts'))
+var buildJs = gulp.src('js/**/*') // Переносим скрипты в продакшен
+.pipe(gulp.dest('dist/js'))
 
     var buildHtml = gulp.src('/*.html') // Переносим HTML в продакшен
         .pipe(gulp.dest('dist'));

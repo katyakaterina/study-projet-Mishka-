@@ -98,7 +98,7 @@ height: 18px;
 }
 }
 }
-/////поставитьназад
+
 .player-video {
   height: 503px;
   border: 1px solid #ececec;
@@ -126,6 +126,9 @@ height: 18px;
 }
 }
 .video-page {
+&__video img{
+margin-top: 10px;
+}
 &__link-pic {
   background:url('/src/img/sprites.png') -739px -11px;
   width: 102px;
@@ -149,7 +152,7 @@ height: 18px;
   @include textLg(13px, 400);
   line-height: 24px;
   color: $darkGray;
-  margin-top: 34px;
+  //margin-top: 34px;
   margin-left: 34px;
   margin-right: 10px;
   order:3;
@@ -159,6 +162,7 @@ height: 18px;
     width: 192px;
     height: 52px;
     display: inline-block;
+
     border: 2px solid $darkGray;
     background-color: $white;
     margin-left: 34px;
@@ -169,7 +173,7 @@ height: 18px;
     color:$darkGray;
     cursor: pointer;
     line-height: 16px;
-    padding:16px 0 16px 0;
+    padding:16px 0 26px 0;
 }
 .player__btn:hover{
 background-color: $darkGray;
@@ -739,7 +743,7 @@ background: url('/src/img/sprites.png') -14px -158px;
     background-color: $white;
     margin-top: 23px;
     margin-left: 42px;
-    padding:16px 0px 16px 0px;
+    padding:16px 0px 26px 0px;
 }
 .modal-ctg {
    margin-top: -250px;

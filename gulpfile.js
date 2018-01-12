@@ -41,6 +41,9 @@ gulp.task('sass', function () { // Создаем таск "sass"
     .pipe(rename({suffix: 'main.css'})) // Выгружаем результата в папку css
 
 });
+
+
+
 gulp.task('browser-sync', function () {
   browserSync.init([
     './src/style/**/*.scss',

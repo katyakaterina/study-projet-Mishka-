@@ -1,9 +1,10 @@
 @import '_variables.scss';
 @import '_mixin.scss';
-@import 'normalize.min.scss';
+@import '_normalize.scss';
+
+@import 'blocks/global/body.scss';
 @import 'sprites.scss';
 @import 'blocks/global/body.scss';
-
 
 
 

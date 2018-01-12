@@ -4,22 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="dist/css/main.css">
-    <!--<link rel="stylesheet" href="dist/css/style/main.css">-->
+    <link rel="stylesheet" href="dist/css/main.css">
+    <script src="picturefill.js"></script>
     <title>Mishka - интернет - магазин</title>
 </head>
 <body>
     <header class="header">
         <nav class="nav">
             <div class="menu-top">
-                <!-- меню-гамбургер -->
                 <div class="hamburger">
-                    <!-- переключатель меню -->
-                    <input class="hamburger__input" type="checkbox" id="toogle">
-                    <label class="hamburger__menu" for="toogle">
-                        <!-- когда меню открыто - кнопка закрытия -->
-                        <span class="hamburger__btn"></span>
-                    </label>
+                    <button class="hamburger-btn">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
                     <nav class="hamburger__nav">
                         <ul class="menu-top__list">
                             <div class="menu-top__logo">
@@ -47,7 +45,6 @@
                                </form>
                            </li>
                            <li class="menu-top__item menu-top__item--cart">
-                                <!-- <a class="menu-top__cart"></a> -->
                                 <a class="menu-top__link menu-top__link--cart" href="#"><i class="menu-top__cart"></i>
                                     Корзина: пока пуста
                                 </a>
@@ -60,6 +57,11 @@
                 </div>
             </div>
             <div class="menu-bottom">
+                <picture>
+                    <source media="(min-width: 320px)" srcset="src/img/header-mobile-1x.jpg 1x, src/img/header-mobile-2x.jpg 2x" sizes="320w" type="image/jpg">
+                    <!-- <img media="(min-width: 320px)" width="320px" height="372px" src="src/img/header-mobile-1x.jpg" src="src/img/header-mobile-2x.jpg" alt=""> -->
+                    <source media="(min-width: 768px)" width="768px" height="746px" srcset="src/img/header-tablet-1x.jpg, src/img/header-tablet-2x.jpg"/>
+                </picture>
                 <h1 class="menu-bottom__title">Милые штуки ручной работы для дома</h1>
                 <ul class="menu-bottom__list">
                     <div class="menu-bottom__icon1 icon"></div>
@@ -173,17 +175,19 @@
 <footer class="footer">
     <div class="footer__social">
         <a class="footer__link" href="#">
-            <img class="footer__insta" src="" width="" height="" alt="instagram">
+            <i class="footer__insta" src="" width="" height="" alt="instagram"></i>
         </a>
         <a class="footer__link" href="#">
-            <img class="footer__facebook" src="" width="" height="" alt="facebook">
+            <i class="footer__facebook" src="" width="" height="" alt="facebook"></i>
         </a>
         <a class="footer__link" href="#">
-            <img class="footer__twitter" src="" width="" height="" alt="twitter">
+            <i class="footer__twitter" src="" width="" height="" alt="twitter"></i>
         </a>
     </div>
     <div class="footer__copyright">
-        <p class="footer__creator">Разработано</p>
+        <p class="footer__creator">Разработано
+            <img class="footer__icon">
+        </p>
     </div>
 </footer>
 <div class="modal-ctg">

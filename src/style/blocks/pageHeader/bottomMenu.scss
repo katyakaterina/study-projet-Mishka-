@@ -98,22 +98,28 @@
 @media (min-width: 768px) {
 
     .menu-bottom {
-        min-height: 746px;
+
+        display: block;
+        background: url(/src/img/header-tablet-1x.jpg);
+        background-position: 50% 90%;
+        background-repeat: no-repeat;
         min-width: 668px;
-        margin: 0 auto;
-        background: none;
+        height: 748px;
+        
+        
         
 
         &__title {
             @include titleXlTab;
             width: 500px;
             margin: 0 auto;
+            padding: 160px 0 0 0;
         }
 
         &__list{
             display: flex;
             width: 668px;
-            margin: 237px 0 0px 50px;
+            margin: 372px 0 0px 50px;
         }
 
         &__item{
@@ -137,4 +143,16 @@
         
 
     }
+}
+
+@media (min-width: 1024px) {
+
+    .menu-bottom{
+        background: url(/src/img/header-desktop-1x.jpg);
+        background-position: 50% 112%;
+        background-repeat: no-repeat;
+  
+    }
+
+    
 }

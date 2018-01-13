@@ -3,9 +3,9 @@
 
   &__logo {
     text-align: center;
-    height: 79px;
+    height: 59px;
     border-bottom: 1px solid $frameMenu;
-    width: 320px;
+    padding: 20px 0 0 0;
   }
 
   &__logo:hover {
@@ -34,6 +34,7 @@
     background-position: -457px -8px ;
 	  width: 86px;
     height: 35px;
+    padding: 5px;
     margin: 0 auto;
   }
 
@@ -53,7 +54,6 @@
     height: 18px;
     margin-right: 19px;
     vertical-align: middle;
-    
   }
 
   &__cart:hover{
@@ -76,6 +76,14 @@
 
   &__item--delivery{
     display: none;
+  }
+
+  &__item--new{
+    display: none;
+  }
+
+  &__item--sale{
+    display: none; 
   }
 
   &__item--cart {
@@ -163,25 +171,13 @@ button.search-submit:hover{
 }
 
 .hamburger {
-
-  &__nav {
-    display: block;
-  }
-  &__btn {
-  display: block;
-  }
+  display: none;
 }
   
 @media (min-width: 768px) {
 
-  header {
-    background: url(/src/img/header-tablet-1x.jpg);
-    background-position: 50% 112%;
-    background-repeat: no-repeat;
-    height: 827px;
-  }
-
-  .menu-top {
+       .menu-top {
+          height: 89px;
 
     // &__logo-tablet{
     //   display: block;
@@ -197,9 +193,10 @@ button.search-submit:hover{
     // }
 
     &__logo {
-      height: 89px;
+      height: 90px;
       width: 370px;
       border: 1px solid $frameMenu;
+      padding: 0;
     }
 
     &__logo-img{
@@ -207,13 +204,15 @@ button.search-submit:hover{
       background: url(/src/img/sprites.png) no-repeat;
       background-position: -453px -56px ;
 	    width: 113px;
-    	height: 46px;
+      height: 46px;
+      margin: 20px 0 0 50px;
     }
   
     &__list {
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
+      height: 180px;
       
     }
 
@@ -259,6 +258,14 @@ button.search-submit:hover{
       border: none;
       order: 7;
       flex-grow: 1;
+    }
+
+    &__item--new{
+      display: none;
+    }
+  
+    &__item--sale{
+      display: none; 
     }
 
     &__text{
@@ -341,69 +348,98 @@ button.search-submit:active{
   left: 15px;
 }
 
-
-
 input.search-input::placeholder{
   font-size: 10px;
-  
-}
-
-
-
-
-.hamburger {
-
-  &__input {
-    display: none;
-  }
 }
 }
+
+
 
 @media (min-width: 1024px) {
 
-  header {
-    background: url(/src/img/header-desktop-1x.jpg);
-    background-position: 50% 112%;
-    background-repeat: no-repeat;
-    height: 827px;
-  }
-
   .menu-top {
 
-    // &__logo-desktop{
-    //   display: block;
+    width: 1150px;
+    margin: 0 auto;
+
+  &__logo{
+    order: 4;
+    width: 300px;
+    border-top: none;
+  }
+
+  &__logo-img{
+    display: block;
+    background: url(/src/img/sprites.png) no-repeat;
+    background-position: -579px -9px ;
+	  width: 149px;
+    height: 72px;
+    margin: 5px auto;
       
-    // }
+  }
 
-    // &__logo-tablet {
-    //   display: none;
-    // }
+  &__item{
+    padding: 27px 0 27px 0;
+    height: 36px;
+    margin: 0;
+  }
 
-    // &__logo-mobile {
-    //   display: none;
-    // }
+  &__item:nth-child(2){
+    order: 2;
+    flex-basis: 223px;
+    border: 1px solid $frameMenu;
+    border-top: none;
+    margin: 0;
+  }
 
-    &__logo-img{
-      display: block;
-      background: url(/src/img/sprites.png) no-repeat;
-      background-position: -579px -9px ;
-	    width: 149px;
-      height: 72px;
-      
+    &__item:nth-child(3){
+      order: 3;
+      border-bottom: 1px solid $frameMenu;
+      flex-basis: 220px;
     }
 
+    &__item:nth-child(4){
+      order: 4;
+      flex-basis: 84px;
+      height: 36px;
+      border-top: none;
 
+      .search-form{
+        margin: 10px 18px 0px 18px;
+      }
+    }
 
+    &__item--cart{
+      order: 5;
+      flex-basis: 316px;
+      border-top: none;
+    }
 
+    &__item--delivery{
+      order: 9;
+    }
+
+    &__item--new{
+      display: inline;
+      order: 7;
+      text-align: left;
+      flex-basis: 220px;
+      margin-left: 30px;
+      border: none;
+    }
+  
+    &__item--sale{
+      display: inline;
+      order: 8;
+      text-align: left;
+      flex-basis: 510px;
+      border: none;
+    }
 
   }
 
-
-
-
-
-  
 }
+
 
 
 

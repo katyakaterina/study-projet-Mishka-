@@ -1,5 +1,12 @@
 .footer{
 
+    &__copyright{
+        text-align: center;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: calc(18/19);
+    }
+
     &__icon{
         display: inline-block;
         background: url(/src/img/sprites.png) no-repeat;

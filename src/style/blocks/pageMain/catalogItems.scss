@@ -1,7 +1,4 @@
 
-
-
-
 .main-catalog {
     margin: 0 auto;
 //margin-top: -510px;
@@ -12,6 +9,7 @@
     background: #f1f1f1;
     line-height: 30px;
 }
+
 .catalog {
 &__img{
     background:url('/src/img/item1-mobile-1x.jpg')no-repeat;
@@ -98,7 +96,6 @@ height: 18px;
 }
 }
 }
-
 .player-video {
   height: 503px;
   border: 1px solid #ececec;
@@ -162,7 +159,6 @@ margin-top: 10px;
     width: 192px;
     height: 52px;
     display: inline-block;
-
     border: 2px solid $darkGray;
     background-color: $white;
     margin-left: 34px;
@@ -181,8 +177,6 @@ color: $white;
 }
 .player__btn:active{
 opacity:0.8;
-}
-
 }
 .modal-ctg {
   margin-top: -250px;
@@ -220,22 +214,24 @@ display: none;
   &__size {
     padding: 20px 34px;
     cursor: pointer;
-    border: 2px solid #c6c6c6;
+    border: 2px solid #ececec;
     @include textLg(17px, 700);
     background-color: #ffffff;
-    color: #444444;
-    line-height: 16px;
-  }
-  &__size:hover {
-    border: 2px solid #444444;
-  }
-  &__size:active {
-    border: 2px solid #62d1ba;
-  }
-  &__input:checked+&__size {
+  line-height: 16px;
+}
+&__size:hover{
+ border: 2px solid #c7c7c7;
+}
+&__size:focus{
+border: 2px solid #63d1bb;
+}
+&__size:active {
+  border: 2px solid #63d1bb;
+}
+&__input:checked + &__size {
     border: 2px solid #63d1bb;
   }
-  &__btn {
+&__btn {
     width: 260px;
     height: 52px;
     background-color: #63d1bb;
@@ -248,10 +244,8 @@ display: none;
     margin-top: 44px;
     border: none;
   }
-
 }
-
-  .overlay {
+.overlay {
     width: 100%;
     height: 2444px;
     position: fixed;
@@ -263,6 +257,7 @@ display: none;
     top: 0;
     left: 0;
     margin-left: 0px;
+}
 }
   }
 //.footer{
@@ -666,6 +661,23 @@ display: none;
     background: #f1f1f1;
     line-height: 50px;
 }
+    &__title-line:after {
+      content: "";
+      display: block;
+      position: relative;
+      background-repeat: repeat;
+      height: 10px;
+      background-size: 33px 14px;
+      background-image: radial-gradient(circle at 20px 13px, #f1f1f1 13px, transparent 13px);
+      right: 0;
+      left: 0px;
+      bottom: 35px;
+      transform: rotate(-180deg);
+    }
+
+
+
+
 .catalog{
 @include flexbox;
     flex-wrap: wrap;
@@ -827,21 +839,28 @@ display: none;
 &__size {
      padding: 20px 50px;
      cursor: pointer;
-     border: 2px solid #c6c6c6;
-     @include textLg(17px, 700);
+     border: 2px solid #ececec;
+    @include textLg(17px, 700);
      background-color: $white;
     color: $darkGray;
     line-height: 16px;
 }
 &__size:hover {
-  border: 2px solid $darkGray;
+  border: 2px solid #c7c7c7;
 }
+
+&__size:focus {
+  border: 2px solid #63d1bb;
+}
+
 &__size:active {
-     border: 2px solid $greenLeft;
+  border: 2px solid #63d1bb;
 }
+
 &__input:checked+&__size {
-    border: 2px solid $greenLeft;
+  border: 2px solid #63d1bb;
 }
+
 &__btn {
      width: 355px;
      height: 52px;
@@ -916,6 +935,20 @@ width: 100%;
   background: #f1f1f1;
   line-height: 57px;
 }
+    &__title-line:after {
+      content: "";
+      display: block;
+      position: relative;
+      background-repeat: repeat;
+      height: 10px;
+      background-size: 33px 14px;
+      background-image: radial-gradient(circle at 20px 13px, #f1f1f1 13px, transparent 13px);
+      right: 0;
+      left: 0px;
+      bottom: 45px;
+      transform: rotate(-180deg);
+    }
+
 .catalog{
 width: 100%;
 &__img{
@@ -1049,21 +1082,28 @@ margin-top: 60px;
    &__size {
      padding: 20px 50px;
      cursor: pointer;
-     border: 2px solid #c6c6c6;
-     @include textLg(17px, 700);
+     border: 2px solid #ececec;
+    @include textLg(17px, 700);
      background-color: #ffffff;
      color: #444444;
      line-height: 16px;
    }
-   &__size:hover {
-     border: 2px solid #444444;
-   }
-   &__size:active {
-     border: 2px solid #63d1bb;
-   }
-   &__input:checked+&__size {
-     border: 2px solid #63d1bb;
-   }
+&__size:hover {
+  border: 2px solid #c7c7c7;
+}
+
+&__size:focus {
+  border: 2px solid #63d1bb;
+}
+
+&__size:active {
+  border: 2px solid #63d1bb;
+}
+
+&__input:checked+&__size {
+  border: 2px solid #63d1bb;
+}
+
    &__btn {
      width: 355px;
      height: 52px;

@@ -70,11 +70,6 @@ gulp.task('watch', ['browser-sync', 'sass', 'html', 'img', 'js'], function () {
 });
 //end watch//
 
-
-
-
-
-
 gulp.task("html", function () {
   return gulp.src("src/**/*.html")
     .pipe(gulp.dest("./*.html"));
@@ -150,16 +145,12 @@ gulp.task('clean', function () {
 });
 
 gulp.task('build', ['clean', 'sass','html'], function () {
-
-    var buildCss = gulp.src([ 'css/main.css'])// Переносим библиотеки в продакшен
-
-        .pipe(gulp.dest('dist/css'))
-
-    var buildFonts = gulp.src('fonts/**/*') // Переносим шрифты в продакшен
-        .pipe(gulp.dest('dist/fonts'))
-
-    var buildJs = gulp.src('js/**/*') // Переносим скрипты в продакшен
-        .pipe(gulp.dest('dist/js'))
+var buildCss = gulp.src([ 'css/main.css'])// Переносим библиотеки в продакшен
+.pipe(gulp.dest('dist/css'))
+var buildFonts = gulp.src('fonts/**/*') // Переносим шрифты в продакшен
+.pipe(gulp.dest('dist/fonts'))
+var buildJs = gulp.src('js/**/*') // Переносим скрипты в продакшен
+.pipe(gulp.dest('dist/js'))
 
     var buildHtml = gulp.src('/*.html') // Переносим HTML в продакшен
         .pipe(gulp.dest('dist'));

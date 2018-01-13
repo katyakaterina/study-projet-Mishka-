@@ -108,8 +108,6 @@
         min-width: 668px;
         height: 748px;
         
-        
-        
 
         &__title {
             @include titleXlTab;
@@ -121,16 +119,16 @@
         &__list{
             display: flex;
             width: 668px;
-            margin: 372px 0 0px 50px;
+            margin: 369px 0 0px 50px;
         }
 
         &__item{
             width: 334px;
-            height: 114px;
+            height: 117px;
         }
 
         &__item:hover {
-            height: 119px;
+            height: 122px;
         }
 
         &__icon2 {
@@ -140,6 +138,10 @@
 
         &__icon2:hover{
             margin: 20px 0 0 570px;
+        }
+
+        &__caption {
+            @include menuItemTab;
         }
 
 
@@ -153,8 +155,34 @@
         background: url(/src/img/header-desktop-1x.jpg);
         background-position: 50% 112%;
         background-repeat: no-repeat;
+
+        &__list {
+            margin: 372px 0 0 50px;
+            width: 1050px;
+        }
+
+        &__item {
+            width: 525px;
+        }
+
+        &__icon1 {
+            margin: 25px 0 0 450px;
+        }
+
+        &__icon2 {
+            margin: 25px 0 0 950px;
+        }
+
+        &__icon1:hover {
+            margin: 20px 0 0 450px;
+        }
+
+        &__icon2:hover {
+            margin: 20px 0 0 950px;
+        }
   
     }
+
 
     
 }

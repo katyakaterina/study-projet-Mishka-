@@ -613,8 +613,44 @@ display: none;
      color: #000000;
      width: 181px;
    }
- } //
-  }
+} 
+}
+
+// @media (min-width: 1024px) { //стили спорят с каталогом
+
+//   .catalog {
+
+//     // &__item {
+//     //   margin-top: 70px;
+//     // }
+
+//     // &__title {
+//     //   order: 2;
+//     //   flex-basis: 85%;
+//     // }
+
+//     // &__hot-sale {
+//     //   order: 1;
+//     //   flex-basis: 10%;
+//     // }
+
+//     // &__detail {
+//     //   order: 3;
+//     // min-width: 30%;
+//     // margin-left: 160px;
+//     // }
+
+//     // &__img {
+//     //   order: 5;
+//     // }
+
+//     // &__to-buy{
+//     //   order: 4;
+//     // flex-basis: 260px;
+//     // align-self: flex-end;
+//     // }
+//   }
+// }
 
 
 // _______________________________

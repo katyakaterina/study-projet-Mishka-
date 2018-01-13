@@ -6,6 +6,11 @@ background:#f1f1f1;
 height: 160px;
 width: 320px;
 
+    display: block;
+
+    height: 160px;
+    background: $lightGray;
+
     &__social{
 cursor: pointer;
 //@include flexbox;

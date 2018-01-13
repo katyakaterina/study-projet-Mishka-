@@ -44,3 +44,29 @@
     }
 
 }
+
+@media (min-width: 768px) {
+
+    .contacts {
+
+        &__box {
+            display: flex;
+            justify-content: space-between;
+            width: 668px;
+        }
+
+        &__wrap {
+            min-width: 45%;
+            @include descrTablet;
+        }
+
+        &__address {
+            width: 195px;
+            padding: 0;
+        }
+
+        &__link:after{
+            width: 204px;
+        }
+    }
+}

@@ -42,8 +42,6 @@ gulp.task('sass', function () { // Создаем таск "sass"
 
 });
 
-
-
 gulp.task('browser-sync', function () {
   browserSync.init([
     './src/style/**/*.scss',
@@ -62,8 +60,7 @@ gulp.task('browser-sync', function () {
 
 //watch//
 gulp.task('watch', ['browser-sync', 'sass', 'html', 'img', 'js'], function () {
-
-  gulp.watch('./src/style/**/*.scss', ['sass']);
+gulp.watch('./src/style/**/*.scss', ['sass']);
   gulp.watch('./*.html', browserSync.reload);
   gulp.watch('./src/js/**/*.js', browserSync.reload);
   gulp.watch('./src/img/*.+(jpg|jpeg|png|gif)', browserSync.reload);
@@ -71,8 +68,9 @@ gulp.task('watch', ['browser-sync', 'sass', 'html', 'img', 'js'], function () {
 //end watch//
 
 gulp.task("html", function () {
-  return gulp.src("src/**/*.html")
-    .pipe(gulp.dest("./*.html"));
+  return gulp.src("./src/**/*.html")
+    .pipe(gulp.dest("./*.html"))
+.pipe(gulp.dest('dist/html'));
 });
 
 gulp.task("scripts", function () {
@@ -83,7 +81,7 @@ gulp.task("scripts", function () {
     .pipe(gulp.dest("dist/js")); // директория продакшена, т.е. куда сложить готовый файл
 });
 gulp.task('img', function () {
-  return gulp.src("./src/img/*.+(jpg|jpeg|png|gif)")
+  return gulp.src("./src/img/*.+(jpg|jpeg|png|gif|svg)")
     .pipe(imagemin({
       progressive: true,
       svgoPlugins: [{ removeViewBox: false }],
@@ -91,19 +89,6 @@ gulp.task('img', function () {
     }))
     .pipe(gulp.dest("dist/img"))
 });
-
-//browser-sync//
-
-
-
-
-
-
-
-
-
-
-//end browser-sync//
 
 
 gulp.task("default", ["watch", "sass", "html", "scripts", "img"]);
@@ -151,8 +136,7 @@ var buildFonts = gulp.src('fonts/**/*') // Переносим шрифты в п
 .pipe(gulp.dest('dist/fonts'))
 var buildJs = gulp.src('js/**/*') // Переносим скрипты в продакшен
 .pipe(gulp.dest('dist/js'))
-
-    var buildHtml = gulp.src('/*.html') // Переносим HTML в продакшен
+var buildHtml = gulp.src('/*.html') // Переносим HTML в продакшен
         .pipe(gulp.dest('dist'));
 });
 //end build//

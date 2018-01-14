@@ -10,11 +10,9 @@
   &__creator:active{
   opacity:0.3;
   }
-
-
- &__icon {
-   display: inline-block;
-   background: url(/src/img/sprites.png) no-repeat;
+&__icon {
+  display: inline-block;
+   background: url('/src/img/sprites.png') no-repeat;
    background-position: -14px -158px;
    width: 27px;
    height: 34px;
@@ -23,8 +21,8 @@
  }
 
  &__icon:hover {
-   display: inline-block;
-   background: url(/src/img/sprites.png) no-repeat;
+   //display: inline-block;
+   background: url('/src/img/sprites.png') no-repeat;
    background-position: -61px -160px;
    width: 27px;
    height: 34px;
@@ -33,8 +31,8 @@
  }
 
  &__icon:active {
-   display: inline-block;
-   background: url(/src/img/sprites.png) no-repeat;
+   //display: inline-block;
+   background: url('/src/img/sprites.png') no-repeat;
    background-position: -108px -159px;
    width: 27px;
    height: 34px;

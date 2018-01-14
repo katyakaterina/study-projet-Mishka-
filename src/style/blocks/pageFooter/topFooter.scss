@@ -6,7 +6,7 @@ background:#f1f1f1;
 height: 160px;
 width: 320px;
 
-    display: block;
+    
 
     height: 160px;
     background: $lightGray;
@@ -111,9 +111,10 @@ margin-left: 50px;
 }
 @media (min-width: 768px){
   .footer {
+      @include flexbox;
   flex:0 0 auto;
   flex-direction: row;
-  width: 760px;
+  width: 768px;
   height: 143px;
   background:#f1f1f1;
   margin-top: 63px;

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="dist/css/main.css">
-<script src="src/js/main.js"></script>
-    <script src="picturefill.js"></script>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/picturefill.js"></script>
     <title>Mishka - интернет - магазин</title>
 </head>
 <body>
@@ -64,11 +64,23 @@
                    <!-- </nav> -->
             </div>
             <div class="menu-bottom">
-                <picture>
-                    <source media="(min-width: 320px)" srcset="src/img/header-mobile-1x.jpg 1x, src/img/header-mobile-2x.jpg 2x" sizes="320w" type="image/jpg">
-                    <!-- <img media="(min-width: 320px)" width="320px" height="372px" src="src/img/header-mobile-1x.jpg" src="src/img/header-mobile-2x.jpg" alt=""> -->
-                    <source media="(min-width: 768px)" width="768px" height="746px" srcset="src/img/header-tablet-1x.jpg, src/img/header-tablet-2x.jpg"/>
-                </picture>
+                <!-- <picture>
+                    <source media="(min-width: 320px)" 
+                            srcset="src/img/header-mobile-1x.jpg, src/img/header-mobile-2x.jpg 2x">
+                    <img sizes="(min-width: 320px)" 
+                         srcset="src/img/header-mobile-1x.jpg" 
+                         srcset="src/img/header-mobile-2x.jpg" alt="">
+                    <source media="(min-width: 768px)" 
+                            srcset="src/img/header-tablet-1x.jpg 1x, src/img/header-tablet-2x.jpg 2x">
+                    <img sizes="(min-width: 768px)" 
+                         srcset="src/img/header-tablet-1x.jpg 768w" 
+                         srcset="src/img/header-tablet-2x.jpg 768w">
+                    <source media="(min-width: 1024px)"
+                            srcset="src/img/header-desktop-1x.jpg 1x, src/img/header-desktop-2x.jpg 2x">
+                    <img sizes="(min-width: 1024px)"
+                         srcset="src/img/header-desktop-1x.jpg 1024w"
+                         srcset="src/img/header-desktop-2x.jpg 1024w">
+                </picture> -->
                 <h1 class="menu-bottom__title">Милые штуки ручной работы для дома</h1>
                 <ul class="menu-bottom__list">
                     <div class="menu-bottom__icon1 icon"></div>
@@ -84,31 +96,31 @@
         </nav>
     </header>
     <main class="main">
-       <section class="catalog">
-          <div class="catalog__item">
-             <h3 class="catalog__title catalog__title--hot">Вязаные корзинки</h3>
-                <span class="catalog__hot-sale">Товар недели</span>
-                <div class="catalog__detail">
-                    <p class="catalog__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-                    <table class="catalog__table table">
-                       <tr class="catalog__row table__row">
-                          <td class="catalog__cell table__cell">Цвет:</td>
-                          <td class="catalog__cell table__cell">"Тиффани"/серый</td>
+       <section class="catalog-card">
+          <div class="catalog-card__item">
+             <h3 class="catalog-card__title catalog-card__title--hot">Вязаные корзинки</h3>
+                <span class="catalog-card__hot-sale">Товар недели</span>
+                <div class="catalog-card__detail">
+                    <p class="catalog-card__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+                    <table class="catalog-card__table table">
+                       <tr class="catalog-card__row table__row">
+                          <td class="catalog-card__cell table__cell">Цвет:</td>
+                          <td class="catalog-card__cell table__cell">"Тиффани"/серый</td>
                         </tr>
-                        <tr class="catalog__row table__row">
-                          <td class="catalog__cell table__cell">Диаметр:</td>
-                          <td class="catalog__cell table__cell">25 см</td>
+                        <tr class="catalog-card__row table__row">
+                          <td class="catalog-card__cell table__cell">Диаметр:</td>
+                          <td class="catalog-card__cell table__cell">25 см</td>
                        </tr>
-                       <tr class="catalog__row table__row">
-                          <td class="catalog__cell table__cell">Высота:</td>
-                          <td class="catalog__cell table__cell">15 см</td>
+                       <tr class="catalog-card__row table__row">
+                          <td class="catalog-card__cell table__cell">Высота:</td>
+                          <td class="catalog-card__cell table__cell">15 см</td>
                        </tr>
                    </table>
                 </div>
-                   <img class="catalog__img" src="src/img/triple-mobile-1x.jpg" width="" height="" alt="Вязаные корзинки">
-                <div class="catalog__to-buy">
-                    <p class="catalog__price">Цена: 990 руб.</p>
-                    <button class="btn catalog__btn" >Заказать</button>
+                   <img class="catalog-card__img" src="src/img/triple-mobile-1x.jpg" width="" height="" alt="Вязаные корзинки">
+                <div class="catalog-card__to-buy">
+                    <p class="catalog-card__price">Цена: 990 руб.</p>
+                    <button class="btn catalog-card__btn" >Заказать</button>
                 </div>
           </div>
       </section>

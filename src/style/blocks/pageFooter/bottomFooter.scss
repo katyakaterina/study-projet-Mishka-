@@ -1,11 +1,12 @@
 .footer{
-  &__copyright {
-  display: flex;
-  }
+  // &__copyright {
+  // display: flex;
+  // }
   &__creator{
   @include textLg(19px, 700);
   cursor: pointer;
-  margin-left: 69px;
+  text-align: center;
+  // margin-left: 69px;
   }
   &__creator:active{
   opacity:0.3;

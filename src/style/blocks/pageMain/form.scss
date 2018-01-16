@@ -1,0 +1,284 @@
+body{
+//border: 1px solid black;
+margin: 0 auto;
+}
+.page-form{
+width: 320px;
+margin-top: -510px;
+margin-left: -30px;
+&__title{
+@include textLg(27px, 700);
+line-height: 30px;
+background: #f1f1f1;
+padding:70px 35px 80px 38px;
+}
+&__text{
+@include textLg(13px, 400);
+line-height: 24px;
+color:#444444;
+margin-left: 30px;
+margin-right: 48px;
+}
+.filters{
+display: flex;
+flex-direction: column;
+//flex-wrap:nowrap;
+height: 183px;
+&__line::after{
+content:"";
+display: inline-block;
+vertical-align: middle;
+margin-top: -70px;
+height: 1px;
+background-color:#63d1bb;
+margin-left: 92px;
+width: 198px;
+position: relative;
+}
+&__title{
+@include textLg(17px, 700);
+line-height: 16px;
+text-transform:uppercase;
+color: #63d1bb;
+margin-left: 29px;
+border-right: 198px;
+margin-top: 10px;
+}
+ &__form-radio{
+margin-left: 30px;
+display: flex;
+flex-direction: column;
+//height: 150px;
+margin-top: 58px;
+}
+&__input{
+vertical-align:top;
+margin: 0 3px 0 0;
+}
+&__input,&__label{
+cursor: pointer;
+}
+&__input:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+&__input:not(checked)+ label{
+  position: relative;
+  padding: 0px 0 0px 35px;
+}
+&__input:not(checked)+label::before{
+content:'';
+position: absolute;
+top: -8px;
+left: 0;
+width: 40px;
+height: 40px;
+border:2px solid #444444;
+border-radius:50%;
+background:#fff;
+margin-left: -30px;
+
+}
+&__input:not(checked) + label::after{
+content:'';
+position: absolute;
+top:6px;
+left: -15px;
+width: 16px;
+height: 16px;
+background-color:#63d1bb;
+border-radius:50%;
+//box-shadow: inset 0 1px 1px rgba(0, 0, 0, .5);
+opacity: 0;
+}
+&__input:checked + label:after{
+opacity: 1;
+}
+&__label{
+@include textLg(17px, 700);
+line-height: 18px;
+display: flex;
+margin-left: 30px;
+cursor: pointer;
+margin-top: -60px;
+margin-bottom: 90px;
+}
+}
+.filter{
+display: flex;
+flex-direction: column;
+
+&__form-checkbox{
+display: flex;
+flex-direction:column;
+margin-top: -52px;
+}
+&__label {
+  @include textLg(17px, 700);
+  line-height: 18px;
+  display: flex;
+  margin-left: 62px;
+  cursor: pointer;
+  margin-top: 50px;
+
+}
+&__input {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+}
+
+&__input,
+&__label {
+  cursor: pointer;
+}
+
+&__input:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+&__input:not(checked)+ label {
+  position: relative;
+  padding: 0px 0 0px 34px;
+}
+&__input:not(checked)+label::before {
+  content: '';
+position: absolute;
+  top: -7px;
+  left: 0;
+  width: 40px;
+  height: 39px;
+  border: 2px solid #444444;
+  background: #fff;
+  margin-left: -30px;
+}
+&__input +label:after{
+content:'';
+display: inline-block;
+height: 8px;
+width: 22px;
+border-left:2px solid;
+border-bottom:2px solid;
+transform: rotate(-45deg);
+margin-left: -55px;
+margin-top: 5px;
+}
+&__input +label{
+position: relative;
+}
+&__input +label:before,
+&__input +label:after{
+position: absolute;
+}
+&__input +label:before{
+top: 3px;
+}
+&__input +label :after{
+left: 4px;
+top: 7px;
+}
+&__input+label:after{
+content:none;
+}
+&__input:checked+label:after{
+content:'';
+}
+}
+.customer{
+&__name{
+display: flex;
+  flex-direction: column;
+}
+&__title{
+  @include textLg(17px, 700);
+  line-height: 16px;
+  color: #63d1bb;
+  text-transform:uppercase;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+&__label{
+@include textLg(17px, 700);
+line-height: 18px;
+margin-left: 30px;
+//padding-bottom: 14px;
+}
+    &__input {
+@include textLg(17px, 400);
+line-height: 18px;
+margin-left: 30px;
+border:none;
+color: #000;
+opacity:0.6;
+border-bottom:2px solid #000;
+width: 260px;
+//box-shadow: inset 0 -2px 0 #000000;
+padding:15px 0px 17px 0;
+margin-bottom: 20px;
+}
+&__data{
+margin-top: -40px;
+display: flex;
+flex-direction: column;
+}
+&__img-phone {
+background:url('/src/img/sprites.png')  -212px -263px;
+width: 25px;
+height: 24px;
+//left: 30px;
+display: block;
+margin-left: 250px;
+margin-top: -10px;
+//position: absolute;
+//display:block;
+}
+&__phone,&__email  {
+width: 260px;
+padding:18px 0 18px 0;
+border:none;
+border-bottom:2px solid #000;
+@include textLg(17px, 400);
+color: #000;
+opacity:0.6;
+line-height: 18px;
+margin-left: 30px;
+margin-top: -40px;
+margin-bottom: -20px;
+}
+&__img-email{
+background:url('/src/img/mail.png') no-repeat;
+width: 32px;
+height: 21px;
+margin-left: 250px;
+margin-top: -10px;
+}
+&__extra{
+@include input-placeholder;
+color:#000;
+opacity: 0.6;
+@include textLg(17px, 400);
+line-height: 18px;
+padding: 15px 30px 70px 17px;
+width: 210px;
+border: 2px solid #000;
+background-color: #ffffff;
+margin-left: 30px;
+margin-top: -10px;
+margin-bottom: 12px;
+}
+}
+&__note{
+@include textLg(14px, 400);
+line-height: 16px;
+color:$darkGray;
+margin-left: 30px;
+}
+&__btn{
+margin-top: 30px;
+margin-left: 30px;
+margin-bottom: 0px;
+}
+}
+
+
+
+

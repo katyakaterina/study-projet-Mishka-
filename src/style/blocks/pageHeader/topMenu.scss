@@ -1,6 +1,6 @@
 
 .menu-top {
-
+//display: none;
   &__logo {
     text-align: center;
     height: 59px;
@@ -83,7 +83,7 @@
   }
 
   &__item--sale{
-    display: none; 
+    display: none;
   }
 
   &__item--cart {
@@ -173,7 +173,7 @@ button.search-submit:hover{
 .hamburger {
   display: none;
 }
-  
+
 @media (min-width: 768px) {
 
        .menu-top {
@@ -208,7 +208,7 @@ button.search-submit:hover{
       height: 46px;
       margin: 20px 0 0 50px;
     }
-  
+
     &__list {
       display: flex;
       flex-wrap: wrap;
@@ -263,9 +263,9 @@ button.search-submit:hover{
     &__item--new{
       display: none;
     }
-  
+
     &__item--sale{
-      display: none; 
+      display: none;
     }
 
     &__text{
@@ -303,7 +303,7 @@ button.search-submit:hover{
       font-weight: 700;
       padding: 10px;
     }
-    
+
     &__link {
       padding: 10px;
       margin: 0;
@@ -375,7 +375,7 @@ input.search-input::placeholder{
 	  width: 149px;
     height: 72px;
     margin: 5px auto;
-      
+
   }
 
   &__item{
@@ -427,7 +427,7 @@ input.search-input::placeholder{
       margin-left: 30px;
       border: none;
     }
-  
+
     &__item--sale{
       display: inline;
       order: 8;
@@ -457,9 +457,9 @@ input.search-input::placeholder{
 
 
 
-  
-  
-  
+
+
+
 
 
 

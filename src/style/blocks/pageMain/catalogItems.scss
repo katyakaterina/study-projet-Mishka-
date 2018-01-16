@@ -63,7 +63,7 @@ line-height: 30px;
   color: $darkGray;
   line-height: 30px;
   margin-left: 30px;
-  margin-top: -50px;
+  // margin-top: -50px;
   padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
   width: 204px;
@@ -259,80 +259,47 @@ border: 2px solid #63d1bb;
     margin-left: 0px;
 }
 }
+}
+
+// index ___________________________________
+.catalog-card {
+
+  &__item {
+    margin-top: 35px;
   }
 
+    &__title {
+      font-size: 25px;
+      line-height: calc(30/25);
+      font-weight: 700;
+      margin: 0 0 15px 0;
+    }
 
+    &__hot-sale {
+      @include titleSm;
+      color: $greenLeft;
+      text-transform: uppercase;
+    }
 
+    &__descr{
+      font-size: 15px;
+      line-height: calc(24/15);
+      width: 260px;
+      color: $darkGray;
+      margin: 0;
+      padding: 34px 0 34px 0;
+    }
 
-//@media (min-width: 768px){
-
-
-  // height: 88px;
-  // width: 760px;
-
-
-
-
-// header сделаю я , у нас тут сильно расходится и перебиваются стили
-
-// &__logo{
-//  width: 113px;
-// height: 46px;
-//  background: url('/src/img/css_sprites.png')no-repeat -744px -463px;
-// cursor: pointer;
-// margin-left: 48px;
-// }
-
-// &__link{
-// @include textLg(15px, 700);
-// margin-top: 25px;
-// line-height: 24px;
-// margin-left: 50px;
-// margin-right: -23px;
-// display: block;
-// }
-// &__link-shipping {
-  // margin-left: 160px;
-  // margin-top: 25px;
-  // height: 14px;
-  // position: absolute;
-  // @include textLg(15px, 400);
-  // color: #444444;
-  // text-decoration: none;
-  // line-height: 24px;
-//}
-
-
-// index
-.catalog {
-
-  &__title {
-    font-size: 25px;
-    line-height: calc(30/25);
-    font-weight: 700;
-  }
-  &__hot-sale {
-    @include titleSm;
-    color: $greenLeft;
-    text-transform: uppercase;
-  }
-  &__descr{
-    font-size: 15px;
-    line-height: calc(24/15);
-    width: 260px;
-    color: $darkGray;
-    margin: 0;
-    padding: 34px 0 34px 0;
+    &__price {
+      @include titleSm;
+      line-height: calc(24/17);
+      color: $darkGray;
+      text-align: center;
+      margin: 0;
+      padding: 29px 0 29px 0;
+    }
 }
-  &__price {
-    @include titleSm;
-    line-height: calc(24/17);
-    color: $darkGray;
-    text-align: center;
-    margin: 0;
-    padding: 29px 0 29px 0;
-}
-}
+
 .btn {
   border: 2px solid $darkGray;
   background-color: transparent;
@@ -344,15 +311,24 @@ border: 2px solid #63d1bb;
   margin: 0 0 76px 0;
   cursor: pointer;
 }
+
 .btn:hover{
   background-color: $darkGray;
   color: $white;
 }
+
 .btn:active{
   opacity: 0.8;
 }
+
 .table {
   margin-bottom: 29px;
+  border-collapse: collapse;
+
+  &__row{
+    height: 41px;
+    border-bottom: 1px solid $frameMenu;
+  }
 &__row &__cell {
     border-bottom: 1px solid $frameMenu;
     color: $darkGray;
@@ -361,195 +337,114 @@ border: 2px solid #63d1bb;
     width: 260px;
   }
 }
-@media (min-width:768px){
-.catalog {////лишнее?
-&__item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-&__title {
-  @include titleXlTab;
-  align-self: flex-start;
-  margin: 0 0 59px 0;
-}
-.menu-top {
-  height: 88px;
-  width: 760px;
-@include flexbox;
 
-
-&__item {
-@include flexbox;
-}
-&__link {
-@include textLg(15px,700);
-        margin-top: 25px;
-        line-height: 24px;
-        margin-left: 50px;
-        margin-right: -23px;
-        display: block;
-}
-&__link-shipping {
-        margin-left: 160px;
-        margin-top: 25px;
-        height: 14px;
-        position: absolute;
-@include textLg(15px,400);
-        color: #444444;
-        text-decoration: none;
-        line-height: 24px;
-}
-}////лишнее?
-
- // index
- .catalog {
-
-   &__title {
-     font-size: 25px;
-     line-height: calc(30/25);
-     font-weight: 700;
-   }
-   &__hot-sale {
-     @include titleSm;
-     color: $greenLeft;
-     text-transform: uppercase;
-   }
-   &__descr {
-     font-size: 15px;
-     line-height: calc(24/15);
-     width: 260px;
-     color: $darkGray;
-     margin: 0;
-     padding: 34px 0 34px 0;
-   }
-   &__price {
-     @include titleSm;
-     line-height: calc(24/17);
-     color: $darkGray;
-     text-align: center;
-     margin: 0;
-     padding: 29px 0 29px 0;
-   }
- }
-.btn {
-   border: 2px solid $darkGray;
-   background-color: transparent;
-   width: 256px;
-   height: 48px;
-   @include titleSm;
-   color: $darkGray;
-   text-transform: uppercase;
-   margin: 0 0 76px 0;
-   cursor: pointer;
- }
-.table {
-   margin-bottom: 29px;
-&__row &__cell {
-     border-bottom: 1px solid $frameMenu;
-     color: $darkGray;
-     font-size: 15px;
-     line-height: calc(20/15);
-     width: 260px;
-}
-}
 @media (min-width:768px) {
-.catalog {
- &__item {
-  @include flexbox;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
+  .catalog-card {
+
+      &__item {
+        @include flexbox;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      &__title {
+        @include titleXlTab;
+        align-self: flex-start;
+        margin: 0 0 59px 0;
+      } 
+  
+      &__hot-sale {
+        @include titleSm;
+        color: $greenLeft;
+        line-height: 1;
+        align-self: flex-start;
+        margin-top: 15px;
+        width: 72px;
+        text-align: center;
+      }
+
+      &__table {
+        width: 289px;
+        height: 106px;
+      }
+
+      &__price {
+        align-self: flex-start;
+      }
+
+      &__detail {
+        min-width: 50%;
+      }
+
+      &__descr {
+        @include descrTablet;
+        align-self: flex-start;
+        padding-top: 0;
+        padding: 0 0 55px 0;
+        width: 285px;
+      }
   }
-&__title {
-   @include titleXlTab;
-  align-self: flex-start;
-   margin: 0 0 59px 0;
-     } // &__title--hot::before{
-     // content: "товар недели";
-     // position: absolute;
-     // left: 84%;
-     // @include titleSm;
-     // color: $greenLeft;
-     // text-transform: uppercase;
-     // width: 70px;
-     // text-align: center;
-     // margin-top: 10px;
-     // }
-     &__hot-sale {
-       @include titleSm;
-       color: $greenLeft;
-       line-height: 1;
-       align-self: flex-start;
-       margin-top: 15px;
-       width: 72px;
-       text-align: center;
-     }
-     &__table {
-       width: 289px;
-       height: 106px;
-     }
-     &__price {
-       align-self: flex-start;
-     }
-     &__detail {
-       min-width: 50%;
-     }
-     &__descr {
-       @include descrTablet;
-       align-self: flex-start;
-       padding-top: 0;
-       padding: 0 0 55px 0;
-       width: 285px;
-     }
-   }
-   &__cart {
-     @include textLg(17px, 700);
-     line-height: 24px;
-     color: #000000;
-     width: 181px;
-   }
+    //  &__item {
+    //    @include textLg(17px, 700);
+    //    line-height: 24px;
+    //    color: #000000;
+    //    width: 181px;
+    //  }
+  } 
+
+@media (min-width: 1024px) { 
+
+  .catalog-card {
+
+    &__item {
+      margin-top: 70px;
+    }
+
+    &__title {
+      order: 2;
+      flex-basis: 85%;
+    }
+
+    &__hot-sale {
+      order: 1;
+      flex-basis: 10%;
+    }
+
+    &__detail {
+      order: 3;
+    min-width: 30%;
+    margin-left: 160px;
+    }
+
+    &__img {
+      order: 5;
+    }
+
+    &__to-buy{
+      order: 4;
+    flex-basis: 260px;
+    align-self: flex-end;
+    }
+  }
 }
-}
-
-// @media (min-width: 1024px) { //стили спорят с каталогом
-
-//   .catalog {
-
-//     // &__item {
-//     //   margin-top: 70px;
-//     // }
-
-//     // &__title {
-//     //   order: 2;
-//     //   flex-basis: 85%;
-//     // }
-
-//     // &__hot-sale {
-//     //   order: 1;
-//     //   flex-basis: 10%;
-//     // }
-
-//     // &__detail {
-//     //   order: 3;
-//     // min-width: 30%;
-//     // margin-left: 160px;
-//     // }
-
-//     // &__img {
-//     //   order: 5;
-//     // }
-
-//     // &__to-buy{
-//     //   order: 4;
-//     // flex-basis: 260px;
-//     // align-self: flex-end;
-//     // }
-//   }
-// }
 
 
 // _______________________________
 
+@media (min-width:768px){
+  .catalog {////лишнее?
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__title {
+    @include titleXlTab;
+    align-self: flex-start;
+    margin: 0 0 59px 0;
+  }
+  }
 
 .main-catalog{
   width: 768px;

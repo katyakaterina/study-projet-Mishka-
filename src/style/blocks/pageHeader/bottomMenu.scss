@@ -101,7 +101,9 @@
 
     .menu-bottom {
 
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         background: url(/src/img/header-tablet-1x.jpg);
         background-position: 50% 90%;
         background-repeat: no-repeat;
@@ -119,7 +121,7 @@
             display: flex;
             position: relative;
             width: 668px;
-            margin: 369px 0 0px 50px;
+            margin: 369px 0 0 0;
         }
 
         &__item{
@@ -195,7 +197,7 @@
 
         &__list {
             position: relative;
-            margin: 372px 0 0 50px;
+            margin: 372px 0 0 0;
             width: 1050px;
         }
 

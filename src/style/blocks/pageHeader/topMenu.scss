@@ -212,7 +212,7 @@ button.search-submit:hover{
     &__list {
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-start;
+      justify-content: center;
       height: 180px;
     }
 
@@ -229,13 +229,15 @@ button.search-submit:hover{
     &__item:nth-child(2){
       border: none;
       order: 4;
-      margin-left: 40px;
+      text-align: left;
+    flex-basis: 200px;
     }
 
     &__item:nth-child(3){
       border: none;
       order: 5;
-      flex-grow: 1;
+      flex-basis: 260px;
+    text-align: left;
     }
 
     &__item:nth-child(4){
@@ -257,7 +259,8 @@ button.search-submit:hover{
       display: inline-block;
       border: none;
       order: 7;
-      flex-grow: 1;
+      flex-basis: 260px;
+    text-align: left;
     }
 
     &__item--new{
@@ -389,13 +392,14 @@ input.search-input::placeholder{
     flex-basis: 223px;
     border: 1px solid $frameMenu;
     border-top: none;
-    margin: 0;
+    text-align: center;
   }
 
     &__item:nth-child(3){
       order: 3;
       border-bottom: 1px solid $frameMenu;
       flex-basis: 220px;
+      text-align: center;
     }
 
     &__item:nth-child(4){
@@ -432,8 +436,7 @@ input.search-input::placeholder{
       display: inline;
       order: 8;
       text-align: left;
-      flex-basis: 510px;
-      flex-grow: 1;
+      flex-basis: 630px;
       border: none;
     }
 

@@ -81,7 +81,7 @@ line-height: 30px;
   color:black;
 }
 &__link {
-  margin-top: 22px;
+  margin-top: 12px;
 }
 &__link-pic{
   background:url('/src/img/sprites.png')-16px -214px;
@@ -97,7 +97,7 @@ height: 18px;
 }
 }
 .player-video {
-  height: 503px;
+
   border: 1px solid #ececec;
   margin: 30px 30px 0 30px;
   flex-direction: column;
@@ -151,7 +151,7 @@ margin-top: 10px;
   color: $darkGray;
   //margin-top: 34px;
   margin-left: 34px;
-  margin-right: 10px;
+  margin-right: 40px;
   order:3;
 }
 }
@@ -163,6 +163,7 @@ margin-top: 10px;
     background-color: $white;
     margin-left: 34px;
     margin-top: 9px;
+margin-bottom: 33px;
     order: 4;
     text-transform: uppercase;
     @include textLg(17px,700);
@@ -352,8 +353,8 @@ border: 2px solid #63d1bb;
         @include titleXlTab;
         align-self: flex-start;
         margin: 0 0 59px 0;
-      } 
-  
+      }
+
       &__hot-sale {
         @include titleSm;
         color: $greenLeft;
@@ -391,9 +392,9 @@ border: 2px solid #63d1bb;
     //    color: #000000;
     //    width: 181px;
     //  }
-  } 
+  }
 
-@media (min-width: 1024px) { 
+@media (min-width: 1024px) {
 
   .catalog-card {
 
@@ -516,7 +517,7 @@ margin-top: -20px;
     @include textLg(15px, 400);
     color:#444444;
     line-height: 30px;
-    margin-top: -55px;
+    margin-top: -70px;
     padding-bottom: 170px;
     border-bottom: 1px solid #ececec;
     width: 268px;
@@ -528,7 +529,7 @@ margin-top: -20px;
     justify-content: space-between;
     margin-left: 30px;
 &__number{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 }
 }

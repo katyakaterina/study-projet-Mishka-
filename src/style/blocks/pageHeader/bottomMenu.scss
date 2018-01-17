@@ -105,7 +105,6 @@
         background: url(/src/img/header-tablet-1x.jpg);
         background-position: 50% 90%;
         background-repeat: no-repeat;
-        min-width: 668px;
         height: 748px;
         
 
@@ -118,6 +117,7 @@
 
         &__list{
             display: flex;
+            position: relative;
             width: 668px;
             margin: 369px 0 0px 50px;
         }
@@ -127,25 +127,62 @@
             height: 117px;
         }
 
-        &__item:hover {
-            height: 122px;
+        &__line {
+            position: absolute;
+            width: 768px;
+            height: 117px;
+            top: 2px;
+            left: -50px;
+        }
+
+        &__line:before{
+            content: "";
+            position: absolute;
+            width: 768px;
+            left: 0px;
+            bottom: 0px;
+            right: 0;
+            background-repeat: repeat;
+            height: 10px;
+            background-size: 20px 20px;
+            background-image:  radial-gradient(circle at 10px -5px, transparent 10px, $white 11px);
+        }
+
+        &__line:after{
+            content: "";
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            right: 0;
+            width: 768px;
+            background-repeat: repeat;
+            height: 15px;
+            background-size: 40px 35px;
+            background-image: radial-gradient(circle at 10px 15px, $white 14px, transparent 15px);
+        }
+
+        &__line:hover{
+            top: 7px;
+        }
+
+        &__icon1{
+            z-index: 10;
         }
 
         &__icon2 {
             position: absolute;
             margin: 25px 0 0 570px;
+             z-index: 10;
         }
 
         &__icon2:hover{
             margin: 20px 0 0 570px;
+           
         }
 
         &__caption {
             @include menuItemTab;
         }
-
-
-
     }
 }
 
@@ -157,23 +194,31 @@
         background-repeat: no-repeat;
 
         &__list {
+            position: relative;
             margin: 372px 0 0 50px;
             width: 1050px;
         }
 
         &__item {
-            position: relative;
-            background: $greenLeft;
             width: 564px;
             height: 119px;
             border: transparent;
         }
 
-        &__item:before{
+        &__line{
+            position: absolute;
+            height: 119px;
+            width: 1150px;
+            z-index: 10;
+            top: 0px;
+            left: -50px;
+        }
+
+        &__line:before{
             content: "";
             position: absolute;
-            width: 630px;
-            left: -50px;
+            width: 1150px;
+            left: 0;
             bottom: 0;
             right: 0;
             background-repeat: repeat;
@@ -182,17 +227,21 @@
             background-image:  radial-gradient(circle at 10px -5px, transparent 10px, $white 11px);
         }
 
-        &__item:after{
+        &__line:after{
             content: "";
             position: absolute;
-            left: -30px;
+            left: 0;
             bottom: 0;
             right: 0;
-            width: 630px;
+            width: 1150px;
             background-repeat: repeat;
             height: 15px;
             background-size: 40px 35px;
             background-image: radial-gradient(circle at 10px 15px, $white 14px, transparent 15px);
+        }
+
+        &__line:hover{
+            top: 5px;
         }
 
         &__item:last-child {
@@ -200,6 +249,10 @@
             width: 574px;
             border: transparent;
         }
+
+        // &__item:hover {
+        //     height: 119px;
+        // }
 
         &__icon1 {
             margin: 25px 0 0 450px;

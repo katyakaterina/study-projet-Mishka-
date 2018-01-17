@@ -1,35 +1,28 @@
 .footer {
-    @include flexbox;
-    flex-direction: column;
-    margin-top: 58px;
+    display: block;
+    margin: 58px 0 0 0;
     background: $lightGray;
     height: 160px;
-    width: 320px;
-
+    
     &__link {
-        align-self: center;
-        padding: 5px;
+        padding: 10px;
     }
-     &__social {
-        cursor: pointer;
-        @include flexbox;
+
+    &__social {
+        display: block;
+        text-align: center;
         height: 80px;
         width: 260px;
-        border-bottom:1px solid $frameMenu;
-        // margin-top: 30px;
-        // margin-left: 30px;
-        // padding-bottom: 30px;   
-        margin: 0 auto;
-        justify-content: space-evenly;    
+        border-bottom:1px solid $frameMenu;  
+        margin: 0 auto;   
+        cursor: pointer;
     }
+
     &__insta {
         display: inline-block;
         background: url('/src/img/sprites.png') no-repeat -15px -61px;
         width: 22px;
         height: 21px;
-        margin: 0;
-        // margin-right: 40px;
-        // margin-left: 50px;
     }
 
     &__insta:hover{
@@ -37,7 +30,6 @@
         background: url('/src/img/sprites.png') no-repeat -63px -62px;
 	    width: 22px;
         height: 21px;
-       margin: 0;
     }
 
     &__insta:active{
@@ -45,16 +37,13 @@
         background: url('/src/img/sprites.png') no-repeat  -115px -61px;
 	    width: 22px;
         height: 21px;
-        margin: 0;
     }
 
     &__facebook{
         display: inline-block;
         background: url('/src/img/sprites.png') -17px -110px;
         width: 15px;
-        height: 29px;
-        // margin-right: 40px;
-        margin: 0;
+        height: 28px;
     }
 
     &__facebook:hover{
@@ -62,7 +51,6 @@
         background: url('/src/img/sprites.png') -64px -110px;
         width: 15px;
         height: 28px;
-        margin: 0;
     }
 
     &__facebook:active{
@@ -70,15 +58,15 @@
         background: url('/src/img/sprites.png')  -114px -111px;
 	    width: 15px;
         height: 28px;
-       margin: 0;
+
     }
 
     &__twitter{
         display: inline-block;
         background: url('/src/img/sprites.png')  -14px -14px;
-	    width: 24px;
+	    width: 23px;
         height: 20px;
-        margin: 0;
+        
     }
 
     &__twitter:hover{
@@ -86,7 +74,7 @@
         background: url('/src/img/sprites.png')  -61px -15px;
 	    width: 23px;
         height: 20px;
-       margin: 0;
+        
     }
 
     &__twitter:active{
@@ -94,7 +82,11 @@
         background: url('/src/img/sprites.png')  -111px -14px;
 	    width: 23px;
         height: 20px;
-        margin: 0;
+        
+    }
+
+    i {
+        margin: 25px 0 0 0;
     }
 }
 @media (min-width: 768px){
@@ -102,57 +94,51 @@
      .footer {
         @include flexbox;
         flex-direction: row;
-        width: 768px;
         height: 143px;
         align-items: center;
         justify-content: space-around;
+        margin: 0 auto;
 
-  &__logo{
-  width: 102px;
-  height: 34px;
-  background: url('/src/img/sprites.png') -603px -88px;
-//   margin-top: 51px;
-//   margin-left: 50px;
-  cursor: pointer;
-  }
-  &__social{
-      border: none;
-      margin: 0;
-//   margin-top: 63px;
-//   margin-left: 69px;
-  }
-//   &__copyright{
-//   margin-top: 38px;
-//   margin-left: -20px;
-//   }
-  }
+        &__logo{
+            width: 102px;
+            height: 34px;
+            background: url('/src/img/sprites.png') -603px -88px;
+            cursor: pointer;
+        }
+
+        &__social{
+           border: none;
+           height: 35px;
+           margin: 0;
+        }
+
+        i {
+            margin: 0;
+        }
+    }
 }
 @media screen and (min-width: 1024px){
-  .footer {
-  width: 100%;
-@include flexbox;
-margin-top: 105px;
-// justify-content: space-evenly;
-// &__logo{
-//   margin-left: 50px;
-//   }
-  &__logo:hover{
-  background:url('/src/img/sprites.png') -600px -132px;
-  width: 102px;
-  height: 34px;
-  }
-  &__logo:active{
-  opacity:0.3;
-  }
-  &__social{
-//   margin-left: 300px;
-  flex-basis: 200px;
-  margin: 0;
-  }
-//   &__copyright{
-//   margin-left: 140px;
-//   }
-  }
+
+    .footer {
+        width: 100%;
+        @include flexbox;
+        margin-top: 105px;
+
+        &__logo:hover {
+            background:url('/src/img/sprites.png') -600px -132px;
+            width: 102px;
+            height: 34px;
+        }
+
+        &__logo:active {
+            opacity:0.3;
+        }
+
+        &__social {
+            flex-basis: 200px;
+            margin: 0;
+        }
+    }
 
 }
 

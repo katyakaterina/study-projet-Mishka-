@@ -4,7 +4,7 @@
 //max-width: 1150px;
 //width: 100%;
     margin: 0 auto;
-    margin-top: -510px;////изменить
+    //margin-top: -510px;////изменить
    // width: 320px;
 &__title {
     //display: block;
@@ -466,7 +466,7 @@ border: 2px solid #63d1bb;
 .main-catalog{
   width: 768px;
   margin-top: -35px;
-  margin-top: -515px; ///////как то надо изменить))
+  //margin-top: -515px; ///////как то надо изменить))
 &__title {
 @include textLg(43px, 700);
     padding:95px 0px 70px 198px;
@@ -708,7 +708,7 @@ padding-bottom: 150px;
 }
 }
 }
-@media screen and (min-width: 1024px)  {
+@media screen and (min-width: 1150px)  {
 body{
 //box-sizing:border-box;
 //border: 1px solid red;

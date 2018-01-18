@@ -56,33 +56,26 @@
                    <!-- </nav> -->
             </div>
             <div class="menu-bottom">
-                
-                <!-- <picture>
+                 <!-- <picture>
                     <source media="(min-width: 320px)" 
-                            srcset="src/img/header-mobile-1x.jpg, src/img/header-mobile-2x.jpg 2x">
-                    <img sizes="(min-width: 320px)" 
-                         srcset="src/img/header-mobile-1x.jpg" 
-                         srcset="src/img/header-mobile-2x.jpg" alt="">
+                            srcset="src/img/header-mobile-1x.jpg 1x, src/img/header-mobile-2x.jpg 2x">
                     <source media="(min-width: 768px)" 
                             srcset="src/img/header-tablet-1x.jpg 1x, src/img/header-tablet-2x.jpg 2x">
-                    <img sizes="(min-width: 768px)" 
-                         srcset="src/img/header-tablet-1x.jpg 768w" 
-                         srcset="src/img/header-tablet-2x.jpg 768w">
                     <source media="(min-width: 1024px)"
                             srcset="src/img/header-desktop-1x.jpg 1x, src/img/header-desktop-2x.jpg 2x">
                     <img sizes="(min-width: 1024px)"
-                         srcset="src/img/header-desktop-1x.jpg 1024w"
-                         srcset="src/img/header-desktop-2x.jpg 1024w">
+                         src="src/img/header-desktop-1x.jpg" alt="Вязаные игрушки">
                 </picture> -->
                 <h1 class="menu-bottom__title">Милые штуки ручной работы для дома</h1>
                 <ul class="menu-bottom__list">
                         <span class="menu-bottom__line"></span>
-                    <span class="menu-bottom__icon1 icon"></span>
                     <li class="menu-bottom__item">
+                        <span class="menu-bottom__icon1 icon"></span>
                         <a class="menu-bottom__link" href="#"><p class="menu-bottom__caption">Предметы интерьера</p></a>
                     </li>
-                    <span class="menu-bottom__icon2 icon"></span>
+                    
                     <li class="menu-bottom__item">
+                        <span class="menu-bottom__icon2 icon"></span>
                         <a class="menu-bottom__link" href="#"><p class="menu-bottom__caption">Детские игрушки</p></a>
                     </li>
                </ul>
@@ -111,6 +104,9 @@
                        </tr>
                    </table>
                 </div>
+                <picture>
+                    
+                </picture>
                    <img class="catalog-card__img" src="src/img/triple-mobile-1x.jpg" width="" height="" alt="Вязаные корзинки">
                 <div class="catalog-card__to-buy">
                     <p class="catalog-card__price">Цена: 990 руб.</p>
@@ -158,17 +154,6 @@
        </div>
     </section>
     <section class="contacts">
-        <!-- <h3 class="contacts__title">Контакты</h3>
-        <table class="contacts__table table">
-            <tr class="contacts__row table__row">
-                <td class="contacts__cell table__cell">e-mail:</td>
-                <td class="contacts__cell table__cell"><a class="contacts__link" href="#">info@mimimishkashop.ru</a></td>
-            </tr>
-            <tr class="contacts__row table__row">
-                <td class="contacts__cell table__cell">адрес:</td>
-                <td class="contacts__cell table__cell">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-            </tr>
-        </table> -->
         <h3 class="contacts__title">Контакты</h3>
         <div class="contacts__box">
             <div class="contacts__wrap">
@@ -182,6 +167,17 @@
        </div>
 
         <div class="map">
+            <picture>
+                <source media="(min-width: 320px) and (orientation: portrait)" 
+                srcset="src/img/map-mobile-1x.jpg 1x, src/img/map-mobile-2x.jpg 2x" type="image/jpg">
+                <!-- <img sizes="(min-width: 320px)" src="src/img/map-mobile-1x.jpg" alt="Map"> -->
+                <source media="(min-width: 768px)and (orientation: portrait)"
+                srcset="src/img/map-tablet-1x.jpg 1x, src/img/map-tablet-2x.jpg 2x" type="image/jpg">
+                <!-- <img sizes="(min-width: 768px)" src="src/img/map-tablet-1x.jpg" alt="Map"> -->
+                <source media="(min-width: 1024px)"
+                srcset="src/img/map-desktop-1x.jpg 1x, src/img/map-desktop-2x.jpg 2x" type="image/jpg">
+                <img sizes="(min-width: 1024px)" src="src/img/map-desktop-1x.jpg">
+            </picture>
             <img class="map__img" src="" width="" height="" alt="Карта">
         </div>
         <button class="btn contacts__btn">Напишите нам</button>

@@ -16,18 +16,6 @@
     opacity: 0.3;
   }
 
-  // &__logo-mobile {
-  //   margin: 22px auto;
-  // }
-
-  // &__logo-desktop {
-  //   display: none;
-  // }
-
-  // &__logo-tablet {
-  //   display: none;
-  // }
-
   &__logo-img{
     display: block;
     background: url(/src/img/sprites.png) no-repeat;
@@ -115,14 +103,16 @@
 }
 form.search-form {
   position: relative;
-  width: 45px;
+  width: 200px;
   height: 45px;
+  margin-left: 20px;
 }
 input.search-input{
-  margin-left: 20px;
+  // margin-left: 20px;
   width: 180px;
-  height: 45px;
+  height: 35px;
   outline: none;
+  border: none;
 }
 input.search-input::placeholder{
   @include titleSm;
@@ -132,8 +122,8 @@ input.search-input::placeholder{
 button.search-submit{
   border: none;
   position: absolute;
-  top: 10px;
-  left: -26px;
+  top: 8px;
+  left: -42px;
   cursor: pointer;
   background: url(/src/img/sprites.png) no-repeat;
   background-position: -16px -261px ;
@@ -148,8 +138,8 @@ button.search-submit:hover {
 	width: 18px;
   height: 18px;
   position: absolute;
-  top: 10px;
-  left: -26px;
+  top: 8px;
+  left: -42px;
 
 }
 button.search-submit:active {
@@ -158,8 +148,8 @@ button.search-submit:active {
 	width: 18px;
 	height: 18px;
   position: absolute;
-  top: 10px;
-  left: -26px;
+  top: 8px;
+  left: -42px;
 }
 
 label.search-label {
@@ -337,18 +327,18 @@ input.search-input:focus{
 }
 
 button.search-submit{
-  top: 0;
-  left: 15px;
+  top: 0px;
+  left: 14px;
 }
 
 button.search-submit:hover{
-  top: 0;
-  left: 15px;
+  top: 0px;
+  left: 14px;
 }
 
 button.search-submit:active{
-  top: 0;
-  left: 15px;
+  top: 0px;
+  left: 14px;
 }
 
 input.search-input::placeholder{

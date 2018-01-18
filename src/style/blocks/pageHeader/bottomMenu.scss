@@ -26,27 +26,27 @@
         background-color: $greenLeft;
     }
 
-    &__item:hover {
+    &__item:hover  {
         background-color: $greenLeftHover;
         height: 108px;
+        
+        &__icon1:hover{
+            opacity: 1;
+            margin: 20px 0 0 230px;
+        }  
     }
 
     &__item:last-child:hover {
         background-color: $greenRightHover;
+
+        &__icon2:hover {
+            opacity: 1;
+            margin: 20px 0 0 220px;
+        } 
     }
 
     &__caption:active {
         opacity: 0.4;
-    }
-
-    &__icon1:hover {
-        opacity: 1;
-        margin: 20px 0 0 230px;
-    }
-
-    &__icon2:hover {
-        opacity: 1;
-        margin: 20px 0 0 220px;
     }
 
     &__icon:active {
@@ -61,7 +61,6 @@
         height: 62px;
         position: absolute;
         margin: 25px 0 0 230px;
-        opacity: 0.6;
     }
 
     &__icon2 {
@@ -72,7 +71,6 @@
         height: 61px;
         position: absolute;
         margin: 25px 0 0 220px;
-        opacity: 0.6;
     }
 
     &__link {
@@ -88,13 +86,9 @@
         line-height: calc(24/19);
     }
 
-
     &__item:last-child {
         border: 1px solid $greenRight;
         background-color: $greenRight;
-
-
-
     }
 }
 @media (min-width: 768px) {
@@ -132,8 +126,8 @@
         &__line {
             position: absolute;
             width: 768px;
-            height: 117px;
-            top: 2px;
+            height: 16px;
+            top: 105px;
             left: -50px;
         }
 
@@ -163,8 +157,9 @@
             background-image: radial-gradient(circle at 10px 15px, $white 14px, transparent 15px);
         }
 
-        &__line:hover{
-            top: 7px;
+        &__item:hover {
+            height: 122px;
+            margin-top: -5px; 
         }
 
         &__icon1{
@@ -173,13 +168,7 @@
 
         &__icon2 {
             position: absolute;
-            margin: 25px 0 0 570px;
-             z-index: 10;
-        }
-
-        &__icon2:hover{
-            margin: 20px 0 0 570px;
-           
+            z-index: 10;
         }
 
         &__caption {
@@ -209,10 +198,10 @@
 
         &__line{
             position: absolute;
-            height: 119px;
+            height: 16px;
             width: 1150px;
             z-index: 10;
-            top: 0px;
+            top: 105px;
             left: -50px;
         }
 
@@ -242,9 +231,12 @@
             background-image: radial-gradient(circle at 10px 15px, $white 14px, transparent 15px);
         }
 
-        &__line:hover{
-            top: 5px;
+        &__item:hover {
+            height: 124px;
+            margin-top: -5px; 
+            background-color: $greenLeftHover;
         }
+
 
         &__item:last-child {
             background-color: $greenRight;
@@ -262,7 +254,7 @@
         }
 
         &__icon2 {
-            margin: 25px 0 0 950px;
+            margin: 25px 0 0 435px;
             z-index: 10;
         }
 
@@ -271,7 +263,7 @@
         }
 
         &__icon2:hover {
-            margin: 20px 0 0 950px;
+            margin: 20px 0 0 435px;
         }
   
     }

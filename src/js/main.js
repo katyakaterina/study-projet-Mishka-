@@ -25,3 +25,13 @@ if (event.target == modal){
 modal.style.display = "none";
 }
 }};
+
+// var modal = document.querySelector('#myModal');
+// var button = document.querySelector('#myBtn');
+
+// button.addEventListener('click', function (e) {
+//     e.preventDefault();
+//     console.log(modal.classList.contains('open'));
+//     modal.classList.toggle('open');
+
+// });

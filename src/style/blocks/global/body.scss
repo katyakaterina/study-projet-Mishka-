@@ -4,12 +4,12 @@ body {
     min-width: 320px;
     max-width: 1200px;
     width: 100%;
-    
 }
 
 main {
     margin: 0 auto;
-    width: 260px;
+    // width: 260px;
+    width: 80%;
 }
 img{
     max-width: 100%;
@@ -20,7 +20,8 @@ img{
     header{        
         margin: 0 auto;
         min-width: 320px;
-    max-width: 1200px;
+        max-width: 1200px;
+        width: 100%;
     }
 
     body {
@@ -29,22 +30,23 @@ img{
         max-width: 1200px;
         width: 100%;
     }
-    main {
-        width: 668px;
-        margin: 0 auto; 
-    }
+    // main {
+    //     width: 668px;
+    //     margin: 0 auto; 
+    // }
 }
 @media (min-width: 1024px){
 
     body {
         margin: 0 auto;
-    min-width: 320px;
-    max-width: 1200px;
-    width: 100%;
+        min-width: 320px;
+        max-width: 1200px;
+        width: 100%;
     }
-    main {
-        min-width: 1050px;
-        margin: 0 auto;
 
-    }
+    // main {
+    //     min-width: 1050px;
+    //     margin: 0 auto;
+
+    // }
 }

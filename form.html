@@ -46,7 +46,7 @@
    <main class="main">
        <div class="page-form">
             <h2 class="page-form__title">Вязание на заказ</h2>
-<div class="main-catalog__title-line"></div>
+<div class="page-form__title-line"></div>
           <div class="page-form__customer">
             <!--<form class="page-form__customer">-->
                 <p class="page-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
@@ -111,31 +111,35 @@
                             </div>
 <div class="customer__name-grup">
                              <label class="customer__label">Имя:</label>
-                             <input class="customer__input" type="text" placeholder="Введите ваше имя*">
+                             <input class="customer__input " type="text" placeholder="Введите ваше имя*">
 </div>
 <div class="customer__name-grup">
                              <label class="customer__label">Фамилия:</label>
-                             <input class="customer__input" type="text" placeholder="Укажите фамилию*">
+                             <input class="customer__input customer__input--line" type="text" placeholder="Укажите фамилию*">
 </div>
 <div class="customer__name-grup">
                              <label class="customer__label">Отчество:</label>
-                             <input class="customer__input" type="text" placeholder="Отчество, если желаете">
+                             <input class="customer__input customer__input--line" type="text" placeholder="Отчество, если желаете">
 </div>
                         </div>
                         <div class="customer__data">
+<div class="customer__data customer__data--block">
                           <div class="filters__line">
-                             <h3 class="filters__title">Тел</h3>
+                             <h3 class="filters__title filters__title--data">Тел</h3>
                             </div>
                             <div class="customer__img-phone"></div>
                              <input class="customer__phone" type="tel"  name="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
                               <label class="customer__number"></label>
                           <div class="filters__line">
-                             <h3 class="filters__title">Email</h3>
+                             <h3 class="filters__title filters__title--data">E-mail</h3>
                           </div>
                           <div class="customer__img-email"></div>
                              <input class="customer__email" type="email"  name="email" placeholder="Ваш Email*">
-                             <!--<label class="customer__email"></label>-->
-                            <div class="filters__line">
+                             <label class="customer__mail"></label>
+</div>
+
+
+                          <div class="filters__line">
                               <h3 class="filters__title">Доп</h3>
                             </div>
                              <textarea class="customer__extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
@@ -145,10 +149,11 @@
                 <span class="page-form__note">*Поля обязательны для заполнения</span>
                 <button class="btn page-form__btn">Отправить заказ</button>
             <!--</form>-->
-</div>
+    </div>
        </div>
    </main>
    <footer class="footer">
+<div class="footer__logo"></div>
         <div class="footer__social">
             <a class="footer__link" href="#">
                 <i class="footer__insta" src="" width="" height="" alt="instagram"></i>

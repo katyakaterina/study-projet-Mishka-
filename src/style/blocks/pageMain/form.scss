@@ -394,11 +394,10 @@ opacity: 0;
   @include textLg(19px, 700);
   line-height: 18px;
 @include flexbox;
-
-  margin-left: 30px;
+margin-left: 30px;
   cursor: pointer;
   margin-top: -7px;
- // margin-bottom: 38px;
+
 }
 }
 .filter{
@@ -462,7 +461,6 @@ line-height: 18px;
 .customer{
 margin-top: 55px;
 margin-left: 50px;
-
 &__name-grup{
 display: flex;
 margin-left: 140px;
@@ -473,7 +471,6 @@ margin-top: 40px;
 line-height: 18px;
 margin-right: 50px;
 margin-top: -40px;
-
 }
 &__input{
 padding-left: 16px;
@@ -489,8 +486,6 @@ margin-left: -30px;
 width: 360px;
 }
 &__data--block {
-
-
 width: 768px;
 height: 228px;
 background-color: #f1f1f1;

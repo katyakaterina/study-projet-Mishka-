@@ -29,28 +29,25 @@
     &__item:hover  {
         background-color: $greenLeftHover;
         height: 108px;
+        margin-top: -5px;
         
         &__icon1:hover{
             opacity: 1;
-            margin: 20px 0 0 230px;
+            // margin: 20px 0 0 230px;
         }  
-    }
+    }      
 
     &__item:last-child:hover {
         background-color: $greenRightHover;
 
         &__icon2:hover {
             opacity: 1;
-            margin: 20px 0 0 220px;
+            // margin: 20px 0 0 220px;
         } 
     }
 
     &__caption:active {
         opacity: 0.4;
-    }
-
-    &__icon:active {
-        opacity: 0.3;
     }
 
     &__icon1 {
@@ -256,14 +253,6 @@
         &__icon2 {
             margin: 25px 0 0 435px;
             z-index: 10;
-        }
-
-        &__icon1:hover {
-            margin: 20px 0 0 450px;
-        }
-
-        &__icon2:hover {
-            margin: 20px 0 0 435px;
         }
   
     }

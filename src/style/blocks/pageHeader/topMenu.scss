@@ -1,6 +1,8 @@
 
 .menu-top {
-//display: none;
+
+  
+
   &__logo {
     text-align: center;
     height: 59px;
@@ -101,6 +103,7 @@
     opacity: 0.1;
   }
 }
+
 form.search-form {
   position: relative;
   width: 200px;
@@ -160,27 +163,10 @@ button.search-submit:hover{
   cursor: pointer;
 }
 
-.hamburger {
-  display: none;
-}
-
 @media (min-width: 768px) {
 
-       .menu-top {
-          height: 89px;
-
-    // &__logo-tablet{
-    //   display: block;
-    //   margin: 23px 0 0 50px;
-    // }
-
-    // &__logo-mobile {
-    //   display: none;
-    // }
-
-    // &__logo-desktop {
-    //   display: none;
-    // }
+  .menu-top {
+    height: 89px;
 
     &__logo {
       height: 90px;
@@ -344,7 +330,12 @@ button.search-submit:active{
 input.search-input::placeholder{
   font-size: 10px;
 }
+.hamburger-btn.closed{
+  display: none;
 }
+
+}
+
 
 
 
@@ -431,8 +422,116 @@ input.search-input::placeholder{
     }
 
   }
+  .hamburger-btn.closed{
+  display: none;
+}
 
 }
+
+.hamburger-btn {
+  display: inline-block;
+  overflow: visible;
+  margin: 10px;
+  padding: 15px;
+  cursor: pointer;
+  text-transform: none;
+  color: inherit;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+.hamburger {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.openBtn{
+  top: 50%;
+  display: block;
+  margin-top: -2px;
+  display: block;
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #000;
+}
+
+.openBtn:before{
+  display: block;
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #000;
+  top: -10px;
+}
+.openBtn:after{
+  display: block;
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #000;
+  bottom: -10px;
+}
+
+.closeBtn::before{
+  display: block;
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #000;
+  top: -10px;
+  transform: rotate(45deg);
+
+}
+.closeBtn::after{
+  display: block;
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #000;
+  top: -10px;
+  transform: rotate(-45deg);
+}
+
+.menu-top__list.closed{
+  display: none;
+}
+.menu-top__list.opened{
+  display: block;
+}
+.menu-top__list.closed.open{
+  display: block;
+
+}
+.hamburger-btn.opened{
+  border-top-color: transparent;
+}
+
+.closeBtn{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
 
 
 

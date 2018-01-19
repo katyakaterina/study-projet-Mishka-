@@ -12,14 +12,15 @@
 <body>
     <header class="header">
         <nav class="nav">
+                <button class="hamburger-btn closed" id="buttonMenu">
+                        <span class="hamburger">
+                            <span class="openBtn"></span>
+                            <span class="closeBtn"></span>
+                        </span>  
+                    </button> 
             <div class="menu-top">
-                <div class="hamburger">
-                    <button class="hamburger-btn">
-                        <span class="hamburger-box"></span>
-                    </button>
-                </div>
                     <!-- <nav class="hamburger__nav"> -->
-                        <ul class="menu-top__list">
+                        <ul class="menu-top__list closed" id="menuList">
                             <div class="menu-top__logo">
                                 <a class="menu-top__logo-link" href="index.html"><i class="menu-top__logo-img"></i></a>
                            </div>
@@ -217,5 +218,6 @@
     </ul>
     <button class="btn modal-ctg__btn">Добавить</button>
 </div>
+<script type="text/javascript" src="src/js/hamburger.js"></script>
 </body>
 </html>

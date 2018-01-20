@@ -8,8 +8,8 @@ body {
 
 main {
     margin: 0 auto;
-    // width: 260px;
     width: 80%;
+    
 }
 img{
     max-width: 100%;
@@ -30,10 +30,10 @@ img{
         max-width: 1200px;
         width: 100%;
     }
-    // main {
-    //     width: 668px;
-    //     margin: 0 auto; 
-    // }
+    main {
+        width: 100%;
+        margin: 0 auto; 
+    }
 }
 @media (min-width: 1024px){
 
@@ -44,9 +44,8 @@ img{
         width: 100%;
     }
 
-    // main {
-    //     min-width: 1050px;
-    //     margin: 0 auto;
-
-    // }
+    main {
+        width: 100%;
+        margin: 0 auto;
+    }
 }

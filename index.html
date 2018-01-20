@@ -11,19 +11,20 @@
 </head>
 <body>
     <header class="header">
-        <nav class="nav">
-                <button class="hamburger-btn closed" id="buttonMenu">
+        <button class="hamburger-btn closed" id="buttonMenu">
                         <span class="hamburger">
                             <span class="openBtn"></span>
                             <span class="closeBtn"></span>
                         </span>  
-                    </button> 
+                    </button>
+        <nav class="nav">
             <div class="menu-top">
+                    
                     <!-- <nav class="hamburger__nav"> -->
                         <ul class="menu-top__list closed" id="menuList">
                             <div class="menu-top__logo">
-                                <a class="menu-top__logo-link" href="index.html"><i class="menu-top__logo-img"></i></a>
-                           </div>
+                            <a class="menu-top__logo-link" href="index.html"><i class="menu-top__logo-img"></i></a>
+                       </div>
                            <li class="menu-top__item">
                                <a class="menu-top__link menu-top__link--catalog" href="catalog.html">
                                    Каталог товаров
@@ -57,17 +58,16 @@
                    <!-- </nav> -->
             </div>
             <div class="menu-bottom">
-                 <!-- <picture>
-                    <source media="(min-width: 320px)" 
-                            srcset="src/img/header-mobile-1x.jpg 1x, src/img/header-mobile-2x.jpg 2x">
-                    <source media="(min-width: 768px)" 
-                            srcset="src/img/header-tablet-1x.jpg 1x, src/img/header-tablet-2x.jpg 2x">
-                    <source media="(min-width: 1024px)"
-                            srcset="src/img/header-desktop-1x.jpg 1x, src/img/header-desktop-2x.jpg 2x">
-                    <img sizes="(min-width: 1024px)"
-                         src="src/img/header-desktop-1x.jpg" alt="Вязаные игрушки">
-                </picture> -->
                 <h1 class="menu-bottom__title">Милые штуки ручной работы для дома</h1>
+                <!-- <picture class="menu-bottom__background">
+                        <source media="(min-width: 320px) and (orientation: portrait)" 
+                                srcset="src/img/header-mobile-1x.jpg 1x, src/img/header-mobile-2x.jpg 2x" type="image/jpg">
+                        <source media="(min-width: 768px) and (orientation: portrait)"
+                                srcset="src/img/header-tablet-1x.jpg 1x, src/img/header-tablet-2x.jpg 2x" type="image/jpg">
+                        <source media="(min-width: 1024px)"
+                                srcset="src/img/header-desktop-1x.jpg 1x, src/img/header-desktop-2x.jpg 2x" type="image/jpg">
+                        <img class="menu-bottom__bg" src="src/img/header-desktop-1x.jpg" alt="Вязаные игрушки">
+                    </picture> -->
                 <ul class="menu-bottom__list">
                         <span class="menu-bottom__line"></span>
                     <li class="menu-bottom__item">
@@ -106,9 +106,14 @@
                    </table>
                 </div>
                 <picture>
-                    
+                    <source media="(min-width: 320px) and (orientation: portrait)" 
+                    srcset="src/img/triple-mobile-1x.jpg 1x, src/img/triple-mobile-2x.jpg 2x" type="image/jpg">
+                    <source media="(min-width: 768px) and (orientation: portrait)"
+                    srcset="src/img/triple-tablet-1x.jpg 1x, src/img/triple-tablet-2x.jpg 2x" type="image/jpg">
+                    <source media="(min-width: 1024px)"
+                    srcset="src/img/triple-desktop-1x.jpg 1x, src/img/triple-desktop-2x.jpg 2x" type="image/jpg">
+                    <img class="catalog-card__img" src="src/img/triple-desktop-1x.jpg" width="" height="" alt="Вязаные корзинки">
                 </picture>
-                   <img class="catalog-card__img" src="src/img/triple-mobile-1x.jpg" width="" height="" alt="Вязаные корзинки">
                 <div class="catalog-card__to-buy">
                     <p class="catalog-card__price">Цена: 990 руб.</p>
                     <button class="btn catalog-card__btn" >Заказать</button>
@@ -127,31 +132,35 @@
           </ul>
      </section>
      <section class="slider">
-        <div class="slider__slider-btn">
-            <input class="button" type="radio" name="radio-btn" id="btn-1" checked>
-            <label class="slider__arrow-btn" for="btn-1"></label>
-            <input class="button" type="radio" name="radio-btn" id="btn-2">
-            <label class="slider__arrow-btn" for="btn-2"></label>
-            <input class="button" type="radio" name="radio-btn" id="btn-3">
-            <label class="slider__arrow-btn" for="btn-3"></label>
+
+         <div class="slider__bg">
             <div class="slider__slides">
                 <h2 class="slider__title">Отзывы</h2>
-                 <div class="slider__slide">
+                <div class="slider__slide1">
+                     <!-- <picture>
+                         <source media="(min-width: 768px) and (orentation: portrait)"
+                         srcset="src/img/review-1x.jpg 1x, src/img/review-2x.jpg 2x" width="355" height="455">
+                         <img src="src/img/review-1x.jpg" width="355" height="455" alt="">
+                     </picture> -->
                     <p class="slider__comment">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
                         как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
                         и мои фотографии сразу стали более стильными, а также набирают больше лайков!
                     </p>
                     <span class="slider__auth">Анастасия Красильникова</span>
                     <span class="slider__nick">@misssssiskras</span>
-                 </div>
-                 <div class="slider__slide">
+                </div>
+                 <div class="slider__slide2">
                     <p class="slider__comment"></p>
                 </div>
-                <div class="slider__slide">
+                <div class="slider__slide3">
                     <p class="slider__comment"></p>
                </div>
+               <div class="slider__controls">
+                    <button class="slider__btn-left" id="btn-1"></button>
+                    <button class="slider__btn-right" id="btn-2"></button>
+               </div>
+             <button class="btn slider__write">Написать</button>
            </div>
-           <button class="btn slider__btn">Написать</button>
        </div>
     </section>
     <section class="contacts">
@@ -171,15 +180,14 @@
             <picture>
                 <source media="(min-width: 320px) and (orientation: portrait)" 
                 srcset="src/img/map-mobile-1x.jpg 1x, src/img/map-mobile-2x.jpg 2x" type="image/jpg">
-                <!-- <img sizes="(min-width: 320px)" src="src/img/map-mobile-1x.jpg" alt="Map"> -->
+                <!-- <img sizes="(min-width: 320px)" src="src/img/map-mobile-1x.jpg"> -->
                 <source media="(min-width: 768px)and (orientation: portrait)"
                 srcset="src/img/map-tablet-1x.jpg 1x, src/img/map-tablet-2x.jpg 2x" type="image/jpg">
-                <!-- <img sizes="(min-width: 768px)" src="src/img/map-tablet-1x.jpg" alt="Map"> -->
+                <!-- <img sizes="(min-width: 768px)" src="src/img/map-tablet-1x.jpg"> -->
                 <source media="(min-width: 1024px)"
                 srcset="src/img/map-desktop-1x.jpg 1x, src/img/map-desktop-2x.jpg 2x" type="image/jpg">
-                <img sizes="(min-width: 1024px)" src="src/img/map-desktop-1x.jpg">
+                <img src="src/img/map-desktop-1x.jpg">
             </picture>
-            <img class="map__img" src="" width="" height="" alt="Карта">
         </div>
         <button class="btn contacts__btn">Напишите нам</button>
     </section>

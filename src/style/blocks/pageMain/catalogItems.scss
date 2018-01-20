@@ -266,6 +266,53 @@ border: 2px solid #63d1bb;
 }
 
 // index ___________________________________
+
+.slider{
+
+  &__controls{
+    margin-bottom: 40px; 
+
+  }
+  &__btn-left{
+    background: url(/src/img/sprites.png)  -193px -100px no-repeat;
+    width: 125px;
+    height: 26px;
+    border: 1px solid $frameMenu;
+    padding: 23px 0px 23px 0px;
+  }
+
+  &__btn-right{
+    background: url(/src/img/sprites.png) -277px -99px no-repeat;
+    width: 126px;
+    height: 26px;
+    border: 1px solid $frameMenu;
+    padding: 23px 0px 23px 0px;
+  }
+
+  &__btn-left:hover{
+    background: url(/src/img/sprites.png) -193px -150px no-repeat;
+    width: 125px;
+    height: 26px;
+  }
+
+  &__btn-right:hover{
+    background: url(/src/img/sprites.png) -276px -148px no-repeat;
+    width: 126px;
+    height: 26px;
+  }
+
+  &__btn-left:active {
+    background: url(/src/img/sprites.png) -226px -211px no-repeat;
+    width: 125px;
+    height: 26px;
+  }
+
+  &__btn-right:active {
+    background: url(/src/img/sprites.png) -319px -209px no-repeat;
+    width: 126px;
+    height: 26px;
+  }
+}
 .catalog-card {
 
   &__item {
@@ -306,7 +353,7 @@ border: 2px solid #63d1bb;
 
 .btn {
   border: 2px solid $darkGray;
-  background-color: transparent;
+  background-color: $white;
   width: 256px;
   height: 48px;
   @include titleSm;
@@ -346,17 +393,20 @@ border: 2px solid #63d1bb;
 
   .catalog-card {
 
-      &__item {
-        @include flexbox;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
+    width: 668px;
+    margin: 0 auto;
 
-      &__title {
-        @include titleXlTab;
-        align-self: flex-start;
-        margin: 0 0 59px 0;
-      }
+    &__item {
+      @include flexbox;
+      flex-wrap: wrap;
+      justify-content: space-between;    
+    }
+
+    &__title {
+      @include titleXlTab;
+      align-self: flex-start;
+      margin: 0 0 59px 0;
+    }
 
       &__hot-sale {
         @include titleSm;
@@ -378,7 +428,7 @@ border: 2px solid #63d1bb;
       }
 
       &__detail {
-        min-width: 50%;
+        min-width: 30%;
       }
 
       &__descr {
@@ -389,6 +439,118 @@ border: 2px solid #63d1bb;
         width: 285px;
       }
   }
+
+  .slider {
+
+    margin: 0 auto;
+    padding-top: 80px;
+    width: 768px;
+    height: 455px;
+
+    &__bg {
+      background-image: url(/src/img/review-1x.jpg);
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: 315px 455px;
+      height: 455px;
+    }
+
+    &__title{
+      width: 110px;
+      margin: 0;
+      padding-top: 80px;
+    }
+
+    &__slides{
+      display: flex;
+      flex-direction: column;
+      width: 606px;
+      margin-left: 50px;
+    }
+
+    &__slide1 {
+      display: flex;
+      flex-direction: column;
+      order: 3;
+    }
+
+    &__slide2{
+      display: none;
+    }
+    &__slide3{
+      display: none;
+    }
+
+    &__write{
+      align-self: flex-end;
+      order: 2;
+      width: 180px;
+      margin: 0;
+    }
+
+    &__comment{
+      width: 606px;
+      margin-bottom: 40px;
+    }
+
+    &__controls {
+      align-self: flex-end;
+      order: 4;
+      position: relative;
+    top: -25px;
+    }
+
+    &__btn-left{
+      background: url(/src/img/sprites.png)  -225px -109px no-repeat;
+      width: 50px;
+      height: 26px;
+      border: none;
+      outline: none;
+      margin-right: 20px;
+    }
+  
+    &__btn-right{
+      background: url(/src/img/sprites.png) -321px -108px no-repeat;
+      width: 50px;
+      height: 26px;
+      border: none;
+      outline: none;
+      
+    }
+  
+    &__btn-left:hover{
+      background: url(/src/img/sprites.png) -226px -159px no-repeat;
+      width: 50px;
+      height: 26px;
+    }
+  
+    &__btn-right:hover{
+      background: url(/src/img/sprites.png) -320px -157px no-repeat;
+      width: 50px;
+      height: 26px;
+    }
+  
+    &__btn-left:active {
+      background: url(/src/img/sprites.png) -226px -211px no-repeat;
+      width: 50px;
+      height: 26px;
+    }
+  
+    &__btn-right:active {
+      background: url(/src/img/sprites.png) -319px -209px no-repeat;
+      width: 50px;
+      height: 26px;
+    }
+
+
+
+
+   
+
+
+  }
+
+     
     //  &__item {
     //    @include textLg(17px, 700);
     //    line-height: 24px;

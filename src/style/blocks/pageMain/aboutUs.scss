@@ -97,16 +97,37 @@
       // margin: 20px;
     }
 }
-  .slider {
+
+.slider {
+
+  // &__slides{
+  //   display: inline-block;
+  // }
   
+  &__slide1{
+    position: relative;
+  }
+  
+  &__slide2{
+    display: none;
+    position: relative;
+  }
+
+  &__slide3{
+    display: none;
+    position: relative;
+  }
+
     &__title {
       @include titleLMob;
     }
+
     &__comment {
       font-size: 15px;
       line-height: calc(30/15);
       color: $darkGray;
     }
+
     &__auth {
       @include titleSm;
       line-height: calc(24/17);
@@ -115,6 +136,52 @@
       font-size: 17px;
       line-height: calc(30/17);
       color: $darkGray;
+    }
+  
+    &__controls{
+      margin-bottom: 40px; 
+    }
+
+    &__btn-left{
+      background: url(/src/img/sprites.png)  -193px -100px no-repeat;
+      width: 125px;
+      height: 26px;
+      border: 1px solid $frameMenu;
+      padding: 23px 0px 23px 0px;
+      left: 0;
+    }
+  
+    &__btn-right{
+      background: url(/src/img/sprites.png) -277px -99px no-repeat;
+      width: 126px;
+      height: 26px;
+      border: 1px solid $frameMenu;
+      padding: 23px 0px 23px 0px;
+      right: 0;
+    }
+  
+    &__btn-left:hover{
+      background: url(/src/img/sprites.png) -193px -150px no-repeat;
+      width: 125px;
+      height: 26px;
+    }
+  
+    &__btn-right:hover{
+      background: url(/src/img/sprites.png) -276px -148px no-repeat;
+      width: 126px;
+      height: 26px;
+    }
+  
+    &__btn-left:active {
+      background: url(/src/img/sprites.png) -226px -211px no-repeat;
+      width: 125px;
+      height: 26px;
+    }
+  
+    &__btn-right:active {
+      background: url(/src/img/sprites.png) -319px -209px no-repeat;
+      width: 126px;
+      height: 26px;
     }
   }
 
@@ -127,6 +194,7 @@
 
     &__title {
       align-self: flex-start;
+      @include titleXlTab;
     }
    
 
@@ -168,14 +236,145 @@
     order: 6;
   }
 }
+
+.slider {
+
+  margin: 0 auto;
+  padding-top: 80px;
+  width: 768px;
+  height: 455px;
+
+  &__bg {
+    background-image: url(/src/img/review-1x.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 315px 455px;
+    height: 455px;
+  }
+
+  &__caption{
+    width: 130px;
+    @include titleXlTab;
+    margin: 0;
+    padding-top: 80px;
+  }
+
+  &__slides{
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+    margin-left: 50px;
+  }
+
+  &__slide1 {
+    display: flex;
+    flex-direction: column;
+    order: 3;
+  }
+
+  &__slide2{
+    display: none;
+  }
+  &__slide3{
+    display: none;
+  }
+
+  &__write{
+    align-self: flex-end;
+    order: 2;
+    width: 180px;
+    margin: 0;
+  }
+
+  &__comment{
+    @include descrTablet;
+    width: 606px;
+    margin-bottom: 40px;
+  }
+
+  &__user{
+    width: 245px;
+  }
+
+  &__controls {
+    align-self: flex-end;
+    order: 4;
+    position: relative;
+    top: -25px;
+  }
+
+  &__btn-left{
+    background: url(/src/img/sprites.png)  -225px -109px no-repeat;
+    width: 50px;
+    height: 26px;
+    border: none;
+    outline: none;
+    margin-right: 20px;
+  }
+
+  &__btn-right{
+    background: url(/src/img/sprites.png) -321px -108px no-repeat;
+    width: 50px;
+    height: 26px;
+    border: none;
+    outline: none;
+    
+  }
+
+  &__btn-left:hover{
+    background: url(/src/img/sprites.png) -226px -159px no-repeat;
+    width: 50px;
+    height: 26px;
+  }
+
+  &__btn-right:hover{
+    background: url(/src/img/sprites.png) -320px -157px no-repeat;
+    width: 50px;
+    height: 26px;
+  }
+
+  &__btn-left:active {
+    background: url(/src/img/sprites.png) -226px -211px no-repeat;
+    width: 50px;
+    height: 26px;
+  }
+
+  &__btn-right:active {
+    background: url(/src/img/sprites.png) -319px -209px no-repeat;
+    width: 50px;
+    height: 26px;
+  }
+}
 }
 
 @media (min-width: 1024px) {
 
   .about-us{
 
+    &__title{
+      @include titleDesk;
+    }
+
     &__list {
       margin: 0 auto;
+    }
+  }
+
+  .slider {
+
+    width: 1055px;
+    
+    &__caption {
+      @include titleDesk;
+    }
+    
+    &__slides{
+      width: 875px;
+      margin-left: 175px;
+    }
+
+    &__comment {
+      width: 772px;
     }
   }
 }

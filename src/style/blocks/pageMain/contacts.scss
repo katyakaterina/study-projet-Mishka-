@@ -16,6 +16,10 @@
         color: $darkGray;
     }
 
+    &__box {
+        margin-bottom: 25px;
+    }
+
     &__text {
         margin: 0;
         text-transform: lowercase;
@@ -43,13 +47,22 @@
         padding-right: 35px;
     }
 
+    &__btn{
+        margin: 20px 0 0 0;
+    }
+
 }
 
 @media (min-width: 768px) {
 
     .contacts {
         width: 668px;
-        margin: 0 auto;
+        margin: 150px 0 0 50px;
+
+        &__title{
+            @include titleXlTab;
+            margin: 0 0 25px 0px;
+        }
 
         &__box {
             display: flex;
@@ -58,17 +71,56 @@
         }
 
         &__wrap {
-            min-width: 45%;
+            min-width: 40%;
             @include descrTablet;
         }
+
+        // &__text:last-child{
+        //     margin: 0 26px 0 0;
+        // }
 
         &__address {
             width: 195px;
             padding: 0;
         }
 
+        &__link{
+            padding: 0;
+        }
+
         &__link:after{
             width: 204px;
         }
+
+        &__icon{
+            background: url(/src/img/sprites.png);
+            background-position: -405px -113px ;
+	        width: 47px;
+            height: 81px;
+            order: 1;
+            position: relative;
+            top: -115px;
+            left: -45px;
+        }
+
+        &__btn {
+            margin: 20px 206px;
+        }
+
+        // img{
+        //     width: 768px;
+        //     height: 457px;
+        // }
     }
+}
+
+@media (min-width: 1024px) {
+
+    .contacts{
+
+        &__title{
+            @include titleDesk;
+        }
+    }
+    
 }

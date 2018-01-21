@@ -45,6 +45,11 @@
    line-height: calc(50/43);
    font-weight: 700;
  }
+ @mixin titleDesk{
+   font-size: 53px;
+   line-height: calc(57/53);
+   font-weight: 700;
+ }
  @mixin flexbox {
   display: -webkit-box;
    display: -moz-box;

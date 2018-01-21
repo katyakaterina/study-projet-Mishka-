@@ -132,28 +132,24 @@
           </ul>
      </section>
      <section class="slider">
-
          <div class="slider__bg">
-            <div class="slider__slides">
-                <h2 class="slider__title">Отзывы</h2>
-                <div class="slider__slide1">
-                     <!-- <picture>
-                         <source media="(min-width: 768px) and (orentation: portrait)"
-                         srcset="src/img/review-1x.jpg 1x, src/img/review-2x.jpg 2x" width="355" height="455">
-                         <img src="src/img/review-1x.jpg" width="355" height="455" alt="">
-                     </picture> -->
+            <div class="slider__slides" id="content">
+                <h2 class="slider__caption">Отзывы</h2>
+                <div class="slide-content slider__slide1">
                     <p class="slider__comment">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
                         как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
                         и мои фотографии сразу стали более стильными, а также набирают больше лайков!
                     </p>
-                    <span class="slider__auth">Анастасия Красильникова</span>
-                    <span class="slider__nick">@misssssiskras</span>
+                    <div class="slider__user">
+                       <span class="slider__auth">Анастасия Красильникова</span>
+                       <span class="slider__nick">@misssssiskras</span> 
+                    </div>
                 </div>
-                 <div class="slider__slide2">
-                    <p class="slider__comment"></p>
+                 <div class="slide-content slider__slide2">
+                    <p class="slider__comment">Второй слайд</p>
                 </div>
-                <div class="slider__slide3">
-                    <p class="slider__comment"></p>
+                <div class="slide-content slider__slide3">
+                    <p class="slider__comment">Третий слайд</p>
                </div>
                <div class="slider__controls">
                     <button class="slider__btn-left" id="btn-1"></button>
@@ -166,6 +162,7 @@
     <section class="contacts">
         <h3 class="contacts__title">Контакты</h3>
         <div class="contacts__box">
+                <span class="contacts__icon"></span>
             <div class="contacts__wrap">
                 <p class="contacts__text">E-mail:</p>
                 <a class="contacts__link" href="#">info@mimimishkashop.ru</a>
@@ -175,13 +172,12 @@
                 <address class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
            </div>
        </div>
-
         <div class="map">
             <picture>
                 <source media="(min-width: 320px) and (orientation: portrait)" 
                 srcset="src/img/map-mobile-1x.jpg 1x, src/img/map-mobile-2x.jpg 2x" type="image/jpg">
                 <!-- <img sizes="(min-width: 320px)" src="src/img/map-mobile-1x.jpg"> -->
-                <source media="(min-width: 768px)and (orientation: portrait)"
+                <source media="(min-width: 768px)"
                 srcset="src/img/map-tablet-1x.jpg 1x, src/img/map-tablet-2x.jpg 2x" type="image/jpg">
                 <!-- <img sizes="(min-width: 768px)" src="src/img/map-tablet-1x.jpg"> -->
                 <source media="(min-width: 1024px)"
@@ -193,22 +189,30 @@
     </section>
 </main>
 <footer class="footer">
-<div class="footer__logo"></div>
-    <div class="footer__social">
-        <a class="footer__link" href="#">
-            <i class="footer__insta" src="" width="" height="" alt="instagram"></i>
-        </a>
-        <a class="footer__link" href="#">
-            <i class="footer__facebook" src="" width="" height="" alt="facebook"></i>
-        </a>
-        <a class="footer__link" href="#">
-            <i class="footer__twitter" src="" width="" height="" alt="twitter"></i>
-        </a>
-    </div>
-    <div class="footer__copyright">
-        <p class="footer__creator">Разработано
-            <img class="footer__icon">
-        </p>
+    <div class="footer__bg">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <a class="footer__logo-link">
+                  <span class="footer__logo-icon"></span>
+                </a>
+           </div>
+           <div class="footer__social">
+                <a class="footer__link footer__insta" href="#">
+                    <!-- <span class="footer__insta"></span> -->
+                </a>
+                <a class="footer__link footer__facebook" href="#">
+                    <!-- <span class="footer__facebook"></span> -->
+                </a>
+                <a class="footer__link footer__twitter" href="#">
+                    <!-- <span class="footer__twitter"></span> -->
+                </a>
+           </div>
+           <div class="footer__copyright">
+               <p class="footer__creator">Разработано
+                   <span class="footer__icon"></span>
+              </p>
+           </div>
+       </div>
     </div>
 </footer>
 <div class="modal-ctg" id="myModal">
@@ -227,5 +231,6 @@
     <button class="btn modal-ctg__btn">Добавить</button>
 </div>
 <script type="text/javascript" src="src/js/hamburger.js"></script>
+<script type="text/javascript" src="src/js/slider.js"></script>
 </body>
 </html>

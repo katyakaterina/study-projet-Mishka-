@@ -1,10 +1,14 @@
+
+
+
+
 body {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     margin: 0 auto;
     min-width: 320px;
     max-width: 1200px;
     width: 100%;
-    
+
 }
 
 main {
@@ -17,7 +21,7 @@ img{
 }
 @media (min-width:768px){
 
-    header{        
+    header{
         margin: 0 auto;
         min-width: 320px;
     max-width: 1200px;
@@ -31,7 +35,7 @@ img{
     }
     main {
         width: 668px;
-        margin: 0 auto; 
+        margin: 0 auto;
     }
 }
 @media (min-width: 1024px){

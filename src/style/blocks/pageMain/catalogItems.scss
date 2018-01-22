@@ -1,23 +1,27 @@
 
 .main-catalog {
   min-width: 320px;
-//max-width: 1150px;
-//width: 100%;
+max-width: 1150px;
+
     margin: 0 auto;
     //margin-top: -510px;////изменить
    // width: 320px;
 &__title {
-    //display: block;
+
 @include textLg(27px, 700);
 padding:55px 0px 74px 42px;
 background: #f1f1f1;
 line-height: 30px;
+
 }
 .catalog {
-&__img{
-    background:url('/src/img/item1-mobile-1x.jpg')no-repeat;
 
-    width: 260px;
+
+&__img{
+    background:url('/src/img/item1-mobile-1x.jpg ')no-repeat;
+
+
+    width:260px;
     height: 195px;
     margin-left: 30px;
 }
@@ -69,8 +73,7 @@ line-height: 30px;
   color: $darkGray;
   line-height: 30px;
   margin-left: 30px;
-  // margin-top: -50px;
-  padding-bottom: 16px;
+padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
   width: 204px;
 }
@@ -101,7 +104,7 @@ margin-left: 30px;
 margin-bottom: -30px;
 }
 &__link-pic{
-  background:url('/src/img/sprites.png')-16px -214px;
+  background:url('/src/img/sprites.png') -16px -214px;
   width: 21px;
   height: 18px;
   opacity:1;
@@ -366,6 +369,7 @@ border: 2px solid #63d1bb;
       }
 
       &__title {
+
         @include titleXlTab;
         align-self: flex-start;
         margin: 0 0 59px 0;
@@ -457,6 +461,7 @@ border: 2px solid #63d1bb;
     justify-content: space-between;
   }
   &__title {
+
     @include titleXlTab;
     align-self: flex-start;
     margin: 0 0 59px 0;
@@ -464,14 +469,17 @@ border: 2px solid #63d1bb;
   }
 
 .main-catalog{
-  width: 768px;
-  //margin-top: -35px;
-  //margin-top: -515px; ///////как то надо изменить))
+
+  min-width: 768px;
+width: 100%;
 &__title {
+
+
 @include textLg(43px, 700);
     padding:95px 0px 70px 198px;
     background: #f1f1f1;
     line-height: 50px;
+margin-top: 0px;
 }
     &__title-line:after {
       content: "";
@@ -483,16 +491,17 @@ border: 2px solid #63d1bb;
       background-image: radial-gradient(circle at 20px 13px, #f1f1f1 13px, transparent 13px);
       right: 0;
       left: 0px;
-      bottom: 35px;
+      bottom: 36px;
       transform: rotate(-180deg);
     }
 .catalog{
+
 @include flexbox;
     flex-wrap: wrap;
     margin-top: 65px;
   width: 760px;
 &__img{
-    background:url('/src/img/item1-tablet-1x.jpg') no-repeat ;
+   background:url('/src/img/item1-tablet-1x.jpg') no-repeat ;
     width: 334px;
     height: 334px;
     margin-left: 50px;
@@ -721,11 +730,12 @@ body{
 .main-catalog{
   width: 100%;
 &__title {
+
   @include textLg(53px, 700);
   padding: 93px 0px 95px 345px;
   background: #f1f1f1;
   line-height: 57px;
-  margin-top: 38px;
+  margin-top: 0px;
 }
 &__title-line:after {
   content: "";
@@ -741,6 +751,7 @@ body{
   transform: rotate(-180deg);
 }
 .catalog{
+
   width: 100%;
 &__img{
   background:url('/src/img/item1-desktop-1x.jpg')no-repeat;
@@ -793,22 +804,20 @@ body{
   padding-bottom: 12px;
   width: 256px;
   margin-left: 27px;
-
 }
-
 .catalog-price{
   width: 256px;
 }
 }
 .player-video{
-width: 1049px;
-height: 455px;
-border: 1px solid #ececec;
-background-color: #ffffff;
-@include flexbox;
-flex-wrap:wrap;
-flex-direction: column;
-margin-top: 37px;
+    width: 1049px;
+    height: 455px;
+    border: 1px solid #ececec;
+    background-color: #ffffff;
+    @include flexbox;
+    flex-wrap:wrap;
+    flex-direction: column;
+    margin-top: 37px;
 .player-process{
 @include flexbox;
 &__title{

@@ -37,6 +37,8 @@
         height: 21px;
     }
 
+
+
     &__insta:hover{
         display: inline-block;
         background: url('/src/img/sprites.png') no-repeat -63px -62px;
@@ -58,7 +60,8 @@
         height: 28px;
     }
 
-    &__facebook:hover{
+
+&__facebook:hover{
         display: inline-block;
         background: url('/src/img/sprites.png') -64px -110px;
         width: 15px;
@@ -78,7 +81,7 @@
         background: url('/src/img/sprites.png')  -14px -14px;
 	    width: 23px;
         height: 20px;
-        
+
     }
 
     &__twitter:hover{
@@ -86,7 +89,7 @@
         background: url('/src/img/sprites.png')  -61px -15px;
 	    width: 23px;
         height: 20px;
-        
+
     }
 
     &__twitter:active{
@@ -94,7 +97,7 @@
         background: url('/src/img/sprites.png')  -111px -14px;
 	    width: 23px;
         height: 20px;
-        
+
     }
 
     // i {
@@ -161,6 +164,5 @@
         // }
     }
 
-}
 
-
+  }

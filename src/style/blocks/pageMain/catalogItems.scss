@@ -3,9 +3,12 @@
   display: block;
 }
 .main-catalog {
+  min-width: 320px;
+//max-width: 1150px;
+//width: 100%;
     margin: 0 auto;
-    margin-top: -510px;////изменить
-    width: 320px;
+    //margin-top: -510px;////изменить
+   // width: 320px;
 &__title {
     //display: block;
 @include textLg(27px, 700);
@@ -16,18 +19,21 @@ line-height: 30px;
 .catalog {
 &__img{
     background:url('/src/img/item1-mobile-1x.jpg')no-repeat;
+
     width: 260px;
     height: 195px;
     margin-left: 30px;
 }
 &__img1{
     background:url('/src/img/item2-mobile-1x.jpg')no-repeat;
+
     width: 260px;
     height: 195px;
     margin-left: 30px;
 }
 &__img2{
     background: url('/src/img/item3-mobile-1x.jpg')no-repeat;
+
     width: 260px;
     height: 195px;
     margin-left: 30px;
@@ -71,6 +77,16 @@ line-height: 30px;
   border-bottom: 1px solid #ececec;
   width: 204px;
 }
+&__descr--line{
+@include textLg(13px, 400);
+color: $darkGray;
+line-height: 30px;
+margin-left: 30px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ececec;
+  width: 204px;
+
+}
 .catalog-price {
 @include flexbox;
   width: 204px;
@@ -84,7 +100,8 @@ line-height: 30px;
   color:black;
 }
 &__link {
-  margin-top: 12px;
+  margin-top: 6px;
+margin-bottom: -30px;
 }
 &__link-pic{
   background:url('/src/img/sprites.png')-16px -214px;
@@ -100,9 +117,9 @@ height: 18px;
 }
 }
 .player-video {
-
+width: 260px;
   border: 1px solid #ececec;
-  margin: 30px 30px 0 30px;
+  margin: 30px 30px 58px 30px;/////
   flex-direction: column;
   @include flexbox;
 .player-process {
@@ -128,6 +145,7 @@ height: 18px;
 .video-page {
 &__video img{
 margin-top: 10px;
+
 }
 &__link-pic {
   background:url('/src/img/sprites.png') -739px -11px;
@@ -160,13 +178,11 @@ margin-top: 10px;
 }
 .player__btn {
     width: 192px;
-    height: 52px;
+    //height: 52px;
     display: inline-block;
     border: 2px solid $darkGray;
     background-color: $white;
-    margin-left: 34px;
-    margin-top: 9px;
-margin-bottom: 33px;
+    margin:9px 0 33px 34px;
     order: 4;
     text-transform: uppercase;
     @include textLg(17px,700);
@@ -272,7 +288,7 @@ border: 2px solid #63d1bb;
 .modal-ctg {
    display: none;
    position: absolute;
-   top: 200%;
+   top: 175%;
    left: 0;
    background-color: $white;
 
@@ -523,11 +539,11 @@ border: 2px solid #63d1bb;
 
 .main-catalog{
   width: 768px;
-  margin-top: -35px;
-  margin-top: -515px; ///////как то надо изменить))
+  //margin-top: -35px;
+  //margin-top: -515px; ///////как то надо изменить))
 &__title {
 @include textLg(43px, 700);
-    padding:106px 0px 78px 198px;
+    padding:95px 0px 70px 198px;
     background: #f1f1f1;
     line-height: 50px;
 }
@@ -575,7 +591,7 @@ margin-top: -20px;
 }
 &__item{
     width: 335px;
-    height: 333px;
+    height: 332px;
     margin-top: -20px;
     border: 1px solid #ececec;
     background-color: #ffffff;
@@ -585,25 +601,35 @@ margin-top: -20px;
     @include textLg(20px, 700);
     line-height: 24px;
     margin-left:28px;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 &__descr{
-    @include textLg(15px, 400);
+@include textLg(15px, 400);
     color:#444444;
     line-height: 30px;
-    margin-top: -70px;
-    padding-bottom: 170px;
+    margin-top: -65px;
+    padding-bottom: 175px;
     border-bottom: 1px solid #ececec;
     width: 268px;
     margin-left: 30px;
 }
+&__descr--line{
+@include textLg(15px, 400);
+color:#444444;
+line-height: 30px;
+margin-top: -65px;
+width: 268px;
+padding-bottom: 150px;
+
+}
 .catalog-price {
+
     @include flexbox;
     width: 268px;
     justify-content: space-between;
     margin-left: 30px;
 &__number{
-    margin-top: 10px;
+    margin-top: 5px;
 }
 }
 }
@@ -761,7 +787,7 @@ margin-top: -20px;
 body{
 //box-sizing:border-box;
 //border: 1px solid red;
-  width: 1150px;
+  //width: 1150px;
 .menu-top{
   width: 1150px;
   height: 89px;
@@ -771,7 +797,7 @@ body{
   width: 100%;
 &__title {
   @include textLg(53px, 700);
-  padding: 93px 0px 95px 340px;
+  padding: 93px 0px 95px 345px;
   background: #f1f1f1;
   line-height: 57px;
   margin-top: 38px;
@@ -834,6 +860,17 @@ body{
   width: 256px;
   margin-left: 27px;
 }
+&__descr--line{
+ @include textLg(15px, 400);
+ line-height: 30px;
+ color:$darkGray;
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 12px;
+  width: 256px;
+  margin-left: 27px;
+
+}
+
 .catalog-price{
   width: 256px;
 }

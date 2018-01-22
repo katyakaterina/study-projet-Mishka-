@@ -46,6 +46,7 @@
    <main class="main">
        <div class="page-form">
             <h2 class="page-form__title">Вязание на заказ</h2>
+<div class="page-form__title-line"></div>
           <div class="page-form__customer">
             <!--<form class="page-form__customer">-->
                 <p class="page-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
@@ -53,89 +54,106 @@
                      Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
                 </article>-->
                 <section class="filters">
+  <form class="filters__form filters__form--radio">
                 <div class="filters__line">
                    <h3 class="filters__title">Тип</h3>
-                    </div>
-                    <div class=" filters__form-radio">
-                      <!--<form class="filter__form filter__form--radio">-->
+                        </div>
+                    <div class=" filters__form--radio">
+<div class="filters__radio-grup">
                          <input class="filters__input" type="radio" id="rd-1" name="radio" checked>
                          <label class="filters__label" for="rd-1">Аксессуар для интерьера</label>
+</div>
+<div class="filters__radio-grup">
                          <input class="filters__input" type="radio" id="rd-2" name="radio">
                          <label class="filters__label" for="rd-2">Детская игрушка</label>
-                      <!--</form>-->
+</div>
                     </div>
+</form>
                </section>
-               <section class="filter">
-                       <form class="filter__form filter__form--checkbox">
-                            <h3 class="filter__title">Цвет</h3>
-                            <div class="filter__ch-group">
-                                <div class="filter__ch-gr">
-                                    <input class="filter__input" type="checkbox" id="ch-1" name="checkbox" checked>
-                                    <label class="filter__label" for="ch-1">Белый</label>
-                               </div>
-                               <div class="filter__ch-gr">
-                                   <input class="filter__input" type="checkbox" id="ch-2" name="checkbox" checked>
-                                   <label class="filter__label" for="ch-2">Серый</label>
-                               </div>
-                               <div class="filter__ch-gr">
-                                   <input class="filter__input" type="checkbox" id="ch-3" name="checkbox">
-                                   <label class="filter__label" for="ch-3">«Тиффани»</label> 
-                               </div>
-                               <div class="filter__ch-gr">
-                                   <input class="filter__input" type="checkbox" id="ch-3" name="checkbox">
-                                   <label class="filter__label" for="ch-3">Черный</label>  
-                               </div>
-                               <div class="filter__ch-gr">
-                                   <input class="filter__input" type="checkbox" id="ch-4" name="checkbox">
-                                   <label class="filter__label" for="ch-4">Розовый</label> 
-                               </div>
-                               <div class="filter__ch-gr">
-                                   <input class="filter__input" type="checkbox" id="ch-5" name="checkbox">
-                                   <label class="filter__label" for="ch-5">Оранжевый</label>  
-                               </div>
-                           </div>
-                       </form>
-                </section>
-                <section class="customer">
-                    <!--<form class="customer__form">-->
+<section class="filter">
+      <form class="filter__form filter__form--checkbox">
+          <div class="filters__line">
+            <h3 class="filters__title">Цвет</h3>
+          </div>
+    <div class="filter__ch-grup">
+      <div class="filter__ch-gr">
+        <input class="filter__input" type="checkbox" id="ch-1" name="checkbox" checked>
+        <label class="filter__label" for="ch-1">Белый</label>
+      </div>
+      <div class="filter__ch-gr">
+        <input class="filter__input" type="checkbox" id="ch-2" name="checkbox" checked>
+        <label class="filter__label" for="ch-2">Серый</label>
+      </div>
+      <div class="filter__ch-gr">
+        <input class="filter__input" type="checkbox" id="ch-3" name="checkbox">
+        <label class="filter__label" for="ch-3">«Тиффани»</label>
+      </div>
+      <div class="filter__ch-gr">
+        <input class="filter__input" type="checkbox" id="ch-4" name="checkbox">
+        <label class="filter__label" for="ch-4">Черный</label>
+      </div>
+      <div class="filter__ch-gr">
+        <input class="filter__input" type="checkbox" id="ch-5" name="checkbox">
+        <label class="filter__label" for="ch-5">Розовый</label>
+      </div>
+      <div class="filter__ch-gr">
+        <input class="filter__input" type="checkbox" id="ch-6" name="checkbox">
+        <label class="filter__label" for="ch-6">Оранжевый</label>
+      </div>
+    </div>
+  </form>
+</section>
+<section class="customer">
+                    <form class="customer__form">
                         <div class="customer__name">
                           <div class="filters__line">
-                             <h3 class="customer__title"> Фио</h3>
+                             <h3 class="filters__title"> Фио</h3>
                             </div>
+<div class="customer__name-grup">
                              <label class="customer__label">Имя:</label>
-                             <input class="customer__input" type="text" placeholder="Введите ваше имя*">
+                             <input class="customer__input " type="text" placeholder="Введите ваше имя*">
+</div>
+<div class="customer__name-grup">
                              <label class="customer__label">Фамилия:</label>
-                             <input class="customer__input" type="text" placeholder="Укажите фамилию*">
+                             <input class="customer__input customer__input--line" type="text" placeholder="Укажите фамилию*">
+</div>
+<div class="customer__name-grup">
                              <label class="customer__label">Отчество:</label>
-                             <input class="customer__input" type="text" placeholder="Отчество, если желаете">
+                             <input class="customer__input customer__input--line" type="text" placeholder="Отчество, если желаете">
+</div>
                         </div>
                         <div class="customer__data">
+<div class="customer__data customer__data--block">
                           <div class="filters__line">
-                             <h3 class="customer__title">Тел</h3>
+                             <h3 class="filters__title filters__title--data">Тел</h3>
                             </div>
                             <div class="customer__img-phone"></div>
                              <input class="customer__phone" type="tel"  name="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
                               <label class="customer__number"></label>
                           <div class="filters__line">
-                             <h3 class="customer__title">Email</h3>
+                             <h3 class="filters__title filters__title--data">E-mail</h3>
                           </div>
                           <div class="customer__img-email"></div>
                              <input class="customer__email" type="email"  name="email" placeholder="Ваш Email*">
-                             <!--<label class="customer__email"></label>-->
-                            <div class="filters__line">
-                              <h3 class="customer__title">Доп</h3>
+                             <label class="customer__mail"></label>
+</div>
+
+
+                          <div class="filters__line">
+                              <h3 class="filters__title">Доп</h3>
                             </div>
                              <textarea class="customer__extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                         </div>
-                    <!--</form>-->
+                    </form>
                 </section>
                 <span class="page-form__note">*Поля обязательны для заполнения</span>
                 <button class="btn page-form__btn">Отправить заказ</button>
             <!--</form>-->
-</div>
+    </div>
        </div>
    </main>
    <footer class="footer">
+<div class="footer__logo"></div>
         <div class="footer__social">
             <a class="footer__link" href="#">
                 <i class="footer__insta" src="" width="" height="" alt="instagram"></i>

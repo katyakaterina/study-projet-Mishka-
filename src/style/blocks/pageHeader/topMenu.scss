@@ -115,7 +115,7 @@
 
   &__logo-img{
     display: block;
-    background: url(/src/img/sprites.png) no-repeat;
+    background: url('/src/img/sprites.png') no-repeat;
     background-position: -457px -8px ;
 	  width: 86px;
     height: 35px;
@@ -133,7 +133,7 @@
 
   &__cart{
     display: inline-block;
-    background: url(/src/img/sprites.png) no-repeat;
+    background: url('/src/img/sprites.png') no-repeat;
     background-position: -16px -214px ;
     width: 21px;
     height: 18px;

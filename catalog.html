@@ -60,10 +60,23 @@
     </nav>
 </header>
     <main class="main-catalog">
-        <h2 class="main-catalog__title">Каталог товаров</h2>
-<div class="main-catalog__title-line">
+<picture>
+<source media="(min-width:320px)"
+ srcset="src/img/item1-mobile-1x.jpg , src/img/item1-mobile-2x.jpg ,
+ src/img/item2-mobile-1x.jpg , src/img/item2-mobile-2x.jpg ,
+ src/img/item3-mobile-1x.jpg , src/img/item3-mobile-2x.jpg">
 
-</div>
+<source media="(min-width:768px )"
+ srcset="src/img/item1-desktop-1x.jpg , src/img/item1-desktop-2x.jpg ,
+  src/img/item2-desktop-1x.jpg ,src/img/item2-desktop-2x.jpg ,
+   src/img/item3-desktop-1x.jpg  ,src/img/item3-desktop-2x.jpg">
+<source media="(min-width: 1150px)"
+ srcset="src/img/item1-tablet-1x.jpg , src/img/item1-tablet-2x.jpg ,
+  src/img/item2-tablet-1x.jpg ,src/img/item2-tablet-2x.jpg ,
+   src/img/item3-tablet-1x.jpg  ,src/img/item3-tablet-2x.jpg">
+</picture>
+        <h2 class="main-catalog__title">Каталог товаров</h2>
+<div class="main-catalog__title-line"></div>
             <section class="catalog">
               <div class="catalog__img"></div>
                 <div class="catalog__item">
@@ -96,7 +109,7 @@
                 <div class="catalog__item">
                   <h3 class="catalog__title">Большая корзина для игрушек</h3>
                     <div class="catalog__detail">
-                        <p class="catalog__descr">Диаметр 30 см, высота 30 см</p>
+                        <p class="catalog__descr--line">Диаметр 30 см, высота 30 см</p>
                       <div class="catalog-price">
                         <p class="catalog-price__number">1 500 руб.</p>
                         <a class="catalog-price__link" href="#">
@@ -161,7 +174,7 @@
   </div>
 </footer>
 
-
+<script src="src/js/picturefill.js"></script>
 <script src="src/js/main.js"></script>
 
 </body>

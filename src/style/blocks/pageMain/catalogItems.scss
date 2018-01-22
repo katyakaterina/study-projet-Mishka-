@@ -266,6 +266,80 @@ border: 2px solid #63d1bb;
 }
 
 // index ___________________________________
+.modal-ctg.open{
+  display: block;
+}
+.modal-ctg {
+   display: none;
+   position: absolute;
+   top: 200%;
+   left: 0;
+   background-color: $white;
+
+  width: 320px;
+  height: 336px;
+
+  &__title{
+    width: 146px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 37px 0 25px 87px;
+  }
+
+  &__group{
+    width: 260px;
+    height: 53px;
+    margin: 30px 0 30px 30px;
+    display: inline-block;
+  }
+
+  &__ch-gr{
+    width: 82px;
+    height: 53px;
+    display: inline-block;
+  }
+
+  &__text{
+    text-align: center;
+    margin: 0;
+  }
+
+  &__input{
+    display: none;
+  }
+
+  &__size{
+    position: relative;
+    top: 14px;
+    left: 0;
+    font-weight: 700;
+    padding: 12px 0px 0px 33px;
+  }
+
+  &__size:before{
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 50px;
+    border: 1px solid $frameMenu;
+    top: 0;
+    left: 0;
+  }
+
+  input:checked + label:after{
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 50px;
+    border: 1px solid $greenLeft;
+    top: 0;
+    left: 0;
+  }
+
+  button{
+    margin: 0 0 0 30px;
+  }
+}
 
 .catalog-card {
 

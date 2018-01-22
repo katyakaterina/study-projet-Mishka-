@@ -161,27 +161,19 @@
     }
   
     &__btn-left:hover{
-      background: url(/src/img/sprites.png) -193px -150px no-repeat;
-      width: 125px;
-      height: 26px;
+      opacity: 0.6;
     }
   
     &__btn-right:hover{
-      background: url(/src/img/sprites.png) -276px -148px no-repeat;
-      width: 126px;
-      height: 26px;
+      opacity: 0.6;
     }
   
     &__btn-left:active {
-      background: url(/src/img/sprites.png) -226px -211px no-repeat;
-      width: 125px;
-      height: 26px;
+      opacity: 0.3;
     }
   
     &__btn-right:active {
-      background: url(/src/img/sprites.png) -319px -209px no-repeat;
-      width: 126px;
-      height: 26px;
+      opacity: 0.3;
     }
   }
 
@@ -321,29 +313,29 @@
     
   }
 
-  &__btn-left:hover{
-    background: url(/src/img/sprites.png) -226px -159px no-repeat;
-    width: 50px;
-    height: 26px;
-  }
+  // &__btn-left:hover{
+  //   background: url(/src/img/sprites.png) -226px -159px no-repeat;
+  //   width: 50px;
+  //   height: 26px;
+  // }
 
-  &__btn-right:hover{
-    background: url(/src/img/sprites.png) -320px -157px no-repeat;
-    width: 50px;
-    height: 26px;
-  }
+  // &__btn-right:hover{
+  //   background: url(/src/img/sprites.png) -320px -157px no-repeat;
+  //   width: 50px;
+  //   height: 26px;
+  // }
 
-  &__btn-left:active {
-    background: url(/src/img/sprites.png) -226px -211px no-repeat;
-    width: 50px;
-    height: 26px;
-  }
+  // &__btn-left:active {
+  //   background: url(/src/img/sprites.png) -226px -211px no-repeat;
+  //   width: 50px;
+  //   height: 26px;
+  // }
 
-  &__btn-right:active {
-    background: url(/src/img/sprites.png) -319px -209px no-repeat;
-    width: 50px;
-    height: 26px;
-  }
+  // &__btn-right:active {
+  //   background: url(/src/img/sprites.png) -319px -209px no-repeat;
+  //   width: 50px;
+  //   height: 26px;
+  // }
 }
 }
 

@@ -59,15 +59,6 @@
             </div>
             <div class="menu-bottom">
                 <h1 class="menu-bottom__title">Милые штуки ручной работы для дома</h1>
-                <!-- <picture class="menu-bottom__background">
-                        <source media="(min-width: 320px) and (orientation: portrait)" 
-                                srcset="src/img/header-mobile-1x.jpg 1x, src/img/header-mobile-2x.jpg 2x" type="image/jpg">
-                        <source media="(min-width: 768px) and (orientation: portrait)"
-                                srcset="src/img/header-tablet-1x.jpg 1x, src/img/header-tablet-2x.jpg 2x" type="image/jpg">
-                        <source media="(min-width: 1024px)"
-                                srcset="src/img/header-desktop-1x.jpg 1x, src/img/header-desktop-2x.jpg 2x" type="image/jpg">
-                        <img class="menu-bottom__bg" src="src/img/header-desktop-1x.jpg" alt="Вязаные игрушки">
-                    </picture> -->
                 <ul class="menu-bottom__list">
                         <span class="menu-bottom__line"></span>
                     <li class="menu-bottom__item">
@@ -112,7 +103,7 @@
                     srcset="src/img/triple-tablet-1x.jpg 1x, src/img/triple-tablet-2x.jpg 2x" type="image/jpg">
                     <source media="(min-width: 1024px)"
                     srcset="src/img/triple-desktop-1x.jpg 1x, src/img/triple-desktop-2x.jpg 2x" type="image/jpg">
-                    <img class="catalog-card__img" src="src/img/triple-desktop-1x.jpg" width="" height="" alt="Вязаные корзинки">
+                    <img class="catalog-card__img" src="src/img/triple-desktop-1x.jpg" alt="Вязаные корзинки">
                 </picture>
                 <div class="catalog-card__to-buy">
                     <p class="catalog-card__price">Цена: 990 руб.</p>
@@ -182,7 +173,7 @@
                 <!-- <img sizes="(min-width: 768px)" src="src/img/map-tablet-1x.jpg"> -->
                 <source media="(min-width: 1024px)"
                 srcset="src/img/map-desktop-1x.jpg 1x, src/img/map-desktop-2x.jpg 2x" type="image/jpg">
-                <img src="src/img/map-desktop-1x.jpg">
+                <img src="src/img/map-desktop-1x.jpg" alt="Map">
             </picture>
         </div>
         <button class="btn contacts__btn">Напишите нам</button>
@@ -215,22 +206,30 @@
        </div>
     </div>
 </footer>
-<div class="modal-ctg" id="myModal">
-    <h2 class="modal-ctg__title">Добавить в корзину</h2>
-    <p class="modal-ctg__text">Выберите размер</p>
-    <ul class="modal-ctg__list">
+<div class="modal-ctg" id="MyModal">
         <form class="modal-ctg__form">
-            <input class="modal-ctg__input" type="checkbox" name="check" checked>
-            <label class="modal-ctg__size">S</label>
-            <input class="modal-ctg__input" type="checkbox" name="check">
-            <label class="modal-ctg__size">M</label>
-            <input class="modal-ctg__input" type="checkbox" name="check">
-            <label class="modal-ctg__size">L</label>
+             <h2 class="modal-ctg__title">Добавить в корзину</h2>
+             <p class="modal-ctg__text">Выберите размер</p>
+            <div class="modal-ctg__group">
+                <div class="modal-ctg__ch-gr">
+                   <input class="modal-ctg__input" type="checkbox" id="ch1" name="check" checked>
+                   <label class="modal-ctg__size" for="ch1">S</label> 
+                </div>
+                <div class="modal-ctg__ch-gr">
+                   <input class="modal-ctg__input" type="checkbox" id="ch2" name="check">
+                   <label class="modal-ctg__size" for="ch2">M</label> 
+                </div>
+                <div class="modal-ctg__ch-gr">
+                   <input class="modal-ctg__input" type="checkbox" id="ch3" name="check">
+                   <label class="modal-ctg__size" for="ch3">L</label>  
+                </div>
+            </div>
         </form>
-    </ul>
-    <button class="btn modal-ctg__btn">Добавить</button>
+    <button class="modal-ctg__btn btn" id="add">Добавить</button>
 </div>
 <script type="text/javascript" src="src/js/hamburger.js"></script>
 <script type="text/javascript" src="src/js/slider.js"></script>
+<script type="text/javascript" src="src/js/modal.js"></script>
+
 </body>
 </html>

@@ -6,7 +6,7 @@
   "author": "Kate Konstantionva Vladimir Ozerskiy",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.23.3",
+    "browser-sync": "^2.23.5",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",

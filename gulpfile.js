@@ -73,22 +73,21 @@ gulp.task("html", function () {
 .pipe(gulp.dest('dist/html'));
 });
 
+// gulp.task("scripts", function () {
+//     gulp.src(['./js/hamburger.js','./js/main.js','./js/modal.js','./js/slider.jd','./js/picturefill.js']) // директория откуда брать исходники
+//     .pipe(concat('scripts.js')) // объеденим все js-файлы в один
+//     .pipe(uglify()) // вызов плагина uglify - сжатие кода
+//     .pipe(rename({ suffix: '.min' })) // вызов плагина rename - переименование файла с приставкой .min
+//     .pipe(gulp.dest("dist/js")); // директория продакшена, т.е. куда сложить готовый файл
+// });
+
 gulp.task("scripts", function () {
-  return gulp.src(['./js/hamburger.js','./js/main.js','./js/modal.js','./js/slider.jd','./js/picturefill.js'])
-    .pipe(concat('scripts.min.js'))
-    .pipe(uglify())
+    return gulp.src(['./js/hamburger.js','./js/main.js','./js/modal.js','./js/slider.jd','./js/picturefill.js'])
+      .pipe(concat('scripts.min.js'))
+      .pipe(uglify())
 
-    .pipe(gulp.dest("dist/js"));
-});
-//gulp.task('scripts', function () {
-  //gulp.src('src/js/**/*.js')
-    //.pipe(concat('scripts.js'))
-    //.pipe(uglify())
-    //.pipe(gulp.dest('./dist/js'));
-
-//});
-
-
+      .pipe(gulp.dest("dist/js"));
+  });
 
 gulp.task('img', function () {
   return gulp.src("./src/img/*.+(jpg|jpeg|png|gif|svg)")

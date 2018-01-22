@@ -4,7 +4,7 @@
 }
 .main-catalog {
   min-width: 320px;
-max-width: 1150px;
+// max-width: 1150px; так он навсю ширину
 
     margin: 0 auto;
     //margin-top: -510px;////изменить
@@ -284,7 +284,7 @@ border: 2px solid #63d1bb;
 }
 }
 
-// index ___________________________________
+// index ______index page_____________________________
 .modal-ctg.open{
   display: block;
 }
@@ -791,16 +791,16 @@ padding-bottom: 150px;
 }
 }
 }
-@media screen and (min-width: 1150px)  {
+@media screen and (min-width: 1024px)  {
 body{
 //box-sizing:border-box;
 //border: 1px solid red;
   //width: 1150px;
-.menu-top{
-  width: 1150px;
-  height: 89px;
-  @include flexbox;
-}
+// .menu-top{
+//   width: 1150px;
+//   height: 89px;
+//   @include flexbox;
+// }
 .main-catalog{
   width: 100%;
 &__title {

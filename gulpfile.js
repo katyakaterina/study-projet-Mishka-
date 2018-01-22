@@ -74,12 +74,22 @@ gulp.task("html", function () {
 });
 
 gulp.task("scripts", function () {
-  return gulp.src("src/js/**/*.js") // директория откуда брать исходники
-    .pipe(concat('scripts.js')) // объеденим все js-файлы в один
-    .pipe(uglify()) // вызов плагина uglify - сжатие кода
-    .pipe(rename({ suffix: '.min' })) // вызов плагина rename - переименование файла с приставкой .min
-    .pipe(gulp.dest("dist/js")); // директория продакшена, т.е. куда сложить готовый файл
+  return gulp.src(['./js/hamburger.js','./js/main.js','./js/modal.js','./js/slider.jd','./js/picturefill.js'])
+    .pipe(concat('scripts.min.js'))
+    .pipe(uglify())
+
+    .pipe(gulp.dest("dist/js"));
 });
+//gulp.task('scripts', function () {
+  //gulp.src('src/js/**/*.js')
+    //.pipe(concat('scripts.js'))
+    //.pipe(uglify())
+    //.pipe(gulp.dest('./dist/js'));
+
+//});
+
+
+
 gulp.task('img', function () {
   return gulp.src("./src/img/*.+(jpg|jpeg|png|gif|svg)")
     .pipe(imagemin({
@@ -96,20 +106,20 @@ gulp.task("default", ["watch", "sass", "html", "scripts", "img"]);
 
 //js//
 gulp.task('js', function () {
-    gulp.src('js/*.js')
-        .pipe(minify())
-        .pipe(gulp.dest("./dist/js"))
-    gulp.watch('js/*.js', ['uglify']);
+  gulp.src('js/*.js')
+    .pipe(minify())
+    .pipe(gulp.dest("dist/js"))///(./)
+  gulp.watch('js/*.js', ['uglify']);
 });
 gulp.task('uglify', function () {
-    gulp.src('js/*.js')
-        .pipe(uglify())
-        .pipe(gulp.dest('dist/js'));
+  gulp.src('js/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/js'));
 });
 gulp.task('minify', function () {
-    gulp.src('js/main.js')
-        .pipe(uglify())
-        .pipe(gulp.dest('dist'));
+  gulp.src('js/*.js')////main
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/js'));///js
 });
 //end js//
 //css//

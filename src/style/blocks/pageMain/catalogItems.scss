@@ -443,18 +443,10 @@ border: 2px solid #63d1bb;
     width: 668px;
     margin: 0 auto;
 
-<<<<<<< HEAD
-      &__title {
-
-        @include titleXlTab;
-        align-self: flex-start;
-        margin: 0 0 59px 0;
-      }
-=======
     &__item {
       @include flexbox;
       flex-wrap: wrap;
-      justify-content: space-between;    
+      justify-content: space-between;
     }
 
     &__title {
@@ -462,7 +454,6 @@ border: 2px solid #63d1bb;
       align-self: flex-start;
       margin: 0 0 59px 0;
     }
->>>>>>> f8a0a86c8a5cb53175c0ce14c4c1d7056210d3e5
 
       &__hot-sale {
         @include titleSm;

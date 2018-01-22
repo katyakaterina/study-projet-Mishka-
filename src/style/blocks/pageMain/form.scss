@@ -6,7 +6,6 @@ margin: 0 auto;
 margin: 0 auto;
 min-width:320px;
 //width:100%;
-margin-left: -30px;
 &__title{
 margin-top: 80px;
 
@@ -244,7 +243,6 @@ margin-bottom: 20px;
 &__data{
 margin-top: -10px;
  @include flexbox;
-
 flex-direction: column;
 }
 &__img-phone {
@@ -370,8 +368,7 @@ width: 100%;
   border: 2px solid #444444;
   border-radius: 50%;
   background: #fff;
- // margin-left: -30px;
-  //margin-bottom:0px;
+
 }
 &__input:not(checked)+label::after {
   content: '';
@@ -520,19 +517,20 @@ cursor: pointer;
 }
 &__phone ,&__email{
 margin-left: 215px;
-margin-top: -20px;
-margin-bottom: -25px;
+margin-top: -15px;//20
+margin-bottom: -20px;///30
 padding:10px 220px 16px 18px;
 @include textLg(19px, 400);
 line-height: 18px;
 background-color: #f1f1f1;
+vertical-align: middle;
 }
 &__extra{
 margin-left: 168px;
 @include input-placeholder;
 @include textLg(19px, 400);
 width: 470px;
-padding: 13px 10px 83px 15px;
+padding: 13px 10px 73px 15px;//83
 margin-bottom: 50px;
 line-height: 18px;
 }
@@ -559,7 +557,6 @@ vertical-align: middle;
 @media (min-width:1150px){
 .page-form{
 min-width: 1150px;
-
 margin-bottom: -60px;
 &__title{
 @include textLg(53px, 700);

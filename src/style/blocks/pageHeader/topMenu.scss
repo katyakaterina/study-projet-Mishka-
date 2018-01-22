@@ -441,7 +441,11 @@ input.search-input::placeholder{
 
   .menu-top {
 
-    width: 1150px;
+    .hamburger-btn{
+      display: none;
+    }
+
+    width: 1200px;
     margin: 0 auto;
 
   &__logo{
@@ -468,7 +472,7 @@ input.search-input::placeholder{
 
   &__item:nth-child(2){
     order: 2;
-    flex-basis: 223px;
+    flex-basis: 235px;
     border: 1px solid $frameMenu;
     border-top: none;
     text-align: center;
@@ -494,32 +498,35 @@ input.search-input::placeholder{
 
     &__item--cart{
       order: 5;
-      flex-basis: 316px;
+      flex-basis: 355px;
       border-top: none;
     }
 
     &__item--delivery{
       order: 9;
       z-index: 1;
+      flex-grow: 1;
+      text-align: center;
     }
 
     &__item--new{
       display: inline;
       order: 7;
-      text-align: left;
-      flex-basis: 220px;
-      margin-left: 30px;
+      // text-align: left;
+      // flex-basis: 220px;
+      // margin-left: 30px;
       border: none;
       z-index: 1;
+      flex-grow: 1;
     }
 
     &__item--sale{
       display: inline;
       order: 8;
       text-align: left;
-      flex-basis: 630px;
       border: none;
       z-index: 1;
+      flex-grow: 8;
     }
 
   }

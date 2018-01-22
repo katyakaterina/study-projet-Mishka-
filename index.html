@@ -11,18 +11,20 @@
 </head>
 <body>
     <header class="header">
+        <button class="hamburger-btn closed" id="buttonMenu">
+                        <span class="hamburger">
+                            <span class="openBtn"></span>
+                            <span class="closeBtn"></span>
+                        </span>  
+                    </button>
         <nav class="nav">
             <div class="menu-top">
-                <div class="hamburger">
-                    <button class="hamburger-btn">
-                        <span class="hamburger-box"></span>
-                    </button>
-                </div>
+                    
                     <!-- <nav class="hamburger__nav"> -->
-                        <ul class="menu-top__list">
+                        <ul class="menu-top__list closed" id="menuList">
                             <div class="menu-top__logo">
-                                <a class="menu-top__logo-link" href="index.html"><i class="menu-top__logo-img"></i></a>
-                           </div>
+                            <a class="menu-top__logo-link" href="index.html"><i class="menu-top__logo-img"></i></a>
+                       </div>
                            <li class="menu-top__item">
                                <a class="menu-top__link menu-top__link--catalog" href="catalog.html">
                                    Каталог товаров
@@ -56,33 +58,16 @@
                    <!-- </nav> -->
             </div>
             <div class="menu-bottom">
-                
-                <!-- <picture>
-                    <source media="(min-width: 320px)" 
-                            srcset="src/img/header-mobile-1x.jpg, src/img/header-mobile-2x.jpg 2x">
-                    <img sizes="(min-width: 320px)" 
-                         srcset="src/img/header-mobile-1x.jpg" 
-                         srcset="src/img/header-mobile-2x.jpg" alt="">
-                    <source media="(min-width: 768px)" 
-                            srcset="src/img/header-tablet-1x.jpg 1x, src/img/header-tablet-2x.jpg 2x">
-                    <img sizes="(min-width: 768px)" 
-                         srcset="src/img/header-tablet-1x.jpg 768w" 
-                         srcset="src/img/header-tablet-2x.jpg 768w">
-                    <source media="(min-width: 1024px)"
-                            srcset="src/img/header-desktop-1x.jpg 1x, src/img/header-desktop-2x.jpg 2x">
-                    <img sizes="(min-width: 1024px)"
-                         srcset="src/img/header-desktop-1x.jpg 1024w"
-                         srcset="src/img/header-desktop-2x.jpg 1024w">
-                </picture> -->
                 <h1 class="menu-bottom__title">Милые штуки ручной работы для дома</h1>
                 <ul class="menu-bottom__list">
                         <span class="menu-bottom__line"></span>
-                    <span class="menu-bottom__icon1 icon"></span>
                     <li class="menu-bottom__item">
+                        <span class="menu-bottom__icon1 icon"></span>
                         <a class="menu-bottom__link" href="#"><p class="menu-bottom__caption">Предметы интерьера</p></a>
                     </li>
-                    <span class="menu-bottom__icon2 icon"></span>
+                    
                     <li class="menu-bottom__item">
+                        <span class="menu-bottom__icon2 icon"></span>
                         <a class="menu-bottom__link" href="#"><p class="menu-bottom__caption">Детские игрушки</p></a>
                     </li>
                </ul>
@@ -111,7 +96,15 @@
                        </tr>
                    </table>
                 </div>
-                   <img class="catalog-card__img" src="src/img/triple-mobile-1x.jpg" width="" height="" alt="Вязаные корзинки">
+                <picture>
+                    <source media="(min-width: 320px) and (orientation: portrait)" 
+                    srcset="src/img/triple-mobile-1x.jpg 1x, src/img/triple-mobile-2x.jpg 2x" type="image/jpg">
+                    <source media="(min-width: 768px) and (orientation: portrait)"
+                    srcset="src/img/triple-tablet-1x.jpg 1x, src/img/triple-tablet-2x.jpg 2x" type="image/jpg">
+                    <source media="(min-width: 1024px)"
+                    srcset="src/img/triple-desktop-1x.jpg 1x, src/img/triple-desktop-2x.jpg 2x" type="image/jpg">
+                    <img class="catalog-card__img" src="src/img/triple-desktop-1x.jpg" alt="Вязаные корзинки">
+                </picture>
                 <div class="catalog-card__to-buy">
                     <p class="catalog-card__price">Цена: 990 руб.</p>
                     <button class="btn catalog-card__btn" >Заказать</button>
@@ -130,47 +123,37 @@
           </ul>
      </section>
      <section class="slider">
-        <div class="slider__slider-btn">
-            <input class="button" type="radio" name="radio-btn" id="btn-1" checked>
-            <label class="slider__arrow-btn" for="btn-1"></label>
-            <input class="button" type="radio" name="radio-btn" id="btn-2">
-            <label class="slider__arrow-btn" for="btn-2"></label>
-            <input class="button" type="radio" name="radio-btn" id="btn-3">
-            <label class="slider__arrow-btn" for="btn-3"></label>
-            <div class="slider__slides">
-                <h2 class="slider__title">Отзывы</h2>
-                 <div class="slider__slide">
+         <div class="slider__bg">
+            <div class="slider__slides" id="content">
+                <h2 class="slider__caption">Отзывы</h2>
+                <div class="slide-content slider__slide1">
                     <p class="slider__comment">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
                         как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
                         и мои фотографии сразу стали более стильными, а также набирают больше лайков!
                     </p>
-                    <span class="slider__auth">Анастасия Красильникова</span>
-                    <span class="slider__nick">@misssssiskras</span>
-                 </div>
-                 <div class="slider__slide">
-                    <p class="slider__comment"></p>
+                    <div class="slider__user">
+                       <span class="slider__auth">Анастасия Красильникова</span>
+                       <span class="slider__nick">@misssssiskras</span> 
+                    </div>
                 </div>
-                <div class="slider__slide">
-                    <p class="slider__comment"></p>
+                 <div class="slide-content slider__slide2">
+                    <p class="slider__comment">Второй слайд</p>
+                </div>
+                <div class="slide-content slider__slide3">
+                    <p class="slider__comment">Третий слайд</p>
                </div>
+               <div class="slider__controls">
+                    <button class="slider__btn-left" id="btn-1"></button>
+                    <button class="slider__btn-right" id="btn-2"></button>
+               </div>
+             <button class="btn slider__write">Написать</button>
            </div>
-           <button class="btn slider__btn">Написать</button>
        </div>
     </section>
     <section class="contacts">
-        <!-- <h3 class="contacts__title">Контакты</h3>
-        <table class="contacts__table table">
-            <tr class="contacts__row table__row">
-                <td class="contacts__cell table__cell">e-mail:</td>
-                <td class="contacts__cell table__cell"><a class="contacts__link" href="#">info@mimimishkashop.ru</a></td>
-            </tr>
-            <tr class="contacts__row table__row">
-                <td class="contacts__cell table__cell">адрес:</td>
-                <td class="contacts__cell table__cell">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-            </tr>
-        </table> -->
         <h3 class="contacts__title">Контакты</h3>
         <div class="contacts__box">
+                <span class="contacts__icon"></span>
             <div class="contacts__wrap">
                 <p class="contacts__text">E-mail:</p>
                 <a class="contacts__link" href="#">info@mimimishkashop.ru</a>
@@ -180,46 +163,73 @@
                 <address class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
            </div>
        </div>
-
         <div class="map">
-            <img class="map__img" src="" width="" height="" alt="Карта">
+            <picture>
+                <source media="(min-width: 320px) and (orientation: portrait)" 
+                srcset="src/img/map-mobile-1x.jpg 1x, src/img/map-mobile-2x.jpg 2x" type="image/jpg">
+                <!-- <img sizes="(min-width: 320px)" src="src/img/map-mobile-1x.jpg"> -->
+                <source media="(min-width: 768px)"
+                srcset="src/img/map-tablet-1x.jpg 1x, src/img/map-tablet-2x.jpg 2x" type="image/jpg">
+                <!-- <img sizes="(min-width: 768px)" src="src/img/map-tablet-1x.jpg"> -->
+                <source media="(min-width: 1024px)"
+                srcset="src/img/map-desktop-1x.jpg 1x, src/img/map-desktop-2x.jpg 2x" type="image/jpg">
+                <img src="src/img/map-desktop-1x.jpg" alt="Map">
+            </picture>
         </div>
         <button class="btn contacts__btn">Напишите нам</button>
     </section>
 </main>
 <footer class="footer">
-<div class="footer__logo"></div>
-    <div class="footer__social">
-        <a class="footer__link" href="#">
-            <i class="footer__insta" src="" width="" height="" alt="instagram"></i>
-        </a>
-        <a class="footer__link" href="#">
-            <i class="footer__facebook" src="" width="" height="" alt="facebook"></i>
-        </a>
-        <a class="footer__link" href="#">
-            <i class="footer__twitter" src="" width="" height="" alt="twitter"></i>
-        </a>
-    </div>
-    <div class="footer__copyright">
-        <p class="footer__creator">Разработано
-            <img class="footer__icon">
-        </p>
+    <div class="footer__bg">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <a class="footer__logo-link">
+                  <span class="footer__logo-icon"></span>
+                </a>
+           </div>
+           <div class="footer__social">
+                <a class="footer__link footer__insta" href="#">
+                    <!-- <span class="footer__insta"></span> -->
+                </a>
+                <a class="footer__link footer__facebook" href="#">
+                    <!-- <span class="footer__facebook"></span> -->
+                </a>
+                <a class="footer__link footer__twitter" href="#">
+                    <!-- <span class="footer__twitter"></span> -->
+                </a>
+           </div>
+           <div class="footer__copyright">
+               <p class="footer__creator">Разработано
+                   <span class="footer__icon"></span>
+              </p>
+           </div>
+       </div>
     </div>
 </footer>
-<div class="modal-ctg" id="myModal">
-    <h2 class="modal-ctg__title">Добавить в корзину</h2>
-    <p class="modal-ctg__text">Выберите размер</p>
-    <ul class="modal-ctg__list">
+<div class="modal-ctg" id="MyModal">
         <form class="modal-ctg__form">
-            <input class="modal-ctg__input" type="checkbox" name="check" checked>
-            <label class="modal-ctg__size">S</label>
-            <input class="modal-ctg__input" type="checkbox" name="check">
-            <label class="modal-ctg__size">M</label>
-            <input class="modal-ctg__input" type="checkbox" name="check">
-            <label class="modal-ctg__size">L</label>
+             <h2 class="modal-ctg__title">Добавить в корзину</h2>
+             <p class="modal-ctg__text">Выберите размер</p>
+            <div class="modal-ctg__group">
+                <div class="modal-ctg__ch-gr">
+                   <input class="modal-ctg__input" type="checkbox" id="ch1" name="check" checked>
+                   <label class="modal-ctg__size" for="ch1">S</label> 
+                </div>
+                <div class="modal-ctg__ch-gr">
+                   <input class="modal-ctg__input" type="checkbox" id="ch2" name="check">
+                   <label class="modal-ctg__size" for="ch2">M</label> 
+                </div>
+                <div class="modal-ctg__ch-gr">
+                   <input class="modal-ctg__input" type="checkbox" id="ch3" name="check">
+                   <label class="modal-ctg__size" for="ch3">L</label>  
+                </div>
+            </div>
         </form>
-    </ul>
-    <button class="btn modal-ctg__btn">Добавить</button>
+    <button class="modal-ctg__btn btn" id="add">Добавить</button>
 </div>
+<script type="text/javascript" src="src/js/hamburger.js"></script>
+<script type="text/javascript" src="src/js/slider.js"></script>
+<script type="text/javascript" src="src/js/modal.js"></script>
+
 </body>
 </html>

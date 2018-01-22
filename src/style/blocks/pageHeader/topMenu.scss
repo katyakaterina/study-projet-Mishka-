@@ -1,6 +1,103 @@
 
+  // .hamburger-btn {
+  //   display: inline-block;
+  //   overflow: visible;
+  //   margin: 10px;
+  //   padding: 15px;
+  //   cursor: pointer;
+  //   text-transform: none;
+  //   color: inherit;
+  //   background-color: transparent;
+  //   border: 0;
+  //   outline: none;
+  // }
+  
+  // .hamburger {
+  //   position: relative;
+  //   display: inline-block;
+  //   width: 40px;
+  //   height: 20px;
+  // }
+  
+  // .openBtn{
+  //   top: 50%;
+  //   display: block;
+  //   margin-top: -2px;
+  //   display: block;
+  //   content: "";
+  //   position: absolute;
+  //   width: 40px;
+  //   height: 4px;
+  //   border-radius: 4px;
+  //   background-color: #000;
+  // }
+  
+  // .openBtn:before{
+  //   display: block;
+  //   content: "";
+  //   position: absolute;
+  //   width: 40px;
+  //   height: 4px;
+  //   border-radius: 4px;
+  //   background-color: #000;
+  //   top: -10px;
+  // }
+  // .openBtn:after{
+  //   display: block;
+  //   content: "";
+  //   position: absolute;
+  //   width: 40px;
+  //   height: 4px;
+  //   border-radius: 4px;
+  //   background-color: #000;
+  //   bottom: -10px;
+  // }
+  
+  // .closeBtn::before{
+  //   display: block;
+  //   content: "";
+  //   position: absolute;
+  //   width: 40px;
+  //   height: 4px;
+  //   border-radius: 4px;
+  //   background-color: #000;
+  //   top: -10px;
+  //   transform: rotate(45deg);
+  
+  // }
+  // .closeBtn::after{
+  //   display: block;
+  //   content: "";
+  //   position: absolute;
+  //   width: 40px;
+  //   height: 4px;
+  //   border-radius: 4px;
+  //   background-color: #000;
+  //   top: -10px;
+  //   transform: rotate(-45deg);
+  // }
+  
+  // .menu-top__list.closed{
+  //   display: none;
+  // }
+  // .menu-top__list.opened{
+  //   display: block;
+  // }
+  // .menu-top__list.closed.open{
+  //   display: block;
+  
+  // }
+  // .hamburger-btn.opened{
+  //   border-top-color: transparent;
+  // }
+  // .closeBtn{
+  //   display: none;
+  // }
+
+
 .menu-top {
-//display: none;
+  
+
   &__logo {
     text-align: center;
     height: 59px;
@@ -15,18 +112,6 @@
   &__logo:active {
     opacity: 0.3;
   }
-
-  // &__logo-mobile {
-  //   margin: 22px auto;
-  // }
-
-  // &__logo-desktop {
-  //   display: none;
-  // }
-
-  // &__logo-tablet {
-  //   display: none;
-  // }
 
   &__logo-img{
     display: block;
@@ -113,16 +198,19 @@
     opacity: 0.1;
   }
 }
+
 form.search-form {
   position: relative;
-  width: 45px;
+  width: 200px;
   height: 45px;
+  margin-left: 20px;
 }
 input.search-input{
-  margin-left: 20px;
+  // margin-left: 20px;
   width: 180px;
-  height: 45px;
+  height: 35px;
   outline: none;
+  border: none;
 }
 input.search-input::placeholder{
   @include titleSm;
@@ -132,8 +220,8 @@ input.search-input::placeholder{
 button.search-submit{
   border: none;
   position: absolute;
-  top: 10px;
-  left: -26px;
+  top: 8px;
+  left: -42px;
   cursor: pointer;
   background: url(/src/img/sprites.png) no-repeat;
   background-position: -16px -261px ;
@@ -148,8 +236,8 @@ button.search-submit:hover {
 	width: 18px;
   height: 18px;
   position: absolute;
-  top: 10px;
-  left: -26px;
+  top: 8px;
+  left: -42px;
 
 }
 button.search-submit:active {
@@ -158,8 +246,8 @@ button.search-submit:active {
 	width: 18px;
 	height: 18px;
   position: absolute;
-  top: 10px;
-  left: -26px;
+  top: 8px;
+  left: -42px;
 }
 
 label.search-label {
@@ -170,27 +258,10 @@ button.search-submit:hover{
   cursor: pointer;
 }
 
-.hamburger {
-  display: none;
-}
-
 @media (min-width: 768px) {
 
-       .menu-top {
-          height: 89px;
-
-    // &__logo-tablet{
-    //   display: block;
-    //   margin: 23px 0 0 50px;
-    // }
-
-    // &__logo-mobile {
-    //   display: none;
-    // }
-
-    // &__logo-desktop {
-    //   display: none;
-    // }
+  .menu-top {
+    height: 89px;
 
     &__logo {
       height: 90px;
@@ -337,24 +408,32 @@ input.search-input:focus{
 }
 
 button.search-submit{
-  top: 0;
-  left: 15px;
+  top: 0px;
+  left: 14px;
 }
 
 button.search-submit:hover{
-  top: 0;
-  left: 15px;
+  top: 0px;
+  left: 14px;
 }
 
 button.search-submit:active{
-  top: 0;
-  left: 15px;
+  top: 0px;
+  left: 14px;
 }
 
 input.search-input::placeholder{
   font-size: 10px;
 }
+// .hamburger-btn{
+//   display: none;
+// }
+// .hamburger-btn.closed{
+//   display: none;
+// }
+
 }
+
 
 
 
@@ -421,6 +500,7 @@ input.search-input::placeholder{
 
     &__item--delivery{
       order: 9;
+      z-index: 1;
     }
 
     &__item--new{
@@ -430,6 +510,7 @@ input.search-input::placeholder{
       flex-basis: 220px;
       margin-left: 30px;
       border: none;
+      z-index: 1;
     }
 
     &__item--sale{
@@ -438,11 +519,30 @@ input.search-input::placeholder{
       text-align: left;
       flex-basis: 630px;
       border: none;
+      z-index: 1;
     }
 
   }
+  // .hamburger-btn.closed{
+  // display: none;
+  // }
+  // #menuList{
+  //   display: block;
+  // }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

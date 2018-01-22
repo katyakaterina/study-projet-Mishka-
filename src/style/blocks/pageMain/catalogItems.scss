@@ -1,4 +1,7 @@
 
+ .open{
+  display: block;
+}
 .main-catalog {
   min-width: 320px;
 max-width: 1150px;
@@ -282,6 +285,81 @@ border: 2px solid #63d1bb;
 }
 
 // index ___________________________________
+.modal-ctg.open{
+  display: block;
+}
+.modal-ctg {
+   display: none;
+   position: absolute;
+   top: 175%;
+   left: 0;
+   background-color: $white;
+
+  width: 320px;
+  height: 336px;
+
+  &__title{
+    width: 146px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 37px 0 25px 87px;
+  }
+
+  &__group{
+    width: 260px;
+    height: 53px;
+    margin: 30px 0 30px 30px;
+    display: inline-block;
+  }
+
+  &__ch-gr{
+    width: 82px;
+    height: 53px;
+    display: inline-block;
+  }
+
+  &__text{
+    text-align: center;
+    margin: 0;
+  }
+
+  &__input{
+    display: none;
+  }
+
+  &__size{
+    position: relative;
+    top: 14px;
+    left: 0;
+    font-weight: 700;
+    padding: 12px 0px 0px 33px;
+  }
+
+  &__size:before{
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 50px;
+    border: 1px solid $frameMenu;
+    top: 0;
+    left: 0;
+  }
+
+  input:checked + label:after{
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 50px;
+    border: 1px solid $greenLeft;
+    top: 0;
+    left: 0;
+  }
+
+  button{
+    margin: 0 0 0 30px;
+  }
+}
+
 .catalog-card {
 
   &__item {
@@ -322,7 +400,7 @@ border: 2px solid #63d1bb;
 
 .btn {
   border: 2px solid $darkGray;
-  background-color: transparent;
+  background-color: $white;
   width: 256px;
   height: 48px;
   @include titleSm;
@@ -362,18 +440,29 @@ border: 2px solid #63d1bb;
 
   .catalog-card {
 
-      &__item {
-        @include flexbox;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
+    width: 668px;
+    margin: 0 auto;
 
+<<<<<<< HEAD
       &__title {
 
         @include titleXlTab;
         align-self: flex-start;
         margin: 0 0 59px 0;
       }
+=======
+    &__item {
+      @include flexbox;
+      flex-wrap: wrap;
+      justify-content: space-between;    
+    }
+
+    &__title {
+      @include titleXlTab;
+      align-self: flex-start;
+      margin: 0 0 59px 0;
+    }
+>>>>>>> f8a0a86c8a5cb53175c0ce14c4c1d7056210d3e5
 
       &__hot-sale {
         @include titleSm;
@@ -395,7 +484,7 @@ border: 2px solid #63d1bb;
       }
 
       &__detail {
-        min-width: 50%;
+        min-width: 30%;
       }
 
       &__descr {
@@ -406,13 +495,7 @@ border: 2px solid #63d1bb;
         width: 285px;
       }
   }
-    //  &__item {
-    //    @include textLg(17px, 700);
-    //    line-height: 24px;
-    //    color: #000000;
-    //    width: 181px;
-    //  }
-  }
+}
 
 @media (min-width: 1024px) {
 
@@ -449,9 +532,8 @@ border: 2px solid #63d1bb;
     }
   }
 }
+// __index page_____________________________
 
-
-// _______________________________
 
 @media (min-width:768px){
   .catalog {////лишнее?
@@ -700,6 +782,7 @@ padding-bottom: 150px;
      margin-top: 51px;
      border: none;
    }
+
 }
    .overlay {
      width: 100%;

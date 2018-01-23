@@ -579,8 +579,7 @@ margin-left: 60px;
 left: 5px;
 margin-top: 12px;
 }
-
-  &__input:not(checked),&__label:hover::before {
+&__input:not(checked),&__label:hover::before {
   content: '';
   position: absolute;
   top: -5px;

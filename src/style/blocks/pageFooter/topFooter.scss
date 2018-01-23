@@ -1,5 +1,6 @@
 .footer {
 
+
     &__bg{
         background: $lightGray;
         width: 100%;
@@ -143,8 +144,9 @@
 @media (min-width: 1024px){
 
     .footer {
+
         // width: 100%;
-        // @include flexbox;
+         //@include flexbox;
         // margin-top: 105px;
 
         &__logo-icon:hover {

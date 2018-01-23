@@ -83,6 +83,7 @@ gulp.task("html", function () {
 
 gulp.task("scripts", function () {
     return gulp.src(['./js/hamburger.js','./js/main.js','./js/modal.js','./js/slider.jd','./js/picturefill.js'])
+//return gulp.src('./js/*.js')
       .pipe(concat('scripts.min.js'))
       .pipe(uglify())
 
@@ -141,12 +142,13 @@ gulp.task('clean', function () {
 gulp.task('build', ['clean', 'sass','html'], function () {
 var buildCss = gulp.src([ 'css/main.css'])// Переносим библиотеки в продакшен
 .pipe(gulp.dest('dist/css'))
-var buildFonts = gulp.src('fonts/**/*') // Переносим шрифты в продакшен
+var buildFonts = gulp.src('src/fonts/**/*') // Переносим шрифты в продакшен
 .pipe(gulp.dest('dist/fonts'))
 var buildJs = gulp.src('js/**/*') // Переносим скрипты в продакшен
 .pipe(gulp.dest('dist/js'))
-var buildHtml = gulp.src('/*.html') // Переносим HTML в продакшен
+var buildHtml = gulp.src('./*.html') // Переносим HTML в продакшен
         .pipe(gulp.dest('dist'));
+
 });
 //end build//
 //img//
@@ -155,7 +157,7 @@ gulp.task('compress', function () {
     .pipe(gulpPngquant({
       quality: '65-80'
     }))
-    .pipe(gulp.dest('./compressed/'));
+    .pipe(gulp.dest('dist'));
 });
     //end img//
 gulp.task("webp", function () {

@@ -1,6 +1,6 @@
 'use strict'
 
-var modal = document.getElementById('MyModal');
+var modal = document.getElementById('myModal');
 var buyBtn = document.querySelector('.catalog-card__btn');
 
 

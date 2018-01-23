@@ -554,9 +554,9 @@ vertical-align: middle;
 }
 }
 }
-@media (min-width:1150px){
+@media (min-width:1024px){
 .page-form{
-min-width: 1150px;
+min-width: 1024px;
 margin-bottom: -60px;
 &__title{
 @include textLg(53px, 700);
@@ -711,12 +711,13 @@ position: relative;
 margin-top: 15px;
 }
 &__btn{
-margin-left: 220px;
-margin-top: -100px;
+margin-left: 225px;
+margin-top: -50px;
 //display: inline-block;
 //position: relative;
-vertical-align: middle;
-margin-bottom: -50px;
+vertical-align:top;
+margin-bottom: 100px;
+
 }
 }
 }

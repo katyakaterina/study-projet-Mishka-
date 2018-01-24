@@ -36,17 +36,36 @@ gulp.task('default', function() {
     //.pipe(gulp.dest('dist/css')) // Выгружаем результата в папку app/css
     //.pipe(browserSync.reload({ stream: true })) // Обновляем CSS на странице при изменении
 //});
-
-
-gulp.task('sass', function () { // Создаем таск "sass"
-  return gulp.src(['./src/style/main.scss']) // Берем источник
-    .pipe(sass({outputStyle: 'expanded'})
-     .on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
-    .pipe(gulp.dest('dist/css'))
+gulp.task("sass", function () {
+  return gulp.src("src/style/main.scss")
+    .pipe(concat('main.scss'))
+    .pipe(sass())
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(gulp.dest("dist/css"))
     .pipe(cssnano())
-    .pipe(rename({suffix: 'main.css'})) // Выгружаем результата в папку css
+    .pipe(rename({ suffix: 'min.css' }))
 
 });
+
+
+
+//gulp.task('sass', function () { // Создаем таск "sass"
+  //return gulp.src(['./src/style/main.scss']) // Берем источник
+    //.pipe(sass({outputStyle: 'expanded'})
+     //.on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
+    //.pipe(gulp.dest('dist/css'))
+    //.pipe(cssnano())
+    //.pipe(rename({suffix: 'main.css'})) // Выгружаем результата в папку css
+
+//});
+
+
+
+
+
 
 gulp.task('browser-sync', function () {
   browserSync.init([
@@ -80,7 +99,7 @@ gulp.task("html", function () {
 });
 
 gulp.task('scripts', function () {
-  return gulp.src(['src/js/hamburger.js', 'src/js/main.js', 'src/js/modal.js', './js/slider.jd', './js/picturefill.js' ])
+  return gulp.src(['src/js/hamburger.js', 'src/js/main.js', 'src/js/modal.js', 'src/js/slider.jd', 'src/js/picturefill.js' ])
     .pipe(concat('scripts.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('dist/js'));
@@ -163,8 +182,11 @@ gulp.task("webp", function () {
 });
 gulp.task('serve', function () {
       browserSync.init({
-        server: './dist'
+        server: {
+          baseDir:'./'
+        }
       });
+
 });
 
 

@@ -7,7 +7,7 @@
     }
 
     &__wrap {
-        display: flex;
+        @include flexbox;
         justify-content: space-between;
         align-items: baseline;
         @include itemTop;
@@ -65,7 +65,7 @@
         }
 
         &__box {
-            display: flex;
+            @include flexbox;
             justify-content: space-between;
             width: 668px;
         }
@@ -122,5 +122,5 @@
             @include titleDesk;
         }
     }
-    
+
 }

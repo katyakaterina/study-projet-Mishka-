@@ -3,12 +3,11 @@
   display: block;
 }
 .main-catalog {
-  min-width: 320px;
+  width: 320px;
 // max-width: 1150px; так он навсю ширину
 
     margin: 0 auto;
-    //margin-top: -510px;////изменить
-   // width: 320px;
+
 &__title {
 
 @include textLg(27px, 700);
@@ -21,26 +20,26 @@ line-height: 30px;
 
 
 &__img{
-    background:url('/src/img/item1-mobile-1x.jpg ')no-repeat;
+    //background:url('/src/img/item1-mobile-1x.jpg ')no-repeat;
 
 
     width:260px;
     height: 195px;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 &__img1{
-    background:url('/src/img/item2-mobile-1x.jpg')no-repeat;
+    //background:url('/src/img/item2-mobile-1x.jpg')no-repeat;
 
     width: 260px;
     height: 195px;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 &__img2{
-    background: url('/src/img/item3-mobile-1x.jpg')no-repeat;
+    //background: url('/src/img/item3-mobile-1x.jpg')no-repeat;
 
     width: 260px;
     height: 195px;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 &__item {
   width: 258px;
@@ -446,7 +445,7 @@ border: 2px solid #63d1bb;
     &__item {
       @include flexbox;
       flex-wrap: wrap;
-      justify-content: space-between;    
+      justify-content: space-between;
     }
 
     &__title {
@@ -539,7 +538,7 @@ border: 2px solid #63d1bb;
 @media (min-width:768px){
   .catalog {////лишнее?
   &__item {
-    display: flex;
+    @include flexbox;
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -584,28 +583,28 @@ margin-top: 0px;
     margin-top: 65px;
   width: 760px;
 &__img{
-   background:url('/src/img/item1-tablet-1x.jpg') no-repeat ;
+  // background:url('/src/img/item1-tablet-1x.jpg') no-repeat ;
     width: 334px;
     height: 334px;
-    margin-left: 50px;
+    margin-left: 25px;
     margin-bottom: 74px;
-margin-top: -20px;
+margin-top: -10px;
 }
 &__img1{
-    background:url('/src/img/item2-tablet-1x.jpg')no-repeat;
+    //background:url('/src/img/item2-tablet-1x.jpg')no-repeat;
     width: 334px;
     height: 334px;
-    margin-left: 50px;
+    margin-left: 25px;
     margin-bottom: 74px;
-margin-top: -20px;
+margin-top: -10px;
 }
 &__img2{
-    background:url('/src/img/item3-tablet-1x.jpg')no-repeat;
+   // background:url('/src/img/item3-tablet-1x.jpg')no-repeat;
     width: 334px;
     height: 334px;
-    margin-left: 50px;
+    margin-left: 25px;
     margin-bottom: 45px;
-margin-top: -20px;
+margin-top: -10px;
 }
 &__item{
     width: 335px;
@@ -613,7 +612,7 @@ margin-top: -20px;
     margin-top: -20px;
     border: 1px solid #ececec;
     background-color: #ffffff;
-    margin-left: 0px;
+    margin-left: 25px;
 }
 &__title{
     @include textLg(20px, 700);
@@ -803,23 +802,20 @@ padding-bottom: 150px;
 }
 @media screen and (min-width: 1024px)  {
 body{
-//box-sizing:border-box;
-//border: 1px solid red;
-  //width: 1150px;
-// .menu-top{
-//   width: 1150px;
-//   height: 89px;
-//   @include flexbox;
-// }
+
 .main-catalog{
+
   width: 100%;
 &__title {
-
+  //width: 465px;
+//border: 1px solid;
   @include textLg(53px, 700);
-  padding: 93px 0px 95px 345px;
+  padding: 93px 340px 95px 345px;
   background: #f1f1f1;
-  line-height: 57px;
+  line-height: 53px;
   margin-top: 0px;
+  //text-align: center;
+
 }
 &__title-line:after {
   content: "";
@@ -835,32 +831,33 @@ body{
   transform: rotate(-180deg);
 }
 .catalog{
-
-  width: 100%;
+width: 100%;
 &__img{
-  background:url('/src/img/item1-desktop-1x.jpg')no-repeat;
+  //background:url('/src/img/item1-desktop-1x.jpg')no-repeat;
   width: 316px;
   height: 462px;
-  margin-left: 50px;
+  //margin-left: 50px;
+  margin-left: 25px;
   margin-right: 50px;
-  margin-top: 19px;
+  margin-top: 9px;
+  //margin-top: -19px;
 }
 &__img1{
-  background: url('/src/img/item2-desktop-1x.jpg')no-repeat;
+  //background: url('/src/img/item2-desktop-1x.jpg')no-repeat;
   width: 316px;
   height: 462px;
   margin-right: 50px;
-  margin-top: 19px;
+  margin-top: 9px;
 }
 &__img2{
-  background: url('/src/img/item3-desktop-1x.jpg')no-repeat;
+  //background: url('/src/img/item3-desktop-1x.jpg')no-repeat;
   width: 316px;
   height: 462px;
   margin-right: 50px;
-  margin-top: 19px;
+  margin-top: 9px;
 }
 &__item{
-  margin-left: -366px;
+  margin-left: -341px;
   width: 314px;
   height: 197px;
   margin-top: 480px;
@@ -902,6 +899,7 @@ body{
     flex-wrap:wrap;
     flex-direction: column;
     margin-top: 37px;
+    margin-bottom: 105px;
 .player-process{
 @include flexbox;
 &__title{

@@ -3,11 +3,12 @@
 margin: 0 auto;
 
 .page-form{
+
 margin: 0 auto;
 min-width:320px;
 //width:100%;
 &__title{
-margin-top: 80px;
+margin-top: -340px;//можно убрать
 
 //min-width:320px;
 //width:100%;
@@ -458,7 +459,7 @@ line-height: 18px;
 margin-top: 55px;
 margin-left: 50px;
 &__name-grup{
-display: flex;
+@include flexbox;
 margin-left: 140px;
 margin-top: 40px;
 }
@@ -519,7 +520,7 @@ cursor: pointer;
 margin-left: 215px;
 margin-top: -15px;//20
 margin-bottom: -20px;///30
-padding:10px 220px 16px 18px;
+padding:10px 220px 8px 18px;
 @include textLg(19px, 400);
 line-height: 18px;
 background-color: #f1f1f1;
@@ -530,7 +531,7 @@ margin-left: 168px;
 @include input-placeholder;
 @include textLg(19px, 400);
 width: 470px;
-padding: 13px 10px 73px 15px;//83
+padding: 13px 10px 93px 15px;//83
 margin-bottom: 50px;
 line-height: 18px;
 }
@@ -554,9 +555,9 @@ vertical-align: middle;
 }
 }
 }
-@media (min-width:1150px){
+@media (min-width:1024px){
 .page-form{
-min-width: 1150px;
+min-width: 1024px;
 margin-bottom: -60px;
 &__title{
 @include textLg(53px, 700);
@@ -579,8 +580,7 @@ margin-left: 60px;
 left: 5px;
 margin-top: 12px;
 }
-
-  &__input:not(checked),&__label:hover::before {
+&__input:not(checked),&__label:hover::before {
   content: '';
   position: absolute;
   top: -5px;
@@ -588,8 +588,7 @@ margin-top: 12px;
   width: 50px;
   height: 50px;
   border: 2px solid #63d1bb;
-
-  border-radius: 50%;
+border-radius: 50%;
   background: #fff;
   }
 &__input:not(checked),&__label:active::before {
@@ -604,8 +603,6 @@ margin-top: 12px;
   background: #fff;
 }
 }
-
-
 .filter{
 height: 228px;
 .filters__title{
@@ -645,7 +642,7 @@ background: #fff;
 
 
 &__label{
-display: flex;
+@include flexbox;
 margin-bottom: 3px;
 }
 }
@@ -690,9 +687,8 @@ margin-left: 890px;
 background:url('/src/img/sprites.png')  -264px -263px;
 width: 25px;
 height: 24px;
-//position: absolute;
+
 margin-left: 890px;
-//display: block;
 z-index: 7;
 }
 &__extra{
@@ -711,12 +707,13 @@ position: relative;
 margin-top: 15px;
 }
 &__btn{
-margin-left: 220px;
-margin-top: -100px;
+margin-left: 225px;
+margin-top: -50px;
 //display: inline-block;
 //position: relative;
-vertical-align: middle;
-margin-bottom: -50px;
+vertical-align:top;
+margin-bottom: 120px;
+
 }
 }
 }

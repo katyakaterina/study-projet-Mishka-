@@ -491,35 +491,45 @@ border: 2px solid #63d1bb;
 @media (min-width: 1024px) {
 
   .catalog-card {
+    width: 1050px;
+    height: 795px;
+    margin: 0 auto;
 
     &__item {
+      height: 795px;
+      flex-direction: column;
       margin-top: 70px;
     }
 
     &__title {
+      @include titleDesk;
       order: 2;
-      flex-basis: 85%;
+      z-index: 1;
+      position: relative;
+      top: -63px;
+      left: 170px;
     }
 
     &__hot-sale {
       order: 1;
-      flex-basis: 10%;
+      align-self: flex-start;
+      margin: 65px 0 0 0;
     }
 
     &__detail {
-      order: 3;
-    min-width: 30%;
-    margin-left: 160px;
+      order: 2;
+      align-self: center;
+      width: 300px;
     }
 
-    &__img {
-      order: 5;
+    &__picture{
+      order: 3;
     }
 
     &__to-buy{
-      order: 4;
-    flex-basis: 260px;
-    align-self: flex-end;
+      order: 2;
+      align-self: center;
+      margin-right: 60px;
     }
   }
 }

@@ -359,6 +359,10 @@
     &__caption {
       @include titleDesk;
     }
+
+    &__slide1, &__slide2, &__slide3{
+      height: 201px;
+    }
     
     &__slides{
       width: 875px;

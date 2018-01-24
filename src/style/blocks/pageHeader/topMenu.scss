@@ -11,14 +11,14 @@
   //   border: 0;
   //   outline: none;
   // }
-  
+
   // .hamburger {
   //   position: relative;
   //   display: inline-block;
   //   width: 40px;
   //   height: 20px;
   // }
-  
+
   // .openBtn{
   //   top: 50%;
   //   display: block;
@@ -31,7 +31,7 @@
   //   border-radius: 4px;
   //   background-color: #000;
   // }
-  
+
   // .openBtn:before{
   //   display: block;
   //   content: "";
@@ -52,7 +52,7 @@
   //   background-color: #000;
   //   bottom: -10px;
   // }
-  
+
   // .closeBtn::before{
   //   display: block;
   //   content: "";
@@ -63,7 +63,7 @@
   //   background-color: #000;
   //   top: -10px;
   //   transform: rotate(45deg);
-  
+
   // }
   // .closeBtn::after{
   //   display: block;
@@ -76,7 +76,7 @@
   //   top: -10px;
   //   transform: rotate(-45deg);
   // }
-  
+
   // .menu-top__list.closed{
   //   display: none;
   // }
@@ -85,7 +85,7 @@
   // }
   // .menu-top__list.closed.open{
   //   display: block;
-  
+
   // }
   // .hamburger-btn.opened{
   //   border-top-color: transparent;
@@ -96,7 +96,7 @@
 
 
 .menu-top {
-  
+
 
   &__logo {
     text-align: center;

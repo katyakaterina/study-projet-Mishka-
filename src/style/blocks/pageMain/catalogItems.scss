@@ -147,6 +147,7 @@ width: 260px;
 .video-page {
 &__video img{
 margin-top: 10px;
+margin-left: 0px;
 
 }
 &__link-pic {
@@ -805,12 +806,12 @@ body{
 
 .main-catalog{
 
-  width: 100%;
+  //width: 100%;
 &__title {
   //width: 465px;
 //border: 1px solid;
   @include textLg(53px, 700);
-  padding: 93px 340px 95px 345px;
+  padding: 93px 30px 95px 345px;
   background: #f1f1f1;
   line-height: 53px;
   margin-top: 0px;
@@ -930,7 +931,7 @@ line-height: 30px;
 }
 }
 .player__btn{
-position: relative;
+ position: relative;
 width: 230px;
 height: 52px;
 border: 2px solid #444444;
@@ -939,7 +940,7 @@ margin-left: 80px;
 margin-top: 64px;
 }
 .modal-ctg {
-   margin-top: -250px;
+margin-top: -250px;
    margin-left: 240px;
    width: 566px;
    height: 336px;

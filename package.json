@@ -31,8 +31,7 @@
     "imagemin-optipng": "^5.2.1",
     "install": "^0.10.2",
     "npm": "^5.6.0",
-    "posthtml-include": "^1.1.0",
-    "imagemin-pngquant": "^5.0.1"
+    "posthtml-include": "^1.1.0"
   },
   "scripts": {
     "stylelint": "stylelint 'sass/**/*.scss' --syntax sass",
@@ -64,7 +63,5 @@
     "mishka"
   ],
   "homepage": "https://bitbucket.org/teamWoKi/project-mishka#readme",
-  "dependencies": {
-
-  }
+  "dependencies": {}
 }

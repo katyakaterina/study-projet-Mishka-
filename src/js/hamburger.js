@@ -2,15 +2,19 @@
 
 var buttonMenu = document.getElementById("buttonMenu");
 var menu = document.getElementById("menuList");
-var menuClosed = document.getElementsByClassName("hamburger-btn closed");
-var menuOpened = document.getElementsByClassName("hamburger-btn opened");
-var itemClosed = document.getElementsByClassName("menu-top__list closed");
-var itemOpened = document.getElementsByClassName("menu-top__list opened");
-var iconOpen = document.getElementsByClassName("openBtn");
-var iconClose = document.getElementsByClassName("closeBtn");
+var iconOpen = document.getElementById("openButton");
+var iconClose = document.getElementById("closeButton");
 
 buttonMenu.addEventListener("click", function (e) {
-    e.preventDefault();
-    console.log(menu.classList.contains("open"));
-    menu.classList.toggle("open");
+(menu.classList.toggle("open")); 
+        
+   if (e) {
+     (iconClose.style.display = 'block');
+      return (iconOpen.style.display = 'none'); 
+    }
+      else {
+     (iconOpen.style.display = 'block');
+     return (iconClose.style.display = 'none');
+   }
 });
+

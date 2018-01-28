@@ -7,7 +7,7 @@ var posthtml = require('gulp-posthtml');
 var postcss = require('gulp-postcss');
 var csso = require('gulp-csso');
 var imagemin = require('gulp-imagemin');
-var pngquant = require('imagemin-pngquant');
+var imageminWebp = require('imagemin-webp');
 var pug = require('gulp-pug');
 var autoprefixer = require('gulp-autoprefixer');
 var plumber = require('gulp-plumber');
@@ -106,12 +106,11 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('img', function () {
-  return gulp.src('src/img/**/*') // Берем все изображения из app
+  return gulp.src('src/img/*') // Берем все изображения из app
     .pipe(imagemin({ // Сжимаем их с наилучшими настройками
 
       progressive: true,
       svgoPlugins: [{ removeViewBox: false }],
-      use: [pngquant()],
         interlaced: true
     }))
     .pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
@@ -177,9 +176,15 @@ gulp.task('compress', function () {
     //end img//
 gulp.task("webp", function () {
     return gulp.src("src/img/**/*.{png,jpg}")
-        .pipe(webp({ quality: 90 }))
-        .pipe(gulp.dest("img"));
+    imagemin(['img/*.{jpg,png}'], {
+      use: [
+          imageminWebp({quality: 50})
+      ]
+        // .pipe(webp({ quality: 90 }))
+        .pipe(gulp.dest("img"))
+      })
 });
+
 gulp.task('serve', function () {
       browserSync.init({
         server: {
@@ -221,32 +226,3 @@ gulp.task('default', function () {
         .pipe(gulp.dest('dist'));
 });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

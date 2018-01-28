@@ -63,7 +63,5 @@
     "mishka"
   ],
   "homepage": "https://bitbucket.org/teamWoKi/project-mishka#readme",
-  "dependencies": {
-    "imagemin-webp": "^4.1.0"
-  }
+  "dependencies": {}
 }

@@ -7,7 +7,6 @@ var posthtml = require('gulp-posthtml');
 var postcss = require('gulp-postcss');
 var csso = require('gulp-csso');
 var imagemin = require('gulp-imagemin');
-var imageminWebp = require('imagemin-webp');
 var pug = require('gulp-pug');
 var autoprefixer = require('gulp-autoprefixer');
 var plumber = require('gulp-plumber');
@@ -30,42 +29,46 @@ var spritesmith = require('gulp.spritesmith');
 gulp.task('default', function() {
     console.log("hello people!")
 });
-//gulp.task('sass', function () { // Создаем таск Sass
-  //return gulp.src('src/style/main.scss') // Берем источник
-    //.pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
-    //.pipe(gulp.dest('dist/css')) // Выгружаем результата в папку app/css
-    //.pipe(browserSync.reload({ stream: true })) // Обновляем CSS на странице при изменении
-//});
-gulp.task("sass", function () {
-  return gulp.src("src/style/main.scss")
-    .pipe(concat('main.scss'))
-    .pipe(sass())
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
-      cascade: false
-    }))
-    .pipe(gulp.dest("dist/css"))
-    .pipe(cssnano())
-    .pipe(rename({ suffix: 'min.css' }))
-
-});
-
-
-
 //gulp.task('sass', function () { // Создаем таск "sass"
-  //return gulp.src(['./src/style/main.scss']) // Берем источник
-    //.pipe(sass({outputStyle: 'expanded'})
-     //.on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
-    //.pipe(gulp.dest('dist/css'))
-    //.pipe(cssnano())
-    //.pipe(rename({suffix: 'main.css'})) // Выгружаем результата в папку css
+//return gulp.src(['./src/style/main.scss'])
+//.pipe(autoprefixer({
+        // browsers: ['last 2 versions'],
+        //cascade: false
+        //}))
+//.pipe(sass({outputStyle: 'expanded'})
+//.on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
+//.pipe(gulp.dest('dist/css'))
+//.pipe(cssnano())
+//.pipe(rename({suffix: 'main.css'})) // Выгружаем результата в папку css
 
 //});
 
+gulp.task('sass', function () { // Создаем таск "sass"
+return gulp.src(['src/style/main.scss']) // Берем источник
+.pipe(sass({outputStyle: 'expanded'})
+.on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
+//.pipe(gulp.dest('dist/css'))
+.pipe(autoprefixer({
+   browsers: ['last 2 versions'],
+   cascade: false
+ }))
+.pipe(gulp.dest('dist/css'))
+.pipe(cssnano())
+.pipe(rename({suffix: 'main.css'})) // Выгружаем результата в папку css
+});
+//gulp.task("sass", function () {
+  //return gulp.src("src/style/main.scss")
+    //.pipe(concat('main.scss'))
+    //.pipe(sass())
+    //.pipe(autoprefixer({
+     // browsers: ['last 2 versions'],
+     //cascade: false
+    //}))
+    //.pipe(gulp.dest("dist/css"))
+    //.pipe(cssnano())
+    //.pipe(rename({ suffix: 'min.css' }))
 
-
-
-
+//});
 
 gulp.task('browser-sync', function () {
   browserSync.init([
@@ -83,6 +86,10 @@ gulp.task('browser-sync', function () {
   });
 });
 
+
+
+
+
 //watch//
 gulp.task('watch', ['browser-sync', 'sass','scripts', 'html', 'img', 'js'], function () {
 gulp.watch('src/style/**/*.scss', ['sass']);
@@ -93,7 +100,7 @@ gulp.watch('src/style/**/*.scss', ['sass']);
 //end watch//
 
 gulp.task("html", function () {
-  return gulp.src("./src/**/*.html")
+  return gulp.src("src/**/*.html")
     .pipe(gulp.dest("./*.html"))
 .pipe(gulp.dest('dist/html'));
 });
@@ -108,9 +115,9 @@ gulp.task('scripts', function () {
 gulp.task('img', function () {
   return gulp.src('src/img/*') // Берем все изображения из app
     .pipe(imagemin({ // Сжимаем их с наилучшими настройками
-
-      progressive: true,
+progressive: true,
       svgoPlugins: [{ removeViewBox: false }],
+      //use: [pngquant()],
         interlaced: true
     }))
     .pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
@@ -168,22 +175,19 @@ var buildHtml = gulp.src('./*.html') // Переносим HTML в продак�
 //img//
 gulp.task('compress', function () {
   gulp.src('src/img/*.png')
-    .pipe(gulpPngquant({
-      quality: '65-80'
-    }))
-    .pipe(gulp.dest('dist'));
+    .pipe(imagemin())
+    .pipe(gulp.dest('dist'))
 });
-    //end img//
+
+
+
 gulp.task("webp", function () {
-    return gulp.src("src/img/**/*.{png,jpg}")
-    imagemin(['img/*.{jpg,png}'], {
-      use: [
-          imageminWebp({quality: 50})
-      ]
-        // .pipe(webp({ quality: 90 }))
-        .pipe(gulp.dest("img"))
-      })
+  return gulp.src("src/img/**/*.{png,jpg}")
+    .pipe(webp({ quality: 90 }))
+    .pipe(gulp.dest("img"));
 });
+
+    //end img//
 
 gulp.task('serve', function () {
       browserSync.init({

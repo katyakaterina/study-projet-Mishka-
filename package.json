@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Первая командная работа",
   "main": "index.js",
-  "author": "Kate Konstantionva Aleksey Malyshev",
+  "author": "Kate Konstantionva  Aleksey Malyshev",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.23.5",

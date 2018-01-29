@@ -5,39 +5,29 @@
 .main-catalog {
   width: 320px;
 // max-width: 1150px; так он навсю ширину
-
-    margin: 0 auto;
-
+margin: 0 auto;
 &__title {
-
 @include textLg(27px, 700);
 padding:55px 0px 74px 42px;
 background: #f1f1f1;
-line-height: 30px;
-
+line-height:1.1;
 }
 .catalog {
-
-
 &__img{
     //background:url('/src/img/item1-mobile-1x.jpg ')no-repeat;
-
-
-    width:260px;
+width:260px;
     height: 195px;
     margin-left: 15px;
 }
 &__img1{
     //background:url('/src/img/item2-mobile-1x.jpg')no-repeat;
-
-    width: 260px;
+width: 260px;
     height: 195px;
     margin-left: 15px;
 }
 &__img2{
     //background: url('/src/img/item3-mobile-1x.jpg')no-repeat;
-
-    width: 260px;
+width: 260px;
     height: 195px;
     margin-left: 15px;
 }
@@ -60,7 +50,7 @@ line-height: 30px;
 &__title {
   cursor: pointer;
 @include textLg(17px,700);
-  line-height: 24px;
+  line-height: 1.4;
   margin-left: 30px;
   margin-top:30px;
 }
@@ -69,11 +59,12 @@ line-height: 30px;
 }
 &__title:active{
   opacity: 0.3;
+
 }
 &__descr {
 @include textLg(13px, 400);
   color: $darkGray;
-  line-height: 30px;
+  line-height:2.3;
   margin-left: 30px;
 padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
@@ -82,12 +73,11 @@ padding-bottom: 16px;
 &__descr--line{
 @include textLg(13px, 400);
 color: $darkGray;
-line-height: 30px;
+line-height:2.3;
 margin-left: 30px;
   padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
   width: 204px;
-
 }
 .catalog-price {
 @include flexbox;
@@ -96,7 +86,7 @@ margin-left: 30px;
   margin-left: 30px;
 &__number {
 @include textLg(17px, 700);
-  line-height: 24px;
+  line-height:1.4;
   margin-top: 17px;
   margin-bottom: 20px;
   color:black;
@@ -121,7 +111,7 @@ height: 18px;
 .player-video {
 width: 260px;
   border: 1px solid #ececec;
-  margin: 30px 30px 58px 30px;/////
+  margin: 30px 30px 58px 30px;
   flex-direction: column;
   @include flexbox;
 .player-process {
@@ -132,7 +122,7 @@ width: 260px;
   @include textLg(17px, 700);
   width: 126px;
   margin-left: 5px;
-  line-height: 24px;
+  line-height:1.4;
   margin-top: 19px;
 }
 &__link-pic {
@@ -148,7 +138,6 @@ width: 260px;
 &__video img{
 margin-top: 10px;
 margin-left: 0px;
-
 }
 &__link-pic {
   background:url('/src/img/sprites.png') -739px -11px;
@@ -171,7 +160,7 @@ margin-left: 0px;
 }
 &__descr {
   @include textLg(13px, 400);
-  line-height: 24px;
+  line-height:1.8;
   color: $darkGray;
   //margin-top: 34px;
   margin-left: 34px;
@@ -191,7 +180,7 @@ margin-left: 0px;
     @include textLg(17px,700);
     color:$darkGray;
     cursor: pointer;
-    line-height: 16px;
+    line-height:0.9;
     padding:16px 0 26px 0;
 }
 .player__btn:hover{
@@ -546,12 +535,12 @@ opacity:0.8;
     margin-top: 45px;
     margin-left: 108px;
     @include textLg(30px, 700);
-    line-height: 57px;
+    line-height:1.9;
     text-transform: uppercase;
   }
   &__text {
     @include textLg(17px, 400);
-    line-height: 30px;
+    line-height:1.7;
     color: $darkGray;
     text-align: center;
     margin-top: 12px;
@@ -688,12 +677,12 @@ opacity:0.8;
     margin-top: 45px;
     margin-left: 108px;
     @include textLg(30px, 700);
-    line-height: 57px;
+    line-height:1.9;
     text-transform: uppercase;
   }
   &__text {
     @include textLg(17px, 400);
-    line-height: 30px;
+    line-height: 1.7;
     color: $darkGray;
     text-align: center;
     margin-top: 12px;
@@ -831,7 +820,7 @@ width: 100%;
 @include textLg(43px, 700);
     padding:95px 0px 70px 198px;
     background: #f1f1f1;
-    line-height: 50px;
+    line-height:1.1;
 margin-top: 0px;
 }
     &__title-line:after {
@@ -904,7 +893,7 @@ margin-top: -10px;
 &__descr--line{
 @include textLg(15px, 400);
 color:#444444;
-line-height: 30px;
+line-height:2;
 margin-top: -65px;
 width: 268px;
 padding-bottom: 150px;
@@ -970,7 +959,7 @@ padding-bottom: 150px;
   order:3;
   margin-top: -4px;
   margin-left: 40px;
-  line-height: 30px;
+  line-height: 2;
 }
 }
 .player__btn {
@@ -1083,7 +1072,7 @@ body{
   @include textLg(53px, 700);
   padding: 93px 30px 95px 345px;
   background: #f1f1f1;
-  line-height: 53px;
+  line-height:1;
   margin-top: 0px;
   //text-align: center;
 
@@ -1137,11 +1126,11 @@ width: 100%;
 }
 &__title{
   @include textLg(20px, 700);
-  line-height: 24px;
+  line-height:1.2;
 }
 &__descr{
   @include textLg(15px, 400);
-  line-height: 30px;
+  line-height:2;
   color:$darkGray;
   border-bottom: 1px solid #ececec;
   padding-bottom: 40px;
@@ -1150,7 +1139,7 @@ width: 100%;
 }
 &__descr--line{
  @include textLg(15px, 400);
- line-height: 30px;
+ line-height:2;
  color:$darkGray;
   border-bottom: 1px solid #ececec;
   padding-bottom: 12px;
@@ -1175,7 +1164,7 @@ width: 100%;
 @include flexbox;
 &__title{
 @include textLg(20px, 700);
-line-height: 24px;
+line-height:1.2;
 width: 148px;
 margin-left: 79px;
 margin-top: 50px;

@@ -262,7 +262,7 @@
     height: 231px;
   }
 
-  &__slide1 {
+  &__slide1, &__slide2, &__slide3 {
     display: flex;
     flex-direction: column;
     order: 3;

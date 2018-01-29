@@ -70,6 +70,9 @@ return gulp.src(['src/style/main.scss']) // Берем источник
 
 //});
 
+
+
+
 gulp.task('browser-sync', function () {
   browserSync.init([
     './src/style/**/*.scss',
@@ -81,7 +84,7 @@ gulp.task('browser-sync', function () {
   ], {
     open: true,
     server: {
-      baseDir: './'
+     baseDir: './'
     }
   });
 });
@@ -96,6 +99,7 @@ gulp.watch('src/style/**/*.scss', ['sass']);
   gulp.watch('./*.html', browserSync.reload);
   gulp.watch('src/js/**/*.js', browserSync.reload);
   gulp.watch('src/img/*.+(jpg|jpeg|png|gif)', browserSync.reload);
+
 });
 //end watch//
 

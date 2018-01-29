@@ -7,7 +7,6 @@ var posthtml = require('gulp-posthtml');
 var postcss = require('gulp-postcss');
 var csso = require('gulp-csso');
 var imagemin = require('gulp-imagemin');
-
 var pug = require('gulp-pug');
 var autoprefixer = require('gulp-autoprefixer');
 var plumber = require('gulp-plumber');
@@ -118,7 +117,7 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('img', function () {
-  return gulp.src('src/img/**/*') // Берем все изображения из app
+  return gulp.src('src/img/*') // Берем все изображения из app
     .pipe(imagemin({ // Сжимаем их с наилучшими настройками
 progressive: true,
       svgoPlugins: [{ removeViewBox: false }],
@@ -235,32 +234,3 @@ gulp.task('default', function () {
         .pipe(gulp.dest('dist'));
 });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -49,3 +49,25 @@ btnRight.addEventListener("click", function(){
 });
 
 startSlide();
+
+
+
+
+
+//  btnLeft.addEventListener('click' , function(){
+//      if ((slideLeft == -1) || (btnLeft == 0))
+//        return slideContent.style.display = "block"
+//     else 
+//        return
+//       (slideContent.style.display = "none")
+//  });
+
+//  btnRight.addEventListener('click', function(){
+//     if ((slideRight == 1) || (btnRight == -1))
+//     return slideContent.style.display = "block"
+//     else 
+//     return (slideContent.style.display = "none")
+//  })
+ 
+
+    

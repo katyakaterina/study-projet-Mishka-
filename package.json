@@ -6,7 +6,7 @@
   "author": "Kate Konstantionva  Aleksey Malyshev",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.23.5",
+    "browser-sync": "^2.23.6",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
@@ -20,7 +20,7 @@
     "gulp-minify": "^2.1.0",
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^7.0.1",
-    "gulp-posthtml": "^3.0.2",
+    "gulp-posthtml": "^3.0.4",
     "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
@@ -29,7 +29,7 @@
     "gulp-webp": "^2.3.0",
     "gulp.spritesmith": "^6.9.0",
     "imagemin-optipng": "^5.2.1",
-    "install": "^0.10.2",
+    "install": "^0.10.4",
     "npm": "^5.6.0",
     "posthtml-include": "^1.1.0"
   },

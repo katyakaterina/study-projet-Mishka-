@@ -1,6 +1,8 @@
 .contacts {
 
-    width: 260px;
+    &__inner{
+        width: 260px; 
+    }
 
     &__title{
         @include titleContactMobile;
@@ -56,8 +58,12 @@
 @media (min-width: 768px) {
 
     .contacts {
-        width: 668px;
-        margin: 150px 0 0 50px;
+
+        &__inner{
+         width: 668px;
+        margin: 150px 0 0 50px;   
+        }
+        
 
         &__title{
             @include titleXlTab;
@@ -117,10 +123,53 @@
 @media (min-width: 1024px) {
 
     .contacts{
+        width: 1050px;
+        height: 528px;
+        margin: 155px 0 0 80px;
 
+        &__inner{
+          width: 1050px;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-content: space-between;
+          height: 700px;
+          margin: 0 auto;
+        }
+        &__box{
+            flex-direction: column;
+            width: 345px;
+            height: 250px;
+            order: 2;
+            margin: 0 0 0 150px;
+        }
+        &__wrap{
+            width: 350px;
+        }
+        &__link{
+            width: 265px;
+        }
+        &__address{
+            width: 265px;
+        }
+
+        &__map{
+            order: 3;
+            align-self: flex-end;
+        }
+        &__btn{
+            order: 2;
+            margin: 0 0 0 150px;
+        }
         &__title{
             @include titleDesk;
+            align-self: flex-start;
+            order: 1;
+            margin: 80px 0 30px 150px;
+        }
+        &__icon{
+            top: -255px;
+            left: -109px;
         }
     }
-
 }

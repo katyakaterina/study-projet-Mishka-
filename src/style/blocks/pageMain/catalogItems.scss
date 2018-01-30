@@ -190,86 +190,7 @@ color: $white;
 .player__btn:active{
 opacity:0.8;
 }
-//.modal-ctg {
-  //margin-top: -250px;
-  //margin-left: -30px;
-  //width: 320px;
-  //height: 336px;
-  //box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
-  //border: 1px solid #c6c6c6;
-  //background: $white;
-  //position: fixed;
-//top: 50%;
-//z-index:5;
-//display: none;
-  //&__title {
-   // margin-left: 89px;
-   // margin-top: 36px;
-    //width: 149px;
-   // @include textLg(25px, 700);
-    //line-height: 30px;
-    //text-transform: uppercase;
-  //}
-  //&__text {
-    //line-height: 30px;
-    //text-align: center;
-   // margin-top: -15px;
-  //}
-  //&__form {
-    //width: 260px;
-    //margin-top: 38px;
-    //margin-left: 30px;
-  //}
-  //&__input {
-    //display: none;
-  //}
-  //&__size {
-    //padding: 14px 34px;
-    //cursor: pointer;
-    //border: 2px solid #ececec;
-    //@include textLg(17px, 700);
-    //background-color: #ffffff;
-  //line-height: 16px;
-//}
-//&__size:hover{
- //border: 2px solid #c7c7c7;
-//}
-//&__size:focus{
-//border: 2px solid #63d1bb;
-//}
-//&__size:active {//
-  //border: 2px solid #63d1bb;
-//}
-//&__input:checked + &__size {
-    //border: 2px solid #63d1bb;
-  //}
-//&__btn {
-    //width: 260px;
-    //height: 52px;
-    //background-color: #63d1bb;
-    //cursor: pointer;
-    //@include textLg(17px, 700);
-    //line-height: 16px;
-    //color: $white;
-    //margin-left: 30px;
-    //text-transform: uppercase;
-    //margin-top: 44px;
-    //border: none;
-  //}
-//}
-//.overlay {
-    //width: 100%;
-    //height: 2444px;
-    //position: fixed;
-    //opacity: 0.9;
-    //z-index:3;
-    //background-color: #fff;
-    //cursor: pointer;
-    //display: none;
-    //top: 0;
-   // left: 0;
-    //margin-left: 0px;
-//}
+
 }
 }
 
@@ -603,12 +524,7 @@ opacity:0.8;
   left: 0;
   margin-left: 10px;
 }
-
-
-
-
-
-  .catalog-card {
+.catalog-card {
 
     width: 668px;
     margin: 0 auto;
@@ -745,11 +661,7 @@ opacity:0.8;
   left: 0;
   margin-left: 0px;
 }
-
-
-
-
-  .catalog-card {
+.catalog-card {
     width: 1050px;
     height: 795px;
     margin: 0 auto;
@@ -972,91 +884,6 @@ padding-bottom: 150px;
   margin-left: 42px;
   padding:16px 0px 26px 0px;
 }
-//.modal-ctg {
-  //width: 566px;
-  //height: 336px;
-  //margin-top: -250px;
-  //margin-left: 50px;
-  //box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
-  //border: 1px solid #c6c6c6;
-  //background: $white;
-  //position: fixed;
-  //top: 50%;
-  //z-index:5;
-  //display: none;
-//&__title {
-  //width: 355px;
-  //height: 29px;
-  //margin-top: 45px;
- // margin-left: 108px;
-  //@include textLg(30px, 700);
-  //line-height: 57px;
-  //text-transform: uppercase;
-//}
-//&__text {
-  //@include textLg(17px, 400);
-  //line-height: 30px;
-  //color: $darkGray;
-  //text-align: center;
-  //margin-top: 12px;
-//}
-//&__form {
-  //width: 360px;
-  //margin-top: 38px;
-  //margin-left: 108px;
-//}
-//&__input {
-  //display: none;
-//}
-//&__size {
- // padding: 20px 50px;
-  //cursor: pointer;
-  //border: 2px solid #ececec;
-  //@include textLg(17px, 700);
-  //background-color: $white;
-  //color: $darkGray;
-  //line-height: 16px;
-//}
-//&__size:hover {
- // border: 2px solid #c7c7c7;
-//}
-//&__size:focus {
-  //border: 2px solid #63d1bb;
-//}
-//&__size:active {
- // border: 2px solid #63d1bb;
-//}
-//&__input:checked+&__size {
-  //border: 2px solid #63d1bb;
-//}
-//&__btn {
-     //width: 355px;
-     //height: 52px;
-    // background-color: $greenLeft;
-    //cursor: pointer;
-     //@include textLg(17px, 700);
-     //line-height: 16px;
-    //color: $white;
-     //margin-left: 108px;
-     //text-transform: uppercase;
-    // margin-top: 51px;
-     //border: none;
-   //}
-
-//}
-   //.overlay {
-    // width: 100%;
-    // height: 2444px;
-    // position: fixed;
-    // opacity: 0.9;
-     //background-color: #fff;
-     // cursor: pointer;
-     //display: none;
-     //z-index: 3;
-     //top: 0;
-     //left: 0;
-    // margin-left: 10px;
-   //}
 }
 }
 }
@@ -1198,90 +1025,7 @@ background-color: #ffffff;
 margin-left: 80px;
 margin-top: 64px;
 }
-////.modal-ctg {
-////margin-top: -250px;
-  //// margin-left: 240px;
-  //// width: 566px;
-  //// height: 336px;
-   ////box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
-   ////border: 1px solid #c6c6c6;
-  //// background: #fff;
-   ////position:fixed;
-  //// top: 50%;
-  ////z-index:5;
-  ////display: none;
-////&__title {
-    //// width: 355px;
-    //// height: 29px;
-    //// margin-top: 45px;
-    //// margin-left: 108px;
-    //// @include textLg(30px, 700);
-     ////line-height: 57px;
-    //// text-transform: uppercase;
-   ////}
-////&__text {
-    //// @include textLg(17px, 400);
-    //// line-height: 30px;
-    //// color: $darkGray;
-     ////text-align: center;
-    //// margin-top: 12px;
-   ////}
-////&__form {
-     ////width: 360px;
-     ////margin-top: 38px;
-    //// margin-left: 108px;
-   ////}
-////&__input {
-     ////display: none;
-   ////}
-////&__size {////
-     //padding: 20px 50px;
-     //cursor: pointer;
-     //border: 2px solid #ececec;
-   // @include textLg(17px, 700);
-    // background-color: #ffffff;
-     //color: #444444;
-     //line-height: 16px;
-   //}
-////&__size:hover {
-  ////border: 2px solid #c7c7c7;
-////}
-////&__size:focus {
-  ////border: 2px solid #63d1bb;
-////}
-////&__size:active {
- //// border: 2px solid #63d1bb;
-////}
-////&__input:checked+&__size {
- //// border: 2px solid #63d1bb;
-////}
-////&__btn {
-    //// width: 355px;
-    //// height: 52px;
-    //// background-color: #63d1bb;
-    //// cursor: pointer;
-    //// @include textLg(17px, 700);
-     ////line-height: 16px;
-    //// color: $white;
-    //// margin-left: 108px;
-    //// text-transform: uppercase;
-    //// margin-top: 51px;
-     ////border: none;
-   ////}
-////}
-////.overlay {
-     ////width: 100%;
-    ////height: 2444px;
-    //// position: fixed;
-     ////opacity: 0.9;
-     ////background-color: #fff;
-    ////cursor: pointer;
-     ////display: none;
-     ////z-index: 3;
-     ////top: 0;
-    //// left: 0;
-    //// margin-left: 0px;
-////}
+
 }
 }
 }

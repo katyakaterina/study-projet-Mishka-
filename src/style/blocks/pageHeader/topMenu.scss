@@ -35,6 +35,9 @@
     height: 4px;
     border-radius: 4px;
     background-color: #000;
+    transition: 0.2s;
+
+
   }
 
   .openBtn:before{
@@ -46,6 +49,8 @@
     border-radius: 4px;
     background-color: #000;
     top: -10px;
+     transition: 0.2s;
+
   }
   .openBtn:after{
     display: block;
@@ -56,6 +61,8 @@
     border-radius: 4px;
     background-color: #000;
     bottom: -10px;
+     transition: 0.2s;
+
   }
 
   .closeBtn::before{
@@ -68,6 +75,10 @@
     background-color: #000;
     top: -10px;
     transform: rotate(45deg);
+ transition: 0.2s;
+
+    
+
 
   }
   .closeBtn::after{
@@ -80,6 +91,9 @@
     background-color: #000;
     top: -10px;
     transform: rotate(-45deg);
+     transition: 0.2s;
+
+
   }
 
   .menu-top__list.closed{
@@ -94,7 +108,7 @@
     top: -74px;
     left: 0;
   }
-  .hamburger-btn.opened{
+  .hamburger-btn, .opened{
     border-top-color: transparent;
   }
   .closeBtn{

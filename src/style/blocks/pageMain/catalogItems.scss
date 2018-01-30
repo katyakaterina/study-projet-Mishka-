@@ -679,12 +679,13 @@ opacity:0.8;
       position: relative;
       top: -63px;
       left: 170px;
+      margin: 0;
     }
 
     &__hot-sale {
       order: 1;
       align-self: flex-start;
-      margin: 65px 0 0 0;
+      margin: 65px 0 0 15px;
     }
 
     &__detail {
@@ -701,6 +702,7 @@ opacity:0.8;
       order: 2;
       align-self: center;
       margin-right: 60px;
+      height: 290px;
     }
   }
 }

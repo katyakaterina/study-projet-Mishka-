@@ -7,15 +7,18 @@
     <link rel="stylesheet" href="dist/css/main.css">
     <script src="src/js/main.js"></script>
     <script src="src/js/picturefill.js"></script>
+    <link rel="preload" href="src/js/main.js" as="script">
+    <link rel="preload" href="src/fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="src/fonts/opensans-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="src/fonts/opensans-regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="src/fonts/opensans-bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="dist/css/main.css" as="style" onload="this.rel='stylesheet'">
     <title>Mishka - интернет - магазин</title>
 </head>
 <body>
     <header class="header">
         <nav class="nav">
             <div class="menu-top">
-                       <!-- <div class="menu-top__logo">
-                            <a class="menu-top__logo-link" href="index.html"><i class="menu-top__logo-img"></i></a>
-                       </div> -->
                        <div class="hamburger-menu">
                            <button class="hamburger-btn closed" id="buttonMenu">
                                <span class="hamburger">
@@ -157,8 +160,6 @@
   <button class="btn modal-ctg__btn">Добавить</button>
 </div>-->
 <div class="overlay"></div>
-
-
           </div>
       </section>
       <section class="about-us">
@@ -187,10 +188,24 @@
                     </div>
                 </div>
                  <div class="slide-content slider__slide2">
-                    <p class="slider__comment">Второй слайд</p>
+                    <p class="slider__comment">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
+                        как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                        и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+                    </p>
+                    <div class="slider__user">
+                        <span class="slider__auth">Анастасия Красильникова</span>
+                        <span class="slider__nick">@misssssiskras</span>
+                    </div>
                 </div>
                 <div class="slide-content slider__slide3">
-                    <p class="slider__comment">Третий слайд</p>
+                    <p class="slider__comment">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
+                        как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                        и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+                    </p>
+                    <div class="slider__user">
+                        <span class="slider__auth">Анастасия Красильникова</span>
+                        <span class="slider__nick">@misssssiskras</span>
+                    </div>
                </div>
                <div class="slider__controls">
                     <button class="slider__btn-left" id="btn-1"></button>

@@ -56,19 +56,7 @@ return gulp.src(['src/style/main.scss']) // Берем источник
 .pipe(cssnano())
 .pipe(rename({suffix: 'main.css'})) // Выгружаем результата в папку css
 });
-//gulp.task("sass", function () {
-  //return gulp.src("src/style/main.scss")
-    //.pipe(concat('main.scss'))
-    //.pipe(sass())
-    //.pipe(autoprefixer({
-     // browsers: ['last 2 versions'],
-     //cascade: false
-    //}))
-    //.pipe(gulp.dest("dist/css"))
-    //.pipe(cssnano())
-    //.pipe(rename({ suffix: 'min.css' }))
 
-//});
 
 
 

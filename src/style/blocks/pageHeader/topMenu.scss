@@ -123,34 +123,21 @@
 
 .menu-top {
 
-  // position: relative;
-  // top: -75px;
-  // left: 0;
-
-
   &__logo {
     text-align: center;
     height: 59px;
     border-bottom: 1px solid $frameMenu;
     padding: 20px 0 0 0;
-  }
 
-  &__logo:hover {
-    opacity: 0.6;
-  }
-
-  &__logo:active {
-    opacity: 0.3;
-  }
-
-  &__logo-img{
-    display: block;
-    background: url('/src/img/sprites.png') no-repeat;
-    background-position: -457px -8px ;
-	  width: 86px;
-    height: 35px;
-    padding: 5px;
-    margin: 0 auto;
+      &:hover {
+        opacity: 0.6;
+      }
+      &:active {
+        opacity: 0.3;
+      }
+      &-tablet, &-desktop{
+        display: none;
+      }
   }
 
   &__item {
@@ -294,18 +281,15 @@ button.search-submit:hover{
     height: 89px;
 
     &__logo {
-      height: 90px;
+      height: 69px;
       width: 370px;
-      border-left: 1px solid $frameMenu;
-      padding: 0;
-    }
-
-    &__logo-img{
-      display: block;
-      background: url(/src/img/sprites.png) -453px -56px no-repeat;
-	    width: 113px;
-      height: 46px;
-      margin: 20px 0 0 50px;
+      border-left: 1px solid #ececec;
+         &-tablet{
+           display: inline-block;
+          }
+         &-mobile, &-desktop{
+            display: none;
+         }
     }
 
     &__list {
@@ -454,17 +438,25 @@ input.search-input::placeholder{
 
   .menu-top {
 
+    width: 1200px;
+    margin: 0 auto;
+
     .hamburger-btn{
       display: none;
     }
 
-    width: 1200px;
-    margin: 0 auto;
-
-  &__logo{
-    order: 4;
-    width: 300px;
-    border-left: none;
+    &__logo{
+       order: 4;
+       flex-basis: 300px;
+       border: none;
+       align-self: center;
+       padding: 0;
+       &-desktop{
+         display: inline-block;
+       }
+       &-mobile, &-tablet{
+         display: none;
+      }
   }
 
   &__logo-img{

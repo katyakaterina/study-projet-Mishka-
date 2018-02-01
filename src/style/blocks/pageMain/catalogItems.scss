@@ -606,8 +606,6 @@ opacity:0.8;
 
 
 
-
-
   .catalog-card {
 
     width: 668px;
@@ -646,15 +644,20 @@ opacity:0.8;
 
       &__detail {
         min-width: 30%;
+        height: 244px;
       }
 
       &__descr {
         @include descrTablet;
         align-self: flex-start;
         padding-top: 0;
-        padding: 0 0 55px 0;
         width: 285px;
       }
+      &__to-buy{
+        height: 130px;
+        width: 256px;
+      }
+     
   }
 }
 

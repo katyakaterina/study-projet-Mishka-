@@ -102,7 +102,7 @@
             background: url(/src/img/sprites.png);
             background-position: -405px -113px ;
 	        width: 47px;
-            height: 81px;
+            height: 90px;
             order: 1;
             position: relative;
             top: -115px;
@@ -125,32 +125,30 @@
     .contacts{
         width: 1050px;
         height: 528px;
-        margin: 155px 0 0 80px;
+        margin: 138px 0 0 80px;
 
         &__inner{
           width: 1050px;
           display: flex;
           flex-wrap: wrap;
           flex-direction: column;
-          align-content: space-between;
+          align-content: space-evenly;
           height: 528px;
-          margin: 0 auto;
         }
         &__box{
-            flex-direction: column;
-            width: 345px;
-            height: 240px;
+            flex-wrap: wrap;
+            width: 311px;
+            height: 220px;
             order: 2;
-            margin: 0 0 0 150px;
         }
         &__wrap{
-            width: 350px;
+            width: 310px;
         }
         &__link{
-            width: 265px;
+            width: 230px;
         }
         &__address{
-            width: 265px;
+            width: 230px;
         }
 
         &__map{
@@ -159,17 +157,16 @@
         }
         &__btn{
             order: 2;
-            margin: 0 0 0 150px;
+            margin: 0;
         }
         &__title{
             @include titleDesk;
-            align-self: flex-start;
             order: 1;
-            margin: 80px 0 30px 150px;
+            margin: 85px 0 20px 0;
         }
         &__icon{
-            top: -255px;
-            left: -109px;
+            top: -280px;
+            left: -90px;
         }
     }
 }

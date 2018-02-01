@@ -101,10 +101,12 @@
 
     .menu-bottom {
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 748px;
+        &__cover{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 748px;
+        }
 
         &__bg{
             background: url(/src/img/header-tablet-2x.jpg);
@@ -117,16 +119,16 @@
 
         &__title {
             @include titleXlTab;
+            flex-grow: 1;
+            padding: 0;
             width: 500px;
-            margin: 0 auto;
-            padding: 160px 0 0 0;
+            padding: 161px 0 0 0;
         }
 
         &__list{
             display: flex;
             position: relative;
             width: 668px;
-            margin: 369px 0 0 50px;
         }
 
         &__item{
@@ -204,7 +206,6 @@
         &__list {
             position: relative;
             width: 1050px;
-            margin: 370px 0 0 80px;
             
         }
 

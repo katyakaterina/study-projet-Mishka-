@@ -21,65 +21,76 @@
   .hamburger {
     position: relative;
     display: inline-block;
-    width: 40px;
-    height: 20px;
+    width: 20px;
+    height: 14px;
   }
 
   .openBtn{
     top: 50%;
     display: block;
-    margin-top: -2px;
+    margin-top: 3px;
+    margin-left: 20px;
     content: "";
     position: absolute;
-    width: 40px;
-    height: 4px;
+    width: 20px;
+    height: 2px;
     border-radius: 4px;
     background-color: #000;
+    transition: 0.2s;
+
+
   }
 
   .openBtn:before{
     display: block;
     content: "";
     position: absolute;
-    width: 40px;
-    height: 4px;
+    width: 20px;
+    height: 2px;
     border-radius: 4px;
     background-color: #000;
-    top: -10px;
+    top: -6px;
+     transition: 0.2s;
+
   }
   .openBtn:after{
     display: block;
     content: "";
     position: absolute;
-    width: 40px;
-    height: 4px;
+    width: 20px;
+    height: 2px;
     border-radius: 4px;
     background-color: #000;
-    bottom: -10px;
+    bottom: -6px;
+     transition: 0.2s;
+
   }
 
   .closeBtn::before{
     display: block;
     content: "";
     position: absolute;
-    width: 40px;
-    height: 4px;
+    width: 21px;
+    height: 3px;
     border-radius: 4px;
     background-color: #000;
     top: -10px;
     transform: rotate(45deg);
-
-  }
+ transition: 0.2s;
+}
   .closeBtn::after{
     display: block;
     content: "";
     position: absolute;
-    width: 40px;
-    height: 4px;
+    width: 21px;
+    height: 3px;
     border-radius: 4px;
     background-color: #000;
     top: -10px;
     transform: rotate(-45deg);
+     transition: 0.2s;
+
+
   }
 
   .menu-top__list.closed{
@@ -94,7 +105,7 @@
     top: -74px;
     left: 0;
   }
-  .hamburger-btn.opened{
+  .hamburger-btn, .opened{
     border-top-color: transparent;
   }
   .closeBtn{

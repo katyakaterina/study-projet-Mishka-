@@ -609,7 +609,7 @@ width: 355px;
       order: 2;
       z-index: 1;
       position: relative;
-      top: -63px;
+      top: -50px;
       left: 170px;
       margin: 0;
     }
@@ -622,8 +622,9 @@ width: 355px;
 
     &__detail {
       order: 2;
-      align-self: center;
-      width: 300px;
+      align-self: flex-end;
+      flex-grow: 2;
+      margin-right: 40px;
     }
 
     &__picture{
@@ -631,10 +632,14 @@ width: 355px;
     }
 
     &__to-buy{
+      width: 292px;
       order: 2;
-      align-self: center;
+      align-self: flex-end;
       margin-right: 60px;
-      height: 290px;
+      flex-grow: 3;
+    }
+    &__btn{
+      width: 292px;
     }
   }
 }

@@ -284,8 +284,11 @@ button.search-submit:hover{
       height: 69px;
       width: 370px;
       border-left: 1px solid #ececec;
+      text-align: left;
+      flex-basis: 395px;
          &-tablet{
            display: inline-block;
+           padding-left: 50px;
           }
          &-mobile, &-desktop{
             display: none;
@@ -313,15 +316,14 @@ button.search-submit:hover{
     &__item:nth-child(2){
       border: none;
       order: 4;
-      text-align: left;
-    flex-basis: 200px;
+      text-align: right;
+      flex-basis: 190px;
     }
 
     &__item:nth-child(3){
       border: none;
       order: 5;
-      flex-basis: 260px;
-    text-align: left;
+      flex-basis: 200px;
     }
 
     &__item:nth-child(4){
@@ -335,7 +337,7 @@ button.search-submit:hover{
 
     &__item--cart{
       height: 36px;
-      min-width: 314px;
+      flex-basis: 290px;
       border-right: 1px solid $frameMenu;
       border-bottom: none;
       margin: 0;
@@ -346,8 +348,8 @@ button.search-submit:hover{
       display: inline-block;
       border: none;
       order: 7;
-      flex-basis: 260px;
-    text-align: left;
+      flex-basis: 325px;
+      text-align: right;
     }
 
     &__item--new{
@@ -447,9 +449,10 @@ input.search-input::placeholder{
 
     &__logo{
        order: 4;
-       flex-basis: 300px;
+       flex-basis: 310px;
        border: none;
        align-self: center;
+       text-align: center;
        padding: 0;
        &-desktop{
          display: inline-block;
@@ -476,7 +479,7 @@ input.search-input::placeholder{
 
   &__item:nth-child(2){
     order: 2;
-    flex-basis: 235px;
+    flex-basis: 221px;
     border-left: 1px solid $frameMenu;
     border-right: 1px solid $frameMenu;
     text-align: center;
@@ -501,7 +504,7 @@ input.search-input::placeholder{
 
     &__item--cart{
       order: 5;
-      flex-basis: 355px;
+      flex-basis: 360px;
       // border-top: none;
     }
 
@@ -529,7 +532,7 @@ input.search-input::placeholder{
       text-align: left;
       border: none;
       z-index: 1;
-      flex-grow: 8;
+      flex-grow: 9;
     }
 
   }

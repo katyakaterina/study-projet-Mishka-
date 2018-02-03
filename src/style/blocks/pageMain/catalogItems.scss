@@ -942,7 +942,7 @@ width: 100%;
 }
 }
 .player-video{
-    width: 1055px;
+    width: 1065px;
     height: 455px;
     border: 1px solid #ececec;
     background-color: #ffffff;
@@ -951,7 +951,7 @@ width: 100%;
     flex-direction: column;
     margin-top: 28px;
     margin-bottom: 105px;
-   margin-left: 60px;
+   margin-left: 70px;
 
 .player-process{
 @include flexbox;
@@ -973,7 +973,7 @@ background:url('/src/img/video-desktop.png')no-repeat;
 width: 682px;
 height: 455px;
 margin-top: 0px;
-//margin-left: 10px;
+margin-left: 0px;
 }
 &__descr{
 @include textLg(15px, 400);

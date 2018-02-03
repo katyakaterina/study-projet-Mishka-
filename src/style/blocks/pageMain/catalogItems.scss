@@ -462,9 +462,11 @@ width: 355px;
 .catalog-card {
 
     width: 668px;
+    height: 560px;
     margin: 0 auto;
 
     &__item {
+      height: 500px;
       @include flexbox;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -473,7 +475,7 @@ width: 355px;
     &__title {
       @include titleXlTab;
       align-self: flex-start;
-      margin: 0 0 59px 0;
+      // margin: 0 0 59px 0;
     }
 
       &__hot-sale {
@@ -496,8 +498,8 @@ width: 355px;
       }
 
       &__detail {
-        min-width: 30%;
-        height: 244px;
+        height: 255px;
+        align-self: center;
       }
 
       &__descr {
@@ -508,7 +510,13 @@ width: 355px;
       }
       &__to-buy{
         height: 130px;
-        width: 256px;
+        width: 292px;
+      }
+      &__btn{
+        width: 292px;
+      }
+      &__picture{
+        display: inline-block;
       }
 
   }
@@ -617,7 +625,7 @@ width: 355px;
       order: 2;
       z-index: 1;
       position: relative;
-      top: -63px;
+      top: -50px;
       left: 170px;
       margin: 0;
     }
@@ -630,8 +638,9 @@ width: 355px;
 
     &__detail {
       order: 2;
-      align-self: center;
-      width: 300px;
+      align-self: flex-end;
+      flex-grow: 2;
+      width: 350px;
     }
 
     &__picture{
@@ -639,11 +648,15 @@ width: 355px;
     }
 
     &__to-buy{
+      // width: 292px;
       order: 2;
-      align-self: center;
-      margin-right: 60px;
-      height: 290px;
+      align-self: flex-end;
+      flex-basis: 290px;
+      margin-right: 50px;
     }
+    // &__btn{
+    //   width: 292px;
+    // }
   }
 }
 // __index page_____________________________

@@ -114,26 +114,13 @@
           flex-direction: row;
           height: 143px;
           align-items: center;
-        // justify-content: space-around;
-        // margin: 0 auto;
           margin: 0 auto;
         }
-
-
         &__logo{
-            display: block;
+            display: inline-block;
             flex-basis: 27%;
             text-align: center;
         }
-
-        &__logo-icon{
-            display: inline-block;
-            width: 102px;
-            height: 34px;
-            background: url('/src/img/sprites.png') -603px -88px;
-            cursor: pointer;
-        }
-
         &__social{
             flex-basis: 43%;
             margin: 0;
@@ -144,10 +131,6 @@
 @media (min-width: 1024px){
 
     .footer {
-
-        // width: 100%;
-         //@include flexbox;
-        // margin-top: 105px;
 
         &__logo-icon:hover {
             display: inline-block;
@@ -160,10 +143,6 @@
             opacity:0.3;
         }
 
-        // &__social {
-        //     flex-basis: 200px;
-        //     margin: 0;
-        // }
     }
 
 

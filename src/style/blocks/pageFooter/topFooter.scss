@@ -13,7 +13,6 @@
         height: 160px;
     }
 
-
     &__logo{
         display: none;
     }
@@ -100,10 +99,6 @@
         height: 20px;
 
     }
-
-    // i {
-    //     margin: 25px 0 0 0;
-    // }
 }
 @media (min-width: 768px){
 
@@ -120,6 +115,24 @@
             display: inline-block;
             flex-basis: 27%;
             text-align: center;
+        }
+        &__logo-link{
+            display: inline-block;
+        }
+        &__logo-link:hover img{
+            opacity: 0;
+        }
+        &__logo-link:hover{
+            display: inline-block;
+            background: url('/src/img/sprites.png') -600px -132px;
+            width: 102px;
+            height: 34px;
+        }
+        &__logo-link:active{
+            display: inline-block;
+            background: url('/src/img/sprites.png') -600px -173px;
+            width: 102px;
+	        height: 34px;
         }
         &__social{
             flex-basis: 43%;

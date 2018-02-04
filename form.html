@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="dist/css/main.css">
+    <script src="src/js/main.js"></script>
     <script src="src/js/picturefill.js"></script>
     <link rel="preload" href="src/js/main.js" as="script">
     <link rel="preload" href="src/fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -16,12 +17,14 @@
 </head>
 <body>
     <header class="header">
-        <button class="hamburger-btn closed" id="buttonMenu">
-                        <span class="hamburger">
-                            <span class="openBtn"></span>
-                            <span class="closeBtn"></span>
-                        </span>
-                    </button>
+        <div class="hamburger-menu">
+            <button class="hamburger-btn closed" id="buttonMenu">
+                <span class="hamburger">
+                   <span class="openBtn" id="openButton"></span>
+                   <span class="closeBtn" id="closeButton"></span>
+               </span>
+           </button>
+        </div>
         <nav class="nav">
             <div class="menu-top">
                         <ul class="menu-top__list closed" id="menuList">

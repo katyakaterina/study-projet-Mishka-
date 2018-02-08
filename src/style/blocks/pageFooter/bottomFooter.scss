@@ -10,6 +10,7 @@
       &__creator{
         @include textLg(19px, 700);
         text-align: center;
+        line-height: 0.9;
       }
 
       &__creator:active{
@@ -23,7 +24,7 @@
         width: 27px;
         height: 34px;
         vertical-align: middle;
-        margin-left: 30px;
+        margin-left: 25px;
       }
 
  &__icon:hover {

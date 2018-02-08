@@ -13,7 +13,7 @@
 //min-width:320px;
   height:177px;
   background: #f1f1f1;
-  //margin-top: -10px;
+  margin-top: 0px;
 margin-bottom: 30px;
 
 }
@@ -21,34 +21,42 @@ margin-bottom: 30px;
 @include textLg(27px, 700);
 line-height:1.1;
 text-align: center;
-
+margin-top: 15px;
 }
 .catalog {
-&__img{
-  //width: 100%;
-  //width:260px;
-    height: 195px;
-    //margin-left: 15px;
+  margin: 0 auto;
 
+&__img{
+  width: 100%;
+  //width:260px;
+    //height: 195px;
+    //margin-left: 15px;
+height: auto;
 }
 &__img1{
 //width: 260px;
-    height: 195px;
+    //height: 195px;
     //margin-left: 15px;
     //margin-top: -5px;
+    height: auto;
+
 }
 &__img2{
 //width: 260px;
-    height: 195px;
+    //height: 195px;
     //margin-left: 15px;
+    height: auto;
+
 }
 &__item {
+
 width: 258px;
  //height: 179px;
   border: 1px solid #ececec;
   margin-left: 30px;
   margin-bottom: 30px;
   //margin-top: 0px;
+  //width: 100%;
 }
 &__item:hover{
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
@@ -65,7 +73,7 @@ width: 258px;
 @include textLg(17px,700);
   line-height: 1.4;
  width: 196px;
-  margin: 27px 0px 0px 25px;
+  margin: 24px 0px 0px 27px;
 }
 &__title:hover{
   opacity: 0.6;
@@ -75,20 +83,22 @@ width: 258px;
 }
 &__descr {
 @include textLg(13px, 400);
+margin-top: 7px;
   color: $darkGray;
   line-height:2.3;
-  margin-left: 26px;
+  margin-left: 27px;
   //margin-bottom: 5px;
 padding-bottom: 18px;
   border-bottom: 1px solid #ececec;
   width: 204px;
 }
 &__descr--line{
-@include textLg(14px, 400);
+@include textLg(13px, 400);
 color: $darkGray;
 line-height:2.3;
-margin-left: 30px;
-  padding-bottom: 16px;
+margin-top: 7px;
+margin-left: 27px;
+  padding-bottom: 19px;
   border-bottom: 1px solid #ececec;
   width: 204px;
 }
@@ -96,7 +106,7 @@ margin-left: 30px;
 @include flexbox;
   width: 204px;
   justify-content: space-between;
-  margin-left: 25px;
+  margin-left: 27px;
 &__number {
 @include textLg(15px, 700);
   line-height:1.6;
@@ -121,7 +131,7 @@ height: 18px;
 }
 }
 .player-video {
-width: 260px;
+//width: 260px;
   border: 1px solid #ececec;
   margin: 30px 30px 58px 30px;
   flex-direction: column;
@@ -134,7 +144,7 @@ width: 260px;
 &__title {
   @include textLg(17px, 700);
   width: 126px;
-  margin-left: 75px;
+  margin-left: 89px;
   line-height:1.4;
   margin-top: 23px;
   margin-right: 45px;
@@ -144,8 +154,8 @@ width: 260px;
   position: absolute;
   width: 32px;
   height: 22px;
-  margin-top: 35px;
-  margin-left: 18px;
+  margin-top: 34px;
+  margin-left: 33px;
 }
 
 .video-page {
@@ -180,7 +190,7 @@ margin-left: 0px;
   line-height:1.8;
   color: $darkGray;
   order:3;
-margin: 12px 40px 18px 30px;
+margin:12px 40px 15px 33px;
 }
 }
 .player__btn {
@@ -189,15 +199,15 @@ margin: 12px 40px 18px 30px;
     display: inline-block;
     border: 2px solid $darkGray;
     background-color: $white;
-    margin: 0px 0px 35px 30px;
+    margin: 0px 0px 35px 32px;
    order: 4;
     text-transform: uppercase;
     @include textLg(17px,700);
     color:$darkGray;
     cursor: pointer;
     line-height:0.9;
-    padding:16px 5px 20px 5px;
-    vertical-align: top;
+    padding:16px 5px 14px 5px;
+    //vertical-align: top;
 }
 .player__btn:hover{
 background-color: $darkGray;

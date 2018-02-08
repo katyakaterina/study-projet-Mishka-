@@ -199,7 +199,7 @@ cursor: pointer;
   &__logo {
     text-align: center;
     height: 79px;
-    
+
 
       &:hover {
         opacity: 0.6;
@@ -209,7 +209,8 @@ cursor: pointer;
       }
 
       &-mobile{
-        margin-top: 18px;
+        //margin-top: 18px;
+        margin-top: 22px;
       }
 
     &-tablet, &-desktop{

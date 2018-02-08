@@ -40,3 +40,17 @@
 
 
 }
+
+@media (min-width: 768px){
+
+    .form-page{
+
+        &__inner{
+            display: flex;
+        }
+
+        &__legend::after{
+            opacity: 0;
+        }
+    }
+}

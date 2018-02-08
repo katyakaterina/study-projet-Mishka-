@@ -81,7 +81,10 @@
       </div>
       <div class="main-catalog__title-line"></div>
             <section class="catalog">
-              <div class="catalog__img">
+
+      <div class="catalog__item">
+
+            <div class="catalog__img">
 <picture>
   <source media="(min-width:320px) and (orientation: portrait)"
    srcset="src/img/item1-mobile-1x.webp 1x, src/img/item1-mobile-2x.webp 2x"
@@ -95,9 +98,11 @@
   <img src="src/img/item1-mobile-1x.jpg" alt="" class="catalog__img">
 </picture>
 </div>
-      <div class="catalog__item">
+
+
+<div class="catalog__detail">
                   <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
-                    <div class="catalog__detail">
+
                         <p class="catalog__descr">Рост 30 см, вес 200 г</p>
                     <div class="catalog-price">
                         <p class="catalog-price__number">1 200 руб.</p>
@@ -105,9 +110,14 @@
                           <img src="src/img/cart.png" alt="" class="catalog-price__link-pic">
                         </a>
                     </div>
+
                     </div>
                 </div>
-              <div class="catalog__img1">
+
+                <div class="catalog__item">
+
+
+            <div class="catalog__img1">
 <picture>
   <source media="(min-width:320px) and (orientation: portrait)"
    srcset="src/img/item2-mobile-1x.webp 1x, src/img/item2-mobile-2x.webp 2x"
@@ -121,9 +131,9 @@
   <img src="src/img/item2-mobile-1x.jpg" alt="" class="catalog__img">
 </picture>
 </div>
-                <div class="catalog__item">
+<div class="catalog__detail">
                   <h3 class="catalog__title">Корзинка для белья</h3>
-                      <div class="catalog__detail">
+
                         <p class="catalog__descr">Диаметр 15 см, высота 10 см</p>
                       <div class="catalog-price">
                         <p class="catalog-price__number">690 руб.</p>
@@ -133,6 +143,8 @@
                     </div>
                     </div>
                 </div>
+
+<div class="catalog__item">
 <div class="catalog__img2">
   <picture>
     <source media="(min-width:320px) and (orientation: portrait)"
@@ -147,9 +159,9 @@
     <img src="src/img/item3-mobile-1x.jpg" alt="" class="catalog__img">
 </picture>
 </div>
-<div class="catalog__item">
+<div class="catalog__detail">
                   <h3 class="catalog__title">Большая корзинка для игрушек</h3>
-                    <div class="catalog__detail">
+
                         <p class="catalog__descr--line">Диаметр 30 см, высота 30 см</p>
                       <div class="catalog-price">
                         <p class="catalog-price__number">1 500 руб.</p>
@@ -161,11 +173,18 @@
                 </div>
             </section>
             <section class="player-video">
-          <div class="player-process">
+              <div class="player-video__description">
+                <h3 class="player-video__title">Процесс производства</h3>
+                <!--<a href="" class="player-video__link-pic"></a>-->
+                <span class="player-video__link-pic"></span>
+                  <!--<img src="" alt="" class="player-video__link-pic">-->
+
+          <!--<div class="player-process__description">
                   <h3 class="player-process__title">Процесс производства</h3>
               <a href="" class="player-process__link">
               <img src="" alt="" class="player-process__link-pic">
               </a>
+            </div>-->
               </div>
             <div class="video-page">
           <div class="video-page__video">
@@ -179,7 +198,7 @@
   <source media="(min-width: 1024px)"
   srcset="src/img/video-desktop.webp "
    srcset="src/img/video-desktop.png">
-  <img src="src/img/video-mobile-1x.jpg" alt="" class="catalog__img">
+  <img src="src/img/video-mobile-1x.jpg" alt="video" class="catalog__img">
 </picture>
 </div>
               <div class="video-page__link-pic">
@@ -188,7 +207,8 @@
     <div class="video-page__descr">
                       <p> По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
                 </div>
-<button class="btn player__btn" id="myBtn">Сделать заказ</button>
+<button class="btn player__btn" id="myBtn" >Сделать заказ</button>
+
 <div class="modal-ctg"  id="myModal">
   <h2 class="modal-ctg__title">Добавить в корзину</h2>
   <p class="modal-ctg__text">Выберите размер</p>
@@ -200,9 +220,11 @@
       <input class="modal-ctg__input" type="radio" name="check">
       <label class="modal-ctg__size">L</label>
     </div>
-    <button  class="btn modal-ctg__btn" >Добавить</button>
+    <button  class="btn modal-ctg__btn" id="closeBtn" >Добавить</button>
 </div>
-<div class="overlay"></div>
+
+<div class="overlay" id="myOverlay"     ></div>
+
 </section>
        </main>
        <footer class="footer">
@@ -233,7 +255,7 @@
         </div>
     </footer>
 
-<script src="src/js/picturefill.js"></script>
+
 <script src="src/js/main.js"></script>
 <script  src="src/js/hamburger.js"></script>
 

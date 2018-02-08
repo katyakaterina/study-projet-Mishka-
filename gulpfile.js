@@ -29,19 +29,7 @@ var spritesmith = require('gulp.spritesmith');
 gulp.task('default', function() {
     console.log("hello people!")
 });
-//gulp.task('sass', function () { // Создаем таск "sass"
-//return gulp.src(['./src/style/main.scss'])
-//.pipe(autoprefixer({
-        // browsers: ['last 2 versions'],
-        //cascade: false
-        //}))
-//.pipe(sass({outputStyle: 'expanded'})
-//.on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
-//.pipe(gulp.dest('dist/css'))
-//.pipe(cssnano())
-//.pipe(rename({suffix: 'main.css'})) // Выгружаем результата в папку css
 
-//});
 
 gulp.task('sass', function () { // Создаем таск "sass"
 return gulp.src(['src/style/main.scss']) // Берем источник
@@ -59,23 +47,31 @@ return gulp.src(['src/style/main.scss']) // Берем источник
 
 
 
-
-
 gulp.task('browser-sync', function () {
-  browserSync.init([
-    './src/style/**/*.scss',
-    './*.html',
-    'css/*.css',
-    '**/*.{png,jpg,svg}',
-    'js/*.js',
-    './src/fonts/*.{eot,woff,woff2,ttf}'
-  ], {
+  browserSync.init({
     open: true,
     server: {
-     baseDir: './'
+      baseDir: "./"
     }
   });
+  browserSync.watch('dist', browserSync.reload)
 });
+
+//gulp.task('browser-sync', function () {
+  //browserSync.init([
+    //'./src/style/**/*.scss',
+    //'./*.html',
+    //'css/*.css',
+    //'**/*.{png,jpg,svg}',
+    //'js/*.js',
+    //'./src/fonts/*.{eot,woff,woff2,ttf}'
+  //], {
+    //open: true,
+    //server: {
+     //baseDir: './'
+    //}
+  //});
+//});
 
 
 
@@ -143,8 +139,8 @@ gulp.task('css', function () {
     ];
     return gulp.src('css/**/*.css')
         .pipe(postcss(plugins))
-      .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('dist'));
+      .pipe(rename({ suffix: '.min.css' }))
+        .pipe(gulp.dest('dist/css'));
 });
 //end css//
 //build//

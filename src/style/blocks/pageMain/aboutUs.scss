@@ -107,16 +107,19 @@ padding: 32px;
   
   &__slide1{
     position: relative;
+    height: 360px;
   }
   
   &__slide2{
     display: none;
     position: relative;
+    height: 360px;
   }
 
   &__slide3{
     display: none;
     position: relative;
+    height: 360px;
   }
 
     &__title {
@@ -127,6 +130,7 @@ padding: 32px;
       font-size: 15px;
       line-height: calc(30/15);
       color: $darkGray;
+      height: 270px;
     }
 
     &__auth {

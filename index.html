@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="dist/css/main.css">
-    <script src="src/js/main.js"></script>
-    <script src="src/js/picturefill.js"></script>
-    <link rel="preload" href="src/js/main.js" as="script">
+    <script type="text/javascript" src="dist/js/scripts.min.js"></script>
+    <script type="text/javascript" src="src/js/picturefill.js"></script>
+    <link rel="preload" href="dist/js/scripts.min.js" as="script">
     <link rel="preload" href="src/fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="src/fonts/opensans-bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="src/fonts/opensans-regular.woff" as="font" type="font/woff" crossorigin>
@@ -73,12 +73,15 @@
                     <ul class="menu-bottom__list">
                         <span class="menu-bottom__line"></span>
                     <li class="menu-bottom__item">
-                        <span class="menu-bottom__icon1 icon"></span>
-                        <a class="menu-bottom__link" href="#"><p class="menu-bottom__caption">Предметы интерьера</p></a>
+                       <!-- <h3 class="menu-bottom__caption"> -->
+                            <a class="menu-bottom__link menu-bottom__link--left" href="#">Предметы интерьера</a>
+                       <!-- </h3>    -->
                     </li>
                     <li class="menu-bottom__item">
-                        <span class="menu-bottom__icon2 icon"></span>
-                        <a class="menu-bottom__link" href="#"><p class="menu-bottom__caption">Детские игрушки</p></a>
+                        <!-- <span class="menu-bottom__icon2 icon"></span> -->
+                        <!-- <h3 class="menu-bottom__caption"> -->
+                            <a class="menu-bottom__link menu-bottom__link--right" href="#">Детские игрушки</a>
+                        <!-- </h3> -->
                     </li>
                   </ul>
                   </div>
@@ -110,13 +113,13 @@
                 </div>
                 <div class="catalog-card__picture">
                     <picture>
-                       <source media="(min-width: 320px) and (orientation: portrait)"
+                       <source media="(min-width: 320px)"
                                srcset = "src/img/triple-mobile-2x.webp 2x, src/img/triple-mobile-1x.webp 1x" type ="image/webp"
                                srcset = "src/img/triple-mobile-2x.jpg 2x, src/img/triple-mobile-1x.jpg 1x" type ="image/jpg">
-                       <source media="(min-width: 768px) and (orientation: portrait)"
+                       <source media="(min-width: 768px)"
                                srcset = "src/img/triple-tablet-2x.webp 2x, src/img/triple-tablet-1x.webp 1x" type ="image/webp"
                                srcset = "src/img/triple-tablet-2x.jpg 2x, src/img/triple-tablet-1x.jpg 1x" type ="image/jpg">
-                       <source media="(min-width: 1024px) and (orientation: landscape)"
+                       <source media="(min-width: 1024px)"
                                srcset = "src/img/triple-desktop-2x.webp 2x, src/img/triple-desktop-1x.webp 1x" type ="image/webp"
                                srcset = "src/img/triple-desktop-2x.jpg 2x, src/img/triple-desktop-1x.jpg 1x" type ="image/jpg">
                        <img class="catalog-card__img" src="src/img/triple-mobile-1x.jpg" alt="Вязаные корзинки">
@@ -249,9 +252,9 @@
        </div>
     </div>
 </footer>
-<script  src="src/js/hamburger.js"></script>
+<!-- <script  src="src/js/hamburger.js"></script>
 <script  src="src/js/slider.js"></script>
 <!--<script type="text/javascript" src="src/js/modal.js"></script>-->
-<script src="src/js/main.js"></script>
+<!-- <script src="src/js/main.js"></script> --> 
 </body>
 </html>

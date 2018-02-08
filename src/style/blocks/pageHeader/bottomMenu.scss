@@ -33,58 +33,51 @@
     &__item:hover  {
         background-color: $greenLeftHover;
         height: 108px;
-        margin-top: -5px;
-        
-        &__icon1:hover{
-            opacity: 1;
-            // margin: 20px 0 0 230px;
-        }  
+        margin-top: -5px;  
     }      
 
     &__item:last-child:hover {
         background-color: $greenRightHover;
-
-        &__icon2:hover {
-            opacity: 1;
-            // margin: 20px 0 0 220px;
-        } 
     }
 
-    &__caption:active {
+    &__link:active {
         opacity: 0.4;
     }
 
-    &__icon1 {
-        display: block;
-        background: url(/src/img/sprites.png) no-repeat;
-        background-position: -226px -12px ;
-	    width: 41px;
-        height: 62px;
-        position: absolute;
-        margin: 25px 0 0 230px;
-    }
 
-    &__icon2 {
-        display: block;
+    &__link {
+        position: relative;
+        color: $white;
+        text-decoration: none;
+        font-size: 19px;
+        line-height: calc(24/19);
+        font-weight: 700;
+        display: inline-block;
+        width: 110px;
+        padding: 24px 57px 24px 30px;
+
+        &--left::before {
+            position: absolute;
+            content: "";
+            background: url(/src/img/sprites.png) no-repeat;
+            background-position: -226px -12px ;
+            width: 41px;
+            height: 62px;
+            top: 20px;
+            left: 120%;
+            }
+        
+        &--right::before {
+        position: absolute;
+        content: "";
         background: url(/src/img/sprites.png) no-repeat;
         background-position: -315px -12px ;
 	    width: 61px;
         height: 61px;
-        position: absolute;
-        margin: 25px 0 0 220px;
-    }
+        top: 20px;
+        left: 115%;
+        }
 
-    &__link {
-        color: $white;
-        text-decoration: none;
-    }
-
-    &__caption {
-        width: 100px;
-        margin-left: 30px;
-        font-size: 19px;
-        font-weight: 700;
-        line-height: calc(24/19);
     }
 
     &__item:last-child {
@@ -128,6 +121,14 @@
         &__item{
             width: 334px;
             height: 117px;
+        }
+
+        &__link{
+            color: $white;
+            text-decoration: none;
+            font-size: 20px;
+            line-height: calc(30/20);
+            
         }
 
         &__line {
@@ -191,10 +192,10 @@
     
         &__bg {
             background: url(/src/img/header-desktop-2x.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: scroll; 
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll; 
         }
 
         &__list {
@@ -211,6 +212,10 @@
             width: 564px;
             height: 119px;
             border: transparent;
+        }
+
+        &__link{
+            padding: 24px 205px 24px 36px;
         }
 
         &__line{
@@ -259,20 +264,6 @@
             background-color: $greenRight;
             width: 574px;
             border: transparent;
-        }
-
-        // &__item:hover {
-        //     height: 119px;
-        // }
-
-        &__icon1 {
-            margin: 25px 0 0 450px;
-            z-index: 10;
-        }
-
-        &__icon2 {
-            margin: 25px 0 0 435px;
-            z-index: 10;
         }
   
     }

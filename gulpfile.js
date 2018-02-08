@@ -114,6 +114,14 @@ gulp.task("default", ["watch", "sass", "html", "scripts", "img"]);
 
 
 //js//
+
+gulp.task('js', function() {
+  return gulp.src(['src/js/slider.js, src/js/hamburger.js, src/js/main.js, src/js/picturefill.js'])
+    .pipe(concat('js/*.js'))
+    .pipe(gulp.dest('dist/new.js'));
+});
+
+
 gulp.task('js', function () {
   gulp.src('js/*.js')
     .pipe(minify())

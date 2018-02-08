@@ -19,6 +19,14 @@
 
     &__filedset{
         border: none;
+        padding: 32px;
+    }
+
+
+    &__inner{
+        height: 160px;
+        display: flex;
+        flex-direction: column;
     }
 
     &__legend{
@@ -26,6 +34,36 @@
         @include titleSm;
         line-height: calc(16/17);
         color: $greenLeft;
+        flex-basis: 45px;
+    }
+
+    &__input--radio{
+        display: none;
+    }
+
+    &__label--radio{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    &__label--radio::before{
+        position: absolute;
+        content: '';
+        width: 40px;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 50%;
+        
+    }
+
+    &__input--radio:checked+&__label--radio::after{
+        position: absolute;
+        content: '';
+        width: 16px;
+        height: 16px;
+        border: 1px solid black;
+        border-radius: 50%;
     }
 
     &__legend::after{
@@ -38,5 +76,24 @@
         top: 10px;
     }
 
+    &__section{
+        flex-basis: 60px;
+        align-self: flex-start;
+    }
 
+
+}
+
+@media (min-width: 768px){
+
+    .form-page{
+
+        &__inner{
+            display: flex;
+        }
+
+        &__legend::after{
+            opacity: 0;
+        }
+    }
 }

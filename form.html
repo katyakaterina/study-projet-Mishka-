@@ -17,194 +17,154 @@
 </head>
 <body>
     <header class="header">
-        <div class="hamburger-menu">
-            <span class="hamburger-btn closed" id="buttonMenu">
-                <span class="hamburger">
-                   <span class="openBtn" id="openButton"></span>
-                   <span class="closeBtn" id="closeButton"></span>
-               </span>
-              </span>
-        </div>
         <nav class="nav">
             <div class="menu-top">
-                        <ul class="menu-top__list closed" id="menuList">
-                            <li class="menu-top__logo">
-                                <a class="menu-top__logo-link" href="index.html">
-                                    <img class="menu-top__logo-mobile" src="src/img/logo-mobile.png" width="86px" height="35px" alt="Mishka">
-                                    <img class="menu-top__logo-tablet" src="src/img/logo-tablet.png" width="113px" height="46px" alt="Mishka">
-                                    <img class="menu-top__logo-desktop" src="src/img/logo-desktop.png" width="149px" height="72px" alt="Mishka">
-                                </a>
-                            </li>
-                           <li class="menu-top__item">
-                               <a class="menu-top__link menu-top__link--catalog" href="catalog.html">
-                                   Каталог товаров
-                                </a>
-                           </li>
-                           <li class="menu-top__item">
-                               <a class="menu-top__link" href="form.html" target="blank">Вязание на заказ</a>
-                           </li>
-                           <li class="menu-top__item">
-                               <form class="search-form"  method="get">
-                                   <label class="search-label">Поиск по сайту</label>
-                                   <input class="search-input" type="search" name="search" placeholder="Поиск по сайту">
-                                   <button class="search-submit" type="submit"></button>
-                               </form>
-                           </li>
-                           <li class="menu-top__item menu-top__item--cart">
-                                <a class="menu-top__link menu-top__link--cart" href="#"><i class="menu-top__cart"></i>
-                                    Корзина: пока пуста
-                                </a>
-                           </li>
-                           <li class="menu-top__item menu-top__item--delivery">
-                               <p class="menu-top__text menu-top__text--delivery">Бесплатная доставка по России</p>
-                           </li>
-                           <li class="menu-top__item menu-top__item--new">
-                               <a class="menu-top__link">Новые поступления</a>
-                           </li>
-                           <li class="menu-top__item menu-top__item--sale">
-                                <a class="menu-top__link">Распродажа</a>
-                           </li>
-                      </ul>
-            </div>
-         </nav>
-   </header>
-   <main class="main">
-       <div class="page-form">
-         <div class="page-form__title--blocks">
-            <h2 class="page-form__title">Вязание на заказ</h2>
-            </div>
-<span class="page-form__title--line"></span>
-          <div class="page-form__customer">
-            <!--<form class="page-form__customer">-->
-                <p class="page-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-
-                <section class="filters">
-  <form class="filters__form filters__form--radio">
-                <div class="filters__line">
-                   <h3 class="filters__title">Тип</h3>
-                        </div>
-                    <div class=" filters__form--radio">
-<div class="filters__radio-grup">
-                         <input class="filters__input" type="radio" id="rd-1" name="radio" checked>
-                         <label class="filters__label" for="rd-1">Аксессуар для интерьера</label>
-</div>
-<div class="filters__radio-grup">
-                         <input class="filters__input" type="radio" id="rd-2" name="radio">
-                         <label class="filters__label" for="rd-2">Детская игрушка</label>
-</div>
+                <div class="menu-top__crown">
+                    <a class="menu-top__logo-link" href="index.html">
+                        <img class="menu-top__logo-mobile" src="src/img/logo-mobile.png" width="86px" height="35px" alt="Mishka">
+                    </a>
+                    <div class="hamburger-menu">
+                        <span class="hamburger-btn closed" id="buttonMenu"></span>
                     </div>
-</form>
-               </section>
-<section class="filter">
-      <form class="filter__form filter__form--checkbox">
-          <div class="filters__line">
-            <h3 class="filters__title">Цвет</h3>
-          </div>
-    <div class="filter__ch-grup">
-      <div class="filter__ch-gr">
-        <input class="filter__input" type="checkbox" id="ch-1" name="checkbox" checked>
-        <label class="filter__label" for="ch-1">Белый</label>
-      </div>
-      <div class="filter__ch-gr">
-        <input class="filter__input" type="checkbox" id="ch-2" name="checkbox" checked>
-        <label class="filter__label" for="ch-2">Серый</label>
-      </div>
-      <div class="filter__ch-gr">
-        <input class="filter__input" type="checkbox" id="ch-3" name="checkbox">
-        <label class="filter__label" for="ch-3">«Тиффани»</label>
-      </div>
-      <div class="filter__ch-gr">
-        <input class="filter__input" type="checkbox" id="ch-4" name="checkbox">
-        <label class="filter__label" for="ch-4">Черный</label>
-      </div>
-      <div class="filter__ch-gr">
-        <input class="filter__input" type="checkbox" id="ch-5" name="checkbox">
-        <label class="filter__label" for="ch-5">Розовый</label>
-      </div>
-      <div class="filter__ch-gr">
-        <input class="filter__input" type="checkbox" id="ch-6" name="checkbox">
-        <label class="filter__label" for="ch-6">Оранжевый</label>
-      </div>
+            </div>
+                <ul class="menu-top__list closed" id="menuList">
+                    <li class="menu-top__logo">
+                        <a class="menu-top__logo-link" href="index.html">
+                            <img class="menu-top__logo-tablet" src="src/img/logo-tablet.png" width="113px" height="46px" alt="Mishka">
+                            <img class="menu-top__logo-desktop" src="src/img/logo-desktop.png" width="149px" height="72px" alt="Mishka">
+                        </a>
+                    </li>
+                    <li class="menu-top__item">
+                        <a class="menu-top__link menu-top__link--catalog" href="catalog.html">Каталог товаров</a>
+                    </li>
+                    <li class="menu-top__item">
+                        <a class="menu-top__link" href="form.html" target="blank">Вязание на заказ</a>
+                    </li>
+                    <li class="menu-top__item">
+                        <form class="search-form"  method="get">
+                            <button class="search-submit" type="submit"></button>
+                            <label class="search-label">Поиск по сайту</label>
+                            <input class="search-input" type="search" name="search" placeholder="Поиск по сайту">
+                        </form>
+                    </li>
+                    <li class="menu-top__item menu-top__item--cart">
+                        <a class="menu-top__link menu-top__link--cart" href="#"><i class="menu-top__cart"></i>Корзина: пока пуста</a>
+                    </li>
+                    <li class="menu-top__item menu-top__item--delivery">
+                        <p class="menu-top__text menu-top__text--delivery">Бесплатная доставка по России</p>
+                    </li>
+                    <li class="menu-top__item menu-top__item--new">
+                        <a class="menu-top__link">Новые поступления</a>
+                    </li>
+                    <li class="menu-top__item menu-top__item--sale">
+                        <a class="menu-top__link">Распродажа</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="form-page">
+            <div class="form-page__descr">
+                <h3 class="form-page__title">Вязание на заказ</h3>
+                <p class="form-page__text">
+                    Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+                </p>
+        </div>
+        <form class="form-page__form" action="" method="post">
+                <fieldset class="form-page__filedset form-page__filedset--radio">
+                    <legend class="form-page__legend">Тип</legend>
+                    <div class="form-page__section">
+                       <input class="form-page__input" type="radio" id="radio-1" name="radio" checked>
+                       <label class="form-page__label" for="radio-1">Аксессуар для интерьера</label>
+                    </div>
+                    <div class="form-page__section">
+                       <input class="form-page__input" type="radio" id="radio-2" name="radio">
+                       <label class="form-page__label" for="radio-2">Детская игрушка</label>
+                    </div>
+                </fieldset>
+                <fieldset class="form-page__filedset form-page__filedset--checkbox">
+                    <legend class="form-page__legend">Цвет</legend>
+                    <div class="form-page__section">
+                       <input class="form-page__input" type="checkbox" id="checkbox-1" name="checkbox" checked>
+                       <label class="form-page__label" for="checkbox-1">Белый</label>
+                    </div>
+                    <div class="form-page__section">
+                        <input class="form-page__input" type="checkbox" id="checkbox-2" name="checkbox" checked>
+                        <label class="form-page__label" for="checkbox-2">Серый</label>
+                    </div>
+                    <div class="form-page__section">
+                        <input class="form-page__input" type="checkbox" id="checkbox-3" name="checkbox">
+                        <label class="form-page__label" for="checkbox-3">«Тиффани»</label>
+                    </div>
+                    <div class="form-page__section">
+                        <input class="form-page__input" type="checkbox" id="checkbox-4" name="checkbox">
+                        <label class="form-page__label" for="checkbox-4">Черный</label>
+                    </div>
+                    <div class="form-page__section">
+                        <input class="form-page__input" type="checkbox" id="checkbox-5" name="checkbox">
+                        <label class="form-page__label" for="checkbox-5">Розовый</label>
+                    </div>
+                    <div class="form-page__section">
+                        <input class="form-page__input" type="checkbox" id="checkbox-6" name="checkbox">
+                        <label class="form-page__label" for="checkbox-6">Оранжевый</label>
+                    </div>
+                </fieldset>
+                <fieldset class="form-page__filedset form-page__filedset--checkbox">
+                    <legend class="form-page__legend">Фио</legend>
+                    <div class="form-page__section">
+                        <input class="form-page__input" type="text" placeholder="Введите ваше имя*">
+                        <label class="form-page__label">Имя:</label>
+                    </div>
+                    <div class="form-page__section">
+                        <input class="form-page__input" type="text" placeholder="Укажите фамилию*">
+                        <label class="form-page__label">Фамилия:</label>
+                    </div>
+                    <div class="form-page__section">
+                        <input class="form-page__input" type="text" placeholder="Отчество, если желаете">
+                        <label class="form-page__label">Отчество</label>
+                    </div>
+                </fieldset>
+                <fieldset class="form-page__filedset form-page__filedset--checkbox">
+                    <legend class="form-page__legend">Тел</legend>
+                    <input class="form-page__input" type="number" placeholder="+7 XXX XX XX*">
+                    <label class="form-page__label"></label>
+                </fieldset>
+                <fieldset class="form-page__filedset form-page__filedset--checkbox">
+                    <legend class="form-page__legend">E-mail</legend>
+                    <input class="form-page__input" type="number" placeholder="Ваш Email*">
+                    <label class="form-page__label"></label>
+                </fieldset>
+                <fieldset class="form-page__filedset form-page__filedset--checkbox">
+                    <legend class="form-page__legend">Доп</legend>
+                    <textarea class="form-page__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                </fieldset>
+                <span>*Поля для обязательного заполнения</span>
+                <button class="btn form-page__btn">Отправить заказ</button>
+        </form>
     </div>
-  </form>
-</section>
-<section class="customer">
-                    <form class="customer__form">
-                        <div class="customer__name">
-                          <div class="filters__line">
-                             <h3 class="filters__title filters__title--name   "> Фио</h3>
-                            </div>
-<div class="customer__name-grup">
-                             <label class="customer__label">Имя:</label>
-                             <input class="customer__input " type="text" placeholder="Введите ваше имя*">
-</div>
-<div class="customer__name-grup">
-                             <label class="customer__label">Фамилия:</label>
-                             <input class="customer__input customer__input--line" type="text" placeholder="Укажите фамилию*">
-</div>
-<div class="customer__name-grup">
-                             <label class="customer__label">Отчество:</label>
-                             <input class="customer__input customer__input--line" type="text" placeholder="Отчество, если желаете">
-</div>
-                        </div>
-                        <div class="customer__data">
-<div class="customer__data customer__data--block">
-                          <div class="filters__line">
-                             <h3 class="filters__title filters__title--data">Тел</h3>
-                            </div>
-                            <div class="customer__img-phone"></div>
-                             <input class="customer__phone" type="tel"  name="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
-                              <label class="customer__number"></label>
-                          <div class="filters__line">
-                             <h3 class="filters__title filters__title--data">E-mail</h3>
-                          </div>
-                          <div class="customer__img-email"></div>
-                             <input class="customer__email" type="email"  name="email" placeholder="Ваш Email*">
-                             <label class="customer__mail"></label>
-</div>
-
-
-                          <div class="filters__line">
-                              <h3 class="filters__title filters__title--additionally ">Доп</h3>
-                            </div>
-                             <textarea class="customer__extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-                        </div>
-                    </form>
-                </section>
-
-                <span class="page-form__note">*Поля обязательны для заполнения</span>
-                <button class="btn page-form__btn">Отправить заказ</button>
-            <!--</form>-->
-    </div>
-       </div>
-   </main>
-   <footer class="footer">
-    <div class="footer__bg">
-        <div class="footer__inner">
-            <div class="footer__logo">
-                <a class="footer__logo-link">
-                    <img class="footer__logo" src="src/img/logo-footer.png" width="102px" height="34px" alt="Mishka">
-                </a>
-           </div>
-           <div class="footer__social">
-                <a class="footer__link footer__insta" href="#">
-                    <!-- <span class="footer__insta"></span> -->
-                </a>
-                <a class="footer__link footer__facebook" href="#">
-                    <!-- <span class="footer__facebook"></span> -->
-                </a>
-                <a class="footer__link footer__twitter" href="#">
-                    <!-- <span class="footer__twitter"></span> -->
-                </a>
-           </div>
-           <div class="footer__copyright">
-               <p class="footer__creator">Разработано
-                   <span class="footer__icon"></span>
-              </p>
-           </div>
-       </div>
-    </div>
-</footer>
-<script src="src/js/hamburger.js"></script>
-  </body>
+</main>
+<footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__inner">
+                    <div class="footer__logo">
+                        <a class="footer__logo-link">
+                            <img class="footer__logo" src="src/img/logo-footer.png" width="102px" height="34px" alt="Mishka">
+                        </a>
+                   </div>
+                   <div class="footer__social">
+                        <a class="footer__link footer__insta" href="#"></a>
+                        <a class="footer__link footer__facebook" href="#"></a>
+                        <a class="footer__link footer__twitter" href="#"></a>
+                   </div>
+                   <div class="footer__copyright">
+                        <p class="footer__creator">Разработано
+                            <span class="footer__icon"></span>
+                      </p>
+                   </div>
+               </div>
+            </div>
+        </footer>
+       <script  src="src/js/hamburger.js"></script>
+   </body>
 </html>

@@ -300,10 +300,11 @@ opacity:0.8;
   margin-left: 0px;
 }
 .catalog-card {
-
-  &__item {
-    margin-top: 35px;
-  }
+  padding: 32px;
+  height: 801px;
+  // &__item {
+  //   height: 650px;
+  // }
 
     &__title {
       font-size: 25px;
@@ -334,6 +335,10 @@ opacity:0.8;
       text-align: center;
       margin: 0;
       padding: 29px 0 29px 0;
+    }
+
+    &__to-buy{
+      height: 130px;
     }
 }
 

@@ -1,6 +1,10 @@
 
 @media screen and (min-width: 320px)  and (max-width: 767px){
 
+  .hamburger-menu{
+    align-self: flex-end;
+  }
+
 .hamburger-btn{
   display: block;
   font-size: 0;
@@ -10,9 +14,8 @@
   height: 14px;
   position: relative;
   cursor: pointer;
-left: 85%;
-border: none;
-top: 32px;
+  top: -28px;
+  right: 28px;
 }
 .hamburger-btn,
 .hamburger-btn::before,
@@ -40,6 +43,7 @@ top: 4px;
   top: 10px;
 }
 .hamburger-btn.opened{
+  z-index: 2;
   border-top-color: transparent;
 
 }
@@ -181,15 +185,21 @@ cursor: pointer;
 
 
 .menu-top {
-height: 79px;
+  height: 79px;
+  position: relative;
 
-
+  &__crown{
+    height: 79px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid $frameMenu;
+  }
 
   &__logo {
     text-align: center;
     height: 79px;
-    border-bottom: 1px solid $frameMenu;
-    background-color: $white;
+    
 
       &:hover {
         opacity: 0.6;
@@ -210,7 +220,7 @@ height: 79px;
   &__item {
     border-bottom: 1px solid $frameMenu;
     text-align: center;
-    height: 79px;
+    height: 78px;
     background-color: $white;
     z-index: 1;
     line-height: 78px;
@@ -262,6 +272,9 @@ height: 79px;
     padding: 0;
     margin: 0;
     list-style: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
   }
 
   &__link {
@@ -271,7 +284,12 @@ height: 79px;
     text-decoration: none;
     text-align: center;
     padding: 20px;
+    margin-left: 20px;
     cursor: pointer;
+
+    &--cart{
+      margin: 0;
+    }
   }
 
   &__link:hover {
@@ -290,12 +308,13 @@ height: 79px;
 
 form.search-form {
   position: relative;
-  width: 200px;
-  height: 45px;
-  margin-left: 20px;
+  height: 79px;
+  // width: 200px;
+  // height: 45px;
+  // margin-left: 20px;
 }
 input.search-input{
-  margin-left: 65px;
+  margin-left: 20px;
   width: 180px;
   height: 35px;
   outline: none;
@@ -308,15 +327,17 @@ input.search-input::placeholder{
 }
 button.search-submit{
   border: none;
-  position: absolute;
-  top: 33px;
-  left: 33px;
+  // position: absolute;
+  // top: 33px;
+  // left: 33px;
   cursor: pointer;
   background: url(/src/img/sprites.png) no-repeat;
   background-position: -16px -261px ;
 	width: 18px;
   height: 19px;
   outline: none;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 button.search-submit:hover {
@@ -324,7 +345,7 @@ button.search-submit:hover {
   background-position: -62px -260px ;
 	width: 18px;
   height: 18px;
-  position: absolute;
+  // position: absolute;
   top: 8px;
   left: -42px;
 
@@ -334,7 +355,7 @@ button.search-submit:active {
   background-position: -114px -259px ;
 	width: 18px;
 	height: 18px;
-  position: absolute;
+  // position: absolute;
   top: 8px;
   left: -42px;
 }
@@ -353,11 +374,15 @@ button.search-submit:hover{
   }
 
   .menu-top {
+
     height: 89px;
+
+    &__crown{
+      display: none;
+    }
 
     &__logo {
       height: 89px;
-      border-left: 1px solid #ececec;
       text-align: left;
       flex-basis: 394px;
          &-tablet{
@@ -413,9 +438,7 @@ button.search-submit:hover{
     }
 
     &__item--cart{
-      // height: 36px;
       flex-basis: 290px;
-      border-right: 1px solid $frameMenu;
       border-bottom: none;
     }
 
@@ -459,11 +482,11 @@ button.search-submit:hover{
     }
 }
 form.search-form{
-  margin: 30px 0 0 17px;
+  // margin: 30px 0 0 17px;
 }
 input.search-input {
   position: absolute;
-  top: 0;
+  top: 20px;
   left: -10px;
   background: transparent;
   outline: none;
@@ -545,7 +568,6 @@ input.search-input::placeholder{
   &__item:nth-child(2){
     order: 2;
     flex-basis: 221px;
-    border-left: 1px solid $frameMenu;
     border-right: 1px solid $frameMenu;
     text-align: center;
   }
@@ -559,12 +581,6 @@ input.search-input::placeholder{
     &__item:nth-child(4){
       order: 4;
       flex-basis: 84px;
-      // height: 36px;
-      // border-top: none;
-
-      // .search-form {
-      //   margin: 5px 18px 0px 18px;
-      // }
     }
 
     &__item--cart{

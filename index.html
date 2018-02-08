@@ -18,30 +18,19 @@
 <body>
     <header class="header">
         <nav class="nav">
-
-
             <div class="menu-top">
-
+                <div class="menu-top__crown">
+                        <a class="menu-top__logo-link" href="index.html">
+                            <img class="menu-top__logo-mobile" src="src/img/logo-mobile.png" width="86px" height="35px" alt="Mishka">
+                        </a>
                        <div class="hamburger-menu">
-
-
-
-                           <span class="hamburger-btn closed" id="buttonMenu">
-                               <!--<span class="hamburger">
-                                  <span class="openBtn" id="openButton"></span>
-                                  <span class="closeBtn" id="closeButton"></span>
-                              </span>-->
-                            </span>
-
-
+                           <span class="hamburger-btn closed" id="buttonMenu"></span>
                        </div>
-                       <!--<a href="" class="menu-top__logo-link">
-                         <img  class="menu-top__logo-mobile" src="src/img/logo-mobile.png" width="86px" height="35px" alt="Mishka">
-                        </a>-->
-                        <ul class="menu-top__list closed" id="menuList">
+                </div>
+                <ul class="menu-top__list closed" id="menuList">
                             <li class="menu-top__logo">
                                 <a class="menu-top__logo-link" href="index.html">
-                                    <img class="menu-top__logo-mobile" src="src/img/logo-mobile.png" width="86px" height="35px" alt="Mishka">
+                                    <!-- <img class="menu-top__logo-mobile" src="src/img/logo-mobile.png" width="86px" height="35px" alt="Mishka"> -->
                                     <img class="menu-top__logo-tablet" src="src/img/logo-tablet.png" width="113px" height="46px" alt="Mishka">
                                     <img class="menu-top__logo-desktop" src="src/img/logo-desktop.png" width="149px" height="72px" alt="Mishka">
                                 </a>
@@ -56,9 +45,9 @@
                            </li>
                            <li class="menu-top__item">
                                <form class="search-form" action="" method="get">
+                                   <button class="search-submit" type="submit"></button>
                                    <label class="search-label">Поиск по сайту</label>
                                    <input class="search-input" type="search" name="search" placeholder="Поиск по сайту">
-                                   <button class="search-submit" type="submit"></button>
                                </form>
                            </li>
                            <li class="menu-top__item menu-top__item--cart">
@@ -107,7 +96,7 @@
                     <table class="catalog-card__table table">
                        <tr class="catalog-card__row table__row">
                           <td class="catalog-card__cell table__cell">Цвет:</td>
-                          <td class="catalog-card__cell table__cell">"Тиффани"/серый</td>
+                          <td class="catalog-card__cell table__cell">«Тиффани»/серый</td>
                         </tr>
                         <tr class="catalog-card__row table__row">
                           <td class="catalog-card__cell table__cell">Диаметр:</td>
@@ -260,7 +249,6 @@
        </div>
     </div>
 </footer>
-
 <script  src="src/js/hamburger.js"></script>
 <script  src="src/js/slider.js"></script>
 <!--<script type="text/javascript" src="src/js/modal.js"></script>-->

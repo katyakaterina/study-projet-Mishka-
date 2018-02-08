@@ -1,11 +1,12 @@
 .contacts {
-
+padding: 32px;
     &__inner{
         width: 260px; 
     }
 
     &__title{
         @include titleContactMobile;
+        margin: 0;
     }
 
     &__wrap {
@@ -58,7 +59,7 @@
 @media (min-width: 768px) {
 
     .contacts {
-
+padding: 0;
         &__inner{
          width: 668px;
         margin: 150px 0 0 50px;   

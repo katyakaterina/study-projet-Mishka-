@@ -125,7 +125,7 @@ gulp.task('js', function() {
 gulp.task('js', function () {
   gulp.src('js/*.js')
     .pipe(minify())
-    .pipe(gulp.dest("dist/js"))
+    .pipe(gulp.dest("dist/js"));
   gulp.watch('js/*.js', ['uglify']);
 });
 gulp.task('uglify', function () {

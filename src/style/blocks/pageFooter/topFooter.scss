@@ -18,12 +18,12 @@
     }
 
     &__link {
-        margin: 20px 13px 20px 13px;
+        margin: 22px 22px 20px 13px;
     }
 
     &__social {
         display: block;
-        height: 80px;
+        //height: 80px;
         width: 195px;
         margin: 0 auto;
         text-align: center;
@@ -106,7 +106,8 @@
 
         &__inner{
           @include flexbox;
-          flex-direction: row;
+          justify-content: space-around;
+          //flex-direction: row;
           height: 143px;
           align-items: center;
           margin: 0 auto;
@@ -114,7 +115,8 @@
         &__logo{
             display: inline-block;
             flex-basis: 27%;
-            text-align: center;
+            //text-align: center;
+            margin-left: 20px;
         }
         &__logo-link{
             display: inline-block;
@@ -135,9 +137,11 @@
 	        height: 34px;
         }
         &__social{
-            flex-basis: 43%;
+          //flex-basis: 43%;
+            //flex-basis: 46%;
             margin: 0;
             text-align: center;
+            margin-left: 30px;
         }
     }
 }

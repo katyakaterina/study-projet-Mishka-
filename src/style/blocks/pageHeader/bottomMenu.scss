@@ -221,7 +221,7 @@
         &__line{
             position: absolute;
             height: 16px;
-            width: 1200px;
+            width: 1150px;
             z-index: 10;
             top: 105px;
             left: -50px;
@@ -230,8 +230,8 @@
         &__line:before{
             content: "";
             position: absolute;
-            width: 1200px;
-            left: -30px;
+            width: 1150px;
+            left: 0;
             bottom: 0;
             right: 0;
             background-repeat: repeat;
@@ -243,10 +243,10 @@
         &__line:after{
             content: "";
             position: absolute;
-            left: -30px;
+            left: 0;
             bottom: 0;
             right: 0;
-            width: 1200px;
+            width: 1150px;
             background-repeat: repeat;
             height: 15px;
             background-size: 40px 35px;

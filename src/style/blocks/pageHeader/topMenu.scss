@@ -209,7 +209,7 @@ cursor: pointer;
       }
 
       &-mobile{
-        margin-top: 18px;
+        margin-top: 20px;
       }
 
     &-tablet, &-desktop{
@@ -223,34 +223,40 @@ cursor: pointer;
     height: 78px;
     background-color: $white;
     z-index: 1;
-    line-height: 78px;
+    line-height: 85px;
   }
 
-  &__cart{
+  &__link-cart {
     display: inline-block;
     background: url('/src/img/sprites.png') no-repeat;
     background-position: -16px -214px ;
     width: 21px;
     height: 18px;
-    margin-right: 19px;
+    position: relative;
+    top: 0;
+    left: -20px;
     vertical-align: middle;
   }
 
-  &__cart:hover{
+  &__link-cart:hover{
     background: url(/src/img/sprites.png) no-repeat;
     background-position: -65px -215px ;
     width: 21px;
     height: 18px;
-    margin-right: 19px;
+    position: relative;
+    top: 0;
+    left: -20px;
     vertical-align: middle;
   }
 
-  &__cart:active{
+  &__link-cart:active{
     background: url(/src/img/sprites.png) no-repeat;
     background-position: -114px -215px ;
     width: 21px;
     height: 18px;
-    margin-right: 19px;
+    position: relative;
+    top: 0;
+    left: -20px;
     vertical-align: middle;
   }
 
@@ -284,12 +290,8 @@ cursor: pointer;
     text-decoration: none;
     text-align: center;
     padding: 20px;
-    margin-left: 20px;
     cursor: pointer;
-
-    &--cart{
-      margin: 0;
-    }
+  
   }
 
   &__link:hover {
@@ -309,12 +311,8 @@ cursor: pointer;
 form.search-form {
   position: relative;
   height: 79px;
-  // width: 200px;
-  // height: 45px;
-  // margin-left: 20px;
 }
 input.search-input{
-  margin-left: 20px;
   width: 180px;
   height: 35px;
   outline: none;
@@ -327,17 +325,16 @@ input.search-input::placeholder{
 }
 button.search-submit{
   border: none;
-  // position: absolute;
-  // top: 33px;
-  // left: 33px;
   cursor: pointer;
   background: url(/src/img/sprites.png) no-repeat;
   background-position: -16px -261px ;
 	width: 18px;
   height: 19px;
   outline: none;
-  display: inline-block;
   vertical-align: middle;
+  position: relative;
+  top: 0;
+  left: -20px;
 }
 
 button.search-submit:hover {
@@ -345,9 +342,10 @@ button.search-submit:hover {
   background-position: -62px -260px ;
 	width: 18px;
   height: 18px;
-  // position: absolute;
-  top: 8px;
-  left: -42px;
+  vertical-align: middle;
+  position: relative;
+  top: 0;
+  left: -20px;
 
 }
 button.search-submit:active {
@@ -355,9 +353,10 @@ button.search-submit:active {
   background-position: -114px -259px ;
 	width: 18px;
 	height: 18px;
-  // position: absolute;
-  top: 8px;
-  left: -42px;
+  vertical-align: middle;
+  position: relative;
+  top: 0;
+  left: -20px;
 }
 
 label.search-label {
@@ -464,6 +463,7 @@ button.search-submit:hover{
       margin: 0;
       color: $darkGray;
     }
+
     &__link:nth-child(2) {
       @include itemTop;
       font-weight: 700;
@@ -475,24 +475,17 @@ button.search-submit:hover{
       font-weight: 700;
       padding: 10px;
     }
+}
 
-    &__link {
-      padding: 10px;
-      margin: 0;
-    }
-}
-form.search-form{
-  // margin: 30px 0 0 17px;
-}
 input.search-input {
   position: absolute;
-  top: 20px;
-  left: -10px;
+  top: 28px;
+  left: 16px;
   background: transparent;
   outline: none;
   width: 0;
-  height: 30px;
-  padding: 0 30px 0 15px;
+  height: 55px;
+  padding: 0 45px 0 19px;
   border: none;
   transition: .4s cubic-bezier(0, 0.8, 0, 1);
   z-index: 2;
@@ -506,18 +499,18 @@ input.search-input:focus{
 }
 
 button.search-submit{
-  top: 0px;
-  left: 14px;
+  top: 0;
+  left: 0;
 }
 
 button.search-submit:hover{
-  top: 0px;
-  left: 14px;
+  top: 0;
+  left: 0;
 }
 
 button.search-submit:active{
-  top: 0px;
-  left: 14px;
+  top: 0;
+  left: 0;
 }
 
 input.search-input::placeholder{
@@ -545,10 +538,8 @@ input.search-input::placeholder{
 
     &__logo{
        order: 4;
-       flex-basis: 309px;
+       flex-basis: 270px;
        align-self: center;
-       text-align: center;
-       padding: 0;
        &-desktop{
          display: inline-block;
          margin-top: 10px;
@@ -567,14 +558,14 @@ input.search-input::placeholder{
   }
   &__item:nth-child(2){
     order: 2;
-    flex-basis: 221px;
+    flex-basis: 240px;
     border-right: 1px solid $frameMenu;
     text-align: center;
   }
 
     &__item:nth-child(3){
       order: 3;
-      flex-basis: 220px;
+      flex-basis: 260px;
       text-align: center;
     }
 
@@ -585,14 +576,13 @@ input.search-input::placeholder{
 
     &__item--cart{
       order: 5;
-      flex-basis: 360px;
+      // flex-basis: 360px;
     }
 
     &__item--delivery{
       order: 9;
       z-index: 1;
-      flex-grow: 1;
-      text-align: center;
+      flex-basis: 640px;
     }
 
     &__item--new{
@@ -600,7 +590,8 @@ input.search-input::placeholder{
       order: 7;
       border: none;
       z-index: 1;
-      flex-grow: 1;
+      text-align: left;
+      flex-basis: 250px;
     }
 
     &__item--sale{
@@ -609,7 +600,8 @@ input.search-input::placeholder{
       text-align: left;
       border: none;
       z-index: 1;
-      flex-grow: 9;
+      text-align: left;
+      flex-basis: 205px;
     }
 
   }

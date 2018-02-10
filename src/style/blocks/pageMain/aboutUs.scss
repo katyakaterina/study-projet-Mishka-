@@ -1,12 +1,16 @@
 .about-us {
-padding: 32px;
+    padding: 32px;
+
     &__title{
       @include titleLMob;
       margin: 0;
     }
     &__list {
+      display: flex;
+      flex-direction: column;
+    }
+    &__features{
       list-style: none;
-      margin: 0;
       padding: 0;
     }
     &__feature {
@@ -19,92 +23,64 @@ padding: 32px;
       margin: 20px 0 25px 0px;
     }
 
-    &__feature:nth-child(2){
-      width: 200px;
-    }
-    &__feature:nth-child(3){
-      width: 200px;
-    }
-    &__feature:nth-child(4){
-      width: 211px;
-    }
-    &__feature:nth-child(5){
-      width: 251px;
-    }
-    &__feature:nth-child(6){
-      width: 250px;
-    }
-    &__feature:nth-child(7){
-      width: 250px;
-    }
-    &__feature:nth-child(1)::before{
+    &__feature--fabric::before{
       content: '';
       display: block;
       background: url(/src/img/sprites.png);
       background-position: -157px -7px ;
 	    width: 33px;
       height: 38px;
-      // margin: 20px;
     }
 
-    &__feature:nth-child(2)::before{
+    &__feature--style::before{
       content: '';
       display: block;
       background: url(/src/img/sprites.png);
       background-position: -151px -58px ;
 	    width: 47px;
       height: 27px;
-      // margin: 15px;
     }
 
-    &__feature:nth-child(3):before{
+    &__feature--likes:before{
       content: ''; 
       display: block;
       background: url(/src/img/sprites.png);
       background-position: -157px -109px ;
 	    width: 34px;
       height: 27px;
-      // margin: 20px;
     }
     
-    &__feature:nth-child(4):before{
+    &__feature--love:before{
       content: '';
       display: block;
       background: url(/src/img/sprites.png);
       background-position: -155px -156px ;
 	    width: 35px;
       height: 34px;
-      // margin: 20px;
     }
 
-    &__feature:nth-child(5):before{
+    &__feature--native:before{
       content: '';
       display: block;
       background: url(/src/img/sprites.png);
       background-position: -152px -212px ;
 	    width: 55px;
       height: 23px;
-      // margin: 15px;
     }
 
-    &__feature:nth-child(6):before{
+    &__feature--box:before{
       content: '';
       display: block;
       background: url(/src/img/sprites.png);
       background-position: -157px -255px ;
 	    width: 33px;
       height: 32px;
-      // margin: 20px;
     }
 }
 
 .slider {
   padding: 32px;
 
-  // &__slides{
-  //   display: inline-block;
-  // }
-  
   &__slide1{
     position: relative;
     height: 360px;
@@ -198,44 +174,10 @@ padding: 32px;
       @include titleXlTab;
     }
    
-
     &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: baseline;
-    // width: 630px;
-  }
+    flex-direction: row;
+   }
 
-    &__feature:nth-child(1) {
-    order: 1;
-    flex-basis: 185px;
-    margin-right: 128px;
-  }
-
-  &__feature:nth-child(2) {
-    order: 3;
-    margin-right: 95px;
-    flex-basis: 220px;
-  }
-
-  &__feature:nth-child(3) {
-    order: 5;
-    flex-basis: 195px;
-    margin-right: 120px;
-  }
-
-  &__feature:nth-child(4) {
-    order: 2;
-  }
-
-  &__feature:nth-child(5) {
-    order: 4;
-  }
-
-  &__feature:nth-child(6) {
-    order: 6;
-  }
 }
 
 .slider {
@@ -277,27 +219,27 @@ padding: 32px;
     order: 3;
   }
 
-  &__slide2{
+  &__slide2 {
     display: none;
   }
-  &__slide3{
+  &__slide3 {
     display: none;
   }
 
-  &__write{
+  &__write {
     align-self: flex-end;
     order: 2;
     width: 180px;
     margin: 0;
   }
 
-  &__comment{
+  &__comment {
     @include descrTablet;
     width: 606px;
     margin-bottom: 40px;
   }
 
-  &__user{
+  &__user {
     width: 245px;
   }
 
@@ -308,7 +250,7 @@ padding: 32px;
     top: -25px;
   }
 
-  &__btn-left{
+  &__btn-left {
     background: url(/src/img/sprites.png)  -225px -109px no-repeat;
     width: 50px;
     height: 26px;
@@ -317,7 +259,7 @@ padding: 32px;
     margin-right: 20px;
   }
 
-  &__btn-right{
+  &__btn-right {
     background: url(/src/img/sprites.png) -321px -108px no-repeat;
     width: 50px;
     height: 26px;
@@ -358,10 +300,6 @@ padding: 32px;
 
     &__title{
       @include titleDesk;
-    }
-
-    &__list {
-      margin: 0 auto;
     }
   }
 

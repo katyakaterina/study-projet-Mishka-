@@ -19,7 +19,7 @@ var cache = require('gulp-cache');
 var build = require('gulp-build');
 var del = require('del');
 var uglify = require("gulp-uglify");
-var concat = require("gulp-concat");
+var concat = require('gulp-concat');
 var spritesmith = require('gulp.spritesmith');
 
 
@@ -114,6 +114,12 @@ gulp.task("default", ["watch", "sass", "html", "scripts", "img"]);
 
 
 //js//
+
+// gulp.task('scripts', function() {
+//   return gulp.src('./lib/*.js')
+//     .pipe(concat('all.js'))
+//     .pipe(gulp.dest('./dist/js'));
+// });
 
 gulp.task('js', function() {
   return gulp.src(['src/js/slider.js, src/js/hamburger.js, src/js/main.js, src/js/picturefill.js'])

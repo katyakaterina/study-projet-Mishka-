@@ -105,15 +105,19 @@
                 </div>
                 <div class="catalog-card__picture">
                     <picture>
-                       <source media="(min-width: 320px)"
+                       <!-- <source media="(min-width: 320px)"
                                srcset = "src/img/triple-mobile-2x.webp 2x, src/img/triple-mobile-1x.webp 1x" type ="image/webp"
-                               srcset = "src/img/triple-mobile-2x.jpg 2x, src/img/triple-mobile-1x.jpg 1x" type ="image/jpg">
-                       <source media="(min-width: 768px)"
+                               srcset = "src/img/triple-mobile-2x.jpg 2x, src/img/triple-mobile-1x.jpg 1x" type ="image/jpg"> -->
+                       <source media="(min-width: 320px) and (min-width: 768px) and (min-width: 1024px)"
+                                srcset = "src/img/triple-mobile-2x.webp 2x, src/img/triple-mobile-1x.webp 1x" type ="image/webp"
+                               srcset = "src/img/triple-mobile-2x.jpg 2x, src/img/triple-mobile-1x.jpg 1x" type ="image/jpg"
                                srcset = "src/img/triple-tablet-2x.webp 2x, src/img/triple-tablet-1x.webp 1x" type ="image/webp"
-                               srcset = "src/img/triple-tablet-2x.jpg 2x, src/img/triple-tablet-1x.jpg 1x" type ="image/jpg">
-                       <source media="(min-width: 1024px)"
+                               srcset = "src/img/triple-tablet-2x.jpg 2x, src/img/triple-tablet-1x.jpg 1x" type ="image/jpg"
                                srcset = "src/img/triple-desktop-2x.webp 2x, src/img/triple-desktop-1x.webp 1x" type ="image/webp"
                                srcset = "src/img/triple-desktop-2x.jpg 2x, src/img/triple-desktop-1x.jpg 1x" type ="image/jpg">
+                       <!-- <source media="(min-width: 1024px)"
+                               srcset = "src/img/triple-desktop-2x.webp 2x, src/img/triple-desktop-1x.webp 1x" type ="image/webp"
+                               srcset = "src/img/triple-desktop-2x.jpg 2x, src/img/triple-desktop-1x.jpg 1x" type ="image/jpg"> -->
                        <img class="catalog-card__img" src="src/img/triple-mobile-1x.jpg" alt="Вязаные корзинки">
                    </picture>
                 </div>
@@ -137,7 +141,11 @@
 </div>
 <div class="overlay" id="myOverlay"></div>
           </div>
-
+      </section>
+      <section class="decoration">
+        <div class="decoration__wave">
+            <span class="decoration__line"></span>
+        </div>
       </section>
       <section class="about-us">
         <h3 class="about-us__title">Коротко о нас:</h3>

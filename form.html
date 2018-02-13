@@ -67,53 +67,56 @@
     <main class="main">
         <div class="form-page">
             <div class="form-page__descr">
-              <div class="form-page__title--block">
+              <div class="form-page__title--block    ">
                 <h3 class="form-page__title">Вязание на заказ</h3>
                 </div>
+                <div class="form-page__title-line"></div>
                 <p class="form-page__text">
                     Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
                 </p>
         </div>
         <form class="form-page__form" action="" method="post">
                 <fieldset class="form-page__filedset form-page__filedset--radio">
-                    <div class="form-page__inner">
+                    <div class="form-page__inner form-page__inner--radio">
                         <legend class="form-page__legend">Тип</legend>
-                        <div class="form-page__section">
+                        <div class="form-page__section form-page__section--radio "   >
                             <input class="form-page__input form-page__input--radio" type="radio" id="radio-1" name="radio" checked>
                             <label class="form-page__label form-page__label--radio" for="radio-1">Аксессуар для интерьера</label>
                         </div>
-                        <div class="form-page__section">
+                        <div class="form-page__section  form-page__section--radio">
                             <input class="form-page__input form-page__input--radio" type="radio" id="radio-2" name="radio">
                             <label class="form-page__label form-page__label--radio" for="radio-2">Детская игрушка</label>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="form-page__filedset form-page__filedset--checkbox">
-                    <div class="form-page__inner">
+            <div class="form-page__inner  form-page__inner--checkbox">
                         <legend class="form-page__legend--checkbox">Цвет</legend>
-                        <div class="form-page__section">
-                           <input class="form-page__input--checkbox" type="checkbox" id="checkbox-1" name="checkbox" checked>
-                           <label class="form-page__label--checkbox" for="checkbox-1">Белый</label>
+<div class="form-page__grupp--checkbox">
+                        <div class="form-page__section form-page__section--checkbox">
+                           <input class="   form-page__input--checkbox" type="checkbox" id="checkbox-1" name="checkbox" checked>
+                           <label class=" form-page__label--checkbox" for="checkbox-1">Белый</label>
                         </div>
-                        <div class="form-page__section">
-                           <input class="form-page__input--checkbox" type="checkbox" id="checkbox-2" name="checkbox" checked>
-                           <label class="form-page__label--checkbox" for="checkbox-2">Серый</label>
+                        <div class="form-page__section form-page__section--checkbox">
+                           <input class="  form-page__input--checkbox" type="checkbox" id="checkbox-2" name="checkbox" checked>
+                           <label class=" form-page__label--checkbox" for="checkbox-2">Серый</label>
                         </div>
-                        <div class="form-page__section">
-                           <input class="form-page__input--checkbox" type="checkbox" id="checkbox-3" name="checkbox">
-                           <label class="form-page__label--checkbox" for="checkbox-3">«Тиффани»</label>
+                        <div class="form-page__section form-page__section--checkbox">
+                           <input class="  form-page__input--checkbox" type="checkbox" id="checkbox-3" name="checkbox">
+                           <label class=" form-page__label--checkbox" for="checkbox-3">«Тиффани»</label>
                         </div>
-                        <div class="form-page__section">
-                           <input class="form-page__input--checkbox" type="checkbox" id="checkbox-4" name="checkbox">
-                           <label class="form-page__label--checkbox" for="checkbox-4">Черный</label>
+                        <div class="form-page__section form-page__section--checkbox">
+                           <input class= "form-page__input--checkbox" type="checkbox" id="checkbox-4" name="checkbox">
+                           <label class=" form-page__label--checkbox" for="checkbox-4">Черный</label>
                        </div>
-                       <div class="form-page__section">
-                           <input class="form-page__input--checkbox" type="checkbox" id="checkbox-5" name="checkbox">
-                           <label class="form-page__label--checkbox" for="checkbox-5">Розовый</label>
+                       <div class="form-page__section form-page__section--checkbox">
+                           <input class=" form-page__input--checkbox" type="checkbox" id="checkbox-5" name="checkbox">
+                           <label class=" form-page__label--checkbox" for="checkbox-5">Розовый</label>
                        </div>
-                       <div class="form-page__section">
-                           <input class="form-page__input--checkbox" type="checkbox" id="checkbox-6" name="checkbox">
-                           <label class="form-page__label--checkbox" for="checkbox-6">Оранжевый</label>
+                       <div class="form-page__section form-page__section--checkbox">
+                           <input class=" form-page__input--checkbox" type="checkbox" id="checkbox-6" name="checkbox">
+                           <label class=" form-page__label--checkbox" for="checkbox-6">Оранжевый</label>
+                       </div>
                        </div>
                     </div>
                 </fieldset>
@@ -138,18 +141,24 @@
                     </div>
                 </fieldset>
                 <fieldset class="form-page__filedset form-page__filedset--checkbox">
+<div class="form-page__data">
+
                     <div class="form-page__inner--phone">
-                       <legend class="form-page__legend">Тел</legend>
-                       <input class="form-page__input--phone" type="" placeholder="+7 XXX XX XX*" required>
+                       <legend class="form-page__legend--phone">Тел</legend>
+                    <input class="form-page__input--phone" type="number"  placeholder="+7 XXX XX XX*"   required  maxlength="15">
+                       <!--<input class="form-page__input--phone" type="" placeholder="+7 XXX XX XX*" required>-->
                        <label class="form-page__label--phone"></label>
                     </div>
-                </fieldset>
-                <fieldset class="form-page__filedset form-page__filedset--checkbox">
+                <!--</fieldset>-->
+                <!--<fieldset class="form-page__filedset form-page__filedset--checkbox">-->
+
                     <div class="form-page__inner--email">
-                       <legend class="form-page__legend">E-mail</legend>
+                       <legend class="form-page__legend--email">E-mail</legend>
                        <input class="form-page__input--email" type="email" placeholder="Ваш Email*" required>
                        <label class="form-page__label"></label>
                     </div>
+
+</div>
                 </fieldset>
                 <fieldset class="form-page__filedset form-page__filedset--checkbox">
                     <div class="form-page__inner">

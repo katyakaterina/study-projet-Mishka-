@@ -122,7 +122,7 @@ gulp.task("default", ["watch", "sass", "html", "scripts", "img"]);
 // });
 
 gulp.task('js', function() {
-  return gulp.src(['src/js/slider.js, src/js/hamburger.js, src/js/main.js, src/js/picturefill.js'])
+  return gulp.src(['src/js/slider.js, src/js/hamburger.js, src/js/main.js, src/js/picturefill.js, src/js/map.js'])
     .pipe(concat('js/*.js'))
     .pipe(gulp.dest('dist/new.js'));
 });

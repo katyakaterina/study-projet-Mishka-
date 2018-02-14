@@ -8,10 +8,9 @@
    background: $frameMenu;
    margin-top: 0px;
    margin-bottom: 24px;
-
+width: 100%;
 }
-
-		&__title{
+&__title{
 			@include textLg(27px, 700);
 				line-height: 1.1;
 				text-align: center;
@@ -22,18 +21,16 @@
       	@include textLg(13px, 400);
       line-height: 1.8;
         color: #444444;
-			
-margin-bottom: 20px;
-margin-left: 30px;
-		}
+        margin-bottom: 20px;
+      margin-left: 30px;
 
-		&__filedset--radio{
+		}
+&__filedset--radio{
     margin-left: 17px;
 
 				border: none;
 			//	padding: 10px;
-
-    }
+}
 
 		&__inner,
     &__inner--phone,
@@ -105,15 +102,11 @@ border-radius:50%;
   line-height: 1.05;
   left: 0px;
   cursor: pointer;
-
-
 }
 
 &__legend::after,
 &__legend--checkbox::after{
-
-
-				position: absolute;
+position: absolute;
 				content: "";
 				width: 198px;
 				height: 1px;
@@ -345,7 +338,7 @@ margin-left: 29px;
  display: flex; //height: 120px;
  margin-top: 0px;
  height: 217px;
-
+width: 100%;
 
 
       }
@@ -371,7 +364,7 @@ margin-left: 29px;
   bottom: 25px;
 }
 &__text {
-  width: 612px;
+  //width: 612px;
   @include textLg(17px, 400);
   line-height: 1.7;
   margin-left: 50px;
@@ -451,9 +444,9 @@ display: flex;
 
 
 
- width: 100%;
+ //width: 100%;
 margin: 0 auto;
-;
+
 display: flex;
 
 }
@@ -544,13 +537,9 @@ margin-right: 120px;
 
 
 
-// &__legend{
-  //margin-left: 20px;
-
-// }
 
 &__section--name{
-  width: 100%;
+  //width: 100%;
 
   margin-left: 145px;
   margin-top: 5px;

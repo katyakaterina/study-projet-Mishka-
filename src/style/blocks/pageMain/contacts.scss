@@ -86,10 +86,6 @@ padding: 0;
             @include descrTablet;
         }
 
-        // &__text:last-child{
-        //     margin: 0 26px 0 0;
-        // }
-
         &__address {
             width: 195px;
             padding: 0;
@@ -113,15 +109,6 @@ padding: 0;
             top: -115px;
             left: -45px;
         }
-
-        &__btn {
-            margin: 20px 206px;
-        }
-
-        // img{
-        //     width: 768px;
-        //     height: 457px;
-        // }
     }
 }
 
@@ -130,14 +117,14 @@ padding: 0;
     .contacts{
         width: 1050px;
         height: 528px;
-        margin: 138px 0 0 80px;
+        margin: 0 auto;
 
         &__inner{
           width: 1050px;
           display: flex;
           flex-wrap: wrap;
           flex-direction: column;
-          align-content: space-evenly;
+          align-content: flex-end;
           height: 528px;
         }
         &__box{
@@ -163,11 +150,12 @@ padding: 0;
         &__btn{
             order: 2;
             margin: 0;
+            width: 290px;
         }
         &__title{
             @include titleDesk;
             order: 1;
-            margin: 85px 0 20px 0;
+            margin: 85px 80px 20px 0;
         }
         &__icon{
             top: -280px;

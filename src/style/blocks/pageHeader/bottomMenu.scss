@@ -28,12 +28,12 @@
         height: 103px;
         border: 1px solid $greenLeft;
         background-color: $greenLeft;
+        display: flex;
     }
 
     &__item:hover  {
         background-color: $greenLeftHover;
-        height: 108px;
-        margin-top: -5px;  
+        height: 108px; 
     }      
 
     &__item:last-child:hover {
@@ -53,8 +53,9 @@
         line-height: calc(24/19);
         font-weight: 700;
         display: inline-block;
-        width: 110px;
-        padding: 24px 57px 24px 30px;
+        width: 100%;
+        padding: 24px 165px 28px 38px;
+
 
         &--left::before {
             position: absolute;
@@ -64,7 +65,7 @@
             width: 41px;
             height: 62px;
             top: 20px;
-            left: 120%;
+            left: 79%;
             }
         
         &--right::before {
@@ -75,7 +76,7 @@
 	    width: 61px;
         height: 61px;
         top: 20px;
-        left: 115%;
+        left: 75%;
         }
 
     }
@@ -120,7 +121,7 @@
 
         &__item{
             width: 334px;
-            height: 117px;
+            height: 119px;
         }
 
         &__link{
@@ -135,7 +136,7 @@
             position: absolute;
             width: 768px;
             height: 16px;
-            top: 105px;
+            top: 108px;
             left: -50px;
         }
 
@@ -166,8 +167,7 @@
         }
 
         &__item:hover {
-            height: 122px;
-            margin-top: -5px; 
+            height: 124px;
         }
 
         &__icon1{
@@ -201,7 +201,6 @@
         &__list {
             position: relative;
             width: 1050px;
-            
         }
 
         &__title{
@@ -215,7 +214,7 @@
         }
 
         &__link{
-            padding: 24px 205px 24px 36px;
+            padding: 24px 308px 24px 36px;
         }
 
         &__line{
@@ -223,7 +222,7 @@
             height: 16px;
             width: 1150px;
             z-index: 10;
-            top: 105px;
+            top: 108px;
             left: -50px;
         }
 
@@ -254,8 +253,7 @@
         }
 
         &__item:hover {
-            height: 124px;
-            margin-top: -5px; 
+            
             background-color: $greenLeftHover;
         }
 

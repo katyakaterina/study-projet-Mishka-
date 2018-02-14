@@ -311,9 +311,6 @@ opacity:0.8;
 .catalog-card {
   padding: 32px;
   height: 801px;
-  // &__item {
-  //   height: 650px;
-  // }
 
     &__title {
       font-size: 25px;
@@ -385,12 +382,11 @@ opacity:0.8;
 .btn {
   border: 2px solid $darkGray;
   background-color: $white;
-  width: 256px;
+  width: 100%;
   height: 48px;
   @include titleSm;
   color: $darkGray;
   text-transform: uppercase;
-  margin: 0 0 76px 0;
   cursor: pointer;
 }
 
@@ -562,9 +558,6 @@ width: 355px;
         height: 130px;
         width: 292px;
       }
-      &__btn{
-        width: 292px;
-      }
       &__picture{
         display: inline-block;
       }
@@ -723,9 +716,6 @@ width: 355px;
     flex-wrap: wrap;
     //justify-content: space-between;
   }
-
-
-
   &__title {
 @include titleXlTab;
     align-self: flex-start;

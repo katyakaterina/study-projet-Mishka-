@@ -218,6 +218,7 @@ cursor: pointer;
  }
 
   &__item {
+    display: flex;
     border-bottom: 1px solid $frameMenu;
     text-align: center;
     height: 78px;
@@ -234,7 +235,7 @@ cursor: pointer;
     height: 18px;
     position: relative;
     top: 0;
-    left: -20px;
+    left: -21px;
     vertical-align: middle;
   }
 
@@ -245,7 +246,7 @@ cursor: pointer;
     height: 18px;
     position: relative;
     top: 0;
-    left: -20px;
+    left: -21px;
     vertical-align: middle;
   }
 
@@ -256,7 +257,7 @@ cursor: pointer;
     height: 18px;
     position: relative;
     top: 0;
-    left: -20px;
+    left: -21px;
     vertical-align: middle;
   }
 
@@ -284,12 +285,13 @@ cursor: pointer;
   }
 
   &__link {
+    width: 100%;
     @include titleSm;
     color: $black;
     line-height: calc(24/17);
     text-decoration: none;
     text-align: center;
-    padding: 20px;
+    padding: 30px 0 32px 0;
     cursor: pointer;
   
   }
@@ -311,6 +313,7 @@ cursor: pointer;
 form.search-form {
   position: relative;
   height: 79px;
+  margin: 0 auto;
 }
 input.search-input{
   width: 180px;
@@ -479,8 +482,8 @@ button.search-submit:hover{
 
 input.search-input {
   position: absolute;
-  top: 28px;
-  left: 16px;
+  top: 19px;
+  left: -22px;
   background: transparent;
   outline: none;
   width: 0;

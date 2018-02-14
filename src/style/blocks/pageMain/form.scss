@@ -5,18 +5,16 @@
    justify-content: center;
    //min-width:320px;
    height:177px;
-   background: #f1f1f1;
+   background: $frameMenu;
    margin-top: 0px;
    margin-bottom: 24px;
 width: 100%;
 }
 &__title{
 			@include textLg(27px, 700);
-				background-color: $frameMenu;
 				line-height: 1.1;
 				text-align: center;
         margin-top: 20px;
-				border-top: 1px solid $frameMenu;
 		}
 
 		&__text{
@@ -80,7 +78,7 @@ width: 36px;
 height: 36px;
 border:2px solid #444444;
 border-radius:50%;
-background:#fff;
+// background:#fff;
 
 
 
@@ -536,7 +534,6 @@ margin-right: 120px;
   //display: flex;
   padding-top: 15px;
 }
-
 
 
 

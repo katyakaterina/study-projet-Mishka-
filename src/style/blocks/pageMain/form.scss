@@ -27,14 +27,12 @@ width: 100%;
       margin-left: 30px;
 
 		}
-
-		&__filedset--radio{
+&__filedset--radio{
     margin-left: 17px;
 
 				border: none;
 			//	padding: 10px;
-
-    }
+}
 
 		&__inner,
     &__inner--phone,
@@ -106,15 +104,11 @@ border-radius:50%;
   line-height: 1.05;
   left: 0px;
   cursor: pointer;
-
-
 }
 
 &__legend::after,
 &__legend--checkbox::after{
-
-
-				position: absolute;
+position: absolute;
 				content: "";
 				width: 198px;
 				height: 1px;

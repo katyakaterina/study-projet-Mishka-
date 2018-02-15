@@ -68,14 +68,27 @@ gulp.task("html", function () {
 .pipe(gulp.dest('dist/html'));
 });
 
+//gulp.task('scripts', function () {
+  //return gulp.src(['src/js/hamburger.js', 'src/js/main.', 'src/js/modal.js', 'src/js/slider.js', 'src/js/picturefill.js','src/js/map.js'  ])
+    //.pipe(concat('scripts.min.js'))
+    //.pipe(uglify())
+//.pipe(rename({ suffix: '.min' }))
+//.pipe(gulp.dest('dist/js'));
+
+//});
+
 gulp.task('scripts', function () {
-  return gulp.src(['src/js/hamburger.js, src/js/main.js, src/js/modal.js, src/js/slider.js, src/js/picturefill.js, src/js/map.js '])
+  return gulp.src(['src/js/**/*.js '])
     .pipe(concat('scripts.min.js'))
     .pipe(uglify())
-//.pipe(rename({ suffix: '.min' }))
-.pipe(gulp.dest('dist/js'));
-
+    .pipe(gulp.dest('dist/js'))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
 });
+
+
+
 
 //gulp.task("uglify", function () {
   //return gulp.src("src/js/*.js")
@@ -117,28 +130,28 @@ gulp.task("default", ["watch", "sass", "html", "scripts", "img"]);
 //     .pipe(gulp.dest('./dist/js'));
 // });
 
-gulp.task('js', function() {
-  return gulp.src(['src/js/slider.js, src/js/hamburger.js, src/js/main.js, src/js/picturefill.js, src/js/map.js, src/js/modal.js'])
-    .pipe(concat('js/*.js'))
+//gulp.task('js', function() {
+  //return gulp.src(['src/js/slider.js', 'src/js/hamburger.js', 'src/js/main.js', 'src/js/picturefill.js', 'src/js/map.js', 'src/js/modal.js'])
+    //.pipe(concat('js/*.js'))
+    //.pipe(gulp.dest('dist/js'));
+//});
+
+gulp.task('js', function () {
+  gulp.src('js/*.js')
+    .pipe(minify())
+    .pipe(gulp.dest("dist/js"));
+  gulp.watch('js/*.js', ['uglify']);
+});
+gulp.task('uglify', function () {
+  gulp.src('js/*.js')
+    .pipe(uglify())
     .pipe(gulp.dest('dist/js'));
 });
-
-//gulp.task('js', function () {
-  //gulp.src('src/js/*.js')
-    //.pipe(minify())
-    //.pipe(gulp.dest("dist/js"));
-  //gulp.watch('js/*.js', ['uglify']);
-//});
-//gulp.task('uglify', function () {
-  //gulp.src('src/js/*.js')
-    //.pipe(uglify())
-    //.pipe(gulp.dest('dist/js'));
-//});
-//gulp.task('minify', function () {
-  //gulp.src('src/js/*.js')
-    //.pipe(uglify())
-    //.pipe(gulp.dest('dist/js'));
-//});
+gulp.task('minify', function () {
+  gulp.src('js/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/js'));
+});
 //end js//
 //css//
 gulp.task('css', function () {

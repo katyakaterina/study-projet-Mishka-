@@ -18,7 +18,7 @@
     }
 
     &__link {
-        margin: 22px 22px 20px 13px;
+        margin: 10px;
     }
 
     &__social {
@@ -32,69 +32,69 @@
 
     &__insta {
         display: inline-block;
-        background: url('/src/img/sprites.png') no-repeat -15px -61px;
-        width: 22px;
-        height: 21px;
+        background: url('/src/img/sprites.png') no-repeat -13px -57px;
+        width: 26px;
+        height: 26px;
     }
 
     &__insta:hover{
         display: inline-block;
-        background: url('/src/img/sprites.png') no-repeat -63px -62px;
-	    width: 22px;
-        height: 21px;
+        background: url('/src/img/sprites.png') no-repeat -61px -58px;
+	    width: 26px;
+        height: 26px;
     }
 
     &__insta:active{
         display: inline-block;
-        background: url('/src/img/sprites.png') no-repeat  -115px -61px;
-	    width: 22px;
-        height: 21px;
+        background: url('/src/img/sprites.png') no-repeat  -113px -57px;
+	    width: 26px;
+        height: 26px;
     }
 
     &__facebook{
         display: inline-block;
-        background: url('/src/img/sprites.png') -17px -110px;
-        width: 15px;
-        height: 28px;
+        background: url('/src/img/sprites.png') -14px -108px;
+        width: 20px;
+        height: 32px;
     }
 
 
-&__facebook:hover{
+    &__facebook:hover{
         display: inline-block;
-        background: url('/src/img/sprites.png') -64px -110px;
-        width: 15px;
-        height: 28px;
+        background: url('/src/img/sprites.png') -61px -108px;
+        width: 20px;
+        height: 32px;
     }
 
     &__facebook:active{
         display: inline-block;
-        background: url('/src/img/sprites.png')  -114px -111px;
-	    width: 15px;
-        height: 28px;
+        background: url('/src/img/sprites.png')  -111px -110px;
+	    width: 20px;
+        height: 32px;
 
     }
 
     &__twitter{
         display: inline-block;
-        background: url('/src/img/sprites.png')  -14px -14px;
-	    width: 23px;
-        height: 20px;
+        background: url('/src/img/sprites.png')  -13px -12px;
+	    width: 27px;
+        height: 24px;
 
     }
 
     &__twitter:hover{
         display: inline-block;
-        background: url('/src/img/sprites.png')  -61px -15px;
-	    width: 23px;
-        height: 20px;
+        background: url('/src/img/sprites.png')  -59px -13px;
+	    width: 27px;
+        height: 24px;
 
     }
 
     &__twitter:active{
         display: inline-block;
-        background: url('/src/img/sprites.png')  -111px -14px;
-	    width: 23px;
-        height: 20px;
+        background: url('/src/img/sprites.png')  -109px -13px;
+	    width: 27px;
+        height: 24px;
 
     }
 }

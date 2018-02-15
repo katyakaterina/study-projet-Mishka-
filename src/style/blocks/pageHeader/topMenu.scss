@@ -585,7 +585,7 @@ input.search-input::placeholder{
     &__item--delivery{
       order: 9;
       z-index: 1;
-      flex-basis: 640px;
+      flex-basis: 680px;
     }
 
     &__item--new{
@@ -593,18 +593,15 @@ input.search-input::placeholder{
       order: 7;
       border: none;
       z-index: 1;
-      text-align: left;
-      flex-basis: 250px;
+      flex-basis: 230px;
     }
 
     &__item--sale{
       display: inline;
       order: 8;
-      text-align: left;
       border: none;
       z-index: 1;
-      text-align: left;
-      flex-basis: 205px;
+      flex-basis: 200px;
     }
 
   }

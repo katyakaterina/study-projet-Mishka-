@@ -492,8 +492,6 @@ display: flex;
 //margin-bottom: 50px;
 padding-left: 0px;
 margin-right: 120px;
-
-
 }
 &__input--checkbox:not(checked)+label::before {
   content: '';

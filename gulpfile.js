@@ -88,8 +88,6 @@ gulp.task('scripts', function () {
 });
 
 
-
-
 //gulp.task("uglify", function () {
   //return gulp.src("src/js/*.js")
     //.pipe(rename("bundle.min.js"))

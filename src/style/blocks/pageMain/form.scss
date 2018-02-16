@@ -660,9 +660,9 @@ display: flex;
 
   min-height: 228px;
   background-color: #f1f1f1;
-//margin-top: -35px;////////////
-width: 100%;
-//margin-bottom: 50px;
+  width: 100%;
+  min-width: 768px;
+
 }
 &__legend--phone{
   margin-left: 40px;
@@ -749,6 +749,12 @@ margin-top: -20px;
 top: 30px;
   margin-left: 25px;
 }
+&__wrap{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
 
 &__textarea{
 
@@ -759,24 +765,33 @@ padding: 13px 10px 90px 15px;
 margin-top: 0px;
 }
 &__btn{
-  margin-top: -40px;
+
+  order: 1;
+  margin: 0;
+  
+  // margin-top: -40px;
   width: 230px;
-  margin-left: 50px;
+  // margin-left: 50px;
   //margin-bottom: 0px;
   //display: inline-block;
-  vertical-align: top;
+  // vertical-align: top;
   //display: flex;
   //flex-direction: row-reverse;
 
 }
 
 span{
-  display: flex;
+  // display: flex;
 @include textLg(17px, 400);
 line-height: 1.7;
-margin-right: 50px;
-  margin-top: 50px;
-  justify-content: flex-end;
+// margin-right: 50px;
+//   margin-top: 50px;
+//   justify-content: flex-end;
+
+  order: 2;
+  flex-basis: 465px;
+  text-align: right;
+  align-self: center;
 }
 
 
@@ -841,6 +856,11 @@ margin-left: 125px;
 &__input--email{
   margin-left: 240px;
   min-width: 680px;
+}
+
+&__data{
+  width: 100%;
+  min-width: 1150px;
 }
 &__inner--phone::before{
   content: '';

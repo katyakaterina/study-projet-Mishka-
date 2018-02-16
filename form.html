@@ -77,7 +77,7 @@
         </div>
         <form class="form-page__form" action="" method="post">
                 <fieldset class="form-page__filedset form-page__filedset--radio">
-                  <legend class="form-page__legend">Тип</legend>
+                  <legend class="form-page__legend form-page__legend--radio">Тип</legend>
                     <div class="form-page__inner form-page__inner--radio">
 
                         <div class="form-page__section form-page__section--radio "   >
@@ -91,9 +91,9 @@
                     </div>
                 </fieldset>
                 <fieldset class="form-page__filedset form-page__filedset--checkbox">
-                   <legend class="form-page__legend">Цвет</legend>
+                   <legend class="form-page__legend  form-page__legend--color">Цвет</legend>
             <div class="form-page__inner  form-page__inner--checkbox">
-                        <legend class="form-page__legend--checkbox">Цвет</legend>
+
 <div class="form-page__group--checkbox">
                         <div class="form-page__section form-page__section--checkbox">
                            <input class="   form-page__input--checkbox" type="checkbox" id="checkbox-1" name="checkbox" checked>
@@ -123,33 +123,40 @@
                     </div>
                 </fieldset>
                 <fieldset class="form-page__filedset form-page__filedset--checkbox">
-                   <legend class="form-page__legend">Фио</legend>
+                   <legend class="form-page__legend form-page__legend--name">Фио</legend>
                     <div class="form-page__inner">
 
                        <div class="form-page__section--name">
                          <label class="form-page__label--name">Имя:</label>
-                           <input class="form-page__input--name" type="text" placeholder="Введите ваше имя*"  required maxlength="10">
+<input class=" form-page__input--name" type="text" placeholder="Введите ваше имя*" required maxlength="10">
+
 
                        </div>
                        <div class="form-page__section--name">
-                         <label class="form-page__label--name">Фамилия:</label>
-                           <input class="form-page__input--name" type="text" placeholder="Укажите фамилию*" required maxlength="25">
+<label class="form-page__label form-page__label--name">Фамилия:</label>
+
+<input class=" form-page__input form-page__input--name" type="text" placeholder="Укажите фамилию*" required maxlength="25">
+
+
 
                        </div>
                        <div class="form-page__section--name">
                          <label class="form-page__label--name">Отчество:</label>
-                           <input class="form-page__input--name" type="text" placeholder="Отчество, если желаете" maxlength="30">
+<input class="form-page__input form-page__input--name" type="text" placeholder="Отчество, если желаете" maxlength="30">
+
+
+
 
                        </div>
                     </div>
                 </fieldset>
                 <fieldset class="form-page__filedset form-page__filedset--checkbox">
-            <legend class="form-page__legend">Тел</legend>
+            <legend class="form-page__legend form-page__legend--phone">Тел</legend>
                 <div class="form-page__data">
 
                     <div class="form-page__inner--phone">
 
-                    <input class="form-page__input--phone" type="number"  placeholder="+7 XXX XX XX*"   required  maxlength="15">
+                    <input class="form-page__input--phone" type="number"  placeholder="+7 XXX XX XX*"   required  maxlength="12">
                        <!--<input class="form-page__input--phone" type="" placeholder="+7 XXX XX XX*" required>-->
                        <label class="form-page__label--phone"></label>
                     </div>
@@ -157,7 +164,8 @@
                 <!--<fieldset class="form-page__filedset form-page__filedset--checkbox">-->
 
                     <div class="form-page__inner--email">
-                       <legend class="form-page__legend">E-mail</legend>
+<legend class="form-page__legend form-page__legend--email">E-mail</legend>
+
                        <input class="form-page__input--email" type="email" placeholder="Ваш Email*" required>
                        <label class="form-page__label"></label>
                     </div>
@@ -166,7 +174,9 @@
                 </fieldset>
                 <fieldset class="form-page__filedset form-page__filedset--checkbox">
                     <div class="form-page__inner">
-                       <legend class="form-page__legend">Доп</legend>
+<legend class=" form-page__legend form-page__legend--extra">Доп</legend>
+
+
                        <textarea class="form-page__textarea" placeholder="Опишите все ваши пожелания к заказу" ></textarea>
                     </div>
                 </fieldset>

@@ -21,43 +21,46 @@ width: 100%;
       	@include textLg(13px, 400);
       line-height: 1.8;
         color: #444444;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
       margin-left: 30px;
 
 		}
 &__filedset--radio{
     margin-left: 17px;
-
-				border: none;
+border: none;
+margin-bottom: 8px;
 			//	padding: 10px;
 }
+		&__legend,
+		&__legend--radio, &__legend--checkbox {
 
-		&__inner,
-    &__inner--phone,
-    &__inner--email {
+      text-transform: uppercase;
+				position: relative;
+				@include titleSm;
+				line-height: calc(16/17);
+        color: $greenLeft;
+        margin-left: 5px;
+//height: 35px;
+        	//flex-basis:25px;
+		}
+		&__inner {
 
 				//height: 180px;
 				display: flex;
         flex-direction: column;
 flex-wrap: wrap;
-margin-bottom: 0px;
+//margin-bottom: 0px;
+margin-top: 14px;
+margin-left: 5px;
 		}
 
-		&__legend, &__legend--checkbox{
-      text-transform: uppercase;
-				position: relative;
-				@include titleSm;
-				line-height: calc(16/17);
-				color: $greenLeft;
-height: 35px;
-        	//flex-basis:25px;
-		}
+
 &__input--radio:not(checked){
 display: none;
 		}
 &__input--radio:not(checked)+label {
   //position: relative;
-  padding-left: 63px;
+  padding-left: 65px;
   top: 0px;
  // width: 180px;
   display: flex;
@@ -115,7 +118,8 @@ position: absolute;
 				top: 10px;
 		}
 
-		&__section{
+    &__section--radio,
+    &__section--checkbox{
 				flex-basis: 60px;
 				//align-self: flex-start;
     }
@@ -159,6 +163,7 @@ position: absolute;
   display: flex;
   //padding-left: 63px;
   //padding-top: 1px;
+  margin-bottom: 10px;
 }
 
 
@@ -200,8 +205,8 @@ position: absolute;
 
 &__section--name{
   display: flex;
-margin-top:12px;
-margin-bottom: 5px;
+margin-top:10px;
+//margin-bottom: 5px;
 flex-direction: column;
 }
 &__label--name{
@@ -223,7 +228,7 @@ opacity:0.6;
 border-bottom:2px solid #000;
 width: 250px;
 padding:15px 0px 14px 10px;
-margin-bottom: 9px;
+margin-bottom: 17px;
 
 }
 &__data{
@@ -248,21 +253,35 @@ margin-bottom: 9px;
 }
 
 
-&__input--phone,&__input--email{
+&__input--phone{
  @include textLg(18px, 400);
  line-height: 1.07;
  //display: flex;
  //margin-top: 30px;
+ width: 100%;
  border:none;
  color: #000;
  opacity:0.6;
  border-bottom:2px solid #000;
  width: 250px;
  padding:15px 0px 14px 10px;
- margin-bottom: 22px;
-margin-top: 10px;
+ margin-bottom: 21px;
+margin-top: 5px;
 margin-left: 10px;
 }
+&__input--email{
+  @include textLg(18px, 400);
+  line-height: 1.07; //display: flex;
+width: 100%;
+  border:none;
+  color: #000;
+  opacity:0.6;
+  border-bottom:2px solid #000;
+  width: 250px;
+  padding:15px 0px 14px 10px;
+margin-top: 11px;
+}
+
 &__inner--phone::before {
 
   content: '';
@@ -270,7 +289,7 @@ margin-left: 10px;
 width: 25px;
 height: 24px;
 position:absolute;
-margin-top: 30px;
+margin-top: 10px;
 //display: block;
 margin-left: 230px;
 z-index: 2;
@@ -280,7 +299,7 @@ z-index: 2;
 background:url('/src/img/sprites.png') -264px -263px;
 width: 25px;
 height: 24px;
-margin-top: 30px;
+margin-top: 10px;
 position:absolute;
 margin-left: 230px;
 z-index: 3;
@@ -293,7 +312,7 @@ z-index: 3;
   position: absolute;
   z-index: 2;
   margin-left: 230px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 
@@ -302,12 +321,12 @@ z-index: 3;
   opacity: 0.6;
   @include textLg(17px, 400);
   line-height: 18px;
-  padding: 13px 30px 85px 17px;
-  width: 210px;
+  padding: 13px 30px 88px 17px;
+  //width: 100%;
   border: 2px solid #000;
   background-color: #ffffff;
   //margin-left: 33px;
-  margin-top: 10px;
+  margin-top: 25px;
   margin-bottom: 6px;
 resize: none;
 
@@ -321,19 +340,27 @@ margin-left: 29px;
 }
 
 &__btn{
+  @include textLg(17px, 700);
+line-height: 0.9;
   margin-top: 30px;
   margin-left: 30px;
   margin-bottom: 0px;
+  //min-width: 260px;
+  padding: 20px 0px;
+  width: 260px;
+  height: 52px;
+
 }
 
 
 
 
-  }
+
 
 @media (min-width: 768px){
 
-		.form-page{
+		//.form-page{
+   // }
       &__title--block{
  display: flex; //height: 120px;
  margin-top: 0px;
@@ -345,61 +372,88 @@ width: 100%;
 &__title{
   text-align: center;
   @include textLg(43px, 700); //padding:95px 0px 70px 0px;
-  background: #f1f1f1;
+  //background: #f1f1f1;
   line-height:1.1;
   margin-top: 60px;
 
 }
-&__title-line:after {
-  content: "";
-  display: block;
-  position: relative;
-  background-repeat: repeat;
-  height: 10px;
-  background-size: 33px 14px;
-  background-image: radial-gradient(circle at 20px 13px, #f1f1f1 13px, transparent 13px);
-  right: 0;
-  left: 0px; //bottom: 44px;//возможно тоже надо править
-  transform: rotate(-180deg);
-  bottom: 25px;
-}
+
+  &__title-line:after {
+      content: "";
+      display: block;
+      position: relative;
+      background-repeat: repeat;
+      height: 10px;
+      background-size: 33px 14px;
+      background-image: radial-gradient(circle at 20px 13px, #f1f1f1 13px, transparent 13px);
+      right: 0;
+      left: 0px;
+      bottom: 25px;///возможно надо редактировать
+      transform: rotate(-180deg);
+    }
+
+
 &__text {
   //width: 612px;
   @include textLg(17px, 400);
   line-height: 1.7;
   margin-left: 50px;
-  margin-top: 50px;
-  padding-bottom: 50px;
+  margin-top: 45px;
+  //margin-bottom: 70px;
 }
+
+
+
+
+
+
+
+
+
+&__legend--radio{
+
+	  text-transform: uppercase;
+	  position: relative;
+	  @include titleSm;
+	  line-height: calc(16/17);
+	  color: $greenLeft;
+	  margin-left: 25px;
+	  //height: 35px;
+    flex-basis:25px;
+    top: 50px;
+
+}
+
 &__legend::after,
 &__legend--checkbox::after {
+display: none;
 
-  display: none;
 }
 &__inner--radio{
 display: flex;
 //flex-direction:row;
+//margin-top: 25px;
+
 }
 
 
+
 &__section--radio {
-  margin-left: 68px;
- margin-bottom: 20px;
- height: 200px;
+  margin-left: 60px;
+ margin-bottom: 10px;
+// height: 200px;
 }
 		&__legend::after {
 		  display: none;
 
   }
-  &__legend{
-    margin-left: 20px;
-  }
+
 &__label--radio{
   //width: 100%;
   display: flex;
   margin-left: 117px;
-  margin-top: -48px;
-
+  //margin-top: -38px;
+margin-bottom: 0px;;
 }
 		&__label--radio::before {
 		  content: '';
@@ -434,11 +488,15 @@ display: flex;
 
 &__input--radio:not(checked)+&__label--radio {
   position: relative;
-  padding-left: 83px;
-  top: 0px; // width: 180px;
+  padding-left: 77px;
+  top: 5px; // width: 180px;
   display: flex;
-  padding-top: 10px;
+  padding-top:11px;
 }
+
+
+
+
 
 &__filedset--checkbox {
 
@@ -448,8 +506,24 @@ display: flex;
 margin: 0 auto;
 
 display: flex;
+//border: 1px solid;
+}
+&__legend--color{
+  text-transform: uppercase;
+  position: relative;
+  @include titleSm;
+  line-height: calc(16/17);
+  color: $greenLeft;
+margin-left: 40px;
+top: 85px;
+}
+&__inner{
+    margin-top: 17px;
+    margin-left: 12px;
+
 
 }
+
 
 &__inner--checkbox {
 
@@ -458,27 +532,30 @@ height: 304px;
 
   margin: 0 auto;
 
-   margin-top: -50px;
+   //margin-top: -50px;
   width: 100%;
-  margin-bottom: 50px;
+  //margin-bottom: 50px;
 }
 
-&__legend--checkbox{
+//&__legend--checkbox{
 
-  margin-left: 30px;
-  margin-top: 60px;
+  //margin-left: 30px;
+  //margin-top: 60px;
 
 
-}
+//}
 &__group--checkbox{///////
 margin-top: 30px;
 display: flex;
   //flex-direction: column;
   flex-wrap: wrap;
-  width: 550px;
+  //width: 550px;
 flex-direction: row;
   height: 225px;
-  margin-left: 120px;
+
+    margin-left: 210px;
+    align-items: center;
+    align-self: center;
 
 }
 &__section--checkbox {
@@ -486,7 +563,7 @@ height: 50px;
 width: 140px;
 display: flex;
 
-  margin-top: 20px;
+  margin-top: 5px;
 //width: 50px;
 //margin-left: 111px;
 //margin-bottom: 50px;
@@ -534,14 +611,18 @@ margin-right: 120px;
 }
 
 
+&__legend--name{
+  margin-left: 40px;
+  top: 50px;
+}
 
 
 &__section--name{
   //width: 100%;
 
   margin-left: 145px;
-  margin-top: 5px;
-  margin-bottom: 70px;
+  margin-top: 55px;
+  margin-bottom: 20px;
 display: flex;
 
 //align-content: space-around;
@@ -565,15 +646,26 @@ display: flex;
   margin-left: 150px;
 
 }////
+&__legend--phone{
+  top: 85px;
+  margin-left: 40px;
+}
+
 &__data{
-  height: 228px;
+  display: flex;
+  flex-direction: column;
+  //vertical-align: top;
+  //align-items:;
+  //align-self:flex-start;
+
+  min-height: 228px;
   background-color: #f1f1f1;
-margin-top: -65px;
+//margin-top: -35px;////////////
 width: 100%;
-margin-bottom: 50px;
+//margin-bottom: 50px;
 }
 &__legend--phone{
-  margin-left: 30px;
+  margin-left: 40px;
   //margin-top: 60px;
   //margin-bottom: -60px;
   	@include titleSm;
@@ -587,30 +679,39 @@ margin-top: 70px;
   	line-height: calc(16/17);
   	color: $greenLeft;
   	text-transform: uppercase;
-margin-left: 30px;
-
+margin-left: 40px;
+position: relative;
+top: 10px;
 }
 &__inner--phone{
-  margin-top: 25px;
+  //margin-top: 25px;
 display: flex;
 border: none
 
 
 }
 
-&__input--phone,
-&__input--email{
+&__input--phone{
    @include textLg(19px, 400);
 line-height: 0.9;
 
-  	color: $greenLeft;
+
   	background-color: #f1f1f1;
 
-  width: 500px;
-  margin-left: 190px;
-  margin-top: -30px;
-  display: flex;
-margin-bottom: 35px;
+  min-width: 500px;
+  margin-left: 200px;
+  margin-top: 45px;
+  //margin-top: 55px;
+  //display: flex;
+//margin-bottom: 35px;
+}
+&__input--email{
+   @include textLg(19px, 400);
+ margin-left:200px;
+min-width: 500px;
+//margin-bottom: 30px;
+    background-color: #f1f1f1;
+margin-top: -20px;
 }
 &__inner--email::before {
   content: '';
@@ -619,8 +720,8 @@ margin-bottom: 35px;
   height: 21px;
   position: absolute;
   z-index: 2;
-  margin-top: 0px;
-  margin-left: 640px;
+  margin-top: 20px;
+  margin-left: 650px;
 }
 &__inner--phone::before {
   content: '';
@@ -630,7 +731,7 @@ margin-bottom: 35px;
   position: absolute;
   margin-top: 60px;
   //display: block;
-  margin-left: 640px;
+  margin-left: 655px;
   z-index: 2;
 }
 
@@ -641,23 +742,28 @@ margin-bottom: 35px;
   height: 24px;
   margin-top: 60px;
   position: absolute;
-  margin-left: 640px;
+  margin-left: 655px;
   z-index: 3;
 }
+&__legend--extra {
+top: 30px;
+  margin-left: 25px;
+}
+
 &__textarea{
 
   margin-left: 190px;
   @include textLg(19px, 400);
-  width: 470px;
+  max-width: 470px;
 padding: 13px 10px 90px 15px;
-margin-top: -50px;
+margin-top: 0px;
 }
 &__btn{
   margin-top: -40px;
   width: 230px;
-  margin-left: 40px;
-  margin-bottom: 55px;
-  display: inline-block;
+  margin-left: 50px;
+  //margin-bottom: 0px;
+  //display: inline-block;
   vertical-align: top;
   //display: flex;
   //flex-direction: row-reverse;
@@ -668,7 +774,7 @@ span{
   display: flex;
 @include textLg(17px, 400);
 line-height: 1.7;
-margin-right: 40px;
+margin-right: 50px;
   margin-top: 50px;
   justify-content: flex-end;
 }
@@ -676,9 +782,106 @@ margin-right: 40px;
 
 
 
+@media screen and (min-width: 1024px){
+  &__title--block {
+    height: 245px;
+    margin-top: 10px;
+  }
 
+  &__title {
+    //text-align: center;
+    @include textLg(53px, 700); //padding: 93px 0px 95px 0px;
+    //background: #f1f1f1;
+    line-height: 1;
 
+}
+&__text {
+  //width: 612px;
+  @include textLg(17px, 400);
+  line-height: 1.7;
+      max-width: 672px;
+      width: 100%;
+      margin-left: 250px;
+      margin-top: 100px;
 
+}
+
+&__filedset--radio{
+  margin-left: 50px;
+}
+&__legend--radio{
+  margin-left: 75px;
+}
+&__legend--color,
+&__legend--name,
+&__legend--phone,
+&__legend--email,
+&__legend--extra {
+margin-left: 125px;
+}
+&__inner--checkbox{
+  min-height: 228px;
+  height: auto;
+}
+
+&__group--checkbox{
+  margin-left: 240px;
+ max-height: 148px;
+
+}
+&__section--name{
+  margin-left: 175px;
+}
+
+&__input{
+  margin-left: 180px;
+  min-width: 500px;
+}
+&__input--phone,
+&__input--email{
+  margin-left: 240px;
+  min-width: 680px;
+}
+&__inner--phone::before{
+  content: '';
+  background: url('/src/img/sprites.png') -212px -263px;
+  width: 25px;
+  height: 24px;
+position: absolute;
+  margin-left: 900px;
+}
+&__inner--phone:hover::before {
+  content: '';
+  background: url('/src/img/sprites.png') -264px -263px;
+position: absolute;
+  width: 25px;
+  height: 24px;
+margin-left: 900px;
+
+}
+&__inner--email::before {
+  content: '';
+  background: url('/src/img/css_sprites.png') -10px -10px;
+  width: 32px;
+  height: 21px;
+  position: absolute;
+  margin-left: 900px;
+
+}
+&__textarea{
+  margin-left: 225px;
+  min-width: 670px;
+}
+&__btn{
+  margin-left: 250px;
+
+  vertical-align: top;
+}
+span{
+  margin-right: 250px;
+}
+    }
 
 		}
-}
+
+  }

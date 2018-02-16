@@ -156,7 +156,9 @@
 
                     <div class="form-page__inner--phone">
 
-                    <input class="form-page__input--phone" type="number"  placeholder="+7 XXX XX XX*"   required  maxlength="12">
+<input class="form-page__input--phone" type="number" pattern="[\+]\d{1}[-]-d{3}[-]-d{2}[\-]-d{2}" placeholder="+7 XXX XX XX*" required  maxlength="10">
+
+
                        <!--<input class="form-page__input--phone" type="" placeholder="+7 XXX XX XX*" required>-->
                        <label class="form-page__label--phone"></label>
                     </div>
@@ -166,7 +168,7 @@
                     <div class="form-page__inner--email">
 <legend class="form-page__legend form-page__legend--email">E-mail</legend>
 
-                       <input class="form-page__input--email" type="email" placeholder="Ваш Email*" required>
+                       <input class="form-page__input--email" type="email" placeholder="Ваш Email*" required maxlength="33">
                        <label class="form-page__label"></label>
                     </div>
 

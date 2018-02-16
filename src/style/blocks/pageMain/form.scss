@@ -3,7 +3,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   //min-width:320px;
+
    height:177px;
    background: $frameMenu;
    margin-top: 0px;
@@ -29,7 +29,7 @@ width: 100%;
     margin-left: 17px;
 border: none;
 margin-bottom: 8px;
-			//	padding: 10px;
+
 }
 		&__legend,
 		&__legend--radio, &__legend--checkbox {
@@ -40,16 +40,15 @@ margin-bottom: 8px;
 				line-height: calc(16/17);
         color: $greenLeft;
         margin-left: 5px;
-//height: 35px;
-        	//flex-basis:25px;
+
 		}
 		&__inner {
 
-				//height: 180px;
+
 				display: flex;
         flex-direction: column;
 flex-wrap: wrap;
-//margin-bottom: 0px;
+
 margin-top: 14px;
 margin-left: 5px;
 		}
@@ -59,10 +58,10 @@ margin-left: 5px;
 display: none;
 		}
 &__input--radio:not(checked)+label {
-  //position: relative;
+
   padding-left: 65px;
   top: 0px;
- // width: 180px;
+
   display: flex;
   padding-top: 16px;
 
@@ -81,7 +80,7 @@ width: 36px;
 height: 36px;
 border:2px solid #444444;
 border-radius:50%;
-// background:#fff;
+
 
 
 
@@ -121,7 +120,7 @@ position: absolute;
     &__section--radio,
     &__section--checkbox{
 				flex-basis: 60px;
-				//align-self: flex-start;
+
     }
 
 &__filedset--checkbox{
@@ -150,9 +149,7 @@ position: absolute;
 }
 &__input--checkbox:not(checked)+label {
 
-  //position: relative;
-  //padding: 0px 0 0px 34px;
-  //margin-left: 20px;
+
   display: flex;
   padding-left: 63px;
   padding-top: 20px;
@@ -161,8 +158,7 @@ position: absolute;
 &__group--checkbox {
   flex-direction: column;
   display: flex;
-  //padding-left: 63px;
-  //padding-top: 1px;
+
   margin-bottom: 10px;
 }
 
@@ -206,14 +202,14 @@ position: absolute;
 &__section--name{
   display: flex;
 margin-top:10px;
-//margin-bottom: 5px;
+
 flex-direction: column;
 }
 &__label--name{
   display: flex;
    @include textLg(17px, 700);
    line-height: 1.05;
-//margin-top: 10px;
+
 }
 &__input--name{
 
@@ -221,7 +217,7 @@ flex-direction: column;
   line-height: 1.07;
 
 display: flex;
-//margin-top: 30px;
+
 border:none;
 color: #000;
 opacity:0.6;
@@ -233,7 +229,7 @@ margin-bottom: 17px;
 }
 &__data{
   width: 100%;
-//margin-bottom: 0px;
+
 }
 &__legend--phone {
 
@@ -241,7 +237,7 @@ margin-bottom: 17px;
   line-height: calc(16/17);
   color: $greenLeft;
   text-transform: uppercase;
-  //margin-top: 70px;
+
 }
 &__legend--email {
   @include titleSm;
@@ -249,15 +245,14 @@ margin-bottom: 17px;
   color: $greenLeft;
   text-transform: uppercase;
   margin-top: 10px;
-  //margin-left: 30px;
+
 }
 
 
 &__input--phone{
  @include textLg(18px, 400);
  line-height: 1.07;
- //display: flex;
- //margin-top: 30px;
+
  width: 100%;
  border:none;
  color: #000;
@@ -294,7 +289,7 @@ margin-top: 10px;
 margin-left: 230px;
 z-index: 2;
 }
-&__inner--phone:hover::before {
+&__inner--phone:focus::before {
   content: '';
 background:url('/src/img/sprites.png') -264px -263px;
 width: 25px;
@@ -322,10 +317,10 @@ z-index: 3;
   @include textLg(17px, 400);
   line-height: 18px;
   padding: 13px 30px 88px 17px;
-  //width: 100%;
+
   border: 2px solid #000;
   background-color: #ffffff;
-  //margin-left: 33px;
+
   margin-top: 25px;
   margin-bottom: 6px;
 resize: none;
@@ -345,7 +340,7 @@ line-height: 0.9;
   margin-top: 30px;
   margin-left: 30px;
   margin-bottom: 0px;
-  //min-width: 260px;
+
   padding: 20px 0px;
   width: 260px;
   height: 52px;
@@ -359,10 +354,9 @@ line-height: 0.9;
 
 @media (min-width: 768px){
 
-		//.form-page{
-   // }
+
       &__title--block{
- display: flex; //height: 120px;
+ display: flex;
  margin-top: 0px;
  height: 217px;
 width: 100%;
@@ -394,22 +388,13 @@ width: 100%;
 
 
 &__text {
-  //width: 612px;
+
   @include textLg(17px, 400);
   line-height: 1.7;
   margin-left: 50px;
   margin-top: 45px;
-  //margin-bottom: 70px;
+
 }
-
-
-
-
-
-
-
-
-
 &__legend--radio{
 
 	  text-transform: uppercase;
@@ -418,7 +403,7 @@ width: 100%;
 	  line-height: calc(16/17);
 	  color: $greenLeft;
 	  margin-left: 25px;
-	  //height: 35px;
+
     flex-basis:25px;
     top: 50px;
 
@@ -431,17 +416,13 @@ display: none;
 }
 &__inner--radio{
 display: flex;
-//flex-direction:row;
-//margin-top: 25px;
+
 
 }
-
-
-
 &__section--radio {
   margin-left: 60px;
  margin-bottom: 10px;
-// height: 200px;
+
 }
 		&__legend::after {
 		  display: none;
@@ -449,10 +430,10 @@ display: flex;
   }
 
 &__label--radio{
-  //width: 100%;
+
   display: flex;
   margin-left: 117px;
-  //margin-top: -38px;
+
 margin-bottom: 0px;;
 }
 		&__label--radio::before {
@@ -475,7 +456,7 @@ margin-bottom: 0px;;
 		  width: 22px;
 		  height: 22px;
 		  background-color: #63d1bb;
-		  border-radius: 50%; //opacity: 0;
+		  border-radius: 50%;
 		}
 
 		&__label--radio {
@@ -500,13 +481,10 @@ margin-bottom: 0px;;
 
 &__filedset--checkbox {
 
-
-
- //width: 100%;
 margin: 0 auto;
 
 display: flex;
-//border: 1px solid;
+
 }
 &__legend--color{
   text-transform: uppercase;
@@ -532,24 +510,17 @@ height: 304px;
 
   margin: 0 auto;
 
-   //margin-top: -50px;
   width: 100%;
-  //margin-bottom: 50px;
+
 }
 
-//&__legend--checkbox{
 
-  //margin-left: 30px;
-  //margin-top: 60px;
-
-
-//}
-&__group--checkbox{///////
+&__group--checkbox{
 margin-top: 30px;
 display: flex;
-  //flex-direction: column;
+
   flex-wrap: wrap;
-  //width: 550px;
+
 flex-direction: row;
   height: 225px;
 
@@ -564,9 +535,7 @@ width: 140px;
 display: flex;
 
   margin-top: 5px;
-//width: 50px;
-//margin-left: 111px;
-//margin-bottom: 50px;
+
 padding-left: 0px;
 margin-right: 120px;
 }
@@ -579,8 +548,7 @@ margin-right: 120px;
   height: 48px;
   border: 2px solid #444444;
   background: #fff;
-  //margin-left: 30px;
-  //margin-bottom: 20px;
+
 }
 &__label--checkbox {
   @include textLg(19px, 700);
@@ -596,17 +564,16 @@ margin-right: 120px;
   transform: rotate(-45deg);
   left: 12px;
   top:12px;
-  //margin-top: 0px;
+
 }
 &__input--checkbox+label:after {
   content: none;
 
 }
 &__input--checkbox:not(checked)+label {
-  //position: relative;
+
   padding-left: 78px;
-  //top: 0px; // width: 180px;
-  //display: flex;
+
   padding-top: 15px;
 }
 
@@ -618,15 +585,14 @@ margin-right: 120px;
 
 
 &__section--name{
-  //width: 100%;
+
 
   margin-left: 145px;
   margin-top: 55px;
   margin-bottom: 20px;
 display: flex;
 
-//align-content: space-around;
-//align-self: flex-start;
+
 }
 &__label--name{
   display: flex;
@@ -639,13 +605,13 @@ display: flex;
 &__input--name{
   width: 410px;
   margin-bottom: -10px;
-  //height: 20px;
+
   margin-top: -35px;
   @include textLg(19px, 400);
   line-height:0.9;
   margin-left: 150px;
 
-}////
+}
 &__legend--phone{
   top: 85px;
   margin-left: 40px;
@@ -654,20 +620,17 @@ display: flex;
 &__data{
   display: flex;
   flex-direction: column;
-  //vertical-align: top;
-  //align-items:;
-  //align-self:flex-start;
+
 
   min-height: 228px;
   background-color: #f1f1f1;
-//margin-top: -35px;////////////
+
 width: 100%;
-//margin-bottom: 50px;
+
 }
 &__legend--phone{
   margin-left: 40px;
-  //margin-top: 60px;
-  //margin-bottom: -60px;
+
   	@include titleSm;
   	line-height: calc(16/17);
   	color: $greenLeft;
@@ -684,7 +647,7 @@ position: relative;
 top: 10px;
 }
 &__inner--phone{
-  //margin-top: 25px;
+
 display: flex;
 border: none
 
@@ -701,15 +664,13 @@ line-height: 0.9;
   min-width: 500px;
   margin-left: 200px;
   margin-top: 45px;
-  //margin-top: 55px;
-  //display: flex;
-//margin-bottom: 35px;
+
 }
 &__input--email{
    @include textLg(19px, 400);
  margin-left:200px;
 min-width: 500px;
-//margin-bottom: 30px;
+
     background-color: #f1f1f1;
 margin-top: -20px;
 }
@@ -730,7 +691,7 @@ margin-top: -20px;
   height: 24px;
   position: absolute;
   margin-top: 60px;
-  //display: block;
+
   margin-left: 655px;
   z-index: 2;
 }
@@ -749,10 +710,8 @@ margin-top: -20px;
 top: 30px;
   margin-left: 25px;
 }
-
 &__textarea{
-
-  margin-left: 190px;
+margin-left: 190px;
   @include textLg(19px, 400);
   max-width: 470px;
 padding: 13px 10px 90px 15px;
@@ -762,12 +721,7 @@ margin-top: 0px;
   margin-top: -40px;
   width: 230px;
   margin-left: 50px;
-  //margin-bottom: 0px;
-  //display: inline-block;
-  vertical-align: top;
-  //display: flex;
-  //flex-direction: row-reverse;
-
+vertical-align: top;
 }
 
 span{
@@ -786,17 +740,18 @@ margin-right: 50px;
   &__title--block {
     height: 245px;
     margin-top: 10px;
+    width: 100%;
+
   }
 
   &__title {
-    //text-align: center;
-    @include textLg(53px, 700); //padding: 93px 0px 95px 0px;
-    //background: #f1f1f1;
+
+    @include textLg(53px, 700);
     line-height: 1;
 
 }
 &__text {
-  //width: 612px;
+
   @include textLg(17px, 400);
   line-height: 1.7;
       max-width: 672px;
@@ -849,6 +804,7 @@ margin-left: 125px;
   height: 24px;
 position: absolute;
   margin-left: 900px;
+  padding-left: 20px;
 }
 &__inner--phone:hover::before {
   content: '';

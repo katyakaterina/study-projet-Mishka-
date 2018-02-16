@@ -43,14 +43,14 @@
     }
 
     &__feature--likes:before{
-      content: ''; 
+      content: '';
       display: block;
       background: url(/src/img/sprites.png);
       background-position: -157px -109px ;
 	    width: 34px;
       height: 27px;
     }
-    
+
     &__feature--love:before{
       content: '';
       display: block;
@@ -86,7 +86,7 @@
     position: relative;
     height: 360px;
   }
-  
+
   &__slide2{
     display: none;
     position: relative;
@@ -119,9 +119,9 @@
       line-height: calc(30/17);
       color: $darkGray;
     }
-  
+
     &__controls{
-      margin-bottom: 40px; 
+      margin-bottom: 40px;
     }
 
     &__btn-left{
@@ -132,7 +132,7 @@
       padding: 23px 0px 23px 0px;
       left: 0;
     }
-  
+
     &__btn-right{
       background: url(/src/img/sprites.png) -277px -99px no-repeat;
       width: 126px;
@@ -141,19 +141,19 @@
       padding: 23px 0px 23px 0px;
       right: 0;
     }
-  
+
     &__btn-left:hover{
       opacity: 0.6;
     }
-  
+
     &__btn-right:hover{
       opacity: 0.6;
     }
-  
+
     &__btn-left:active {
       opacity: 0.3;
     }
-  
+
     &__btn-right:active {
       opacity: 0.3;
     }
@@ -174,7 +174,7 @@
       align-self: flex-start;
       @include titleXlTab;
     }
-   
+
     &__list {
     flex-direction: row;
    }
@@ -239,7 +239,7 @@
     width: 606px;
     height: 170px;
     margin: 20px 0 0 0;
-    // margin-bottom: 40px;
+    
   }
 
   &__user {
@@ -268,32 +268,10 @@
     height: 26px;
     border: none;
     outline: none;
-    
+
   }
 
-  // &__btn-left:hover{
-  //   background: url(/src/img/sprites.png) -226px -159px no-repeat;
-  //   width: 50px;
-  //   height: 26px;
-  // }
 
-  // &__btn-right:hover{
-  //   background: url(/src/img/sprites.png) -320px -157px no-repeat;
-  //   width: 50px;
-  //   height: 26px;
-  // }
-
-  // &__btn-left:active {
-  //   background: url(/src/img/sprites.png) -226px -211px no-repeat;
-  //   width: 50px;
-  //   height: 26px;
-  // }
-
-  // &__btn-right:active {
-  //   background: url(/src/img/sprites.png) -319px -209px no-repeat;
-  //   width: 50px;
-  //   height: 26px;
-  // }
 }
 }
 
@@ -309,7 +287,7 @@
   .slider {
 
     width: 1055px;
-    
+
     &__caption {
       @include titleDesk;
     }
@@ -317,7 +295,7 @@
     &__slide1, &__slide2, &__slide3{
       height: 201px;
     }
-    
+
     &__slides{
       width: 875px;
       margin-left: 175px;

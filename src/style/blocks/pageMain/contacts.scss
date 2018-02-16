@@ -1,8 +1,6 @@
 .contacts {
 padding: 32px;
-    // &__inner{
-    //     width: 260px; 
-    // }
+    
 
     &__title{
         @include titleContactMobile;
@@ -66,9 +64,9 @@ padding: 32px;
 padding: 0;
         &__inner{
          width: 668px;
-        margin: 0 auto;   
+        margin: 0 auto;
         }
-        
+
 
         &__title{
             @include titleXlTab;

@@ -161,7 +161,16 @@ cursor: pointer;
   }
   .menu-top__list.opened{
     display: flex;
+    min-height: 395px;
   }
+  #menulist:flex ~ .menu-top{
+    display: flex;
+    min-height: 395px;
+  }
+
+  // .opened{
+  //   min-height: 395px;
+  // }
   //.menu-top__list.closed.open{
     //display: block;
     //position: relative;

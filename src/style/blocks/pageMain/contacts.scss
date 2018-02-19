@@ -58,8 +58,11 @@ padding: 32px;
 #map{
     width: 100%;
     height: 400px;
+    display: block;
 }
-
+#mapImg{
+    display: none;
+}
 @media (min-width: 768px) {
 
     .contacts {
@@ -161,5 +164,8 @@ padding: 0;
             top: -280px;
             left: -90px;
         }
+    }
+    #map{
+        min-width: 525px;
     }
 }

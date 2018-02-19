@@ -10,19 +10,18 @@ var openButton = 'hamburger-btn opened';//
 var menuListClosed = 'menu-top__list closed';
 var menuListOpened = 'menu-top__list opened';
 
-
 buttonMenu.onclick = function (e) {
-  if (buttonMenu.className == closeButton)
-  {
-buttonMenu.className = openButton;
-menu.className = menuListOpened;
+  if (buttonMenu.className == closeButton) {
+    buttonMenu.className = openButton;
+    menu.className = menuListOpened;
+
+  } else if (buttonMenu.className == openButton) {
+    buttonMenu.className = closeButton;
+    menu.className = menuListClosed;
+  }
+}
 
 
-} else if (buttonMenu.className == openButton) {
-buttonMenu.className = closeButton;
-menu.className = menuListClosed;
-}
-}
 
 
 

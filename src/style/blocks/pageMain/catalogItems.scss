@@ -1,5 +1,5 @@
 
- 
+
 .main-catalog {
 
 
@@ -274,7 +274,10 @@ padding-right:10px;
   &__size:active {
     border: 2px solid #63d1bb;
   }
-  &__input:checked+&__size {
+ &__input:checked+&__size {
+
+
+
     border: 2px solid #63d1bb;
   }
 
@@ -935,8 +938,8 @@ body{
 .catalog{
 
 display: flex;
-flex-direction:row;
-flex-wrap: wrap;
+//flex-direction:row;
+//flex-wrap: wrap;
 
 margin-left: 40px;
 margin-top: 70px;
@@ -996,8 +999,8 @@ width: 100%;
 
 }
 .player-video{
-    width: 1075px;
-    height: 455px;
+    min-width: 1075px;
+    max-height: 463px;
     border: 1px solid #ececec;
     background-color: #ffffff;
     @include flexbox;

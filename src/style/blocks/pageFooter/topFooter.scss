@@ -32,69 +32,69 @@
 
     &__insta {
         display: inline-block;
-        background: url('/src/img/sprites.png') no-repeat -13px -57px;
-        width: 26px;
-        height: 26px;
+        background: url('/src/img/sprites.png') no-repeat -13px -60px;
+        width: 25px;
+        height: 24px;
     }
 
     &__insta:hover{
         display: inline-block;
-        background: url('/src/img/sprites.png') no-repeat -61px -58px;
-	    width: 26px;
-        height: 26px;
+        background: url('/src/img/sprites.png') no-repeat -61px -61px;
+	    width: 25px;
+        height: 24px;
     }
 
     &__insta:active{
         display: inline-block;
-        background: url('/src/img/sprites.png') no-repeat  -113px -57px;
-	    width: 26px;
-        height: 26px;
+        background: url('/src/img/sprites.png') no-repeat  -113px -60px;
+	    width: 25px;
+        height: 24px;
     }
 
     &__facebook{
         display: inline-block;
-        background: url('/src/img/sprites.png') -14px -108px;
-        width: 20px;
-        height: 32px;
+        background: url('/src/img/sprites.png') -15px -109px;
+        width: 18px;
+        height: 30px;
     }
 
 
     &__facebook:hover{
         display: inline-block;
-        background: url('/src/img/sprites.png') -61px -108px;
-        width: 20px;
-        height: 32px;
+        background: url('/src/img/sprites.png') -62px -109px;
+        width: 18px;
+        height: 30px;
     }
 
     &__facebook:active{
         display: inline-block;
-        background: url('/src/img/sprites.png')  -111px -110px;
-	    width: 20px;
-        height: 32px;
+        background: url('/src/img/sprites.png') -112px -109px;
+	    width: 18px;
+        height: 30px;
 
     }
 
     &__twitter{
         display: inline-block;
-        background: url('/src/img/sprites.png')  -13px -12px;
-	    width: 27px;
-        height: 24px;
+        background: url('/src/img/sprites.png') -14px -13px;
+	    width: 24px;
+        height: 22px;
 
     }
 
     &__twitter:hover{
         display: inline-block;
-        background: url('/src/img/sprites.png')  -59px -13px;
-	    width: 27px;
-        height: 24px;
+        background: url('/src/img/sprites.png') -59.6px -14px;
+	    width: 24px;
+        height: 22px;
 
     }
 
     &__twitter:active{
         display: inline-block;
-        background: url('/src/img/sprites.png')  -109px -13px;
-	    width: 27px;
-        height: 24px;
+        background: url('/src/img/sprites.png')  -110px -13px;
+	    width: 24px;
+        height: 22px;
 
     }
 }
@@ -137,6 +137,7 @@
             flex-basis: 43%;
             flex-basis: 46%;
             margin: 0;
+            height: 55px;
             text-align: center;
 
         }

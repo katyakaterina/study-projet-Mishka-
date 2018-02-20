@@ -26,7 +26,7 @@ margin-top: 15px;
 
 
 &__img{
-  width: 80%;
+  width: 100%;
   min-height: 190px;
   min-width: 260px;
 
@@ -346,6 +346,9 @@ padding-right:10px;
 
     &__to-buy{
       height: 130px;
+    }
+    &__img{
+      width: 100%;
     }
 }
 .decoration{

@@ -15,11 +15,15 @@ close.onclick = function (e) {
   modal.style.display = "none";
   overlay.style.display = "none";
 }
-overlay.keyCode = function (e) {
-  if (e.keyCode === 27, (e.target == modal)) {
-    overlay.style.display = "none";
-    modal.style.display = "none";
+modal.keyCode = function (e) {
+  if (e.keyCode === 27 (e.target == modal)){
+    overlay.style.display = 'none';
+    modal.style.display = 'none';
+   
   }
+    // overlay.style.display = "none";
+    // modal.style.display = "none";
+  
 }
 overlay.onclick = function (e) {
   overlay.style.display = "none";

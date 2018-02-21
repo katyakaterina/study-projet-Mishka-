@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: center; //min-width:320px;
     height: 177px;
-    background: $frameMenu;
+    background: $lightGray;
+
     margin-top: 0px;
     width: 100%;
   }
@@ -27,6 +28,7 @@
     border: none;
     margin: 0;
     padding: 0;
+    margin-bottom: 8px;
   }
   &__legend,
   &__legend--radio,
@@ -36,6 +38,7 @@
     @include titleSm;
     line-height: calc(16/17);
     color: $greenLeft;
+    top: -7px;
   }
 
   &__inner {
@@ -48,17 +51,20 @@
 
     &--checkbox{
       min-height: 400px;
-      justify-content: center;
+      //justify-content: center;
+     // margin-top: 10px;
     }
 
     &--name{
       min-height: 290px;
-      justify-content: center;
+      //justify-content: center;
+      margin-top: 15px;
+
     }
 
     &--info{
       display: flex;
-      flex-wrap: wrap; 
+      flex-wrap: wrap;
       min-height: 200px;
       justify-content: center;
     }
@@ -111,14 +117,14 @@
     width: 198px;
     height: 1px;
     background-color: $greenLeft;
-    left: 53px;
+    left: 63px;
     top: 8px;
   }
   &__section--radio,
   &__section--checkbox {
     display: flex;
     min-width: 259px;
-    min-height: 60px;
+    min-height: 62px;
     align-items: center;
   }
   &__filedset--checkbox {
@@ -181,6 +187,7 @@
     display: flex;
     margin-top: 10px;
     flex-direction: column;
+    margin-bottom: 10px;
   }
   &__label--name {
     display: flex;
@@ -201,13 +208,15 @@
     @include titleSm;
     line-height: calc(16/17);
     color: $greenLeft;
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    top: 5px
   }
   &__legend--email {
     @include titleSm;
     line-height: calc(16/17);
     color: $greenLeft;
     text-transform: uppercase;
+    margin-top: 25px;
   }
   &__input--phone {
     @include textLg(18px, 400);
@@ -219,6 +228,8 @@
     border-bottom: 2px solid #000;
     min-height: 50px;
     outline: none;
+    margin-top: 10px;
+
   }
   &__input--email {
     @include textLg(18px, 400);
@@ -281,7 +292,17 @@
       top: -38px;
       left: 227px;
     }
+
+
+
   }
+   &__legend--extra {
+     @include titleSm;
+     line-height: calc(16/17);
+     color: $greenLeft;
+     text-transform: uppercase;
+     top: 10px;
+   }
   &__textarea {
     color: #000;
     opacity: 0.6;
@@ -290,12 +311,13 @@
     line-height: 18px;
     border: 2px solid $black;
     background-color: $white;
-    margin-top: 25px;
+    margin-top: 27px;
     align-self: center;
-    min-width: 250px;
-    min-height: 142px;
+    min-width: 240px;
+    min-height: 138px;
     width: 100%;
     resize: none;
+    margin-bottom: 20px;
   }
 
   &__wrap{
@@ -311,7 +333,7 @@
     400);
     line-height: 1.14;
     color: $darkGray;
-    margin-bottom: 31px;
+    margin-bottom: 15px;
   }
   &__btn {
     @include textLg(17px,
@@ -325,7 +347,7 @@
     &__form{
       padding: 0;
     }
-    
+
     &__title--block {
       display: flex;
       margin-top: 0px;
@@ -348,15 +370,15 @@
       background-image: radial-gradient(circle at 20px 13px, #f1f1f1 13px, transparent 13px);
       right: 0;
       left: 0px;
-      bottom: 25px; ///возможно надо редактировать
+      bottom: 0px; ///возможно надо редактировать
       transform: rotate(-180deg);
     }
     &__text {
       @include textLg(17px,
       400);
       line-height: 1.7;
-      margin-left: 50px;
-      margin-top: 45px;
+      margin-left: 20px;
+      margin-top: 40px;
     }
     &__legend--radio {
       text-transform: uppercase;
@@ -364,7 +386,7 @@
       @include titleSm;
       line-height: calc(16/17);
       color: $greenLeft;
-      top: 50px;
+      top: 75px;
       left: 50px;
     }
     &__legend::after,
@@ -374,7 +396,9 @@
     &__section--radio {
       min-width: 300px;
       width: 100%;
-      justify-content: center; 
+     // justify-content: center;
+margin-left: 215px;
+margin-top: 20px;
     }
     &__legend::after {
       display: none;
@@ -415,7 +439,7 @@
     &__input--radio:not(checked)+&__label--radio {
       position: relative;
       padding-left: 77px;
-      top: 5px; // width: 180px;
+      //top: 5px; // width: 180px;
       display: flex;
       padding-top: 11px;
     }
@@ -440,6 +464,7 @@
 
     &--radio{
       flex-direction: column;
+      margin-bottom: 35px;
     }
     &--checkbox{
       min-height: 304px;
@@ -449,13 +474,13 @@
       min-width: 768px;
     }
     &--info{
-      flex-direction: column; 
+      flex-direction: column;
       min-height: 228px;
       background-color: #f1f1f1;
       width: 100%;
       min-width: 768px;
       justify-content: center;
-      align-items: center;      
+      align-items: center;
     }
     &--name{
     min-width: 668px;
@@ -463,19 +488,21 @@
     display: flex;
     width: 100%;
     align-content: flex-start;
+    margin-bottom: 27px;
     }
     &--textarea{
       min-width: 600px;
       justify-content: center;
       display: flex;
-      margin-left: 150px;
+      margin-left: 170px;
+      margin-top: 10px;
     }
     }
     &__box{
-    min-height: 70px;
+    //min-height: 70px;
     display: flex;
     min-width: 712px;
-    justify-content: flex-end;
+    //justify-content: flex-end;
     }
     &__group--checkbox {
       display: flex; //flex-direction: column;
@@ -483,9 +510,12 @@
       flex-direction: row;
       // min-width: 470px;
       // min-height: 225px;
-      flex-basis: 592px;
+      //flex-basis: 592px;
       width: 100%;
-      justify-content: center;
+     // justify-content: center;
+     margin-left: 217px;
+     max-height: 220px;
+     margin-top: 30px;
     }
     &__section--checkbox {
       display: flex;
@@ -524,7 +554,7 @@
       padding-top: 15px;
     }
     &__legend--name {
-      top: 50px;
+      top: 70px;
       left: 50px;
     }
     &__section--name {
@@ -533,8 +563,9 @@
       min-width: 535px;
       align-self: flex-start;
       justify-content: space-around;
-      margin-left: 210px;
+      margin-left: 215px;
       width: 100%;
+      margin-top: 13px;
     }
     &__label--name {
       @include textLg(19px,
@@ -552,14 +583,14 @@
       &--name{
         min-width: 425px;
       }
-    } 
+    }
     &__legend--phone {
       @include titleSm;
       line-height: calc(16/17);
       color: $greenLeft;
       text-transform: uppercase;
-      top: 40px;
-      left: 20px;
+      top: 60px;
+      left: 25px;
     }
     &__legend--email {
       @include titleSm;
@@ -567,8 +598,8 @@
       color: $greenLeft;
       text-transform: uppercase;
       position: relative;
-      top: 40px;
-      left: 20px;
+      top: 15px;
+      left: 25px;
     }
     &__input--phone {
       @include textLg(19px,
@@ -577,8 +608,8 @@
       background-color: #f1f1f1;
       min-width: 500px;
       width: 100%;
-      margin: 0 0 0 180px;
-      
+      margin: 25px 0 0 190px;
+
     }
     &__input--email {
       @include textLg(19px,400);
@@ -586,7 +617,7 @@
       background-color: #f1f1f1;
       min-width: 500px;
       width: 100%;
-      margin: 0 0 0 180px;
+      margin: 0 0 0 190px;
     }
     &__label--phone {
       position: relative;
@@ -596,8 +627,8 @@
     &__label--phone:after {
       position: absolute;
       content: '';
-      top: 25px;
-      left: -40px;
+      top: 30px;
+      left: -60px;
       background: url('/src/img/sprites.png') -212px -263px;
       width: 25px;
       height: 24px;
@@ -630,7 +661,7 @@
       }
     }
     &__legend--extra {
-      top: 50px;
+      top: 70px;
       left: 50px;
     }
     &__wrap {
@@ -650,6 +681,7 @@
       order: 1;
       margin: 0;
       width: 230px;
+      
     }
     span {
       @include textLg(17px,
@@ -681,6 +713,20 @@
         margin-left: 250px;
         margin-top: 100px;
       }
+       &__title-line:after {
+         content: "";
+         display: block;
+         position: relative;
+         background-repeat: repeat;
+         height: 10px;
+         background-size: 33px 14px;
+         background-image: radial-gradient(circle at 20px 13px, #f1f1f1 13px, transparent 13px);
+         right: 0;
+         left: 0px;
+         bottom: 0px; ///возможно надо редактировать
+         transform: rotate(-180deg);
+       }
+
       &__legend--color,
       &__legend--name,
       &__legend--extra {

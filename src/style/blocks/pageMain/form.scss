@@ -456,9 +456,9 @@
     flex-direction: row;
     justify-content: center;
 
-    &--radio{
+    // &--radio{
       // margin: 10px 0 0 10px;
-    }
+    // }
     &--checkbox{
       min-height: 304px;
       justify-content: flex-end;
@@ -738,7 +738,7 @@
         margin: 0;
       }
       &__section--name {
-        margin-left: 175px;
+        flex-basis: 770px;
       }
       &__input {
         margin-left: 180px;
@@ -746,22 +746,30 @@
       }
       &__input--phone,
       &__input--email {
-        margin-left: 240px;
-        min-width: 680px;
+        margin: 0 25px 0 194px;
+        min-width: 715px;
+      }
+      &__label--phone::after{
+        top: 20px;
+        left: -70px;
+      }
+      &__label--email::after{
+        top: 20px;
+        left: -66px;
       }
       &__data {
         width: 100%;
         min-width: 1150px;
       }
      
-      &__inner--email::before {
-        content: '';
-        background: url('/src/img/css_sprites.png') -10px -10px;
-        width: 32px;
-        height: 21px;
-        position: absolute;
-        margin-left: 900px;
-      }
+      // &__inner--email::before {
+      //   content: '';
+      //   background: url('/src/img/css_sprites.png') -10px -10px;
+      //   width: 32px;
+      //   height: 21px;
+      //   position: absolute;
+      //   margin-left: 900px;
+      // }
       &__textarea {
         min-width: 700px;
       }

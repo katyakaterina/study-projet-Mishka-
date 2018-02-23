@@ -8,7 +8,8 @@
 
     &__inner{
         display: block;
-        margin: 58px 0 0 0;
+        margin: 53px 0 0 0;
+        //margin:58px 0 0 0;
         width: 100%;
         height: 160px;
     }
@@ -18,7 +19,8 @@
     }
 
     &__link {
-        margin: 10px;
+        margin: 18px;
+        //margin:10px;
     }
 
     &__social {
@@ -108,6 +110,7 @@
           flex-direction: row;
           height: 143px;
           align-items: center;
+          margin-top:30px;//////izmen
         }
         &__logo{
             display: inline-block;

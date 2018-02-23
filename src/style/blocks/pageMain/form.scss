@@ -611,9 +611,9 @@
       background-color: #f1f1f1;
       min-width: 500px;
       width: 100%;
-      margin: 10px 0 -20px 200px;
-height: 52px;
-padding-left: 20px;
+      margin: 10px 0 0 200px;
+      height: 52px;
+      padding-left: 20px;
     }
     &__input--email {
       @include textLg(19px,400);
@@ -780,7 +780,7 @@ padding-left: 20px;
       }
       &__input--phone,
       &__input--email {
-                margin: -17px 140px 0px 154px;
+                margin: 0 140px 0px 154px;
                 min-width: 665px;
 
 

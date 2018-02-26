@@ -2,33 +2,24 @@
 
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
-
-
+var open = document.querySelector('open');
 var close = document.getElementById("closeBtn");
 var overlay = document.getElementById("myOverlay");
-btn.onclick = function (e) {
-  modal.style.display = "block";
-  overlay.style.display = "block";
-}
 
-close.onclick = function (e) {
-  modal.style.display = "none";
-  overlay.style.display = "none";
-}
-modal.keyCode = function (e) {
-  if (e.keyCode === 27 (e.target == modal)){
-    overlay.style.display = 'none';
-    modal.style.display = 'none';
-   
+btn.addEventListener('click', function(){
+  modal.style.display = 'block'
+  overlay.style.display = 'block'
+});
+overlay.addEventListener('click', function(){
+  modal.style.display = 'none'
+  overlay.style.display = 'none'
+});
+window.addEventListener('keydown', function(e){
+  if (e.keyCode === 27){
+    modal.style.display = 'none'
+    overlay.style.display = 'none'
   }
-    // overlay.style.display = "none";
-    // modal.style.display = "none";
-  
-}
-overlay.onclick = function (e) {
-  overlay.style.display = "none";
-  modal.style.display = "none";
-};
+});
 
 
 

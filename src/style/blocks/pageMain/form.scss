@@ -799,7 +799,7 @@
         &__label--phone:hover::after {
           position: absolute;
           content: '';
-          top: 45px;
+          top: 18px;
           left: -170px;
           background-position: -264px -263px;
           width: 25px;
@@ -807,13 +807,13 @@
         }
 
       &__label--email::after{
-        top: 0px;
+        top: 10px;
         left: -170px;
       }
        &__input--phone:focus+&__label--phone::before {
          position: absolute;
          content: '';
-         top: 0px;
+         top: 20px;
          left: -170px;
          background: url('/src/img/sprites.png') -264px -263px;
          width: 25px;

@@ -770,31 +770,36 @@
       }
       &__legend--phone{
         left: 40px;
-        top: 25px;
+        top: 40px;
 
       }
       &__legend--email{
         left: 40px;
         top: 18px;
 }
-      &__input--phone,
-      &__input--email {
-                margin: 0 140px 0px 154px;
+      &__input--phone
+       {
+                margin: 5px 140px 0px 154px;
                 min-width: 665px;
 
 
         //margin: 0 25px 0 194px;
         //min-width: 715px;
       }
+      &__input--email{
+        margin: 0px 140px 0px 154px;
+        min-width: 665px;
+
+      }
       &__label--phone::after{
-           top: 0px;
+           top: 18px;
            left: -170px;
 
       }
         &__label--phone:hover::after {
           position: absolute;
           content: '';
-          top: 0px;
+          top: 45px;
           left: -170px;
           background-position: -264px -263px;
           width: 25px;

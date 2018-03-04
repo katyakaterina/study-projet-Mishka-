@@ -251,6 +251,7 @@
     outline: none;
     margin-top: 10px;
   }
+  
   &__input--email:focus ~ &__line::before{
     display: block;
   }
@@ -340,16 +341,10 @@
     background-color: $white;
     margin-top: 27px;
     align-self: center;
-    //min-width: 240px;
-    //min-height: 135px;
-    //width: 100%;
     resize: none;
-    //margin-bottom: 20px;
-       padding: 15px 45px 90px 10px;
-      //margin-left:55px;
-     margin-bottom: 13px;
-     margin-left:50px;
-     width:100%;
+    min-width: 250px;
+    min-height: 145px;
+    width:100%;
   }
   &__textarea:focus{
     border: 2px solid $greenLeft;
@@ -631,11 +626,11 @@
         }
         &--phone{
           top: 63px;
-          left: -522px;
+          left: -501px;
         }
         &--email{
           top: 53px;
-          left: -522px;
+          left: -501px;
         }
     }
     &__input-name:focus ~ &__line::before{
@@ -649,10 +644,10 @@
       min-width: 377px;
     }
     &__input--phone:focus ~ &__line--phone::before{
-      min-width: 522px;
+      min-width: 501px;
     }
     &__input--email:focus ~ &__line--email::before{
-      min-width: 522px;
+      min-width: 501px;
     }
     
     &__legend--phone {
@@ -679,21 +674,19 @@
       400);
       line-height: 0.9;
       background-color: #f1f1f1;
-      min-width: 500px;
+      min-width: 498px;
       width: 100%;
       margin: 10px 0 0 200px;
       height: 52px;
-      padding-left: 20px;
     }
     &__input--email {
       @include textLg(19px,400);
       line-height: 0.9;
       background-color: #f1f1f1;
-      min-width: 500px;
+      min-width: 498px;
       width: 100%;
       margin: 0 0 30px 200px;
       height: 52px;
-      padding-left: 20px;
     }
     &__label--phone {
       position: relative;
@@ -704,17 +697,27 @@
       position: absolute;
       content: '';
       top: 25px;
-      left: -80px;
+      left: -40px;
       background: url('/src/img/sprites.png') -212px -263px;
       width: 25px;
       height: 24px;
+    }
+    &__input--phone:focus{
+      padding: 0;
+      min-height: 54px;
+      min-width: 500px;
+    }
+    &__input--email:focus{
+      padding: 0;
+      min-height: 54px;
+      min-width: 500px;
     }
    
     &__input--phone:focus+&__label--phone::before {
       position: absolute;
       content: '';
       top: 25px;
-      left: -80px;
+      left: -40px;
       background: url('/src/img/sprites.png') -264px -263px;
       width: 25px;
       height: 24px;
@@ -734,7 +737,7 @@
         position: absolute;
         content: "";
         top: 18px;
-        left: -75px;
+        left: -38px;
       }
     }
     &__legend--extra {
@@ -750,11 +753,9 @@
     &__textarea {
       @include textLg(19px,
       400);
-      max-width: 501px;
+      max-width: 493px;
       margin-top: 10px;
       align-self: center;
-      //padding: 10px 270px 90px 10px;
-    margin-right: 21px;
     }
     &__btn {
       order: 1;
@@ -860,7 +861,7 @@
       &__input--phone
        {
                 margin: 5px 140px 0px 154px;
-                min-width: 665px;
+                min-width: 688px;
 
 
         //margin: 0 25px 0 194px;
@@ -868,19 +869,24 @@
       }
       &__input--email{
         margin: 0px 140px 0px 154px;
-        min-width: 665px;
+        min-width: 688px;
 
       }
       &__line {
         &--email{
           top: 53px;
-          left: -82%;
+          left: -831px;
         }
         &--phone{
           top: 59px;
-          left: -82%;
+          left: -831px;
         }
         
+      }
+      &__input--phone:focus,
+      &__input--email:focus{
+        min-width: 690px;
+
       }
       &__input--email:focus ~ &__line--email::before{
         min-width: 690px;

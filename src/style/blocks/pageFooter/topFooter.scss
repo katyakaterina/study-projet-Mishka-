@@ -106,20 +106,23 @@
 
         &__inner{
           @include flexbox;
-          justify-content: space-around;
-          flex-direction: row;
+          //justify-content: space-around;
+         // flex-direction: row;
           height: 143px;
           align-items: center;
-          margin-top:30px;//////izmen
+          //margin-top:30px;//////izmen
+          justify-content: space-between;
         }
         &__logo{
-            display: inline-block;
-            flex-basis: 19%;
+          display: flex;
+            //display: inline-block;
+            flex-basis: 31%;
             text-align: center;
-            
+margin-left: 25px;
         }
         &__logo-link{
             display: inline-block;
+            margin-left: 0;
         }
         &__logo-link:hover img{
             opacity: 0;
@@ -129,6 +132,7 @@
             background: url('/src/img/sprites.png') -600px -132px;
             width: 102px;
             height: 34px;
+            margin-left: 25px;
         }
         &__logo-link:active{
             display: inline-block;
@@ -137,13 +141,24 @@
 	        height: 34px;
         }
         &__social{
-            flex-basis: 43%;
-            flex-basis: 46%;
-            margin: 0;
-            height: 55px;
-            text-align: center;
+          //flex-basis: 32%;
+            //flex-basis: 43%;
+            //flex-basis: 46%;
+           // margin: 0;
+            //height: 55px;
+           // text-align: center;
+//margin-right: 32px;
+//margin-top: 23px;
+//margin-top: 25px;
+//display: flex;
+margin-left: 20px;
+margin-top: 21px;
+
 
         }
+
+
+
     }
 }
 @media (min-width: 1024px){
@@ -151,16 +166,26 @@
     .footer {
         width: 100%;
         min-width: 1200px;
-        &__logo-icon:hover {
+        &__logo{
+          margin-left: 38px;
+        }
+        &__logo-link:hover {
             display: inline-block;
             background:url('/src/img/sprites.png') -600px -132px;
             width: 102px;
             height: 34px;
+            margin-left: 39px;
         }
 
-        &__logo-icon:active {
+        &__logo-link:active {
             opacity:0.3;
         }
+        &__social{
+             margin-left: 90px;
+             margin-top: 16px;
+
+        }
+       
 
     }
 

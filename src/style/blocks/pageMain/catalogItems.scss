@@ -26,8 +26,8 @@ margin-top: 15px;
 
 
 &__img{
-  width: 100%;
-  min-height: 190px;
+ width: 100%;
+  //min-height: 190px;
   min-width: 260px;
 
 
@@ -59,7 +59,7 @@ overflow: hidden;
 @include textLg(17px,700);
   line-height: 1.4;
  width: 196px;
-  margin: 24px 0px 0px 27px;
+  margin: 22px 0px 0px 30px;
 }
 &__title:hover{
   opacity: 0.6;
@@ -72,7 +72,7 @@ overflow: hidden;
 margin-top: 7px;
   color: $darkGray;
   line-height:2.3;
-  margin-left: 27px;
+  margin-left: 28px;
 
 padding-bottom: 18px;
   border-bottom: 1px solid #ececec;
@@ -82,8 +82,8 @@ padding-bottom: 18px;
 @include textLg(13px, 400);
 color: $darkGray;
 line-height:2.3;
-margin-top: 7px;
-margin-left: 27px;
+margin-top: 10px;
+margin-left: 29px;
   padding-bottom: 19px;
   border-bottom: 1px solid #ececec;
   width: 204px;
@@ -98,6 +98,7 @@ margin-left: 27px;
   line-height:1.6;
   margin-top: 10px;
   padding-bottom: 12px;
+  margin-left: 2px;
 }
 &__link {
   margin-top: 10px;
@@ -146,6 +147,7 @@ height: 18px;
 &__video img{
 
 margin-left: 0px;
+    margin-top: 6px;
 
 }
 &__link{
@@ -161,10 +163,12 @@ margin-left: 0px;
   width: 102px;
   height: 78px;
   cursor: pointer;
-  margin-top: 40px;
+    margin-top: 14%;
+    left: 35%;
 
-  margin-left: 79px;
-  position: absolute;
+     position: absolute;
+     z-index: 1;
+
 
   border: none;
 }
@@ -180,10 +184,10 @@ margin-left: 0px;
 }
 &__descr {
 @include textLg(13px, 400);
-  line-height:1.8;
+  line-height:1.9;
   color: $darkGray;
   order:3;
-margin:12px 40px 15px 33px;
+margin:12px 40px 13px 33px;
 }
 }
 .player__btn {
@@ -199,7 +203,7 @@ margin:12px 40px 15px 33px;
     color:$darkGray;
     cursor: pointer;
     line-height:0.9;
-    padding:16px 5px 14px 5px;
+    padding:13px 5px 14px 5px;
     //vertical-align: top;
 }
 .player__btn:hover{
@@ -779,7 +783,10 @@ width: 100%;
     margin-top: 25px;
     border: 1px solid #ececec;
     background-color: #ffffff;
-    margin-left: 30px;
+    //margin-left: 30px;
+    margin-left: 50px;
+        margin-bottom: 26px;
+
 }
 &__detail{
   display: flex;
@@ -790,10 +797,12 @@ width: 100%;
 &__title{
     @include textLg(20px, 700);
     line-height:1.2;
-    margin-left:26px;
-    margin-top: 24px;
+    //margin-left:26px;
+    //margin-top: 24px;
     width: 230px;
     margin-bottom: 4px;
+    margin-left: 16px;
+    margin-top: 26px;
 
 
 }
@@ -801,18 +810,18 @@ width: 100%;
 @include textLg(15px, 400);
     color:#444444;
     line-height: 2;
-    margin-top: 7px;
+    margin-top: 3px;
     padding-bottom: 173px;
     border-bottom: 1px solid #ececec;
     width: 268px;
-    margin-left: 24px;
+    margin-left: 16px;
 }
 &__descr--line{
 @include textLg(15px, 400);
 color:#444444;
 line-height:2;
 margin-top: 1px;
-margin-left: 26px;
+margin-left: 17px;
 width: 268px;
 padding-bottom: 150px;
 
@@ -821,7 +830,7 @@ padding-bottom: 150px;
 @include flexbox;
     width: 268px;
     justify-content: space-between;
-    margin-left: 30px;
+    margin-left: 18px;
 &__number{
   @include textLg(17px, 700);
 line-height: 1.4;
@@ -832,10 +841,10 @@ line-height: 1.4;
 }
 .player-video {
     @include flexbox;
-    width: 668px;
-    height: 718px;
+    min-width: 668px;
+    height: 740px;
     margin-left: 50px;
-    margin-top: 41px;
+    //margin-top: 41px;
     margin-bottom: 60px;
 &__description {
     @include flexbox;
@@ -846,17 +855,17 @@ line-height: 1.4;
     @include textLg(20px, 700);
     line-height: 1.2;
 
-    margin-top: 30px;
+    margin-top: 32px;
 
     width: 241px;
-margin-left: 104px;
+margin-left: 106px;
 }
 &__link-pic{
     background:url('/src/img/sprites.png') -314px -263px;
 	  width: 32px;
 	  height: 22px;
     margin-left: 40px;
-    margin-top: 30px;
+    margin-top: 33px;
 
 
 }
@@ -865,7 +874,7 @@ margin-left: 104px;
 &__video img {
     background: url('/src/img/video-tablet-1x.jpg')no-repeat 50% 50%;
 
-    height: 455px;
+    min-height: 455px;
     margin-left: 0px;
 
     margin-top: 0px;
@@ -879,17 +888,17 @@ margin-left: 104px;
   height: 78px;
   cursor: pointer;
   background:url('/src/img/sprites.png') -739px -11px;
-  margin-top: 168px;
+    margin-top: 185px;
+    margin-left: 50px;
 
-  margin-left: 280px;
 }
 &__descr {
 
   @include textLg(15px, 400);
   order:3;
   margin-top: 0px;
-  margin-left: 40px;
-
+  margin-left: 39px;
+//margin-bottom: 2px;
 }
 }
 .player__btn {
@@ -901,6 +910,7 @@ margin-left: 104px;
   margin-top: 10px;
   margin-left: 42px;
   padding:16px 7px 30px 0px;
+  margin-bottom: 10px;
 }
 }
 }
@@ -960,15 +970,18 @@ width: 100%;
 &__item{
 
  width: 316px;
-
-  border: 1px solid #ececec;
+ border: 1px solid #ececec;
   background-color: #ffffff;
   height: 660px;
+      margin-left: 30px;
+      margin-right: 19px;
+
 }
 &__title{
   @include textLg(20px, 700);
   line-height:1.2;
- ;
+ margin-left: 28px;
+ margin-top: 20px;
 }
 &__descr{
 
@@ -981,6 +994,7 @@ width: 100%;
   margin-left: 27px;
 
 }
+
 &__descr--line{
  @include textLg(15px, 400);
  line-height:2;
@@ -991,20 +1005,23 @@ width: 100%;
   margin-left: 27px;
 
 }
+.catalog-price{
 
 
-
-
-
-  &__number{
-    margin-left: -2px;
+&__number{
+    margin-left: 10px;
 
   }
+}
+
+
+
+
 
 }
 .player-video{
     min-width: 1075px;
-    max-height: 463px;
+    max-height: 455px;
     border: 1px solid #ececec;
     background-color: #ffffff;
     @include flexbox;
@@ -1022,12 +1039,13 @@ width: 100%;
 @include textLg(20px, 700);
 line-height:1.2;
 width: 148px;
-margin-left: 50px;
+margin-left: 9px;
 margin-top: 95px;
 }
 &__link-pic{
-margin-left: 50px;
-margin-top: 43px;
+    margin-left: 10px;
+    margin-top: 47px;
+
 }
 
 .video-page{
@@ -1040,13 +1058,15 @@ margin-top: 0px;
 
 }
 &__link-pic{
-  margin-top: 180px;
+  margin-top: 188px;
+  left: 28%;
+ // margin-left: 10px;
 }
 &__descr{
 @include textLg(15px, 400);
 width: 225px;
 height: 106px;
-margin-left: 50px;
+margin-left: 6px;
 line-height: 2;
 }
 }
@@ -1056,8 +1076,9 @@ width: 230px;
 height: 52px;
 border: 2px solid #444444;
 background-color: #ffffff;
-margin-left: 50px;
-margin-top: 55px;
+    margin-left: 10px;
+    margin-top: 60px;
+
 }
 
 }

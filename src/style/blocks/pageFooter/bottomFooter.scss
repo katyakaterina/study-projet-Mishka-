@@ -25,7 +25,7 @@
         height: 34px;
         vertical-align: middle;
         margin-left: 25px;
-        
+
       }
 
  &__icon:hover {
@@ -56,9 +56,21 @@
 
     &__copyright{
       border: none;
-      margin: 0;
-      flex-basis: 25%;
+     // margin: 0;
+      //flex-basis: 25%;
+        margin-right: 15px;
+        margin-top: 10px;
+
     }
   }
 }
+@media (min-width: 1024px){
+  .footer{
+    &__copyright{
+      margin-top: 7px;
+      margin-right: 38px;
+    }
+  }
+}
+
 

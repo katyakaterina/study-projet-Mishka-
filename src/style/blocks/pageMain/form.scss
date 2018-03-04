@@ -204,6 +204,27 @@
     border-bottom: 2px solid #000;
     min-height: 50px;
   }
+  &__input-name:focus{
+    outline: none;
+  }
+  &__line{
+    position: relative;
+    top: -2px;
+    left: 0;
+    width: 100%;
+
+    &::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background: $greenLeft;
+      display: none;
+    }
+  }
+  &__input-name:focus ~ &__line::before{
+    display: block;
+  }
   &__legend--phone {
     @include titleSm;
     line-height: calc(16/17);
@@ -229,8 +250,15 @@
     min-height: 50px;
     outline: none;
     margin-top: 10px;
-
   }
+  
+  &__input--email:focus ~ &__line::before{
+    display: block;
+  }
+  &__input--phone:focus ~ &__line::before{
+    display: block;
+  } 
+
   &__input--email {
     @include textLg(18px, 400);
     line-height: 1.07; //display: flex;
@@ -259,6 +287,9 @@
       height: 24px;
     }
   }
+  &__input--phone:focus ~ &__label--phone::after{
+    display: none;
+  }
   &__label--phone:hover::after {
     position: absolute;
     content: '';
@@ -267,7 +298,7 @@
     background-position: -264px -263px;
     width: 25px;
     height: 24px;
-  }
+    }
   &__input--phone:focus+&__label--phone::before {
     position: absolute;
     content: '';
@@ -310,16 +341,14 @@
     background-color: $white;
     margin-top: 27px;
     align-self: center;
-    //min-width: 240px;
-    //min-height: 135px;
-    //width: 100%;
     resize: none;
-    //margin-bottom: 20px;
-       padding: 15px 45px 90px 10px;
-      //margin-left:55px;
-     margin-bottom: 13px;
-     margin-left:50px;
-     width:100%;
+    min-width: 250px;
+    min-height: 145px;
+    width:100%;
+  }
+  &__textarea:focus{
+    border: 2px solid $greenLeft;
+    outline: none;
   }
 
   &__wrap{
@@ -587,6 +616,40 @@
         min-width: 425px;
       }
     }
+    &__line{
+        top: 52px;
+        left: -475px; 
+        height: 3px;
+
+        &--last{
+          left: -422px;
+        }
+        &--phone{
+          top: 63px;
+          left: -501px;
+        }
+        &--email{
+          top: 53px;
+          left: -501px;
+        }
+    }
+    &__input-name:focus ~ &__line::before{
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 3px;
+      min-width: 430px;
+    }
+    &__input-name:focus ~ &__line--last::before{
+      min-width: 377px;
+    }
+    &__input--phone:focus ~ &__line--phone::before{
+      min-width: 501px;
+    }
+    &__input--email:focus ~ &__line--email::before{
+      min-width: 501px;
+    }
+    
     &__legend--phone {
       @include titleSm;
       line-height: calc(16/17);
@@ -594,6 +657,7 @@
       text-transform: uppercase;
       top: 50px;
       left: 40px;
+      width: 100px;
     }
     &__legend--email {
       @include titleSm;
@@ -603,27 +667,26 @@
       position: relative;
       top: 35px;
       left: 40px;
+      width: 100px;
     }
     &__input--phone {
       @include textLg(19px,
       400);
       line-height: 0.9;
       background-color: #f1f1f1;
-      min-width: 500px;
+      min-width: 498px;
       width: 100%;
       margin: 10px 0 0 200px;
       height: 52px;
-      padding-left: 20px;
     }
     &__input--email {
       @include textLg(19px,400);
       line-height: 0.9;
       background-color: #f1f1f1;
-      min-width: 500px;
+      min-width: 498px;
       width: 100%;
       margin: 0 0 30px 200px;
       height: 52px;
-      padding-left: 20px;
     }
     &__label--phone {
       position: relative;
@@ -634,8 +697,28 @@
       position: absolute;
       content: '';
       top: 25px;
-      left: -80px;
+      left: -40px;
       background: url('/src/img/sprites.png') -212px -263px;
+      width: 25px;
+      height: 24px;
+    }
+    &__input--phone:focus{
+      padding: 0;
+      min-height: 54px;
+      min-width: 500px;
+    }
+    &__input--email:focus{
+      padding: 0;
+      min-height: 54px;
+      min-width: 500px;
+    }
+   
+    &__input--phone:focus+&__label--phone::before {
+      position: absolute;
+      content: '';
+      top: 25px;
+      left: -40px;
+      background: url('/src/img/sprites.png') -264px -263px;
       width: 25px;
       height: 24px;
     }
@@ -643,27 +726,18 @@
       position: absolute;
       content: '';
       top: 25px;
-      left: -80px;
+      left: -40px;
       background-position: -264px -263px;
       width: 25px;
       height: 24px;
-    }
-    &__input--phone:focus+&__label--phone::before {
-      position: absolute;
-      content: '';
-      top: 25px;
-      left: -80px;
-      background: url('/src/img/sprites.png') -264px -263px;
-      width: 25px;
-      height: 24px;
-    }
+      }
 
     &__label--email{
       &::after {
         position: absolute;
         content: "";
         top: 18px;
-        left: -75px;
+        left: -38px;
       }
     }
     &__legend--extra {
@@ -679,11 +753,9 @@
     &__textarea {
       @include textLg(19px,
       400);
-      max-width: 501px;
+      max-width: 493px;
       margin-top: 10px;
       align-self: center;
-      //padding: 10px 270px 90px 10px;
-    margin-right: 21px;
     }
     &__btn {
       order: 1;
@@ -740,6 +812,15 @@
   margin: 17px 0 0 250px;
 
 }
+&__label--phone:hover::after {
+  position: absolute;
+  content: '';
+  top: 18px;
+  left: -170px;
+  background-position: -264px -263px;
+  width: 25px;
+  height: 24px;
+  }
 &__filedset--radio{
   margin-bottom: 45px;
 }
@@ -767,6 +848,10 @@
       &__input {
         margin-left: 180px;
         min-width: 500px;
+        &-name{
+          min-width: 570px;
+          margin: 0 0 0 20px;
+        }
       }
       &__legend--phone{
         left: 40px;
@@ -780,7 +865,7 @@
       &__input--phone
        {
                 margin: 5px 140px 0px 154px;
-                min-width: 665px;
+                min-width: 688px;
 
 
         //margin: 0 25px 0 194px;
@@ -788,24 +873,42 @@
       }
       &__input--email{
         margin: 0px 140px 0px 154px;
-        min-width: 665px;
+        min-width: 688px;
 
+      }
+      &__line {
+
+        &--name,
+        &--last{
+          left: -572px;
+        }
+        &--email{
+          top: 53px;
+          left: -831px;
+        }
+        &--phone{
+          top: 59px;
+          left: -831px;
+        }
+      }
+      &__input--phone:focus,
+      &__input--email:focus{
+        min-width: 690px;
+      }
+      &__input--email:focus ~ &__line--email::before{
+        min-width: 690px;
+      }
+      &__input--phone:focus ~ &__line--phone::before{
+        min-width: 690px;
+      }
+      &__input-name:focus ~ &__line--name::before,
+      &__input-name:focus ~ &__line--last::before{
+        min-width: 572px;
       }
       &__label--phone::after{
            top: 18px;
            left: -170px;
-
       }
-        &__label--phone:hover::after {
-          position: absolute;
-          content: '';
-          top: 18px;
-          left: -170px;
-          background-position: -264px -263px;
-          width: 25px;
-          height: 24px;
-        }
-
       &__label--email::after{
         top: 10px;
         left: -170px;
@@ -813,12 +916,13 @@
        &__input--phone:focus+&__label--phone::before {
          position: absolute;
          content: '';
-         top: 20px;
+         top: 18px;
          left: -170px;
          background: url('/src/img/sprites.png') -264px -263px;
          width: 25px;
          height: 24px;
        }
+
 
       &__data {
         width: 100%;
@@ -834,9 +938,9 @@
       //   margin-left: 900px;
       // }
       &__textarea {
-        //min-width: 700px;
-            min-width: 640px;
-            margin-right: 209px;
+        min-width: 700px;
+        margin-right: 165px;
+        min-height: 140px;
 
       }
       &__wrap{

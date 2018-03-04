@@ -848,6 +848,10 @@
       &__input {
         margin-left: 180px;
         min-width: 500px;
+        &-name{
+          min-width: 570px;
+          margin: 0 0 0 20px;
+        }
       }
       &__legend--phone{
         left: 40px;
@@ -873,6 +877,11 @@
 
       }
       &__line {
+
+        &--name,
+        &--last{
+          left: -572px;
+        }
         &--email{
           top: 53px;
           left: -831px;
@@ -881,12 +890,10 @@
           top: 59px;
           left: -831px;
         }
-        
       }
       &__input--phone:focus,
       &__input--email:focus{
         min-width: 690px;
-
       }
       &__input--email:focus ~ &__line--email::before{
         min-width: 690px;
@@ -894,12 +901,14 @@
       &__input--phone:focus ~ &__line--phone::before{
         min-width: 690px;
       }
+      &__input-name:focus ~ &__line--name::before,
+      &__input-name:focus ~ &__line--last::before{
+        min-width: 572px;
+      }
       &__label--phone::after{
            top: 18px;
            left: -170px;
-
       }
-      
       &__label--email::after{
         top: 10px;
         left: -170px;
@@ -929,9 +938,9 @@
       //   margin-left: 900px;
       // }
       &__textarea {
-        //min-width: 700px;
-            min-width: 640px;
-            margin-right: 209px;
+        min-width: 700px;
+        margin-right: 165px;
+        min-height: 140px;
 
       }
       &__wrap{
@@ -953,14 +962,3 @@
     }
   }
 }
-// .form-page__input-name+label{
-//   display: block;
-//   position: relative;
-//   height: 20px;
-//   width: 10%;
-//   border-bottom: 1px solid red;
-// }
-// .form-page__input-name:focus+label{
-//   width: 100%;
-//   border-bottom: 1px solid red;
-// }

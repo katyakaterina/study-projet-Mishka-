@@ -18,7 +18,7 @@
   .catalog {
     &__img {
       width: 100%;
-      min-height: 190px;
+      //min-height: 190px;
       min-width: 260px;
     }
     &__item {
@@ -53,7 +53,7 @@
     }
     &__descr {
       @include textLg(13px, 400);
-      margin-top: 7px;
+      margin-top: 4px;
       color: $darkGray;
       line-height: 2.3;
       margin-left: 27px;
@@ -81,6 +81,7 @@
         line-height: 1.6;
         margin-top: 10px;
         padding-bottom: 12px;
+        //margin-left: 2px;
       }
       &__link {
         margin-top: 10px;
@@ -126,6 +127,7 @@
     .video-page {
       &__video img {
         margin-left: 0px;
+        margin-top: 10px;
       }
       &__link {
         border: none;
@@ -136,8 +138,10 @@
         width: 102px;
         height: 78px;
         cursor: pointer;
-        margin-top: 40px;
-        margin-left: 79px;
+        left: 35%;
+        margin-top: 14%;
+        //margin-top: 40px;
+        //margin-left: 79px;
         position: absolute;
         border: none;
       }
@@ -173,7 +177,7 @@
       color: $darkGray;
       cursor: pointer;
       line-height: 0.9;
-      padding: 16px 5px 14px 5px; //vertical-align: top;
+      padding: 13px 5px 14px 5px; //vertical-align: top;
     }
     .player__btn:hover {
       background-color: $darkGray;
@@ -706,10 +710,11 @@
       &__item {
         width: 100%;
         height: 334px;
-        margin-top: 25px;
+        margin-top: 23px;
         border: 1px solid #ececec;
         background-color: #ffffff;
-        margin-left: 30px;
+        margin-left: 50px;
+        margin-bottom: 30px;
       }
       &__detail {
         display: flex;
@@ -719,8 +724,10 @@
         @include textLg(20px,
         700);
         line-height: 1.2;
-        margin-left: 26px;
-        margin-top: 24px;
+        //margin-left: 26px;
+        margin-left: 16px;
+        margin-top: 26px;
+        //margin-top: 24px;
         width: 230px;
         margin-bottom: 4px;
       }
@@ -729,19 +736,19 @@
         400);
         color: #444444;
         line-height: 2;
-        margin-top: 7px;
+        margin-top: 5px;
         padding-bottom: 173px;
         border-bottom: 1px solid #ececec;
         width: 268px;
-        margin-left: 24px;
+        margin-left: 16px;
       }
       &__descr--line {
         @include textLg(15px,
         400);
         color: #444444;
         line-height: 2;
-        margin-top: 1px;
-        margin-left: 26px;
+        margin-top: 2px;
+        margin-left: 16px;
         width: 268px;
         padding-bottom: 150px;
       }
@@ -749,7 +756,7 @@
         @include flexbox;
         width: 268px;
         justify-content: space-between;
-        margin-left: 30px;
+        margin-left: 21px;
         &__number {
           @include textLg(17px,
           700);
@@ -760,11 +767,11 @@
     }
     .player-video {
       @include flexbox;
-      width: 668px;
-      height: 718px;
+      min-width: 668px;
+      height: 740px;
       margin-left: 50px;
-      margin-top: 41px;
-      margin-bottom: 60px;
+      margin-top: 22px;
+      margin-bottom: 62px;
       &__description {
         @include flexbox;
         order: 2;
@@ -773,7 +780,7 @@
         @include textLg(20px,
         700);
         line-height: 1.2;
-        margin-top: 30px;
+        margin-top: 35px;
         width: 241px;
         margin-left: 104px;
       }
@@ -782,12 +789,12 @@
         width: 32px;
         height: 22px;
         margin-left: 40px;
-        margin-top: 30px;
+        margin-top: 33px;
       }
       .video-page {
         &__video img {
           background: url('/src/img/video-tablet-1x.jpg')no-repeat 50% 50%;
-          height: 455px;
+          min-height: 455px;
           margin-left: 0px;
           margin-top: 0px;
           order: 1;
@@ -799,8 +806,9 @@
           height: 78px;
           cursor: pointer;
           background: url('/src/img/sprites.png') -739px -11px;
-          margin-top: 168px;
-          margin-left: 280px;
+          margin-top: 190px;
+          //margin-left: 280px;
+          left: 43%;
         }
         &__descr {
           @include textLg(15px,
@@ -815,9 +823,10 @@
         order: 4;
         border: 2px solid $darkGray;
         background-color: $white;
-        margin-top: 10px;
+        margin-top: 6px;
         margin-left: 42px;
         padding: 16px 7px 30px 0px;
+        margin-bottom: 0;
       }
     }
   }
@@ -864,12 +873,15 @@
           border: 1px solid #ececec;
           background-color: #ffffff;
           height: 660px;
+          margin-left: 33px;
+          margin-right: 16px;
         }
         &__title {
           @include textLg(20px,
           700);
           line-height: 1.2;
-          ;
+          margin-left: 28px;
+          margin-top: 23px;
         }
         &__descr {
           @include textLg(15px,
@@ -887,24 +899,30 @@
           line-height: 2;
           color: $darkGray;
           border-bottom: 1px solid #ececec;
-          padding-bottom: 15px;
+          padding-bottom: 13px;
           width: 256px;
           margin-left: 27px;
+          margin-top: 5px;
         }
-        &__number {
-          margin-left: -2px;
+        .catalog-price {
+          margin-left: 17px;
+          &__number {
+            margin-left: 10px;
+
+          }
+
         }
       }
       .player-video {
-        min-width: 1075px;
-        max-height: 463px;
+        width: 1053px;
+        max-height: 455px;
         border: 1px solid #ececec;
         background-color: #ffffff;
         @include flexbox;
         flex-wrap: wrap;
         flex-direction: column;
         margin-top: 28px;
-        margin-bottom: 105px;
+        margin-bottom: 100px;
         margin-left: 70px;
         &__description {
           @include flexbox;
@@ -914,12 +932,12 @@
           700);
           line-height: 1.2;
           width: 148px;
-          margin-left: 50px;
-          margin-top: 95px;
+          margin-left: 56px;
+          margin-top: 93px;
         }
         &__link-pic {
-          margin-left: 50px;
-          margin-top: 43px;
+          margin-left: 59px;
+          margin-top: 44px;
         }
         .video-page {
           &__video {
@@ -929,14 +947,15 @@
             margin-top: 0px;
           }
           &__link-pic {
-            margin-top: 180px;
+            margin-top: 185px;
+            left: 31%;
           }
           &__descr {
             @include textLg(15px,
             400);
             width: 225px;
             height: 106px;
-            margin-left: 50px;
+            margin-left: 55px;
             line-height: 2;
           }
         }
@@ -946,8 +965,8 @@
           height: 52px;
           border: 2px solid #444444;
           background-color: #ffffff;
-          margin-left: 50px;
-          margin-top: 55px;
+          margin-left: 59px;
+          margin-top: 59px;
         }
       }
     }

@@ -204,17 +204,29 @@
         }
 
         &__title{
-            top: 145px;
+            font-size: 52px;
+            width: 605px;
+            padding: 152px 0 0 0;
+            // top: 145px;
         }
 
         &__item {
-            width: 564px;
-            height: 119px;
+            width: 550px;
+            height: 121px;
             border: transparent;
         }
 
         &__link{
-            padding: 24px 308px 24px 36px;
+            padding: 27px 350px 29px 40px;
+
+            &--left::before{
+                top: 33px;
+                left: 86%;
+            }
+            &--right::before{
+                top: 30px;
+                left: 82.6%;
+            }
         }
 
         &__line{
@@ -260,7 +272,6 @@
 
         &__item:last-child {
             background-color: $greenRight;
-            width: 574px;
             border: transparent;
         }
   

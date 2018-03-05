@@ -456,7 +456,7 @@ input.search-input::placeholder{
 
     &__item:nth-child(3){
       order: 3;
-      flex-basis: 260px;
+      flex-basis: 243px;
       text-align: center;
     }
 
@@ -467,6 +467,7 @@ input.search-input::placeholder{
 
     &__item--cart{
       order: 5;
+      flex-basis: 315px;
 
     }
 
@@ -481,7 +482,9 @@ input.search-input::placeholder{
       order: 7;
       border: none;
       z-index: 1;
-      flex-basis: 230px;
+      flex-basis: 161px;
+      text-align: end;
+      line-height: 3.7;
     }
 
     &__item--sale{
@@ -490,6 +493,17 @@ input.search-input::placeholder{
       border: none;
       z-index: 1;
       flex-basis: 200px;
+      line-height: 3.7;
+    }
+    &__text{
+      line-height: 3.7;
+    }
+
+    &__link--sale,
+    &__link--new {
+      
+        font-size: 15px;
+      
     }
 
   }

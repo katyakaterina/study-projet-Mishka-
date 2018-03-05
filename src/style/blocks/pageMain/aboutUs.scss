@@ -197,7 +197,7 @@
   }
 
   &__caption{
-    width: 130px;
+    width: 225px;
     @include titleXlTab;
     margin: 0;
     padding-top: 80px;
@@ -278,18 +278,53 @@
 @media (min-width: 1024px) {
 
   .about-us{
+    padding: 0;
+    min-width: 700px;
+    height: 550px;
 
     &__title{
       @include titleDesk;
+      line-height: calc(64/53);
+    }
+    &__features{
+      min-width: 350px;
+    }
+    &__feature{
+      font-size: 19px;
+      // flex-basis: 390px;
+      padding: 24px 0 11px 4px;
+
+      &--fabric::before{
+        margin: 19px 0 18px 7px;
+      }
+      &--style::before{
+        margin: 22px 0 26px 0px;
+      }
+      &--likes::before{
+        margin: 28px 7px 20px 7px;
+      }
+
+      &--love::before{
+        margin: 23px 0 16px 2px;
+      }
+      &--native::before{
+        margin: 27px 0 27px 0;
+      }
+      &--box::before{
+        margin: 24px 0 20px 2px;
+      }
     }
   }
 
   .slider {
 
-    width: 1055px;
+    min-width: 1055px;
+    margin-top: 54px;
 
     &__caption {
       @include titleDesk;
+      line-height: 1;
+      padding-top: 74px;
     }
 
     &__slide1, &__slide2, &__slide3{
@@ -297,13 +332,26 @@
     }
 
     &__slides{
-      width: 875px;
+      min-width: 881px;
       margin-left: 175px;
     }
 
     &__comment {
-      width: 772px;
-      height: 155px;
+      min-width: 781px;
+      height: 132px;
+      line-height: 1.8;
+      margin: 0;
+    }
+    &__controls{
+      top: -57px;
+      left: -15px;
+      width: 141px;
+    }
+    &__btn-left{
+      margin-right: 32px;
+    }
+    &__btn-right{
+      width: 54px;
     }
   }
 }

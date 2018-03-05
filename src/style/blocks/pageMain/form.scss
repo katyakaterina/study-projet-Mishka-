@@ -5,20 +5,20 @@
     justify-content: center; //min-width:320px;
     height: 177px;
     background: $lightGray;
-
-    margin-top: 0px;
+margin-top: 0px;
     width: 100%;
   }
   &__title {
     @include textLg(27px, 700);
     line-height: 1.1;
     text-align: center;
+    margin-top: 20px;
   }
   &__text {
     @include textLg(13px, 400);
     line-height: 1.8;
     color: #444444;
-    padding: 30px 30px 0 30px;
+    padding: 22px 30px 0 30px;
     margin: 0;
   }
   &__form{
@@ -38,7 +38,7 @@
     @include titleSm;
     line-height: calc(16/17);
     color: $greenLeft;
-    top: -7px;
+    top: -2px;
   }
 
   &__inner {
@@ -50,7 +50,7 @@
     }
 
     &--checkbox{
-      min-height: 400px;
+      min-height: 402px;
       //justify-content: center;
      // margin-top: 10px;
     }
@@ -58,7 +58,7 @@
     &--name{
       min-height: 290px;
       //justify-content: center;
-      margin-top: 15px;
+      margin-top: 18px;
 
     }
 
@@ -81,7 +81,7 @@
   }
   &__input--radio:not(checked)+label {
     padding-left: 65px;
-    top: 12px;
+    top: 16px;
   }
   &__label--radio::before {
     content: '';
@@ -120,13 +120,23 @@
     left: 63px;
     top: 8px;
   }
-  &__section--radio,
-  &__section--checkbox {
+  &__section--radio {
     display: flex;
     min-width: 259px;
-    min-height: 62px;
+    min-height: 46px;
     align-items: center;
+    margin-top: 7px;
+    margin-bottom: 0px;
   }
+   &__section--checkbox {
+     display: flex;
+     min-width: 259px;
+     min-height: 46px;
+     align-items: center;
+     margin-top: 5px;
+     margin-bottom: 10px;
+   }
+
   &__filedset--checkbox {
     margin: 0;
     padding: 0;
@@ -148,11 +158,12 @@
   &__input--checkbox:not(checked)+label {
     display: flex;
     padding-left: 63px;
-    padding-top: 20px;
+    padding-top: 15px;
   }
   &__group--checkbox {
     flex-direction: column;
     display: flex;
+    margin-top: 10px;
   }
   &__input--checkbox:not(checked)+label::before {
     content: '';
@@ -204,6 +215,13 @@
     border-bottom: 2px solid #000;
     min-height: 50px;
   }
+&__input-name:hover{
+  border-bottom: 2px solid $greenLeft;
+}
+
+
+
+
   &__input-name:focus{
     outline: none;
   }
@@ -237,7 +255,7 @@
     line-height: calc(16/17);
     color: $greenLeft;
     text-transform: uppercase;
-    margin-top: 25px;
+    margin-top: 18px;
   }
   &__input--phone {
     @include textLg(18px, 400);
@@ -251,13 +269,19 @@
     outline: none;
     margin-top: 10px;
   }
-  
+  &__input--phone:hover{
+     border-bottom: 2px solid $greenLeft;
+
+
+  }
+
+
   &__input--email:focus ~ &__line::before{
     display: block;
   }
   &__input--phone:focus ~ &__line::before{
     display: block;
-  } 
+  }
 
   &__input--email {
     @include textLg(18px, 400);
@@ -269,7 +293,11 @@
     border-bottom: 2px solid #000;
     min-height: 50px;
     outline: none;
+    margin-top: 4px;
   }
+&__input--email:hover {
+  border-bottom: 2px solid $greenLeft;
+}
 
   &__label--phone {
     position: relative;
@@ -329,7 +357,7 @@
      line-height: calc(16/17);
      color: $greenLeft;
      text-transform: uppercase;
-     top: 5px;
+     top:10px;
    }
   &__textarea {
     color: #000;
@@ -339,13 +367,18 @@
     line-height: 18px;
     border: 2px solid $black;
     background-color: $white;
-    margin-top: 27px;
+    margin-top: 35px;
     align-self: center;
     resize: none;
     min-width: 250px;
-    min-height: 145px;
+    min-height: 135px;
     width:100%;
+    margin-left: 5px;
+    margin-bottom: 15px;
   }
+  &__textarea:hover{
+    border: 2px solid $greenLeft;
+}
   &__textarea:focus{
     border: 2px solid $greenLeft;
     outline: none;
@@ -358,13 +391,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 57px;
   }
   span {
     @include textLg(14px,
     400);
     line-height: 1.14;
     color: $darkGray;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
+    margin-right: 11px;
   }
   &__btn {
     @include textLg(17px,
@@ -618,7 +653,7 @@
     }
     &__line{
         top: 52px;
-        left: -475px; 
+        left: -475px;
         height: 3px;
 
         &--last{
@@ -649,7 +684,7 @@
     &__input--email:focus ~ &__line--email::before{
       min-width: 501px;
     }
-    
+
     &__legend--phone {
       @include titleSm;
       line-height: calc(16/17);
@@ -712,7 +747,7 @@
       min-height: 54px;
       min-width: 500px;
     }
-   
+
     &__input--phone:focus+&__label--phone::before {
       position: absolute;
       content: '';

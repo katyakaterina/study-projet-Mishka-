@@ -178,7 +178,7 @@ cursor: pointer;
     width: 100%;
     @include titleSm;
     color: $black;
-    line-height: calc(24/17);
+    line-height: calc(27/17);
     text-decoration: none;
     text-align: center;
     padding: 30px 0 32px 0;
@@ -433,7 +433,7 @@ input.search-input::placeholder{
        align-self: center;
        &-desktop{
          display: inline-block;
-         margin-top: 10px;
+         margin: 10px 0 0 21px;
        }
        &-mobile, &-tablet{
          display: none;

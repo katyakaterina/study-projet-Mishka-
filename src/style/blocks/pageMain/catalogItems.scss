@@ -290,9 +290,9 @@
   padding: 32px;
   &__title {
     font-size: 25px;
-    line-height: calc(30/25);
+    line-height: calc(25/25);
     font-weight: 700;
-    margin: 0 0 15px 0;
+    margin: 0 0 6px 0;
   }
   &__hot-sale {
     @include titleSm;
@@ -304,7 +304,8 @@
     line-height: calc(24/15);
     color: $darkGray;
     margin: 0;
-    padding: 34px 0 34px 0;
+    // padding: 34px 0 34px 0;
+    padding: 22px 0 16px 0;
   }
   &__price {
     @include titleSm;
@@ -312,7 +313,7 @@
     color: $darkGray;
     text-align: center;
     margin: 0;
-    padding: 29px 0 29px 0;
+    padding: 24px 0 27px 0;
   }
   &__to-buy {
     height: 130px;

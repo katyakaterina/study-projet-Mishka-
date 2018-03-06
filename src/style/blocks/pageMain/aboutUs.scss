@@ -1,5 +1,5 @@
 .about-us {
-    padding: 32px;
+    padding: 7px 32px 32px 32px;
 
     &__title{
       @include titleLMob;
@@ -16,7 +16,8 @@
     }
     &__feature {
       @include titleSm;
-      padding: 15px 0 15px 0;
+      padding: 7px 0 0 0;
+      // padding: 15px 0 15px 0;
       margin: 0;
     }
 
@@ -31,6 +32,7 @@
       background-position: -157px -7px ;
 	    width: 33px;
       height: 38px;
+      margin: 24px 0 18px 5px;
     }
 
     &__feature--style::before{
@@ -40,6 +42,7 @@
       background-position: -151px -58px ;
 	    width: 47px;
       height: 27px;
+      margin: 22px 0px 27px 0px;
     }
 
     &__feature--likes:before{
@@ -49,6 +52,7 @@
       background-position: -157px -109px ;
 	    width: 34px;
       height: 27px;
+      margin: 27px 0 22px 5px;
     }
 
     &__feature--love:before{
@@ -58,15 +62,17 @@
       background-position: -155px -156px ;
 	    width: 35px;
       height: 34px;
+      margin: 24px 0 17px 1px;
     }
 
     &__feature--native:before{
       content: '';
       display: block;
       background: url(/src/img/sprites.png);
-      background-position: -152px -212px ;
-	    width: 55px;
+      background-position: -159px -212px ;
+	    width: 48px;
       height: 23px;
+      margin: 26px 0 27px 0;
     }
 
     &__feature--box:before{
@@ -76,11 +82,19 @@
       background-position: -157px -255px ;
 	    width: 33px;
       height: 32px;
+      margin: 24px 0 20px 1px;
+    }
+    .slider{
+      min-height: 602px;
     }
 }
 
 .slider {
-  padding: 32px;
+  padding: 0 32px;
+
+  &__caption{
+    margin-top: 25px;
+  }
 
   &__slide1{
     position: relative;
@@ -108,6 +122,8 @@
       line-height: calc(30/15);
       color: $darkGray;
       height: 270px;
+      padding-top: 5px;
+      margin-bottom: 27px;
     }
 
     &__auth {
@@ -121,7 +137,7 @@
     }
 
     &__controls{
-      margin-bottom: 40px;
+      margin: 30px 0 40px 0;
     }
 
     &__btn-left{
@@ -129,7 +145,7 @@
       width: 125px;
       height: 26px;
       border: 1px solid $frameMenu;
-      padding: 23px 0px 23px 0px;
+      padding: 24px 0px 24px 0px;
       left: 0;
     }
 
@@ -138,7 +154,7 @@
       width: 126px;
       height: 26px;
       border: 1px solid $frameMenu;
-      padding: 23px 0px 23px 0px;
+      padding: 24px 0px 24px 0px;
       right: 0;
     }
 

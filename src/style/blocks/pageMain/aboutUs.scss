@@ -91,6 +91,7 @@
 
 .slider {
   padding: 0 32px;
+  min-height: 614px;
 
   &__caption{
     margin-top: 25px;
@@ -335,6 +336,7 @@
   .slider {
 
     min-width: 1055px;
+    min-height: 453px;
     margin-top: 54px;
 
     &__caption {

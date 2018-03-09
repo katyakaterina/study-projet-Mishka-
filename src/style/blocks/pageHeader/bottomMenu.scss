@@ -33,8 +33,9 @@
     }
 
     &__item:hover  {
-        background-color: $greenLeftHover;
-        height: 108px; 
+        opacity: 0.9;
+        // background-color: $greenLeftHover;
+        // height: 108px; 
     }      
 
     &__item:last-child:hover {
@@ -168,9 +169,9 @@
             background-image: radial-gradient(circle at 10px 15px, $white 14px, transparent 15px);
         }
 
-        &__item:hover {
-            height: 124px;
-        }
+        // &__item:hover {
+        //     height: 124px;
+        // }
 
         &__icon1{
             z-index: 10;
@@ -266,10 +267,10 @@
             background-image: radial-gradient(circle at 10px 15px, $white 14px, transparent 15px);
         }
 
-        &__item:hover {
+        // &__item:hover {
             
-            background-color: $greenLeftHover;
-        }
+        //     background-color: $greenLeftHover;
+        // }
 
 
         &__item:last-child {

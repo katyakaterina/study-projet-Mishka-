@@ -183,7 +183,6 @@ cursor: pointer;
     text-align: center;
     padding: 30px 0 32px 0;
     cursor: pointer;
-
   }
 
   &__link:hover {
@@ -276,10 +275,10 @@ button.search-submit:hover{
     &__logo {
       height: 89px;
       text-align: left;
-      flex-basis: 394px;
+      flex-basis: 344px;
          &-tablet{
            display: inline-block;
-           padding: 20px 0 0 50px;
+           padding: 21px;
           }
          &-mobile, &-desktop{
             display: none;
@@ -311,13 +310,13 @@ button.search-submit:hover{
       border: none;
       order: 4;
       text-align: right;
-      flex-basis: 190px;
+      flex-basis: 150px;
     }
 
     &__item:nth-child(3){
       border: none;
       order: 5;
-      flex-basis: 200px;
+      flex-basis: 181px;
     }
 
     &__item:nth-child(4){
@@ -338,7 +337,7 @@ button.search-submit:hover{
       display: inline-block;
       border: none;
       order: 7;
-      flex-basis: 325px;
+      flex-basis: 337px;
       text-align: right;
     }
 
@@ -352,7 +351,8 @@ button.search-submit:hover{
 
     &__text{
       @include itemTop;
-      line-height: 78px;
+      font-size: 15px;
+      line-height: calc(55/15);
       margin: 0;
       color: $darkGray;
     }
@@ -362,11 +362,28 @@ button.search-submit:hover{
       font-weight: 700;
       padding: 10px;
     }
+    &__link--catalog{
+      font-size: 15px;
+      line-height: 0;
+      padding: 27px 13px 32px 0; 
+    }
+
+    &__link--form{
+      font-size: 15px; 
+      line-height: 0;  
+      padding: 27px 13px 32px 0; 
+    }
 
     &__link:nth-child(3) {
       @include itemTop;
       font-weight: 700;
       padding: 10px;
+    }
+    &__link-cart{
+      left: -30px;
+    }
+    &__link--cart{
+      padding-left: 39px;
     }
 }
 

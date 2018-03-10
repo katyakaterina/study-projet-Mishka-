@@ -491,7 +491,7 @@ input.search-input::placeholder{
     &__item--delivery{
       order: 9;
       z-index: 1;
-      flex-basis: 680px;
+      flex-basis: 690px;
     }
 
     &__item--new{
@@ -515,17 +515,42 @@ input.search-input::placeholder{
     &__text{
       line-height: 3.7;
     }
+    &__link--catalog,
+    &__link--form{
+      width: 100%;
+      font-size: 17px;
+      font-weight: 700;
+      color: #000000;
+      line-height: calc(27/17);
+      text-decoration: none;
+      text-align: center;
+      padding: 30px 0 32px 0;
+      cursor: pointer;
+    }
+    &__link--cart{
+      padding-left: 9px;
+    }
+    &__link--form{
+      padding-right: 20px;
+    }
+    &__link--catalog{
+      padding-left: 17px;
+    }
 
     &__link--sale,
     &__link--new {
-      
         font-size: 15px;
-      
     }
-
+    &__link--sale{
+      padding-left: 19px;
+    }
   }
   .hamburger-btn.closed{
   display: none;
+  }
+  button.search-submit{
+    top: 3px;
+    left: 0;
   }
 
 }

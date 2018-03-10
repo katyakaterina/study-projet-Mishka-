@@ -479,18 +479,23 @@
     margin-left: 10px;
   }
   .catalog-card {
-    width: 668px;
-    height: 560px;
+    min-width: 668px;
+    min-height: 520px;
+    padding: 32px 0 32px 0;
+    // height: 560px;
     margin: 0 auto;
     &__item {
-      height: 500px;
+      height: 520px;
+      width: 668px;
       @include flexbox;
       flex-wrap: wrap;
       justify-content: space-between;
+      margin: 10px 0 0 50px;
     }
     &__title {
       @include titleXlTab;
       align-self: flex-start;
+      margin: 0 0 49px 0;
     }
     &__hot-sale {
       @include titleSm;
@@ -500,6 +505,7 @@
       margin-top: 15px;
       width: 72px;
       text-align: center;
+      margin: 10px 27px 0px 0px;
     }
     &__table {
       width: 289px;
@@ -510,13 +516,13 @@
     }
     &__detail {
       height: 255px;
-      align-self: center;
+      align-self: flex-start;
     }
     &__descr {
       @include descrTablet;
       align-self: flex-start;
-      padding-top: 0;
       width: 285px;
+      padding: 0 0 34px 0;
     }
     &__to-buy {
       height: 130px;
@@ -527,7 +533,9 @@
     }
   }
   .decoration {
-    margin: 68px 0 71px 0;
+    // margin: 68px 0 71px 0;
+    // margin: 20px 0 35px 0;
+    margin: 20px 0 24px 0;
   }
 }
 
@@ -622,11 +630,13 @@
     width: 1050px;
     height: 637px;
     margin: 0 auto;
-    padding: 0;
+    padding: 70px 0 0 0;
+    // padding: 0;
     &__item {
       height: 634px;
+      min-width: 1050px;
       flex-direction: column;
-      margin-top: 70px;
+      margin: 0;
     }
     &__title {
       @include titleDesk;
@@ -666,7 +676,7 @@
     }
   }
   .decoration {
-    margin: 65px 0 60px 0;
+    margin: 70px 0 60px 0;
   }
 }
 

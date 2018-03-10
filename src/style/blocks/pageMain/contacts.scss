@@ -56,7 +56,8 @@ min-height: 850px;
     }
 
     &__btn{
-        margin: 40px 0 0 0;
+        margin: 51px 0 0 30px;
+        width: 260px;
     }
 
 }
@@ -71,27 +72,37 @@ min-height: 850px;
 @media (min-width: 768px) {
 
     .contacts {
-padding: 0;
+        padding: 0;
+        min-height: 855px;
+
         &__inner{
-         width: 668px;
-        margin: 0 auto;
+         min-width: 668px;
         }
 
 
         &__title{
             @include titleXlTab;
-            margin: 0 0 25px 0px;
+           margin: 55px 0 0 46px;
+           padding: 0;
         }
 
         &__box {
             @include flexbox;
             justify-content: space-between;
             width: 668px;
+            padding: 0;
+            margin: 29px 0 45px 50px;
         }
 
         &__wrap {
-            min-width: 40%;
-            @include descrTablet;
+            min-width: 42%;
+            font-size: 17px;
+            line-height: calc(30/17);
+            // @include descrTablet;
+        }
+        &__wrap:last-child{
+            min-width: 41%;
+            margin-left: 39px;
         }
 
         &__address {
@@ -114,9 +125,16 @@ padding: 0;
             height: 90px;
             order: 1;
             position: relative;
-            top: -115px;
-            left: -45px;
+            top: -95px;
+            left: -3px;
         }
+        &__btn{
+            width: 230px;
+            margin: 59px 0 0 269px;
+        }
+    }
+    #map{
+        width: 100%;
     }
 }
 
@@ -141,6 +159,7 @@ padding: 0;
             height: 238px;
             margin: 0;
             order: 2;
+            padding: 0 32px;
         }
         &__wrap{
             width: 310px;
@@ -168,6 +187,7 @@ padding: 0;
             @include titleDesk;
             order: 1;
             margin: 85px 48px 20px 0;
+            padding: 0 32px;
         }
         &__icon{
             top: -265px;

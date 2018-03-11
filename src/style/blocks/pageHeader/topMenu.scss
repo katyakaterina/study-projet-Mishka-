@@ -382,6 +382,12 @@ button.search-submit:hover{
     &__link-cart{
       left: -30px;
     }
+    &__link-cart:hover{
+      left: -30px;
+    }
+    &__link-cart:active{
+      left: -30px;
+    }
     &__link--cart{
       padding-left: 39px;
     }

@@ -178,12 +178,11 @@ cursor: pointer;
     width: 100%;
     @include titleSm;
     color: $black;
-    line-height: calc(24/17);
+    line-height: calc(27/17);
     text-decoration: none;
     text-align: center;
     padding: 30px 0 32px 0;
     cursor: pointer;
-
   }
 
   &__link:hover {
@@ -276,10 +275,10 @@ button.search-submit:hover{
     &__logo {
       height: 89px;
       text-align: left;
-      flex-basis: 394px;
+      flex-basis: 344px;
          &-tablet{
            display: inline-block;
-           padding: 20px 0 0 50px;
+           padding: 21px;
           }
          &-mobile, &-desktop{
             display: none;
@@ -311,13 +310,13 @@ button.search-submit:hover{
       border: none;
       order: 4;
       text-align: right;
-      flex-basis: 190px;
+      flex-basis: 150px;
     }
 
     &__item:nth-child(3){
       border: none;
       order: 5;
-      flex-basis: 200px;
+      flex-basis: 181px;
     }
 
     &__item:nth-child(4){
@@ -338,7 +337,7 @@ button.search-submit:hover{
       display: inline-block;
       border: none;
       order: 7;
-      flex-basis: 325px;
+      flex-basis: 337px;
       text-align: right;
     }
 
@@ -352,7 +351,8 @@ button.search-submit:hover{
 
     &__text{
       @include itemTop;
-      line-height: 78px;
+      font-size: 15px;
+      line-height: calc(55/15);
       margin: 0;
       color: $darkGray;
     }
@@ -362,11 +362,28 @@ button.search-submit:hover{
       font-weight: 700;
       padding: 10px;
     }
+    &__link--catalog{
+      font-size: 15px;
+      line-height: 0;
+      padding: 27px 13px 32px 0; 
+    }
+
+    &__link--form{
+      font-size: 15px; 
+      line-height: 0;  
+      padding: 27px 13px 32px 0; 
+    }
 
     &__link:nth-child(3) {
       @include itemTop;
       font-weight: 700;
       padding: 10px;
+    }
+    &__link-cart{
+      left: -30px;
+    }
+    &__link--cart{
+      padding-left: 39px;
     }
 }
 
@@ -433,7 +450,7 @@ input.search-input::placeholder{
        align-self: center;
        &-desktop{
          display: inline-block;
-         margin-top: 10px;
+         margin: 10px 0 0 21px;
        }
        &-mobile, &-tablet{
          display: none;
@@ -456,7 +473,7 @@ input.search-input::placeholder{
 
     &__item:nth-child(3){
       order: 3;
-      flex-basis: 260px;
+      flex-basis: 243px;
       text-align: center;
     }
 
@@ -467,13 +484,14 @@ input.search-input::placeholder{
 
     &__item--cart{
       order: 5;
+      flex-basis: 315px;
 
     }
 
     &__item--delivery{
       order: 9;
       z-index: 1;
-      flex-basis: 680px;
+      flex-basis: 690px;
     }
 
     &__item--new{
@@ -481,7 +499,9 @@ input.search-input::placeholder{
       order: 7;
       border: none;
       z-index: 1;
-      flex-basis: 230px;
+      flex-basis: 161px;
+      text-align: end;
+      line-height: 3.7;
     }
 
     &__item--sale{
@@ -490,11 +510,47 @@ input.search-input::placeholder{
       border: none;
       z-index: 1;
       flex-basis: 200px;
+      line-height: 3.7;
+    }
+    &__text{
+      line-height: 3.7;
+    }
+    &__link--catalog,
+    &__link--form{
+      width: 100%;
+      font-size: 17px;
+      font-weight: 700;
+      color: #000000;
+      line-height: calc(27/17);
+      text-decoration: none;
+      text-align: center;
+      padding: 30px 0 32px 0;
+      cursor: pointer;
+    }
+    &__link--cart{
+      padding-left: 9px;
+    }
+    &__link--form{
+      padding-right: 20px;
+    }
+    &__link--catalog{
+      padding-left: 17px;
     }
 
+    &__link--sale,
+    &__link--new {
+        font-size: 15px;
+    }
+    &__link--sale{
+      padding-left: 19px;
+    }
   }
   .hamburger-btn.closed{
   display: none;
+  }
+  button.search-submit{
+    top: 3px;
+    left: 0;
   }
 
 }

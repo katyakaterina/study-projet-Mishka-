@@ -333,7 +333,8 @@
 
     &__title{
       @include titleDesk;
-      line-height: calc(64/53);
+      line-height: calc(53/53);
+      margin-bottom: 26px;
     }
     &__features{
       min-width: 350px;
@@ -387,14 +388,21 @@
 
     &__comment {
       min-width: 781px;
-      height: 132px;
-      line-height: 1.8;
+      height: 126px;
+      line-height: calc(31/17);
       margin: 0;
     }
+    &__auth{
+      line-height: calc(33/18);
+    }
     &__controls{
-      top: -57px;
-      left: -15px;
+      top: -85px;
+      left: -17px;
       width: 141px;
+    }
+    &__write{
+      width: 175px;
+      margin: 0 2px 0 0;
     }
     &__btn-left{
       margin-right: 32px;

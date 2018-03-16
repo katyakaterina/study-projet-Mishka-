@@ -549,9 +549,8 @@
 
 
   .decoration {
-    // margin: 68px 0 71px 0;
-    // margin: 20px 0 35px 0;
-    margin: 20px 0 24px 0;
+    // margin: 20px 0 24px 0;
+    margin: 11px 0 34px 0;
   }
 }
 
@@ -959,7 +958,7 @@
         @include flexbox;
         flex-wrap: wrap;
         flex-direction: column;
-        margin-top: 28px;
+        margin-top: 27px;
         margin-bottom: 100px;
         margin-left: 70px;
         &__description {

@@ -138,8 +138,9 @@
         width: 102px;
         height: 78px;
         cursor: pointer;
-        left: 35%;
-        margin-top: 14%;
+        left: 36%;
+        margin-top: 17%;
+
         //margin-top: 40px;
         //margin-left: 79px;
         position: absolute;
@@ -299,6 +300,9 @@
     color: $greenLeft;
     text-transform: uppercase;
   }
+  &__detail{
+    order: 1;
+  }
   &__descr {
     font-size: 15px;
     line-height: calc(24/15);
@@ -317,7 +321,16 @@
   }
   &__to-buy {
     height: 130px;
+    order: 3;
+    display: flex;
+    flex-direction: column;
+}
+  &__picture{
+    display: flex;
+    order: 2;
+    flex-direction: column-reverse;
   }
+
   &__img {
     width: 100%;
   }
@@ -491,7 +504,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
       margin: 10px 0 0 50px;
-    }
+ }
     &__title {
       @include titleXlTab;
       align-self: flex-start;
@@ -511,9 +524,7 @@
       width: 289px;
       height: 106px;
     }
-    &__price {
-      align-self: flex-start;
-    }
+
     &__detail {
       height: 255px;
       align-self: flex-start;
@@ -524,14 +535,19 @@
       width: 285px;
       padding: 0 0 34px 0;
     }
+     &__picture {
+      display: inline-block;
+    }
     &__to-buy {
       height: 130px;
       width: 292px;
-    }
-    &__picture {
-      display: inline-block;
-    }
-  }
+      }
+        &__price {
+          align-self: flex-start;
+        }
+}
+
+
   .decoration {
     // margin: 68px 0 71px 0;
     // margin: 20px 0 35px 0;
@@ -828,7 +844,7 @@
           height: 78px;
           cursor: pointer;
           background: url('/src/img/sprites.png') -739px -11px;
-          margin-top: 190px;
+          margin-top: 189px;
           //margin-left: 280px;
           left: 43%;
         }
@@ -970,7 +986,7 @@
           }
           &__link-pic {
             margin-top: 185px;
-            left: 34%;
+            left: 33%;
           }
           &__descr {
             @include textLg(15px,

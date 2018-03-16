@@ -33,69 +33,109 @@
 
     &__insta {
         display: inline-block;
-        background: url('/src/img/sprites.png') no-repeat -13px -60px;
-        width: 25px;
-        height: 24px;
+        //background: url('/src/img/sprites.png') no-repeat -13px -60px;
+        ///width: 25px;
+        //height: 24px;
+        	background: url('/src/img/sprites.png') -15px -61px;
+
+        	width: 22px;
+        	height: 21px;
+
     }
 
     &__insta:hover{
         display: inline-block;
-        background: url('/src/img/sprites.png') no-repeat -61px -61px;
-	    width: 25px;
-        height: 24px;
+        //background: url('/src/img/sprites.png') no-repeat -60.9px -60.8px;
+	    //width: 25px;
+       //height: 24px;
+        background: url('/src/img/sprites.png') -63px -62px;
+
+       width: 22px;
+       height: 21px;
+
     }
 
     &__insta:active{
         display: inline-block;
-        background: url('/src/img/sprites.png') no-repeat  -113px -60px;
-	    width: 25px;
-        height: 24px;
+        //background: url('/src/img/sprites.png') no-repeat  -113px -60px;
+	    //width: 25px;
+        //height: 24px;
+        	background: url('/src/img/sprites.png') -115px -61px;
+
+        	width: 22px;
+        	height: 21px;
+
     }
 
     &__facebook{
         display: inline-block;
-        background: url('/src/img/sprites.png') -15px -109px;
-        width: 18px;
-        height: 30px;
+        //background: url('/src/img/sprites.png') -15px -109px;
+        //width: 18px;
+        //height: 30px;
+        background: url('/src/img/sprites.png') -17px -110px;
+
+        	width: 15px;
+        	height: 29px;
+
     }
 
 
     &__facebook:hover{
         display: inline-block;
-        background: url('/src/img/sprites.png') -62px -109px;
-        width: 18px;
-        height: 30px;
+        //background: url('/src/img/sprites.png') -61.9px -108.5px;
+       // width: 18px;
+        //height: 30px;
+        background: url('/src/img/sprites.png') -64.1px -109px;
+
+        width: 15px;
+        height: 29px;
+
     }
 
     &__facebook:active{
         display: inline-block;
-        background: url('/src/img/sprites.png') -112px -109px;
-	    width: 18px;
-        height: 30px;
+        //background: url('/src/img/sprites.png') -112px -109px;
+	    //width: 18px;
+        //height: 30px;
+background: url('/src/img/sprites.png') -114px -111px;
 
+width: 15px;
+height: 29px;
     }
 
     &__twitter{
         display: inline-block;
-        background: url('/src/img/sprites.png') -14px -13px;
-	    width: 24px;
-        height: 22px;
+        //background: url('/src/img/sprites.png') -14px -13px;
+	    //width: 24px;
+       // height: 22px;
+background: url('/src/img/sprites.png') -14px -14px;
+
+width: 24px;
+height: 20px;
 
     }
 
     &__twitter:hover{
         display: inline-block;
-        background: url('/src/img/sprites.png') -59.6px -14px;
-	    width: 24px;
-        height: 22px;
+       // background: url('/src/img/sprites.png') -60.4px -13.9px;
+	    //width: 24px;
+        //height: 22px;
+background: url('/src/img/sprites.png') -60px -14.5px;
+
+width: 24px;
+height: 20px;
 
     }
 
     &__twitter:active{
         display: inline-block;
-        background: url('/src/img/sprites.png')  -110px -13px;
-	    width: 24px;
-        height: 22px;
+       // background: url('/src/img/sprites.png')  -110px -13px;
+	   //width: 24px;
+        //height: 22px;
+	background: url('/src/img/sprites.png') -111px -14px;
+
+	width: 24px;
+	height: 20px;
 
     }
 }
@@ -111,14 +151,14 @@
           align-items: center;
           //margin-top:30px;//////izmen
           justify-content: space-between;
-          margin-top: 32px;
+         // margin-top: 32px;
         }
         &__logo{
           display: flex;
             //display: inline-block;
             flex-basis: 31%;
             text-align: center;
-            margin: 0 0 4px 25px;
+            margin: 0 0 0px 25px;
         }
         &__logo-link{
             display: inline-block;
@@ -154,7 +194,7 @@
         width: 100%;
         min-width: 1200px;
         &__inner{
-            margin-top: 30px;
+            margin-top: 47px;
         }
         &__logo{
           margin-left: 38px;

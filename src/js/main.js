@@ -1,10 +1,10 @@
 'use strict'
 
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
+var modal = document.getElementById("modal");
+var btn = document.getElementById("btn");
 var open = document.querySelector('open');
 var close = document.getElementById("closeBtn");
-var overlay = document.getElementById("myOverlay");
+var overlay = document.getElementById("overlay");
 
 btn.addEventListener('click', function(){
   modal.style.display = 'block'

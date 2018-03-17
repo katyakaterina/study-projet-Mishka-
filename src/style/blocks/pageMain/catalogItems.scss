@@ -138,8 +138,9 @@
         width: 102px;
         height: 78px;
         cursor: pointer;
-        left: 35%;
-        margin-top: 14%;
+        left: 36%;
+        margin-top: 17%;
+
         //margin-top: 40px;
         //margin-left: 79px;
         position: absolute;
@@ -303,6 +304,9 @@
     color: $greenLeft;
     text-transform: uppercase;
   }
+  &__detail{
+    order: 1;
+  }
   &__descr {
     font-size: 15px;
     line-height: calc(24/15);
@@ -325,7 +329,15 @@
   &__to-buy {
     height: 130px;
     order: 3;
+    display: flex;
+    flex-direction: column;
+}
+  &__picture{
+    display: flex;
+    order: 2;
+    flex-direction: column-reverse;
   }
+
   &__img {
     width: 100%;
   }
@@ -500,7 +512,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
       margin: 10px 0 0 50px;
-    }
+ }
     &__title {
       @include titleXlTab;
       align-self: flex-start;
@@ -535,6 +547,9 @@
       align-self: flex-start;
       width: 285px;
       padding: 0 0 34px 0;
+    }
+     &__picture {
+      display: inline-block;
     }
     &__to-buy {
       height: 130px;
@@ -868,7 +883,7 @@
           height: 78px;
           cursor: pointer;
           background: url('/src/img/sprites.png') -739px -11px;
-          margin-top: 190px;
+          margin-top: 189px;
           //margin-left: 280px;
           left: 43%;
         }
@@ -923,8 +938,8 @@
         display: flex;
         //flex-direction:row;
         //flex-wrap: wrap;
-        margin-left: 40px;
-        margin-top: 70px;
+        margin-left: 43px;
+        margin-top: 74px;
         &__img {
           min-height: 462px;
           min-width: 316px;
@@ -977,14 +992,14 @@
       }
       .player-video {
         width: 1053px;
-        max-height: 460px;
+        max-height: 455px;
         border: 1px solid #ececec;
         background-color: #ffffff;
         @include flexbox;
         flex-wrap: wrap;
         flex-direction: column;
         margin-top: 27px;
-        margin-bottom: 100px;
+        margin-bottom: 104px;
         margin-left: 70px;
         &__description {
           @include flexbox;
@@ -1010,7 +1025,7 @@
           }
           &__link-pic {
             margin-top: 185px;
-            left: 34%;
+            left: 32%;
           }
           &__descr {
             @include textLg(15px,
@@ -1032,5 +1047,7 @@
         }
       }
     }
+
   }
+
 }

@@ -816,9 +816,10 @@ margin-top: 0px;
     &__wrap {
       display: flex;
       justify-content: space-around;
-      margin-top: 25px;
+      margin-top: 29px;
       align-items: center;
-      margin-bottom: 0;
+      margin-bottom: 41px;
+      height: 60px;
     }
     &__textarea {
       @include textLg(19px,
@@ -1026,13 +1027,16 @@ margin-top: 0px;
         min-width: 700px;
         width: 100%;
         margin-top: 15px;
+        height: 60px;
       }
       span{
         margin-right: 190px;
+        margin-top: 35px;
       }
       &__btn {
         margin-left: 193px;
         vertical-align: top;
+        margin-top: 10px;
       }
       // span {
       //   margin-right: 250px;

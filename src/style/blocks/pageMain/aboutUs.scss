@@ -233,7 +233,7 @@
     background-image: url(/src/img/review-1x.jpg);
     background-position: left;
     background-repeat: no-repeat;
-    background-size: 315px 455px;
+    background-size: 345px 455px;
     height: 455px;
     display: flex;
     flex-wrap: wrap;
@@ -274,6 +274,7 @@
     display: none;
   }
 
+
   &__write {
     align-self: center;
     order: -1;
@@ -291,7 +292,7 @@
     height: 170px;
     margin: 0;
     padding: 0;
-    
+
   }
 
   &__user {

@@ -5,13 +5,13 @@
            background: url(/src/img/header-mobile-1x.jpg);
            background-position: 50% 0;
            background-repeat: no-repeat;
-           background-size: 100% auto;   
+           background-size: 100% auto;
          }
         }
 
     &__title {
         @include titleXlMob;
-        width: 220px;
+        width: 244px;
         text-align: center;
         margin: 0 auto;
         // padding: 77px 0 140px 0;
@@ -35,8 +35,8 @@
     // &__item:hover  {
         // opacity: 0.9;
         // background-color: $greenLeftHover;
-        // height: 108px; 
-    // }      
+        // height: 108px;
+    // }
 
     &__item:hover {
         background-color: $greenRightHover;
@@ -74,7 +74,7 @@
             top: 22px;
             left: 76%;
             }
-        
+
         &--right::before {
         position: absolute;
         content: "";
@@ -137,7 +137,7 @@
             font-size: 20px;
             line-height: calc(30/20);
             padding: 25px 170px 28px 34px;
-            
+
             &--left::before{
                 top: 27px;
                 left: 77%;
@@ -201,13 +201,13 @@
 
     .menu-bottom {
         width: 1200px;
-    
+
         &__bg {
             background: url(/src/img/header-desktop-2x.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
-            background-attachment: scroll; 
+            background-attachment: scroll;
         }
 
         &__list {
@@ -281,9 +281,9 @@
             background-color: $greenRight;
             border: transparent;
         }
-  
+
     }
 
 
-    
+
 }

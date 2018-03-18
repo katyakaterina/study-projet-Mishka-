@@ -18,10 +18,6 @@
   .catalog {
     &__img {
       width: 100%;
-<<<<<<< HEAD
-
-=======
->>>>>>> 8caaee515ab495c5c0f64de2f7bc1e6e5b01988e
       min-width: 260px;
     }
     &__item {
@@ -84,10 +80,6 @@
         line-height: 1.6;
         margin-top: 10px;
         padding-bottom: 12px;
-<<<<<<< HEAD
-
-=======
->>>>>>> 8caaee515ab495c5c0f64de2f7bc1e6e5b01988e
       }
       &__link {
         margin-top: 10px;
@@ -145,12 +137,7 @@
         height: 78px;
         cursor: pointer;
         left: 36%;
-        margin-top: 17%;
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 8caaee515ab495c5c0f64de2f7bc1e6e5b01988e
+        margin-top: 14%;
         position: absolute;
         border: none;
       }
@@ -538,10 +525,6 @@
       height: 106px;
     }
     &__price {
-<<<<<<< HEAD
-
-=======
->>>>>>> 8caaee515ab495c5c0f64de2f7bc1e6e5b01988e
       font-size: 21px;
       padding-bottom: 32px;
     }
@@ -815,8 +798,8 @@
         400);
         color: #444444;
         line-height: 2;
-        margin-top: 5px;
-        padding-bottom: 173px;
+        margin-top: 2px;
+        padding-bottom: 172px;
         border-bottom: 1px solid #ececec;
         width: 268px;
         margin-left: 16px;
@@ -938,7 +921,7 @@
       }
       .catalog {
         display: flex;
-        
+
         margin-left: 43px;
         margin-top: 74px;
         &__img {
@@ -992,7 +975,7 @@
         }
       }
       .player-video {
-        width: 1053px;
+        width: 1051px;
         max-height: 455px;
         border: 1px solid #ececec;
         background-color: #ffffff;
@@ -1001,7 +984,7 @@
         flex-direction: column;
         margin-top: 27px;
         margin-bottom: 104px;
-        margin-left: 70px;
+        margin-left: 76px;
         &__description {
           @include flexbox;
         }

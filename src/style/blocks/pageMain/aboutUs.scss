@@ -235,6 +235,8 @@
     background-repeat: no-repeat;
     background-size: 345px 455px;
     height: 455px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &__caption{
@@ -242,12 +244,16 @@
     @include titleXlTab;
     margin: 0;
     padding-top: 77px;
+    order: -1;
+    flex-grow: 1;
+    margin-left: 45px;
   }
 
   &__slides{
     display: flex;
     flex-direction: column;
     width: 668px;
+    height: 232px;
     margin-left: 50px;
   }
 
@@ -270,10 +276,14 @@
 
 
   &__write {
-    align-self: flex-end;
-    order: 2;
+    align-self: center;
+    order: -1;
     width: 180px;
     margin: 0;
+    width: 175px;
+    height: 50px;
+    margin: 34px 50px 0 0;
+    padding: 2px 0 2px 1px;
   }
 
   &__comment {
@@ -320,8 +330,6 @@
     outline: none;
 
   }
-
-
 }
 }
 
@@ -376,6 +384,7 @@
       @include titleDesk;
       line-height: 1;
       padding-top: 74px;
+      margin: 0 0 0 177px;
     }
 
     &__slide1, &__slide2, &__slide3{
@@ -397,13 +406,13 @@
       line-height: calc(33/18);
     }
     &__controls{
-      top: -85px;
+      top: -73px;
       left: -17px;
       width: 141px;
     }
     &__write{
       width: 175px;
-      margin: 0 2px 0 0;
+      margin: 37px 0px 0 0;
     }
     &__btn-left{
       margin-right: 32px;

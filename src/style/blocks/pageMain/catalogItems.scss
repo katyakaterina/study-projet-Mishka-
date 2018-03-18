@@ -18,7 +18,7 @@
   .catalog {
     &__img {
       width: 100%;
-      //min-height: 190px;
+
       min-width: 260px;
     }
     &__item {
@@ -81,7 +81,7 @@
         line-height: 1.6;
         margin-top: 10px;
         padding-bottom: 12px;
-        //margin-left: 2px;
+
       }
       &__link {
         margin-top: 10px;
@@ -141,8 +141,7 @@
         left: 36%;
         margin-top: 17%;
 
-        //margin-top: 40px;
-        //margin-left: 79px;
+
         position: absolute;
         border: none;
       }
@@ -178,7 +177,7 @@
       color: $darkGray;
       cursor: pointer;
       line-height: 0.9;
-      padding: 13px 5px 14px 5px; //vertical-align: top;
+      padding: 13px 5px 14px 5px;
     }
     .player__btn:hover {
       background-color: $darkGray;
@@ -190,10 +189,7 @@
   }
 }
 
-// index ______index page_____________________________
-// .open{
-//   display: block;
-// }
+
 .modal-ctg {
   .open {
     display: block;
@@ -312,7 +308,7 @@
     line-height: calc(24/15);
     color: $darkGray;
     margin: 0;
-    // padding: 34px 0 34px 0;
+
     padding: 22px 0 16px 0;
   }
   &__picture{
@@ -502,11 +498,11 @@
     min-width: 668px;
     min-height: 520px;
     padding: 32px 0 32px 0;
-    // height: 560px;
+
     margin: 0 auto;
     &__item {
       height: 421px;
-      // height: 520px;
+
       width: 668px;
       @include flexbox;
       flex-wrap: wrap;
@@ -533,7 +529,7 @@
       height: 106px;
     }
     &__price {
-      // align-self: flex-start;
+
       font-size: 21px;
       padding-bottom: 32px;
     }
@@ -557,20 +553,20 @@
       order: 0;
     }
     &__picture {
-      // display: inline-block;
+
       align-self: flex-end;
     }
     &__caption{
       display: flex;
-      // flex-direction: row-reverse;
+
       justify-content: space-between;
       width: 668px;
       margin: 0 auto;
-      // flex-direction: row;
+
     }
   }
   .decoration {
-    // margin: 20px 0 24px 0;
+
     margin: 11px 0 34px 0;
   }
 }
@@ -666,24 +662,19 @@
     width: 1050px;
     margin: 0 auto;
     padding: 0;
-    // padding: 25px 0 0 0;
-    // height: 682px;
+
     height: 707px;
-    // width: 1050px;
-    // height: 637px;
-    // margin: 0 auto;
-    // padding: 70px 0 0 0;
-    // padding: 0;
+
     &__item {
       height: 634px;
       min-width: 1050px;
-      // flex-direction: column;
+
       margin: 0 auto;
     }
     &__title {
       @include titleDesk;
       line-height: 1;
-      // order: 2;
+
       z-index: 1;
       position: relative;
       top: 112px;
@@ -694,25 +685,24 @@
     }
     &__hot-sale {
       order: 1;
-      // align-self: flex-start;
+
       margin: 135px 0 0 49px;
     }
     &__detail {
       width: 1050px;
       height: 635px;
       order: 2;
-      // align-self: flex-end;
+
       justify-content: center;
       align-content: flex-end;
-      // flex-grow: 2;
-      // width: 350px;
+
     }
     &__picture {
       order: 3;
     }
     &__to-buy {
       order: 2;
-      // align-self: flex-end;
+
       height: 130px;
       margin-right: 57px;
     }
@@ -801,10 +791,10 @@
         @include textLg(20px,
         700);
         line-height: 1.2;
-        //margin-left: 26px;
+
         margin-left: 16px;
         margin-top: 26px;
-        //margin-top: 24px;
+
         width: 230px;
         margin-bottom: 4px;
       }
@@ -884,7 +874,7 @@
           cursor: pointer;
           background: url('/src/img/sprites.png') -739px -11px;
           margin-top: 189px;
-          //margin-left: 280px;
+
           left: 43%;
         }
         &__descr {
@@ -936,8 +926,7 @@
       }
       .catalog {
         display: flex;
-        //flex-direction:row;
-        //flex-wrap: wrap;
+        
         margin-left: 43px;
         margin-top: 74px;
         &__img {

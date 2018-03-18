@@ -2,7 +2,7 @@
   &__title--block {
     display: flex;
     align-items: center;
-    justify-content: center; //min-width:320px;
+    justify-content: center; 
     height: 177px;
     background: $lightGray;
 margin-top: 0px;
@@ -51,13 +51,12 @@ margin-top: 0px;
 
     &--checkbox{
       min-height: 402px;
-      //justify-content: center;
-     // margin-top: 10px;
+
     }
 
     &--name{
       min-height: 290px;
-      //justify-content: center;
+
       margin-top: 18px;
 
     }
@@ -69,9 +68,7 @@ margin-top: 0px;
       justify-content: center;
     }
 
-   // &--textarea{
-     // min-height: 200px;
-    //}
+
   }
   &__box{
     min-height: 80px;
@@ -425,7 +422,7 @@ margin-top: 0px;
       @include textLg(43px,700);
       line-height: 1.1;
       margin-top: 60px;
-      //margin-left: 5px;
+
     }
     &__title-line:after {
       content: "";
@@ -465,7 +462,7 @@ margin-top: 0px;
     }
     &__section--radio {
       width: 100%;
-      //flex-basis: 51%;
+
       margin: 20px 0 0 215px;
     }
     &__legend::after {
@@ -494,7 +491,7 @@ margin-top: 0px;
       width: 22px;
       height: 22px;
       background-color: #63d1bb;
-      border-radius: 50%; //opacity: 0;
+      border-radius: 50%;
     }
     &__label--radio {
       position: relative;
@@ -507,13 +504,12 @@ margin-top: 0px;
     &__input--radio:not(checked)+&__label--radio {
       position: relative;
       padding: 11px 0 0 77px;
-      //top: 5px; // width: 180px;
+
       display: flex;
     }
     &__filedset--checkbox {
       padding: 0;
-      //margin: 0 auto;
-      // margin-top: 44px;
+
     }
     &__legend--color {
       text-transform: uppercase;
@@ -527,11 +523,7 @@ margin-top: 0px;
     &__inner {
     flex-wrap: wrap;
     flex-direction: row;
-    //justify-content: center;
 
-    // &--radio{
-      // margin: 10px 0 0 10px;
-    // }
     &--checkbox{
       min-height: 304px;
       justify-content: flex-end;
@@ -547,7 +539,7 @@ margin-top: 0px;
       min-width: 768px;
       justify-content: center;
       align-items: center;
-      //display: flex;
+
     }
     &--name{
     min-width: 668px;
@@ -560,18 +552,16 @@ margin-top: 0px;
     &--textarea{
       min-width: 600px;
       justify-content: center;
-      //display: flex;
+
       margin: 25px 0 0 165px;
     }
     }
 
     &__group--checkbox {
-      display: flex; //flex-direction: column;
-      flex-wrap: wrap; //width: 550px;
-      flex-direction: row; // min-width: 470px;
-      // min-height: 225px;
-      //flex-basis: 592px;
-      width: 100%; // justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+
       margin-left: 215px;
       max-height: 220px;
       min-width: 500px;
@@ -621,7 +611,7 @@ margin-top: 0px;
 
     &__legend--name {
       top: 67px;
-      left: 48px; //top:20px;
+      left: 48px;
     }
 
     &__section--name {
@@ -684,8 +674,7 @@ margin-top: 0px;
     &__input--phone:focus~&__line--phone::before {
       min-width: 500px;
       height: 2px;
-      //padding-left: 30px;
-      //margin-left: 95px;
+
     }
 
     &__input--email:focus~&__line--email::before {
@@ -700,7 +689,7 @@ margin-top: 0px;
       text-transform: uppercase;
       top: 67px;
       left: 28px;
-      //width: 100px;
+
     }
 
     &__legend--email {
@@ -711,15 +700,14 @@ margin-top: 0px;
       position: relative;
       top: 30px;
       left: 27px;
-      //width: 100px;
+
     }
 
     &__box {
-      //min-height: 70px;
+
       display: flex;
-      min-width: 712px; // min-height: 45px;
-      //margin-bottom:16px;
-      //justify-content: flex-end;
+      min-width: 712px;
+
     }
 
     &__input--phone {
@@ -728,8 +716,8 @@ margin-top: 0px;
       background-color: #f1f1f1;
       min-width: 500px;
       width: 100%;
-      margin: 25px 0 0 195px; //height: 52px;
-      //padding-left: 20px;
+      margin: 25px 0 0 195px;
+
     }
 
     &__box--email {
@@ -745,7 +733,7 @@ margin-top: 0px;
       width: 100%;
       margin: 0 0 40px 195px;
       height: 52px;
-      //padding: 0 0 0 20px;
+
     }
 
     &__label--phone {
@@ -768,15 +756,13 @@ margin-top: 0px;
   min-width: 500px;
     }
     &__input--phone:focus {
-      //padding: 0;
-      //min-height: 5px;
-      min-width: 500px;//500
+
+      min-width: 500px;
     }
 
     &__input--email:focus {
-      //padding: 0;
-      //min-height: 54px;
-      min-width: 500px;//500
+
+      min-width: 500px;
     }
 
     &__input--phone:focus+&__label--phone::before {
@@ -840,7 +826,7 @@ margin-top: 0px;
       400);
       line-height: 1.7;
       order: 2;
-      //margin: 0;
+
       text-align: right;
       align-self: center;
           margin-top: 22px;
@@ -849,13 +835,12 @@ margin-top: 0px;
     @media screen and (min-width: 1024px) {
       &__title--block {
         height: 245px;
-        //margin-top: 10px;
+
       }
       &__title {
-        //text-align: center;
+
         @include textLg(53px,
-        700); //padding: 93px 0px 95px 0px;
-        //background: #f1f1f1;
+        700);
         line-height: 1;
         margin-top: 50px;
       }
@@ -878,7 +863,7 @@ margin-top: 0px;
          background-image: radial-gradient(circle at 20px 13px, #f1f1f1 13px, transparent 13px);
          right: 0;
          left: 0px;
-         bottom: 0px; ///возможно надо редактировать
+         bottom: 0px;
          transform: rotate(-180deg);
        }
 &__section--radio{
@@ -935,14 +920,12 @@ margin-top: 0px;
 }
       &__input--phone
        {
-                //margin: 5px 140px 0px 154px;
                 min-width: 700px;
                 margin: 17px 140px 0px 170px;
 
 
 
-        //margin: 0 25px 0 194px;
-        //min-width: 715px;
+
       }
 
       &__input--phone:hover{
@@ -1008,14 +991,7 @@ margin-top: 0px;
         min-width: 1150px;
       }
 
-      // &__inner--email::before {
-      //   content: '';
-      //   background: url('/src/img/css_sprites.png') -10px -10px;
-      //   width: 32px;
-      //   height: 21px;
-      //   position: absolute;
-      //   margin-left: 900px;
-      // }
+
       &__textarea {
         min-width: 700px;
         margin-right: 165px;
@@ -1038,9 +1014,7 @@ margin-top: 0px;
         vertical-align: top;
         margin-top: 10px;
       }
-      // span {
-      //   margin-right: 250px;
-      // }
+
     }
   }
 }

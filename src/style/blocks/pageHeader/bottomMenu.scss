@@ -14,7 +14,7 @@
         width: 244px;
         text-align: center;
         margin: 0 auto;
-        // padding: 77px 0 140px 0;
+
         padding: 71px 0 122px 0;
     }
 
@@ -32,13 +32,7 @@
         display: flex;
     }
 
-    // &__item:hover  {
-        // opacity: 0.9;
-        // background-color: $greenLeftHover;
-        // height: 108px;
-    // }
-
-    &__item:hover {
+  &__item:hover {
         background-color: $greenRightHover;
     }
     &__item:last-child:hover{
@@ -60,7 +54,7 @@
         font-weight: 700;
         display: inline-block;
         width: 100%;
-        // padding: 24px 165px 28px 38px;
+       
         padding: 24px 165px 27px 28px;
 
 

@@ -9,14 +9,4 @@
           position: uluru,
           map: map
         });
-
-        var mapImg = document.getElementById('mapImg');
-
-        if(e) {
-          (map.style.display='none');
-          return(mapImg.style.display='block');
-        }
-
-
-
       }

@@ -526,7 +526,7 @@
     }
     &__price {
       font-size: 21px;
-      padding-bottom: 32px;
+      padding-bottom: 29px;
     }
     &__detail {
       width: 668px;
@@ -543,21 +543,24 @@
       display: inline-block;
     }
     &__to-buy {
-      height: 130px;
-      width: 292px;
+      height: 140px;
+      width: 287px;
       order: 0;
     }
     &__picture {
-
       align-self: flex-end;
     }
     &__caption{
       display: flex;
-
       justify-content: space-between;
       width: 668px;
       margin: 0 auto;
 
+    }
+    &__btn{
+      padding: 3px 3px 0 0;
+      width: 289px;
+      height: 54px;
     }
   }
   .decoration {
@@ -697,13 +700,15 @@
     }
     &__to-buy {
       order: 2;
-
-      height: 130px;
-      margin-right: 57px;
+      height: 135px;
+      margin-right: 58px;
     }
     &__price{
       font-size: 20px;
-      padding: 19px 0 34px 0;
+      padding: 22px 0 33px 0;
+    }
+    &__btn{
+      height: 50px;
     }
     &__caption{
       width: 1050px;
@@ -983,8 +988,8 @@
         @include flexbox;
         flex-wrap: wrap;
         flex-direction: column;
-        margin-top: 27px;
-        margin-bottom: 100px;
+        margin-top: 24px;
+        margin-bottom: 104px;
         margin-left: 76px;
         &__description {
           @include flexbox;

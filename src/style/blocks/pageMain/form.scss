@@ -475,7 +475,7 @@ margin-top: 0px;
     &__label--radio::before {
       content: '';
       position: absolute;
-      top: -6px;
+      top: 9px;
       left: 0;
       width: 50px;
       height: 50px;
@@ -486,7 +486,7 @@ margin-top: 0px;
     &__input--radio:checked+&__label--radio::after {
       content: '';
       position: absolute;
-      top: 10px;
+      top: 23px;
       left: 16px;
       width: 22px;
       height: 22px;
@@ -503,11 +503,11 @@ margin-top: 0px;
     }
     &__input--radio:not(checked)+&__label--radio {
       position: relative;
-      padding: 11px 0 0 77px;
-
+      padding: 25px 0 12px 81px;
       display: flex;
     }
     &__filedset--checkbox {
+      min-width: 668px;
       padding: 0;
 
     }
@@ -698,13 +698,13 @@ margin-top: 0px;
       color: $greenLeft;
       text-transform: uppercase;
       position: relative;
-      top: 30px;
-      left: 27px;
+      top: 23px;
+      left: 29px;
 
     }
 
     &__box {
-
+      height: 85px;
       display: flex;
       min-width: 712px;
 
@@ -716,13 +716,14 @@ margin-top: 0px;
       background-color: #f1f1f1;
       min-width: 500px;
       width: 100%;
-      margin: 25px 0 0 195px;
+      margin: 30px 0 0 195px;
 
     }
 
     &__box--email {
       display: flex;
       min-width: 712px;
+      height: 93px;
     }
 
     &__input--email {
@@ -745,8 +746,8 @@ margin-top: 0px;
     &__label--phone:after {
       position: absolute;
       content: '';
-      top: 37px;
-      left: -49px;
+      top: 43px;
+      left: -52px;
       background: url('/src/img/sprites.png') -212px -263px;
       width: 25px;
       height: 24px;
@@ -768,8 +769,8 @@ margin-top: 0px;
     &__input--phone:focus+&__label--phone::before {
       position: absolute;
       content: '';
-      top: 37px;
-      left: -49px;
+      top: 43px;
+      left: -52px;
       background: url('/src/img/sprites.png') -264px -263px;
       width: 25px;
       height: 24px;
@@ -778,8 +779,8 @@ margin-top: 0px;
     &__label--phone:hover::after {
       position: absolute;
       content: '';
-      top: 37px;
-      left: -49px;
+      top: 43px;
+      left: -52px;
       background-position: -264px -263px;
       width: 25px;
       height: 24px;

@@ -2,7 +2,7 @@
   &__title--block {
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     height: 177px;
     background: $lightGray;
 margin-top: 0px;
@@ -12,13 +12,13 @@ margin-top: 0px;
     @include textLg(27px, 700);
     line-height: 1.1;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 16px;
   }
   &__text {
     @include textLg(13px, 400);
     line-height: 1.8;
     color: #444444;
-    padding: 22px 30px 0 30px;
+    padding: 20px 30px 0 30px;
     margin: 0;
   }
   &__form{
@@ -127,7 +127,7 @@ margin-top: 0px;
   }
    &__section--checkbox {
      display: flex;
-     min-width: 259px;
+     min-width: 263px;
      min-height: 46px;
      align-items: center;
      margin-top: 5px;
@@ -155,7 +155,7 @@ margin-top: 0px;
   &__input--checkbox:not(checked)+label {
     display: flex;
     padding-left: 63px;
-    padding-top: 15px;
+    padding-top: 17px;
   }
   &__group--checkbox {
     flex-direction: column;
@@ -441,7 +441,7 @@ margin-top: 0px;
       @include textLg(17px,
       400);
       line-height: 1.7;
-      margin-left: 17px;
+      margin-left: 12px;
       margin-top: 50px;
     }
     &__filedset--radio{
@@ -454,7 +454,7 @@ margin-top: 0px;
       line-height: calc(16/17);
       color: $greenLeft;
       top: 75px;
-      left: 50px;
+      left: 42px;
     }
     &__legend::after,
     &__legend--checkbox::after {
@@ -463,7 +463,7 @@ margin-top: 0px;
     &__section--radio {
       width: 100%;
 
-      margin: 20px 0 0 215px;
+      margin: 24px 0 0 207px;
     }
     &__legend::after {
       display: none;
@@ -503,7 +503,7 @@ margin-top: 0px;
     }
     &__input--radio:not(checked)+&__label--radio {
       position: relative;
-      padding: 11px 0 0 77px;
+      padding: 15px 0 0 81px;
 
       display: flex;
     }
@@ -517,8 +517,8 @@ margin-top: 0px;
       @include titleSm;
       line-height: calc(16/17);
       color: $greenLeft;
-      top: 82px;
-      left: 48px;
+      top: 84px;
+      left: 42px;
     }
     &__inner {
     flex-wrap: wrap;
@@ -553,7 +553,7 @@ margin-top: 0px;
       min-width: 600px;
       justify-content: center;
 
-      margin: 25px 0 0 165px;
+      margin: 25px 0 0 157px;
     }
     }
 
@@ -562,10 +562,11 @@ margin-top: 0px;
       flex-wrap: wrap;
       flex-direction: row;
 
-      margin-left: 215px;
-      max-height: 220px;
-      min-width: 500px;
-      margin-top: 34px;
+          margin-left: 210px;
+          max-height: 226px;
+          min-width: 500px;
+          margin-top: 34px;
+
     }
 
     &__section--checkbox {
@@ -611,7 +612,7 @@ margin-top: 0px;
 
     &__legend--name {
       top: 67px;
-      left: 48px;
+      left: 42px;
     }
 
     &__section--name {
@@ -620,9 +621,9 @@ margin-top: 0px;
       min-width: 535px;
       align-self: flex-start;
       justify-content: space-around;
-      margin-left: 215px;
+      margin-left: 208px;
       width: 100%;
-      margin-top: 12px;
+      margin-top: 13px;
     }
 
     &__label--name {
@@ -635,7 +636,7 @@ margin-top: 0px;
       min-width: 375px;
       @include textLg(19px, 400);
       line-height: 0.9;
-      margin: 0 45px 0 40px;
+      margin: 0 45px 0 26px;
       width: 100%;
       &--name {
         min-width: 425px;
@@ -688,7 +689,7 @@ margin-top: 0px;
       color: $greenLeft;
       text-transform: uppercase;
       top: 67px;
-      left: 28px;
+      left: 21px;
 
     }
 
@@ -699,7 +700,7 @@ margin-top: 0px;
       text-transform: uppercase;
       position: relative;
       top: 30px;
-      left: 27px;
+      left: 21px;
 
     }
 
@@ -716,7 +717,7 @@ margin-top: 0px;
       background-color: #f1f1f1;
       min-width: 500px;
       width: 100%;
-      margin: 25px 0 0 195px;
+      margin: 25px 0 0 188px;
 
     }
 
@@ -796,7 +797,7 @@ margin-top: 0px;
 
     &__legend--extra {
       top: 70px;
-      left: 50px;
+      left: 43px;
     }
 
     &__wrap {
@@ -818,7 +819,7 @@ margin-top: 0px;
       order: 1;
       margin: 0;
       width: 230px;
-margin-left: 9px;
+margin-left: 10px;
 margin-top: 0px;
     }
     span {
@@ -829,8 +830,8 @@ margin-top: 0px;
 
       text-align: right;
       align-self: center;
-          margin-top: 22px;
-    margin-left: 59px;
+          margin-top: 25px;
+    margin-left: 81px;
     }
     @media screen and (min-width: 1024px) {
       &__title--block {
@@ -843,6 +844,7 @@ margin-top: 0px;
         700);
         line-height: 1;
         margin-top: 50px;
+        margin-left: 5px;
       }
       &__text {
         @include textLg(17px,
@@ -850,8 +852,8 @@ margin-top: 0px;
         line-height: 1.7;
         max-width: 672px;
         width: 100%;
-        margin-left: 220px;
-        margin-top:100px;
+        margin-left: 223px;
+        margin-top:104px;
       }
        &__title-line:after {
          content: "";
@@ -883,9 +885,9 @@ margin-top: 0px;
 
       &__legend--color,
       &__legend--name,
-      &__legend--extra,
+
       &__legend--radio {
-        left: 138px;
+        left: 141px;
       }
       &__inner--checkbox {
         min-height: 228px;
@@ -893,13 +895,13 @@ margin-top: 0px;
       }
       &__group--checkbox {
         flex-direction: row;
-        height: 150px;
-        flex-basis: 877px;
-        margin-right:67px;
+        height: 146px;
+        flex-basis: 881px;
+        margin-right:65px;
       }
       &__section--name {
         flex-basis: 770px;
-        margin-left: 250px;
+        margin-left: 254px;
       }
       &__input {
         margin-left: 180px;
@@ -985,32 +987,37 @@ margin-top: 0px;
          height: 24px;
        }
 
-
+&__legend--extra{
+  left: 141px;
+  top: 66px;
+}
       &__data {
         width: 100%;
         min-width: 1150px;
       }
 
-
+&__inner--textarea{
+  margin-left: 171px;
+}
       &__textarea {
         min-width: 700px;
         margin-right: 165px;
-        min-height: 140px;
+        min-height: 132px;
 
       }
       &__wrap{
         justify-content: space-around;
         min-width: 700px;
         width: 100%;
-        margin-top: 15px;
+        margin-top: 19px;
         height: 60px;
       }
       span{
-        margin-right: 190px;
-        margin-top: 35px;
+        margin-right: 200px;
+        margin-top: 40px;
       }
       &__btn {
-        margin-left: 193px;
+        margin-left: 209px;
         vertical-align: top;
         margin-top: 10px;
       }

@@ -5,7 +5,7 @@
   }
   &__inner {
     display: block;
-    margin: 10px 0 0 0; 
+    margin: 10px 0 0 0;
     width: 100%;
     height: 160px;
   }
@@ -13,7 +13,7 @@
     display: none;
   }
   &__link {
-    margin: 23px 20px 7px 14px;
+    margin: 23px 20px 7px 16px;
   }
   &__social {
     display: block;
@@ -110,7 +110,7 @@ margin-top: 30px;
       display: flex; //display: inline-block;
       flex-basis: 31%;
       text-align: center;
-      margin: 0 0 0px 25px;
+      margin: 0 0 0px 21px;
     }
     &__logo-link {
       display: inline-block;
@@ -143,7 +143,7 @@ margin-top: 30px;
     width: 100%;
     min-width: 1200px;
     &__inner {
-      margin-top: 47px;
+      margin-top: 44px;
     }
     &__logo {
       margin-left: 38px;
@@ -160,7 +160,7 @@ margin-top: 30px;
     }
     &__social {
       // margin: 0 0 0 95px;
-      margin-left: 92px; //  margin-top: 16px;
+      margin-left: 95px; //  margin-top: 16px;
     }
   }
 }

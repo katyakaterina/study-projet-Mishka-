@@ -3,7 +3,7 @@
     @media only screen and (max-width: 767px) {
          &__bg{
            background: url(/src/img/header-mobile-1x.jpg);
-           background-position: 50% 0;
+           background-position: 50% -17%;
            background-repeat: no-repeat;
            background-size: 100% auto;
          }
@@ -14,8 +14,7 @@
         width: 244px;
         text-align: center;
         margin: 0 auto;
-
-        padding: 71px 0 122px 0;
+        padding: 69px 0 122px 0;
     }
 
     &__list {
@@ -100,7 +99,7 @@
 
         &__bg{
             background: url(/src/img/header-tablet-2x.jpg);
-            background-position: center center;
+            background-position: center -3px;
             background-repeat: no-repeat;
             background-size: cover;
             border-top: 1px solid $frameMenu;

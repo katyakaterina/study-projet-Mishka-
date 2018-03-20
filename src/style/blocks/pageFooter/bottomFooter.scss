@@ -56,8 +56,6 @@
 
     &__copyright{
       border: none;
-      // margin-right: 12px;
-      // margin-top: 5px;
       margin: 5px 12px 0 0;
 
     }
@@ -66,7 +64,7 @@
 @media (min-width: 1024px){
   .footer{
     &__copyright{
-      margin: 0px 40px 0 0
+      margin: 4px 34px 0 0
     }
   }
 }

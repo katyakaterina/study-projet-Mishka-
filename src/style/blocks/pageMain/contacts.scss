@@ -75,7 +75,7 @@ min-height: 850px;
 
     .contacts {
         padding: 0;
-        min-height: 833px;
+        min-height: 837px;
 
         &__inner{
          min-width: 668px;
@@ -84,7 +84,7 @@ min-height: 850px;
 
         &__title{
             @include titleXlTab;
-           margin: 55px 0 0 46px;
+           margin: 51px 0 0 44px;
            padding: 0;
         }
 
@@ -93,7 +93,7 @@ min-height: 850px;
             justify-content: space-between;
             width: 668px;
             padding: 0;
-            margin: 29px 0 45px 50px;
+            margin: 29px 0 48px 50px;
         }
 
         &__wrap {
@@ -132,11 +132,12 @@ min-height: 850px;
         }
         &__btn{
             width: 230px;
-            margin: 57px 0 0 269px;
+            margin: 54px 0 0 269px;
             height: 51px;
         }
     }
     #map{
+        height: 459px;
         width: 100%;
     }
 }
@@ -154,7 +155,7 @@ min-height: 850px;
           flex-wrap: wrap;
           flex-direction: column;
           align-content: flex-end;
-          height: 524px;
+          height: 528px;
           margin: 0 auto;
         }
         &__box{
@@ -182,7 +183,7 @@ min-height: 850px;
         &__map{
             order: 3;
             align-self: flex-end;
-            
+
             margin-top: 11px;
         }
         &__btn{

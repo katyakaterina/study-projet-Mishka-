@@ -17,7 +17,7 @@ buttonMenu.onclick = function (e) {
 
   } else if (buttonMenu.className == openButton) {
     buttonMenu.className = closeButton;
-    menu.className = menuListClosed;
+   menu.className = menuListClosed;
   }
 }
 

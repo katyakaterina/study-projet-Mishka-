@@ -780,7 +780,7 @@
         margin-top: 23px;
         border: 1px solid #ececec;
         background-color: #ffffff;
-        margin-left: 42px;
+        margin-left: 50px;
         margin-bottom: 30px;
       }
       &__detail {
@@ -793,7 +793,7 @@
         line-height: 1.2;
 
         margin-left: 22px;
-        margin-top: 26px;
+        margin-top: 28px;
 
         width: 230px;
         margin-bottom: 4px;
@@ -849,14 +849,14 @@
         line-height: 1.2;
         margin-top: 35px;
         width: 241px;
-        margin-left: 104px;
+        margin-left: 110px;
       }
       &__link-pic {
         background: url('/src/img/sprites.png') -314px -263px;
         width: 32px;
         height: 22px;
-        margin-left: 40px;
-        margin-top: 33px;
+        margin-left: 45px;
+        margin-top: 36px;
       }
       .video-page {
         &__video img {
@@ -882,7 +882,7 @@
           400);
           order: 3;
           margin-top: 0px;
-          margin-left: 37px;
+          margin-left: 44px;
         }
       }
       .player__btn {
@@ -890,8 +890,8 @@
         order: 4;
         border: 2px solid $darkGray;
         background-color: $white;
-        margin-top: 6px;
-        margin-left: 42px;
+        margin-top: 8px;
+        margin-left: 47px;
         padding: 16px 7px 30px 0px;
         margin-bottom: 0;
       }
@@ -1015,7 +1015,7 @@
           }
           &__link-pic {
             margin-top: 185px;
-            left: 33%;
+            left: 32%;
           }
           &__descr {
             @include textLg(15px,

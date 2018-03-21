@@ -441,11 +441,11 @@ margin-top: 0px;
       @include textLg(17px,
       400);
       line-height: 1.7;
-      margin-left: 12px;
-      margin-top: 50px;
+      margin-left: 19px;
+      margin-top: 53px;
     }
     &__filedset--radio{
-      margin-bottom:60px;
+      margin-bottom:56px;
     }
     &__legend--radio {
       text-transform: uppercase;
@@ -454,7 +454,7 @@ margin-top: 0px;
       line-height: calc(16/17);
       color: $greenLeft;
       top: 75px;
-      left: 42px;
+      left: 50px;
     }
     &__legend::after,
     &__legend--checkbox::after {
@@ -463,7 +463,7 @@ margin-top: 0px;
     &__section--radio {
       width: 100%;
 
-      margin: 24px 0 0 207px;
+      margin: 19px 0 0 214px;
     }
     &__legend::after {
       display: none;
@@ -518,7 +518,7 @@ margin-top: 0px;
       line-height: calc(16/17);
       color: $greenLeft;
       top: 84px;
-      left: 42px;
+      left: 50px;
     }
     &__inner {
     flex-wrap: wrap;
@@ -553,7 +553,7 @@ margin-top: 0px;
       min-width: 600px;
       justify-content: center;
 
-      margin: 25px 0 0 157px;
+      margin: 25px 0 0 162px;
     }
     }
 
@@ -562,7 +562,7 @@ margin-top: 0px;
       flex-wrap: wrap;
       flex-direction: row;
 
-          margin-left: 210px;
+          margin-left: 218px;
           max-height: 226px;
           min-width: 500px;
           margin-top: 34px;
@@ -612,7 +612,7 @@ margin-top: 0px;
 
     &__legend--name {
       top: 67px;
-      left: 42px;
+      left: 50px;
     }
 
     &__section--name {
@@ -621,9 +621,9 @@ margin-top: 0px;
       min-width: 535px;
       align-self: flex-start;
       justify-content: space-around;
-      margin-left: 208px;
+      margin-left: 218px;
       width: 100%;
-      margin-top: 13px;
+      margin-top: 14px;
     }
 
     &__label--name {
@@ -688,8 +688,8 @@ margin-top: 0px;
       line-height: calc(16/17);
       color: $greenLeft;
       text-transform: uppercase;
-      top: 67px;
-      left: 21px;
+      top: 71px;
+      left: 31px;
 
     }
 
@@ -699,8 +699,8 @@ margin-top: 0px;
       color: $greenLeft;
       text-transform: uppercase;
       position: relative;
-      top: 23px;
-      left: 29px;
+      top: 27px;
+      left: 30px;
 
     }
 
@@ -798,7 +798,7 @@ margin-top: 0px;
 
     &__legend--extra {
       top: 70px;
-      left: 43px;
+      left: 50px;
     }
 
     &__wrap {
@@ -813,14 +813,14 @@ margin-top: 0px;
       @include textLg(19px,
       400);
       max-width: 493px;
-      margin-top: 10px;
+      margin-top: 13px;
       align-self: center;
     }
     &__btn {
       order: 1;
       margin: 0;
       width: 230px;
-margin-left: 10px;
+margin-left: 7px;
 margin-top: 0px;
     }
     span {
@@ -832,7 +832,7 @@ margin-top: 0px;
       text-align: right;
       align-self: center;
           margin-top: 25px;
-    margin-left: 81px;
+    margin-left: 56px;
     }
     @media screen and (min-width: 1024px) {
       &__title--block {
@@ -855,6 +855,7 @@ margin-top: 0px;
         width: 100%;
         margin-left: 223px;
         margin-top:104px;
+        margin-bottom: 7px;
       }
        &__title-line:after {
          content: "";
@@ -869,8 +870,11 @@ margin-top: 0px;
          bottom: 0px;
          transform: rotate(-180deg);
        }
+       &__filedset--radio{
+margin-bottom: 52px;
+       }
 &__section--radio{
-  margin: 25px 0 0 250px;
+  margin: 5px 0 0 252px;
 
 }
 &__label--phone:hover::after {
@@ -884,12 +888,18 @@ margin-top: 0px;
   }
 
 
-      &__legend--color,
+
       &__legend--name,
 
       &__legend--radio {
         left: 141px;
+        top: 69px;
       }
+        &__legend--color{
+         left: 136px;
+top: 84px;
+        }
+
       &__inner--checkbox {
         min-height: 228px;
         height: auto;
@@ -903,6 +913,7 @@ margin-top: 0px;
       &__section--name {
         flex-basis: 770px;
         margin-left: 254px;
+        margin-top: 12px;
       }
       &__input {
         margin-left: 180px;
@@ -1014,11 +1025,11 @@ margin-top: 0px;
         height: 60px;
       }
       span{
-        margin-right: 200px;
+        margin-right: 188px;
         margin-top: 40px;
       }
       &__btn {
-        margin-left: 209px;
+        margin-left: 197px;
         vertical-align: top;
         margin-top: 10px;
       }

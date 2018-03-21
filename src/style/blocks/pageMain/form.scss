@@ -445,7 +445,7 @@ margin-top: 0px;
       margin-top: 50px;
     }
     &__filedset--radio{
-      margin-bottom:60px;
+      margin-bottom: 57px;
     }
     &__legend--radio {
       text-transform: uppercase;
@@ -867,6 +867,31 @@ margin-top: 0px;
          bottom: 0px;
          transform: rotate(-180deg);
        }
+       &__filedset--radio{
+        margin-bottom: 48px;
+      }
+      &__input--radio:not(checked) + label{
+        top: 10px;
+      }
+      // input--radio:not(checked) + &__label--radio{
+      //   padding: 20px 9px 9px 83px;
+      // }
+      &__label--radio{
+        padding: 20px 9px 9px 83px;
+
+        &::before{
+          top: 5px;
+          left: 2px;
+        }
+        // &::after{
+        //   top: 19px;
+        //   left: 18px;
+        // }
+      }
+      &__input--radio:checked + &__label--radio::after{
+        top: 20px;
+        left: 18px;
+      }
 &__section--radio{
   margin: 25px 0 0 250px;
 
